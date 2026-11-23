@@ -7,6 +7,7 @@ one vantage point or serves it different content shows up as a disagreement.
 
 import base64
 import json
+import uuid
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -39,15 +40,16 @@ class Sandbox:
     API = "https://backend.composio.dev/api/v3/tool_router/session"
     TIMEOUT_SECONDS = 300
     SCRIPT = Path(__file__).with_name("remote_check.py")
+    USER_ID = "research"
 
     api_key: str
     session_id: str
 
     @classmethod
-    def open(cls, api_key: str, user_id: str = "research") -> "Sandbox":
+    def open(cls, api_key: str) -> "Sandbox":
         if not api_key:
             raise CatalogError("set COMPOSIO_API_KEY to use the Composio sandbox")
-        reply = cls._post(api_key, cls.API, {"user_id": user_id})
+        reply = cls._post(api_key, cls.API, {"user_id": cls.USER_ID})
         return cls(api_key, str(reply["session_id"]))
 
     @staticmethod
@@ -76,7 +78,8 @@ class Sandbox:
         """Run remote_check.py in the sandbox on one batch of (url, quotes); results keep the order."""
         script = base64.b64encode(self.SCRIPT.read_bytes()).decode()
         payload = base64.b64encode(json.dumps(pages).encode()).decode()
-        out = self.bash(f"echo {script} | base64 -d > /tmp/rc.py && echo {payload} | base64 -d | python3 /tmp/rc.py")
+        path = f"/tmp/rc_{uuid.uuid4().hex}.py"  # batches run at once in one session
+        out = self.bash(f"echo {script} | base64 -d > {path} && echo {payload} | base64 -d | python3 {path}")
         try:
             return [PageAnswer.from_json(doc) for doc in json.loads(out)]
         except (ValueError, KeyError, TypeError) as err:
@@ -112,7 +115,7 @@ class RemoteReport:
             index = seen.get(url, 0)
             seen[url] = index + 1
             answer = answers[url]
-            checks.append(RemoteCheck(app_id, url, quote, answer.code, index < len(answer.found) and answer.found[index]))
+            checks.append(RemoteCheck(app_id, url, quote, answer.code, answer.found[index]))
         return cls(tuple(checks))
 
     @classmethod
@@ -127,6 +130,9 @@ class RemoteReport:
             answers = [answer for part in pool.map(sandbox.check_pages, batches) for answer in part]
         if len(answers) != len(pages):
             raise CatalogError(f"the sandbox answered {len(answers)} pages for {len(pages)}")
+        for (url, quotes), answer in zip(pages, answers):
+            if len(answer.found) != len(quotes):
+                raise CatalogError(f"the sandbox checked {len(answer.found)} of {len(quotes)} quotes on {url}")
         return {url: answer for (url, _), answer in zip(pages, answers)}
 
     @classmethod
@@ -142,12 +148,13 @@ class RemoteReport:
             raise ValueError("the two reports do not cover the same citations in the same order")
         local_found = [c.quote is QuoteStatus.FOUND for c in local.checks]
         remote_found = [c.found for c in self.checks]
+        here, there = sum(local_found), sum(remote_found)
         both = sum(a and b for a, b in zip(local_found, remote_found))
         return {
             "citations": len(self.checks),
-            "local_found": sum(local_found),
-            "remote_found": sum(remote_found),
+            "local_found": here,
+            "remote_found": there,
             "both_found": both,
-            "only_local": sum(local_found) - both,
-            "only_remote": sum(remote_found) - both,
+            "only_local": here - both,
+            "only_remote": there - both,
         }

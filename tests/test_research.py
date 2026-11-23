@@ -1,8 +1,11 @@
+import base64
 import contextlib
 import shutil
 import http.server
 import io
 import json
+import os
+import re
 import sys
 import tempfile
 import threading
@@ -359,9 +362,9 @@ class SampleTest(unittest.TestCase):
 class RemoteTest(unittest.TestCase):
     def test_the_sandbox_script_reads_pages_as_the_local_check_does(self) -> None:
         for text in ("Create an <b>API\u00a0key</b>", "It\u2019s \u201cOAuth\u201d \u2013 two  words &amp; more"):
-            self.assertEqual(remote_check.normalise(text), Page.normalise(text))
+            self.assertEqual(remote_check.Check.normalise(text), Page.normalise(text))
         page = "<p>keep</p><script>drop()</script><style>x{}</style>"
-        self.assertEqual(remote_check.readable(page), Page.readable(page))
+        self.assertEqual(remote_check.Check.readable(page), Page.readable(page))
 
     def test_answers_are_matched_to_citations_by_position_not_by_address(self) -> None:
         class Fake:
@@ -384,6 +387,57 @@ class RemoteTest(unittest.TestCase):
             "citations": 3, "local_found": 1, "remote_found": 2, "both_found": 1, "only_local": 0, "only_remote": 1})
         with self.assertRaises(ValueError):
             remote.compare(local([True]))
+
+    @staticmethod
+    def fake_post(short: bool = False):
+        """Stands in for Composio's HTTP API: opens a session, then runs the batch it is sent."""
+        def post(api_key, url, body):
+            if url.endswith("/session"):
+                return {"session_id": "s1"}
+            payload = re.search(r"echo (\S+) \| base64 -d \| python3", body["arguments"]["command"]).group(1)
+            pages = json.loads(base64.b64decode(payload))
+            answers = [{"code": 200, "found": [True] * (len(quotes) - short)} for _, quotes in pages]
+            return {"error": None, "data": {"stdout": json.dumps(answers)}}
+        return post
+
+    def remote_root(self, tmp: str) -> Path:
+        root = Path(tmp)
+        directory = root / "runs" / "pass9"
+        directory.mkdir(parents=True)
+        (directory / "61.json").write_text(json.dumps(profile_doc()))
+        return root
+
+    def run_remote(self, root: Path, post) -> int:
+        out = io.StringIO()
+        with mock.patch("research.__main__.ROOT", root), mock.patch.object(Sandbox, "_post", staticmethod(post)), \
+                mock.patch.dict(os.environ, {"COMPOSIO_API_KEY": "k"}), \
+                mock.patch.object(sys, "argv", ["research", "remote", str(root / "runs" / "pass9")]), \
+                contextlib.redirect_stdout(out), contextlib.redirect_stderr(io.StringIO()):
+            return main()
+
+    def test_the_remote_command_compares_the_sandbox_with_the_local_check(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = self.remote_root(tmp)
+            (root / "runs" / "checks").mkdir()
+            citations = [LinkCheck(61, "GitHub", f, "https://docs.github.com/rest", PageStatus.LIVE, 200, QuoteStatus.FOUND)
+                         for f in ("auth_methods", "access", "api_styles", "mcp")]
+            LinkReport(tuple(citations)).write(root / "runs" / "checks" / "pass9_links.json")
+            self.assertEqual(self.run_remote(root, self.fake_post()), 0)
+            written = RemoteReport.read(root / "runs" / "checks" / "pass9_remote_links.json")
+        self.assertEqual([c.found for c in written.checks], [True] * 4)
+
+    def test_a_missing_local_report_stops_the_command_before_the_sandbox_is_used(self) -> None:
+        def refuse(*args):
+            raise AssertionError("the sandbox must not be opened")
+
+        with tempfile.TemporaryDirectory() as tmp:
+            self.assertEqual(self.run_remote(self.remote_root(tmp), refuse), 1)
+
+    def test_a_sandbox_that_checks_fewer_quotes_than_it_was_sent_is_an_error(self) -> None:
+        profile = Profile.from_json(profile_doc())
+        with mock.patch.object(Sandbox, "_post", staticmethod(self.fake_post(short=True))):
+            with self.assertRaisesRegex(CatalogError, "checked 3 of 4 quotes"):
+                RemoteReport.run([profile], Sandbox("k", "s1"))
 
     def test_the_sandbox_needs_a_key_and_reports_a_failed_command(self) -> None:
         with self.assertRaisesRegex(CatalogError, "COMPOSIO_API_KEY"):

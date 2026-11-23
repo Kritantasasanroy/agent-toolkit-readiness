@@ -62,10 +62,13 @@ def composio(_args: argparse.Namespace) -> int:
 
 def remote(args: argparse.Namespace) -> int:
     survey = Survey.load(Path(args.pass_dir))
+    local_path = ROOT / "runs" / "checks" / f"{survey.name}_links.json"
+    if not local_path.exists():
+        raise CatalogError(f"run `research links {args.pass_dir}` first: {local_path.name} is missing")
+    local = LinkReport.read(local_path)
     report = RemoteReport.run(survey.all(), Sandbox.open(os.environ.get("COMPOSIO_API_KEY", "")))
     out = ROOT / "runs" / "checks" / f"{survey.name}_remote_links.json"
     report.write(out)
-    local = LinkReport.read(ROOT / "runs" / "checks" / f"{survey.name}_links.json")
     print(json.dumps(report.compare(local), indent=1))
     print(f"wrote {out.relative_to(ROOT)}")
     return 0
