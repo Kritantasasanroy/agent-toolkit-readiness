@@ -5,6 +5,7 @@
     python3 -m research score runs/pass1 data/handchecks.json
     python3 -m research composio    (needs COMPOSIO_API_KEY)
     python3 -m research remote runs/pass2    (needs COMPOSIO_API_KEY)
+    python3 -m research scope    (needs COMPOSIO_API_KEY)
     python3 -m research site
 """
 
@@ -17,6 +18,7 @@ from pathlib import Path
 from research.composio import CatalogError, ComposioCatalog
 from research.handcheck import HandCheck, HandCheckError, Scorecard
 from research.links import LinkReport
+from research.mcp_scope import McpScopes
 from research.paths import ROOT
 from research.profile import ProfileError
 from research.remote import RemoteReport, Sandbox
@@ -74,6 +76,16 @@ def remote(args: argparse.Namespace) -> int:
     return 0
 
 
+def scope(_args: argparse.Namespace) -> int:
+    directory, checks = ROOT / "runs" / "mcp_scope", ROOT / "runs" / "checks" / "mcp_scope_quotes.json"
+    scopes = McpScopes.load(directory, checks)
+    results = McpScopes.verify(scopes.findings, Sandbox.open(os.environ.get("COMPOSIO_API_KEY", "")))
+    checks.write_text(json.dumps([c.to_json() for c in results], indent=1))
+    print(json.dumps(McpScopes(scopes.findings, results).counts()))
+    print(f"wrote {checks.relative_to(ROOT)}")
+    return 0
+
+
 def site(_args: argparse.Namespace) -> int:
     study = CaseStudy.build(ROOT)
     study.render(ROOT)
@@ -96,6 +108,7 @@ def main() -> int:
     command = commands.add_parser("remote")
     command.add_argument("pass_dir")
     command.set_defaults(run=remote)
+    commands.add_parser("scope").set_defaults(run=scope)
     commands.add_parser("site").set_defaults(run=site)
     args = parser.parse_args()
     try:

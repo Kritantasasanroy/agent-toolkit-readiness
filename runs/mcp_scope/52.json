@@ -1,0 +1,8 @@
+{
+ "app_id": 52,
+ "app": "SE Ranking",
+ "scope": "account",
+ "reason": "Server exposes the user's projects, rank tracking, audits, local listings and reviews through OAuth.",
+ "url": "https://seranking.com/api/mcp/",
+ "quote": "your projects, rank tracking, audits, and competitors"
+}

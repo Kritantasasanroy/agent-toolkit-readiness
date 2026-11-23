@@ -1,0 +1,8 @@
+{
+ "app_id": 81,
+ "app": "Stripe",
+ "scope": "account",
+ "reason": "The server has stripe_api_read and stripe_api_write for customers, invoices, refunds and subscriptions after OAuth or an agent API key. It also has documentation search tools, but the account tools make it account.",
+ "url": "https://docs.stripe.com/mcp",
+ "quote": "The Stripe Model Context Protocol (MCP) server provides tools that AI agents can use to interact with the Stripe API"
+}

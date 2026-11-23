@@ -1,0 +1,8 @@
+{
+ "app_id": 62,
+ "app": "Vercel",
+ "scope": "account",
+ "reason": "Remote OAuth server that manages projects and deployments and reads logs and analytics in the user's Vercel account.",
+ "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+ "quote": "Manage projects and deployments"
+}

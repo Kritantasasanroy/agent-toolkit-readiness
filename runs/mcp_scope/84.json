@@ -1,0 +1,8 @@
+{
+ "app_id": 84,
+ "app": "Paygent Connect",
+ "scope": "account",
+ "reason": "The NMI MCP server runs locally with the merchant's own API key and reads live customers, payments, subscriptions and invoices from the gateway (read-only).",
+ "url": "https://docs.nmi.com/docs/mcp-api",
+ "quote": "It runs locally on your machine and talks to the NMI REST API with your own merchant API key."
+}

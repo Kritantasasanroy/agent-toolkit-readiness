@@ -152,7 +152,7 @@ function stats() {
   const rank = D.patterns.self_serve_by_category;
   const rate = l => Math.round(100 * l.verified / l.pages.live);
   return {
-    n: A.length, cAuthN: D.composio.auth.checked, cAuthOk: D.composio.auth.consistent, cAuthDiffN: D.composio.auth.differ.length, cAuthDiff: D.composio.auth.differ.map(d => d.app + " (+" + d.extra_in_composio.join(", ") + ")").join("; "), cNative: D.composio.coverage.native, cMcp: D.composio.coverage.mcp_only, cNone: D.composio.coverage.none,
+    n: A.length, cAuthN: D.composio.auth.checked, cAuthOk: D.composio.auth.consistent, cAuthDiffN: D.composio.auth.differ.length, cAuthDiff: D.composio.auth.differ.map(d => d.app + " (+" + d.extra_in_composio.join(", ") + ")").join("; "), cGated: D.composio.gated_but_built.length, cGatedList: D.composio.gated_but_built.join(", "), mAcct: D.patterns.mcp_scope.account, mNo: D.patterns.mcp_scope.no_account, mUnclear: D.patterns.mcp_scope.unclear, mUnverified: D.patterns.mcp_scope.unverified, cNative: D.composio.coverage.native, cMcp: D.composio.coverage.mcp_only, cNone: D.composio.coverage.none,
     cSize: D.composio.catalog_size, cDate: D.composio.catalog_fetched,
     cNowNative: c(a => a.verdict === "build_now" && a.composio.coverage === "native"),
     cGaps: A.filter(a => a.verdict === "build_now" && a.composio.coverage !== "native").map(a => a.app + (a.composio.coverage === "mcp_only" ? " (MCP only)" : "")).join(", "),
@@ -199,6 +199,7 @@ function init() {
   bars("auth", p.primary_auth, n);
   bars("blockers", Object.fromEntries(Object.entries(p.blockers).filter(([k]) => k !== "none")));
   bars("mcp", p.mcp, n);
+  bars("mcpScope", {account: p.mcp_scope.account, no_account: p.mcp_scope.no_account, unclear: p.mcp_scope.unclear});
   bars("verdicts", p.verdicts, n);
   heat();
   verdictList("easy", "build_now");

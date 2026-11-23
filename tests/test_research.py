@@ -1,5 +1,6 @@
 import base64
 import contextlib
+import gzip
 import shutil
 import http.server
 import io
@@ -18,6 +19,7 @@ from research.adjudication import Decider, Disputes, Winner
 from research.__main__ import main
 from research.composio import CatalogError, ComposioCatalog, Coverage, Match, Toolkit
 from research.handcheck import HandCheck, HandCheckError, Scorecard
+from research.mcp_scope import McpScopes, Scope, ScopeCheck, ScopeFinding
 from research.links import LinkCheck, LinkReport, Page, PageStatus, QuoteStatus
 from research.profile import Access, ApiStyle, AuthMethod, Doc, Field, Profile, ProfileError
 from research.paths import ROOT
@@ -242,10 +244,14 @@ class FetchTest(unittest.TestCase):
     def setUpClass(cls) -> None:
         class Handler(http.server.BaseHTTPRequestHandler):
             def do_GET(self) -> None:
-                code = {"/ok": 200, "/gone": 404, "/blocked": 403, "/broken": 503}.get(self.path, 404)
+                code = {"/ok": 200, "/zipped": 200, "/gone": 404, "/blocked": 403, "/broken": 503}.get(self.path, 404)
                 self.send_response(code)
+                if self.path == "/zipped":
+                    self.send_header("Content-Encoding", "gzip")
                 self.end_headers()
-                if code == 200:
+                if self.path == "/zipped":
+                    self.wfile.write(gzip.compress(b"<p>Send the key in the <code>x-api-key</code> header .</p>"))
+                elif code == 200:
                     self.wfile.write(b"<p>Create an <b>API key</b> in settings</p>")
 
             def log_message(self, *args: object) -> None:
@@ -265,6 +271,10 @@ class FetchTest(unittest.TestCase):
         self.assertIs(Page.fetch(self.base + "/blocked").status, PageStatus.REFUSED)
         self.assertIs(Page.fetch(self.base + "/broken").status, PageStatus.SERVER_ERROR)
         self.assertIs(Page.fetch("http://127.0.0.1:1/").status, PageStatus.UNREACHABLE)
+
+    def test_a_compressed_page_is_read_and_tag_gaps_do_not_hide_a_quote(self) -> None:
+        page = Page.fetch(self.base + "/zipped")
+        self.assertIs(page.quote_status("Send the key in the x-api-key header."), QuoteStatus.FOUND)
 
     def test_finds_a_quote_on_a_fetched_page(self) -> None:
         page = Page.fetch(self.base + "/ok")
@@ -292,6 +302,21 @@ class FetchTest(unittest.TestCase):
                          [("auth_methods", "live", "found"), ("access", "live", "found"),
                           ("api_styles", "not_found", "unchecked"), ("mcp", "live", "found")])
         self.assertIn('"citations": 4', out.getvalue())
+
+    def test_a_scope_answer_counts_only_if_its_quote_is_found_here_or_in_the_sandbox(self) -> None:
+        class Fake:
+            def check_pages(self, pages):
+                return [PageAnswer(200, tuple(quote == "found remotely" for quote in quotes)) for _, quotes in pages]
+
+        def finding(app_id: int, quote: str, scope: Scope = Scope.ACCOUNT) -> ScopeFinding:
+            return ScopeFinding(app_id, f"App{app_id}", scope, "why", self.base + "/ok", quote)
+
+        findings = [finding(1, "create an API key"), finding(2, "found remotely"), finding(3, "nowhere"),
+                    finding(4, "", Scope.UNCLEAR)]
+        scopes = McpScopes(tuple(findings), McpScopes.verify(findings, Fake()))
+        self.assertEqual(scopes.effective(), {1: Scope.ACCOUNT, 2: Scope.ACCOUNT, 3: Scope.UNCLEAR, 4: Scope.UNCLEAR})
+        self.assertEqual(scopes.counts(), {"account": 2, "no_account": 0, "unclear": 2})
+        self.assertEqual(scopes.unverified(), 1)
 
     def test_link_report_writes_one_entry_per_citation_and_fetches_each_url_once(self) -> None:
         cited = [{"field": f, "url": self.base + "/ok", "quote": "create an API key"}
@@ -361,7 +386,7 @@ class SampleTest(unittest.TestCase):
 
 class RemoteTest(unittest.TestCase):
     def test_the_sandbox_script_reads_pages_as_the_local_check_does(self) -> None:
-        for text in ("Create an <b>API\u00a0key</b>", "It\u2019s \u201cOAuth\u201d \u2013 two  words &amp; more"):
+        for text in ("Create an <b>API\u00a0key</b>", "Use `x-api-key` header ( see docs ) .", "It\u2019s \u201cOAuth\u201d \u2013 two  words &amp; more"):
             self.assertEqual(remote_check.Check.normalise(text), Page.normalise(text))
         page = "<p>keep</p><script>drop()</script><style>x{}</style>"
         self.assertEqual(remote_check.Check.readable(page), Page.readable(page))
@@ -447,6 +472,22 @@ class RemoteTest(unittest.TestCase):
                 Sandbox("key", "session").bash("true")
 
 
+class ScopeFileTest(unittest.TestCase):
+    def test_findings_are_read_from_one_file_per_app_and_bad_values_are_refused(self) -> None:
+        doc = {"app_id": 5, "app": "X", "scope": "account", "reason": "r", "url": "https://x.io", "quote": "q"}
+        self.assertIs(ScopeFinding.from_json(doc).scope, Scope.ACCOUNT)
+        with self.assertRaisesRegex(ProfileError, "scope"):
+            ScopeFinding.from_json(dict(doc, scope="everything"))
+        with tempfile.TemporaryDirectory() as tmp:
+            directory, checks = Path(tmp) / "scope", Path(tmp) / "checks.json"
+            directory.mkdir()
+            with self.assertRaisesRegex(ProfileError, "no scope files"):
+                McpScopes.load(directory, checks)
+            (directory / "5.json").write_text(json.dumps(doc))
+            checks.write_text(json.dumps([ScopeCheck(5, QuoteStatus.FOUND, False).to_json()]))
+            self.assertEqual(McpScopes.load(directory, checks).effective(), {5: Scope.ACCOUNT})
+
+
 class CatalogTest(unittest.TestCase):
     CATALOG = ComposioCatalog("2026-11-23", (
         Toolkit("hubspot", "HubSpot", 100, ("OAUTH2",)),
@@ -477,6 +518,7 @@ class CatalogTest(unittest.TestCase):
         self.assertEqual(toolkit.auth_methods(), {AuthMethod.OAUTH2, AuthMethod.API_KEY, AuthMethod.OTHER})
         match = Match(Coverage.NATIVE, toolkit)
         self.assertEqual(match.auth_not_in((AuthMethod.OAUTH2,)), ["api_key", "other"])
+        self.assertEqual(match.auth_not_in((AuthMethod.OAUTH2, AuthMethod.BEARER_TOKEN)), ["other"])
         self.assertEqual(match.auth_not_in((AuthMethod.OAUTH2, AuthMethod.API_KEY, AuthMethod.OTHER, AuthMethod.BASIC)), [])
         self.assertEqual(Match(Coverage.NONE, None).auth_not_in(()), [])
 
@@ -528,7 +570,8 @@ class CommandTest(unittest.TestCase):
 
     def test_score_reports_a_hand_check_with_no_profile_as_an_error_not_a_traceback(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
-            checks = Path(tmp) / "checks.json"
+            checks = Path(tmp).parent / "scope_checks_for_test.json"
+            self.addCleanup(checks.unlink)
             checks.write_text(json.dumps([hand_check_doc()]))
             self.assertEqual(self.run_main("score", tmp, str(checks)), 1)
 

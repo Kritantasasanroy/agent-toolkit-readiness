@@ -1,0 +1,8 @@
+{
+ "app_id": 51,
+ "app": "DataForSEO",
+ "scope": "unclear",
+ "reason": "Tools are docs lookups plus a generic authenticated api_request passthrough to SEO data APIs. The pages do not show access to the customer's own account records, and the GitHub README was read as well as the help page.",
+ "url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+ "quote": "this MCP server is a bridge between AI models and our APIs"
+}

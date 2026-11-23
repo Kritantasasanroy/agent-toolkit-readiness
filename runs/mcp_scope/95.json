@@ -1,0 +1,8 @@
+{
+ "app_id": 95,
+ "app": "Reducto",
+ "scope": "account",
+ "reason": "The server lets an agent parse, extract and split documents with the user's API key, and list or fetch the account's earlier jobs. It also has a get_documentation tool, but the job tools make it account.",
+ "url": "https://docs.reducto.ai/mcp-server",
+ "quote": "The hosted server runs at https://mcp.reducto.ai/mcp ."
+}

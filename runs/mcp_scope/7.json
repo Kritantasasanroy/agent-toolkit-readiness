@@ -1,0 +1,8 @@
+{
+ "app_id": 7,
+ "app": "Zoho CRM",
+ "scope": "account",
+ "reason": "Pre-built MCP servers cover data insights (read-only), data operations, module customization and workflow automation on the org's CRM data.",
+ "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+ "quote": "Zoho CRM provides these as pre-built MCP servers, so you don't need to build, host, or maintain any infrastructure."
+}

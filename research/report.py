@@ -9,8 +9,9 @@ from research.adjudication import Disputes
 from research.composio import ComposioCatalog, Coverage, Match
 from research.handcheck import HandCheck, Scorecard
 from research.links import LinkReport
+from research.mcp_scope import McpScopes
 from research.paths import ROOT
-from research.profile import Field
+from research.profile import Access, Field, Verdict
 from research.remote import RemoteReport
 from research.survey import Survey
 
@@ -24,6 +25,7 @@ class CaseStudy:
     links_first: LinkReport
     links_final: LinkReport
     remote_final: RemoteReport
+    mcp_scopes: McpScopes
     catalog: ComposioCatalog
 
     @classmethod
@@ -36,6 +38,7 @@ class CaseStudy:
             links_first=LinkReport.read(root / "runs" / "checks" / "pass1_links.json"),
             links_final=LinkReport.read(root / "runs" / "checks" / "pass2_links.json"),
             remote_final=RemoteReport.read(root / "runs" / "checks" / "pass2_remote_links.json"),
+            mcp_scopes=McpScopes.load(root / "runs" / "mcp_scope", root / "runs" / "checks" / "mcp_scope_quotes.json"),
             catalog=ComposioCatalog.read(root / "data" / "composio_toolkits.json"),
         )
 
@@ -48,14 +51,23 @@ class CaseStudy:
                   for app, (p, extra) in extras.items() if extra]
         return {"checked": len(native), "consistent": len(native) - len(differ), "differ": differ}
 
+    def gated_but_built(self, coverage: Dict[str, Match]) -> List[str]:
+        """Apps I marked as needing outreach or gated that Composio already has a native toolkit for."""
+        return [p.app for p in self.final.all()
+                if coverage[p.app].coverage is Coverage.NATIVE
+                and (p.verdict is Verdict.NEEDS_OUTREACH or p.access in (Access.PARTNER_GATED, Access.ADMIN_APPROVAL))]
+
     def to_json(self) -> Dict[str, object]:
         contested = self.disputes.contested_fields()
         coverage = {p.app: self.catalog.lookup(p.app) for p in self.final.all()}
+        scopes = self.mcp_scopes.effective()
         return {
-            "apps": [dict(p.to_json(), contested=contested.get(p.app, []), composio=coverage[p.app].to_json())
+            "apps": [dict(p.to_json(), contested=contested.get(p.app, []), composio=coverage[p.app].to_json(),
+                          mcp_scope=scopes[p.app_id].value if p.app_id in scopes else "")
                      for p in self.final.all()],
             "composio": {
                 "auth": self.auth_check(coverage),
+                "gated_but_built": self.gated_but_built(coverage),
                 "catalog_fetched": self.catalog.fetched,
                 "catalog_size": len(self.catalog.toolkits),
                 "coverage": {c.value: sum(m.coverage is c for m in coverage.values()) for c in Coverage},
@@ -66,6 +78,7 @@ class CaseStudy:
                 "verdicts": self.final.verdicts(),
                 "blockers": self.final.blockers(),
                 "mcp": self.final.mcp_coverage(),
+                "mcp_scope": dict(self.mcp_scopes.counts(), unverified=self.mcp_scopes.unverified()),
                 "access_by_category": self.final.access_by_category(),
                 "self_serve_by_category": self.final.self_serve_share_by_category(),
             },

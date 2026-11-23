@@ -1,0 +1,8 @@
+{
+ "app_id": 4,
+ "app": "Attio",
+ "scope": "account",
+ "reason": "Hosted MCP server gives AI tools access to the user's Attio workspace records via OAuth.",
+ "url": "https://docs.attio.com/mcp/overview",
+ "quote": "Attio MCP uses OAuth authentication, so you simply log in with your Attio account"
+}

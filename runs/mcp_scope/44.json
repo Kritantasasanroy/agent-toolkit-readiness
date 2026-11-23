@@ -1,0 +1,8 @@
+{
+ "app_id": 44,
+ "app": "Salesforce Commerce Cloud",
+ "scope": "account",
+ "reason": "Server includes docs but also connected tasks that deploy code, read logs and run SCAPI administration against the user's B2C instance after sign-in.",
+ "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp",
+ "quote": "Connected tasks use your B2C Commerce configuration and account permissions."
+}

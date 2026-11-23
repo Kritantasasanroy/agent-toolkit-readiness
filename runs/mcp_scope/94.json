@@ -1,0 +1,8 @@
+{
+ "app_id": 94,
+ "app": "Consensus",
+ "scope": "no_account",
+ "reason": "The server exposes the REST API primitives (paper search, paper detail, synthesis). It searches published research, not a customer's own data.",
+ "url": "https://consensus.app/llms-full.txt",
+ "quote": "exposes the same primitives as the REST API as MCP tools"
+}

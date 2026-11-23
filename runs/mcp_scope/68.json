@@ -1,0 +1,8 @@
+{
+ "app_id": 68,
+ "app": "MongoDB Atlas",
+ "scope": "account",
+ "reason": "Server queries and manages the user's MongoDB data and deployments and can manage Atlas organizations, projects and clusters.",
+ "url": "https://www.mongodb.com/docs/mcp-server/",
+ "quote": "Create and manage Atlas organizations, projects, and clusters, and customize access to your data."
+}

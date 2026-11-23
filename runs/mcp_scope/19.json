@@ -1,0 +1,8 @@
+{
+ "app_id": 19,
+ "app": "Gorgias",
+ "scope": "account",
+ "reason": "First-party server connects the Gorgias workspace to AI tools for ticket and customer insights.",
+ "url": "https://updates.gorgias.com/publications/gorgias-mcp-is-now-in-open-beta",
+ "quote": "a first-party server that plugs your workspace into Claude, ChatGPT, Cursor, and any MCP-compatible tool"
+}

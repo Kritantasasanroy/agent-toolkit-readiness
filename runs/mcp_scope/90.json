@@ -1,0 +1,8 @@
+{
+ "app_id": 90,
+ "app": "PitchBook",
+ "scope": "unclear",
+ "reason": "The connector needs sign-in and exposes PitchBook search and profile tools over licensed market data, not records the customer owns. I could not tell from the vendor page whether that counts as account data.",
+ "url": "https://claude.com/marketplace/connectors/pitchbook",
+ "quote": "Made by PitchBook"
+}

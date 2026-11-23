@@ -1,0 +1,8 @@
+{
+ "app_id": 15,
+ "app": "Pylon",
+ "scope": "account",
+ "reason": "MCP server reads and updates issues, accounts, contacts and tasks via OAuth or API token.",
+ "url": "https://docs.usepylon.com/pylon-docs/integrations/mcp",
+ "quote": "Server URL (US): https://mcp.usepylon.com"
+}

@@ -1,0 +1,8 @@
+{
+ "app_id": 92,
+ "app": "Otter AI",
+ "scope": "account",
+ "reason": "The connector searches and retrieves the user's own meeting transcripts, summaries and action items after sign-in.",
+ "url": "https://claude.com/connectors/otter-ai",
+ "quote": "search meeting transcripts, retrieve conversation records, and extract insights"
+}

@@ -1,0 +1,8 @@
+{
+ "app_id": 14,
+ "app": "Front",
+ "scope": "account",
+ "reason": "Agents search conversations, send replies and manage tasks via OAuth as the authorizing teammate.",
+ "url": "https://dev.frontapp.com/docs/mcp-server",
+ "quote": "lets AI agents act on Front conversation data using a single OAuth-authenticated endpoint."
+}

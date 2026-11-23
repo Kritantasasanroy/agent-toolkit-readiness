@@ -68,11 +68,15 @@ class Match:
         """Auth methods Composio's toolkit offers that the research profile does not list.
 
         Empty when the app has no toolkit, or when every method Composio offers is one the
-        profile names. Composio often supports fewer methods than the vendor, so the other
+        profile names. An API key and a bearer token count as the same thing here, since vendors
+        and Composio label the same credential either way. Composio often supports fewer methods than the vendor, so the other
         direction is not a disagreement."""
         if self.toolkit is None:
             return []
-        return sorted(m.value for m in self.toolkit.auth_methods() - set(ours))
+        known = set(ours)
+        if known & {AuthMethod.API_KEY, AuthMethod.BEARER_TOKEN}:
+            known |= {AuthMethod.API_KEY, AuthMethod.BEARER_TOKEN}  # the brief's "token" covers both labels
+        return sorted(m.value for m in self.toolkit.auth_methods() - known)
 
     def to_json(self) -> Dict[str, object]:
         return {

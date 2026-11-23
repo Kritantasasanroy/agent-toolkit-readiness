@@ -1,0 +1,8 @@
+{
+ "app_id": 24,
+ "app": "Lark (Larksuite)",
+ "scope": "account",
+ "reason": "Official OpenAPI MCP wraps Lark Open Platform APIs as tools for messaging, docs and calendar using the user's or tenant's token.",
+ "url": "https://github.com/larksuite/lark-openapi-mcp",
+ "quote": "This is the Feishu/Lark official OpenAPI MCP (Model Context Protocol) tool"
+}

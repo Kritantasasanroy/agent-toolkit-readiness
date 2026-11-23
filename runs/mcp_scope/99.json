@@ -1,0 +1,8 @@
+{
+ "app_id": 99,
+ "app": "YouTube Transcript",
+ "scope": "no_account",
+ "reason": "The 12 tools fetch public YouTube transcripts, video, channel and playlist data. The account only supplies credits and does not hold records the tools read.",
+ "url": "https://transcriptapi.com/docs/mcp/",
+ "quote": "YouTube Transcript MCP Server"
+}

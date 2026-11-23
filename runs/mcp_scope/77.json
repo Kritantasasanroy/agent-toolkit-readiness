@@ -1,0 +1,8 @@
+{
+ "app_id": 77,
+ "app": "ClickUp",
+ "scope": "account",
+ "reason": "Server manages tasks, time entries and docs in the user's ClickUp workspace.",
+ "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+ "quote": "Log time entries and manage timers."
+}

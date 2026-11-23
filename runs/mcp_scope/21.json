@@ -1,0 +1,8 @@
+{
+ "app_id": 21,
+ "app": "Slack",
+ "scope": "account",
+ "reason": "Server searches messages and channels and sends messages for the signed-in workspace.",
+ "url": "https://docs.slack.dev/ai/mcp-server",
+ "quote": "Only directory-published apps or internal apps may use MCP."
+}

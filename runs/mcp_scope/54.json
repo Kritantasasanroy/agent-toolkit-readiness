@@ -1,0 +1,8 @@
+{
+ "app_id": 54,
+ "app": "MrScraper",
+ "scope": "unclear",
+ "reason": "Tools scrape pages and search the web, plus one status call for account plan and usage; no customer records are listed.",
+ "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+ "quote": "MrScraper MCP is the official Model Context Protocol server for MrScraper."
+}

@@ -1,0 +1,8 @@
+{
+ "app_id": 100,
+ "app": "Grain",
+ "scope": "account",
+ "reason": "The server connects AI clients to the user's own meeting data in Grain. The page names no tools.",
+ "url": "https://developers.grain.com/mcp",
+ "quote": "directly to your meeting data in Grain"
+}

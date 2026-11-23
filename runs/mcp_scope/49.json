@@ -1,0 +1,8 @@
+{
+ "app_id": 49,
+ "app": "Amazon Selling Partner",
+ "scope": "account",
+ "reason": "Repo lists a local Developer Assistant MCP with API execution and a Data Kiosk MCP for querying seller and vendor data. The page does not say how each authenticates, so account is based on the Data Kiosk server.",
+ "url": "https://github.com/amzn/selling-partner-api-samples",
+ "quote": "lets AI assistants query the Data Kiosk API to analyze seller and vendor data"
+}

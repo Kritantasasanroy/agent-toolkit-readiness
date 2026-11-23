@@ -1,0 +1,8 @@
+{
+ "app_id": 60,
+ "app": "Clay",
+ "scope": "unclear",
+ "reason": "Vendor pages only say MCP can call Clay functions from a coding agent; they do not list tools or say what account data is reachable.",
+ "url": "https://developers.clay.com/use-cases/agent-workflows.md",
+ "quote": "Use MCP to call Clay functions from a coding agent like Claude Code, Codex, or Cursor."
+}

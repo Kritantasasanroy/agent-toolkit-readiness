@@ -1,0 +1,8 @@
+{
+ "app_id": 43,
+ "app": "BigCommerce",
+ "scope": "account",
+ "reason": "Store Management MCP lets a signed-in user look up and update products, inventory, promotions and orders.",
+ "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+ "quote": "Store Management MCP is in early access and available to all stores."
+}

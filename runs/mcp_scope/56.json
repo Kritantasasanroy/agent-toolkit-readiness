@@ -1,0 +1,8 @@
+{
+ "app_id": 56,
+ "app": "Firecrawl",
+ "scope": "account",
+ "reason": "Server tools include account-bound monitors and firecrawl_credit_usage, which needs an authenticated Firecrawl account.",
+ "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+ "quote": "The tool requires an authenticated Firecrawl account and is read-only."
+}

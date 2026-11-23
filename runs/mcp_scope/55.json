@@ -1,0 +1,8 @@
+{
+ "app_id": 55,
+ "app": "Apify",
+ "scope": "account",
+ "reason": "Authenticated server can list your own Actors and access run and storage data.",
+ "url": "https://docs.apify.com/integrations/mcp.md",
+ "quote": "Running Actors and accessing storage or run data always requires authentication."
+}

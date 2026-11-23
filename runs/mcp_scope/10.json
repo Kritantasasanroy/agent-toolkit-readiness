@@ -1,0 +1,8 @@
+{
+ "app_id": 10,
+ "app": "DealCloud",
+ "scope": "account",
+ "reason": "Default MCP server exposes the site's schema and has write tools to create and update records; the page does not say outright that data is read, so this is inferred from the write tools.",
+ "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+ "quote": "DealCloud provides a default MCP Server out-of-the-box without any configuration required."
+}

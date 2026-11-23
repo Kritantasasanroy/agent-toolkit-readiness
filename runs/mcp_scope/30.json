@@ -1,0 +1,8 @@
+{
+ "app_id": 30,
+ "app": "Vonage",
+ "scope": "unclear",
+ "reason": "Overview page names a Documentation MCP and a separate Server API Bindings MCP, but the bindings page I tried returned 404 and the overview does not say what account data it reaches.",
+ "url": "https://developer.vonage.com/en/mcp-server/overview",
+ "quote": "The Vonage MCP Server enables AI agents and developer tools to discover, describe, and use Vonage capabilities"
+}

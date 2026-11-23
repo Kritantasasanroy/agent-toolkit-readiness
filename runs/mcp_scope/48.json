@@ -1,0 +1,8 @@
+{
+ "app_id": 48,
+ "app": "Gumroad",
+ "scope": "account",
+ "reason": "Connector uses OAuth access to the seller's Gumroad account to check sales, draft and publish products and review payouts.",
+ "url": "https://gumroad.com/mcp",
+ "quote": "Check sales, draft products, publish them, and track payouts from your chat."
+}

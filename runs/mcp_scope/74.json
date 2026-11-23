@@ -1,0 +1,8 @@
+{
+ "app_id": 74,
+ "app": "Jira",
+ "scope": "account",
+ "reason": "Atlassian Rovo MCP server searches, summarises, creates and updates Jira work items under the user's permissions.",
+ "url": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/",
+ "quote": "with your existing permissions"
+}

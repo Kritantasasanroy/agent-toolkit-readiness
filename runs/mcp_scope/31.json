@@ -1,0 +1,8 @@
+{
+ "app_id": 31,
+ "app": "Google Ads",
+ "scope": "account",
+ "reason": "Server reads accessible customer IDs, runs reporting searches, and creates assets and labels in the signed-in user's Google Ads account.",
+ "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+ "quote": "Returns the Google Ads customer IDs directly accessible to the authenticated user."
+}

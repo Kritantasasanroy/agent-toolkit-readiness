@@ -1,0 +1,8 @@
+{
+ "app_id": 66,
+ "app": "Neo4j",
+ "scope": "account",
+ "reason": "Server connects a client to the user's Neo4j instance to explore schema and run Cypher reads and writes.",
+ "url": "https://neo4j.com/docs/mcp/current/",
+ "quote": "execute reads and writes against your database"
+}

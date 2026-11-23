@@ -1,0 +1,8 @@
+{
+ "app_id": 25,
+ "app": "Pumble",
+ "scope": "account",
+ "reason": "Server acts on a workspace: send, reply, edit and schedule messages, list channels and users.",
+ "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+ "quote": "search messages, find information, and take actions on your behalf"
+}

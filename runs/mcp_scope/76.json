@@ -1,0 +1,8 @@
+{
+ "app_id": 76,
+ "app": "Monday.com",
+ "scope": "account",
+ "reason": "Tools create, change and delete items and boards in the user's monday.com account.",
+ "url": "https://github.com/mondaycom/mcp",
+ "quote": "Create a new item in a monday.com board with specified column values"
+}

@@ -1,0 +1,8 @@
+{
+ "app_id": 18,
+ "app": "Help Scout",
+ "scope": "account",
+ "reason": "Server reads conversations, customers, inboxes and reports in the user's account; it is read-only but still accesses account data.",
+ "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+ "quote": "Set the remote MCP server URL to https://mcp.helpscout.net/mcp ."
+}

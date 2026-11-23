@@ -1,0 +1,8 @@
+{
+ "app_id": 64,
+ "app": "Cloudflare",
+ "scope": "account",
+ "reason": "Cloudflare ships both docs servers and account servers; the main API server acts on the user's account via OAuth, so account.",
+ "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+ "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth"
+}

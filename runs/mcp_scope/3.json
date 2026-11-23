@@ -1,0 +1,8 @@
+{
+ "app_id": 3,
+ "app": "Pipedrive",
+ "scope": "account",
+ "reason": "Tools fetch, create and edit deals, contacts, leads, notes and more on the user's behalf.",
+ "url": "https://support.pipedrive.com/en/article/mcp-tools",
+ "quote": "MCP, it can use these tools to access information and perform actions on your behalf, based on the permissions you grant."
+}

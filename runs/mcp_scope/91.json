@@ -1,0 +1,8 @@
+{
+ "app_id": 91,
+ "app": "NotebookLM",
+ "scope": "account",
+ "reason": "The server lets the signed-in caller create, list and rename their notebooks and add sources.",
+ "url": "https://developers.google.com/notebook/docs/mcp",
+ "quote": "The Gemini Notebook API provides a remote Model Context Protocol (MCP) server at https://notebook.googleapis.com/mcp"
+}

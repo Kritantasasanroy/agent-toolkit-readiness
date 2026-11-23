@@ -1,0 +1,8 @@
+{
+ "app_id": 85,
+ "app": "iPayX",
+ "scope": "no_account",
+ "reason": "The listed tools are stateless FX utilities (mid-market rate, transaction audit, source comparison, report). None reads a customer's account records.",
+ "url": "https://ipayx.ai/llms.txt",
+ "quote": "Endpoint: https://mcp.ipayx.ai/mcp"
+}

@@ -1,0 +1,8 @@
+{
+ "app_id": 17,
+ "app": "Plain",
+ "scope": "account",
+ "reason": "MCP server exposes about 400 tools over threads, customers and workflows in the user's workspace.",
+ "url": "https://plain.com/docs/agents/mcp-server",
+ "quote": "The Plain MCP server at https://mcp.plain.com/mcp lets tools like Claude, ChatGPT, and Cursor work with your support data directly."
+}

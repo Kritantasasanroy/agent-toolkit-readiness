@@ -1,0 +1,8 @@
+{
+ "app_id": 37,
+ "app": "systeme.io",
+ "scope": "account",
+ "reason": "Server manages contacts, tags and newsletters in the user's account.",
+ "url": "https://developer.systeme.io/docs/mcp-server.md",
+ "quote": "currently supports contact and newsletter management"
+}

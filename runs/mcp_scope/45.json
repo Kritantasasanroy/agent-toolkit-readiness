@@ -1,0 +1,8 @@
+{
+ "app_id": 45,
+ "app": "Magento (Adobe Commerce)",
+ "scope": "no_account",
+ "reason": "App Builder MCP server is developer tooling (IDE integration, documentation-aware assistance, app deploy) and the pages show no tools reading store records.",
+ "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/tools-overview",
+ "quote": "IDE integration for Commerce development tasks"
+}

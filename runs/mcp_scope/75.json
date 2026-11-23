@@ -1,0 +1,8 @@
+{
+ "app_id": 75,
+ "app": "Asana",
+ "scope": "account",
+ "reason": "Server creates and manages the user's tasks and projects.",
+ "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+ "quote": "Create and manage tasks and projects through natural language."
+}

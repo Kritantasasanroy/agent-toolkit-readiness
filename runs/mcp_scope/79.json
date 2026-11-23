@@ -1,0 +1,8 @@
+{
+ "app_id": 79,
+ "app": "Smartsheet",
+ "scope": "account",
+ "reason": "After sign-in with an API token or OAuth, the server lets an agent work with the user's Smartsheet data.",
+ "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+ "quote": "interact with your Smartsheet data using natural language"
+}

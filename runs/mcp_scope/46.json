@@ -1,0 +1,8 @@
+{
+ "app_id": 46,
+ "app": "Squarespace",
+ "scope": "account",
+ "reason": "Remote server has Commerce tools, after sign-in, that create and update contacts and products and look up orders; a separate Domains group needs no sign-in.",
+ "url": "https://developers.squarespace.com/mcp/overview",
+ "quote": "They can create and update contacts and products, but they can't take payments, issue refunds, or fulfill orders."
+}

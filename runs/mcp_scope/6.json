@@ -1,0 +1,8 @@
+{
+ "app_id": 6,
+ "app": "Podio",
+ "scope": "account",
+ "reason": "MCP server has 22 tools for reading and writing Podio workspaces, apps and items.",
+ "url": "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide.md",
+ "quote": "The server is live at **[https://mcp.podio.com](https://mcp.podio.com/)**"
+}

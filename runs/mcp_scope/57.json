@@ -1,0 +1,8 @@
+{
+ "app_id": 57,
+ "app": "Bright Data",
+ "scope": "unclear",
+ "reason": "README lists web search, scraping and browser tools; no tool for reading or changing account data (zones, proxies) is listed, but it is not a docs server either.",
+ "url": "https://github.com/brightdata/brightdata-mcp",
+ "quote": "Your Bright Data API token (required)."
+}

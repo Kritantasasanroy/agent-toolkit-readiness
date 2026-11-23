@@ -1,0 +1,8 @@
+{
+ "app_id": 13,
+ "app": "Freshdesk",
+ "scope": "account",
+ "reason": "MCP server can create, search and update tickets, contacts and agents, authenticated with an API key.",
+ "url": "https://partnersupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+ "quote": "Currently, Freshdesk allows you to authenticate requests involved in MCP integration by using an API key only."
+}

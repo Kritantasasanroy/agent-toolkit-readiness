@@ -1,0 +1,8 @@
+{
+ "app_id": 22,
+ "app": "Twilio",
+ "scope": "no_account",
+ "reason": "Twilio's MCP at this URL serves read-only API documentation and schemas, with no account access.",
+ "url": "https://www.twilio.com/docs/mcp",
+ "quote": "it does not connect to a Twilio account or execute any API calls."
+}

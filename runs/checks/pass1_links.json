@@ -60,7 +60,7 @@
   "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview.md",
   "page": "live",
   "http_code": 200,
-  "quote": "found"
+  "quote": "missing"
  },
  {
   "app_id": 2,
@@ -528,7 +528,7 @@
   "url": "https://dev.frontapp.com/docs/mcp-server",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 15,
@@ -654,7 +654,7 @@
   "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 18,
@@ -672,7 +672,7 @@
   "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 18,
@@ -751,9 +751,9 @@
   "app": "Gladly",
   "field": "mcp",
   "url": "https://supergood.ai/api-report-card/gladly",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
+  "page": "unreachable",
+  "http_code": 0,
+  "quote": "unchecked"
  },
  {
   "app_id": 21,
@@ -771,7 +771,7 @@
   "url": "https://docs.slack.dev/authentication/tokens",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 21,
@@ -780,7 +780,7 @@
   "url": "https://docs.slack.dev/authentication/installing-with-oauth",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 21,
@@ -789,7 +789,7 @@
   "url": "https://docs.slack.dev/apis/web-api/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 21,
@@ -825,7 +825,7 @@
   "url": "https://www.twilio.com/docs/usage/api",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 22,
@@ -915,7 +915,7 @@
   "url": "https://github.com/larksuite/lark-openapi-mcp",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 25,
@@ -960,7 +960,7 @@
   "url": "https://docs.discord.com/developers/topics/oauth2",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 26,
@@ -996,7 +996,7 @@
   "url": "https://core.telegram.org/bots/api",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 27,
@@ -1005,7 +1005,7 @@
   "url": "https://core.telegram.org/bots/api",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 27,
@@ -1041,7 +1041,7 @@
   "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
   "page": "live",
   "http_code": 200,
-  "quote": "found"
+  "quote": "missing"
  },
  {
   "app_id": 28,
@@ -1104,7 +1104,7 @@
   "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 30,
@@ -1131,7 +1131,7 @@
   "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 30,
@@ -1239,7 +1239,7 @@
   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 33,
@@ -1248,7 +1248,7 @@
   "url": "https://pypi.org/project/linkedin-ads-mcp/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 34,
@@ -1338,7 +1338,7 @@
   "url": "https://developers.klaviyo.com/en/docs/authenticate_",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 36,
@@ -1446,7 +1446,7 @@
   "url": "https://developers.facebook.com/docs/threads/get-started",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 39,
@@ -1491,7 +1491,7 @@
   "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 40,
@@ -1518,7 +1518,7 @@
   "url": "https://shopify.dev/docs/apps/build/dev-dashboard",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 41,
@@ -1797,7 +1797,7 @@
   "url": "https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 49,
@@ -1860,7 +1860,7 @@
   "url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 52,
@@ -1869,7 +1869,7 @@
   "url": "https://seranking.com/api/data/getting-started/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 52,
@@ -1914,7 +1914,7 @@
   "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 53,
@@ -1932,7 +1932,7 @@
   "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 54,
@@ -1941,7 +1941,7 @@
   "url": "https://docs.mrscraper.com/docs/api/authentication",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 54,
@@ -2013,7 +2013,7 @@
   "url": "https://docs.firecrawl.dev/api-reference/introduction",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 56,
@@ -2058,7 +2058,7 @@
   "url": "https://docs.brightdata.com/api-reference/authentication",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 57,
@@ -2319,7 +2319,7 @@
   "url": "https://docs.netlify.com/build/build-with-ai/netlify-mcp-server/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 64,
@@ -2472,7 +2472,7 @@
   "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 67,
@@ -2553,7 +2553,7 @@
   "url": "https://docs.datadoghq.com/api/latest/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 69,
@@ -2562,7 +2562,7 @@
   "url": "https://docs.datadoghq.com/mcp_server/setup/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 69,
@@ -2571,7 +2571,7 @@
   "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 69,
@@ -2589,7 +2589,7 @@
   "url": "https://docs.datadoghq.com/bits_ai/mcp_server/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 70,
@@ -2598,7 +2598,7 @@
   "url": "https://docs.sentry.io/api/auth/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 70,
@@ -2670,7 +2670,7 @@
   "url": "https://developers.notion.com/reference/intro",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 71,
@@ -2679,7 +2679,7 @@
   "url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 72,
@@ -2769,7 +2769,7 @@
   "url": "https://linear.app/docs/mcp",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 74,
@@ -2859,7 +2859,7 @@
   "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 76,
@@ -2949,7 +2949,7 @@
   "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 79,
@@ -3075,7 +3075,7 @@
   "url": "https://docs.stripe.com/api",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 81,
@@ -3093,7 +3093,7 @@
   "url": "https://plaid.com/docs/api/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 82,
@@ -3507,7 +3507,7 @@
   "url": "https://www.scalekit.com/blog/otter-mcp-vs-api",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 92,
@@ -3516,7 +3516,7 @@
   "url": "https://www.scalekit.com/blog/otter-mcp-vs-api",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 92,
@@ -3660,7 +3660,7 @@
   "url": "https://docs.devin.ai/api-reference/overview",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 96,
@@ -3750,7 +3750,7 @@
   "url": "https://github.com/mermaid-js/mermaid-cli",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 98,
@@ -3822,7 +3822,7 @@
   "url": "https://support.grain.com/en/articles/15507288-grain-api",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 100,

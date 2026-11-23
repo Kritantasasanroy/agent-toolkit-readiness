@@ -1,0 +1,8 @@
+{
+ "app_id": 42,
+ "app": "WooCommerce",
+ "scope": "account",
+ "reason": "Abilities let an agent query, create, update and delete products and query and update orders on the store, under WordPress permissions.",
+ "url": "https://developer.woocommerce.com/docs/features/mcp/",
+ "quote": "The MCP implementation in WooCommerce is currently in developer preview."
+}

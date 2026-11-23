@@ -1,0 +1,8 @@
+{
+ "app_id": 88,
+ "app": "Brex",
+ "scope": "account",
+ "reason": "The server acts on the signed-in user's Brex account (expenses, users, cards, banking transactions, bills, travel), within their permissions.",
+ "url": "https://developer.brex.com/docs/mcp.md",
+ "quote": "The Brex MCP server lets AI assistants interact directly with your Brex account"
+}

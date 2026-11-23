@@ -1,0 +1,8 @@
+{
+ "app_id": 65,
+ "app": "Supabase",
+ "scope": "account",
+ "reason": "Tools run SQL, apply migrations, deploy edge functions and manage projects in the user's account, plus a separate search_docs tool.",
+ "url": "https://supabase.com/docs/guides/getting-started/mcp",
+ "quote": "Execute SQL queries"
+}

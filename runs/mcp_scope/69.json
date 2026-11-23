@@ -1,0 +1,8 @@
+{
+ "app_id": 69,
+ "app": "Datadog",
+ "scope": "account",
+ "reason": "Server bridges the authenticated user's Datadog observability data to AI agents under their permissions.",
+ "url": "https://docs.datadoghq.com/bits_ai/mcp_server/",
+ "quote": "The Datadog MCP Server acts as a bridge between your observability data in Datadog and any AI agents that support the Model Context Protocol (MCP)"
+}

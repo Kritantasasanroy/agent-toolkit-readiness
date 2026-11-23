@@ -1,0 +1,8 @@
+{
+ "app_id": 32,
+ "app": "Meta Ads",
+ "scope": "account",
+ "reason": "Hosted server creates and edits ads, ad sets and campaigns and pulls performance reports.",
+ "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+ "quote": "Create and edit ads, ad sets, and campaigns."
+}

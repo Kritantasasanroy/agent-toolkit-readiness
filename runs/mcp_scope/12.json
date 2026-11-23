@@ -1,0 +1,8 @@
+{
+ "app_id": 12,
+ "app": "Intercom",
+ "scope": "account",
+ "reason": "MCP server finds conversations, contacts and companies, and can add internal notes and edit Help Center articles in the authenticated workspace.",
+ "url": "https://developers.intercom.com/docs/guides/mcp",
+ "quote": "The Intercom MCP server is available for US and EU hosted workspaces."
+}

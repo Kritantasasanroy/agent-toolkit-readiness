@@ -1,0 +1,8 @@
+{
+ "app_id": 78,
+ "app": "Coda",
+ "scope": "account",
+ "reason": "The server lets an agent create docs and tables and read and update content in the user's own Coda docs.",
+ "url": "https://coda.io/resources/guides/getting_started_with_coda_mcp",
+ "quote": "Create docs and tables from simple descriptions."
+}

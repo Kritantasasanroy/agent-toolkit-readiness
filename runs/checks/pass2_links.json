@@ -546,7 +546,7 @@
   "url": "https://tldv.io/blog/zendesk-mcp/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 11,
@@ -879,7 +879,7 @@
   "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 18,
@@ -888,7 +888,7 @@
   "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 18,
@@ -2742,7 +2742,7 @@
   "url": "https://docs.firecrawl.dev/api-reference/introduction",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 56,
@@ -2796,7 +2796,7 @@
   "url": "https://docs.brightdata.com/api-reference/authentication",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 57,
@@ -2886,7 +2886,7 @@
   "url": "https://docs.waterfall.io/v1/authentication.md",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 59,
@@ -3291,7 +3291,7 @@
   "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 67,
@@ -3390,7 +3390,7 @@
   "url": "https://docs.datadoghq.com/api/latest/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 69,
@@ -3399,7 +3399,7 @@
   "url": "https://docs.datadoghq.com/mcp_server/setup/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 69,
@@ -3408,7 +3408,7 @@
   "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 69,
@@ -3426,7 +3426,7 @@
   "url": "https://docs.datadoghq.com/bits_ai/mcp_server/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 69,
@@ -3444,7 +3444,7 @@
   "url": "https://docs.datadoghq.com/mcp_server/setup/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 70,
@@ -3453,7 +3453,7 @@
   "url": "https://docs.sentry.io/api/auth/",
   "page": "live",
   "http_code": 200,
-  "quote": "missing"
+  "quote": "found"
  },
  {
   "app_id": 70,

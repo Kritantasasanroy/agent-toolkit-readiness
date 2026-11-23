@@ -1,0 +1,8 @@
+{
+ "app_id": 70,
+ "app": "Sentry",
+ "scope": "account",
+ "reason": "Server searches errors, triages issues and manages projects in the user's Sentry organisation.",
+ "url": "https://mcp.sentry.dev/",
+ "quote": "Connects AI assistants to Sentry for searching errors, analyzing performance, triaging issues,"
+}

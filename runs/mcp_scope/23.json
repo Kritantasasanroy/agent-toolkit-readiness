@@ -1,0 +1,8 @@
+{
+ "app_id": 23,
+ "app": "Zoho Cliq",
+ "scope": "account",
+ "reason": "Official MCP server lets agents access Cliq data to send messages and manage channels.",
+ "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+ "quote": "Any AI model or agent can use our official MCP server to access your Cliq data"
+}

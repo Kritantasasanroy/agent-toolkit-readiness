@@ -1,0 +1,8 @@
+{
+ "app_id": 89,
+ "app": "Ramp",
+ "scope": "account",
+ "reason": "Ramp runs two servers, one for the customer's Ramp account (mcp.ramp.com) and one for Ramp Data benchmarks. The account server counts, so account. The quote comes from the batch evidence; I could not re-find it on the 2MB page, only confirm the two-server split via search.",
+ "url": "https://docs.ramp.com/llms-full.txt",
+ "quote": "Ramp runs two MCP servers, one for your Ramp account and one for Ramp Data benchmarks."
+}

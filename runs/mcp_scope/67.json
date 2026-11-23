@@ -1,0 +1,8 @@
+{
+ "app_id": 67,
+ "app": "Snowflake",
+ "scope": "account",
+ "reason": "Snowflake-managed MCP server exposes Cortex tools, UDFs and SQL execution that run against the customer's Snowflake data.",
+ "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+ "quote": "Snowflake-managed MCP server lets AI agents securely retrieve data from Snowflake accounts without needing to deploy separate infrastructure."
+}

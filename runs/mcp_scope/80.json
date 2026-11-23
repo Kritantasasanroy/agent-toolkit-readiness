@@ -1,0 +1,8 @@
+{
+ "app_id": 80,
+ "app": "Harvest",
+ "scope": "unclear",
+ "reason": "The vendor's Harvest MCP help article returned HTTP 403 to the fetcher, so I could not read it. Search snippets of that article suggest timers and time entries, but I could not confirm them on the page.",
+ "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+ "quote": ""
+}

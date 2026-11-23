@@ -1,0 +1,8 @@
+{
+ "app_id": 73,
+ "app": "Linear",
+ "scope": "account",
+ "reason": "Server finds, creates and updates issues, projects and comments in the user's Linear workspace.",
+ "url": "https://linear.app/docs/mcp",
+ "quote": "tools available for finding, creating, and updating objects in Linear like issues, projects, and comments"
+}

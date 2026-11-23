@@ -18,7 +18,8 @@ without talking to the vendor, API surface, MCP servers, and what blocks the res
 auth_methods: oauth2, api_key, basic, bearer_token, other, none
 access: free_self_serve, free_trial, paid_plan, admin_approval, partner_gated, no_public_api
 api_styles: rest, graphql, soap, rpc, sdk_only, cli, none
-mcp: official, community, none (official includes docs-only and developer-tooling servers)
+mcp: official, community, none (official includes servers with no account access)
+mcp_scope: account, no_account, unclear (only for official servers; patterns.mcp_scope has the counts)
 verdict: build_now, build_with_caveat, needs_outreach, not_feasible
 blocker: none, partner_program, paid_plan, app_review, admin_install, no_public_api,
 narrow_api, region_or_kyc, unofficial_only

@@ -1,0 +1,8 @@
+{
+ "app_id": 53,
+ "app": "Ahrefs",
+ "scope": "account",
+ "reason": "Hosted server connects the user's Ahrefs account to AI tools under plan limits; it serves Ahrefs data rather than editing records.",
+ "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+ "quote": "Ahrefs provides a hosted MCP server that allows users with a Lite plan or higher to connect their Ahrefs account to supported AI tools."
+}

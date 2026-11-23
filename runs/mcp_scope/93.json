@@ -1,0 +1,8 @@
+{
+ "app_id": 93,
+ "app": "Fathom",
+ "scope": "account",
+ "reason": "The official connector lets Claude answer questions about the user's own Fathom meetings after sign-in. The page names no tools.",
+ "url": "https://developers.fathom.ai/mcp-docs/claude",
+ "quote": "You can now ask Claude about your meetings."
+}

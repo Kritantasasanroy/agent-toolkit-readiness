@@ -32,7 +32,7 @@
     {
       "field": "access",
       "url": "https://www.close.com/pricing",
-      "quote": "14-day free trial, no credit card required."
+      "quote": "try it free for 14 days with no credit card"
     },
     {
       "field": "api_styles",
@@ -73,6 +73,12 @@
         "oauth2"
       ],
       "reason": "Strict re-check of a contested answer: Basic is the transport for the API key, not a separate method."
+    },
+    {
+      "field": "evidence",
+      "from": "14-day free trial, no credit card required.",
+      "to": "try it free for 14 days with no credit card",
+      "reason": "The first quote sits in the page's hidden metadata. This wording is visible on the pricing page."
     }
   ]
 }

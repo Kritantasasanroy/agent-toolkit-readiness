@@ -1,0 +1,8 @@
+{
+ "app_id": 34,
+ "app": "GoHighLevel",
+ "scope": "account",
+ "reason": "Server executes actions on a user's sub-accounts such as contacts, conversations, invoices and workflows.",
+ "url": "https://marketplace.gohighlevel.com/docs/other/mcp.md",
+ "quote": "Connect HighLevel to your AI assistant, then ask it to find a contact, book an appointment, send a message"
+}

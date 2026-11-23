@@ -1,0 +1,8 @@
+{
+ "app_id": 2,
+ "app": "HubSpot",
+ "scope": "account",
+ "reason": "Remote MCP server reads, writes and updates CRM records after sign-in.",
+ "url": "https://developers.hubspot.com/docs/build-with-ai/remote-mcp-server.md",
+ "quote": "The remote HubSpot MCP server is a publicly hosted endpoint for connecting external AI tools and applications to HubSpot's CRM."
+}

@@ -1,0 +1,8 @@
+{
+ "app_id": 5,
+ "app": "Twenty",
+ "scope": "account",
+ "reason": "MCP server reads and writes the workspace's CRM data under the user's or API key's permissions.",
+ "url": "https://docs.twenty.com/developers/extend/mcp",
+ "quote": "Twenty exposes an MCP server so that AI assistants"
+}

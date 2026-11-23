@@ -1,0 +1,8 @@
+{
+ "app_id": 50,
+ "app": "fanbasis",
+ "scope": "account",
+ "reason": "MCP beta lets the user create checkout links, issue refunds and pull their numbers. Only the homepage was read, not a tool list.",
+ "url": "https://commas.com/",
+ "quote": "Create checkout links, issue refunds and pull your numbers in plain English."
+}

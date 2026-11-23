@@ -1,0 +1,8 @@
+{
+ "app_id": 41,
+ "app": "Shopify",
+ "scope": "no_account",
+ "reason": "The linked Dev MCP server serves Shopify developer resources, runs locally and needs no authentication. I did not confirm any other Shopify MCP server on the pages read.",
+ "url": "https://shopify.dev/docs/apps/build/devmcp",
+ "quote": "The server runs locally and doesn't require authentication."
+}

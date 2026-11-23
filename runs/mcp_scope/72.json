@@ -1,0 +1,8 @@
+{
+ "app_id": 72,
+ "app": "Airtable",
+ "scope": "account",
+ "reason": "Server lets AI tools query bases and create, update and comment on records.",
+ "url": "https://airtable.com/developers/agents/mcp/getting-started",
+ "quote": "create and update records"
+}

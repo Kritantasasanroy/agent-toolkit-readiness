@@ -1,0 +1,8 @@
+{
+ "app_id": 97,
+ "app": "higgsfield",
+ "scope": "unclear",
+ "reason": "The page only advertises image and video generation inside Claude. It does not say whether the server reads or changes anything in a customer's account, and I could read only part of the page.",
+ "url": "https://higgsfield.ai/mcp",
+ "quote": "Generate Images & Videos in Claude with Higgsfield"
+}

@@ -1,0 +1,8 @@
+{
+ "app_id": 96,
+ "app": "Devin",
+ "scope": "account",
+ "reason": "With a Devin API key the server creates, searches and controls Devin sessions and manages knowledge notes, playbooks and schedules.",
+ "url": "https://docs.devin.ai/work-with-devin/devin-mcp.md",
+ "quote": "To use the Devin MCP server, you need a Devin API key:"
+}

@@ -60,7 +60,8 @@
     "coverage": "native",
     "slug": "salesforce",
     "tools": 556
-   }
+   },
+   "mcp_scope": "unclear"
   },
   {
    "app_id": 2,
@@ -111,7 +112,8 @@
     "coverage": "native",
     "slug": "hubspot",
     "tools": 354
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 3,
@@ -162,7 +164,8 @@
     "coverage": "native",
     "slug": "pipedrive",
     "tools": 404
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 4,
@@ -228,7 +231,8 @@
     "coverage": "native",
     "slug": "attio",
     "tools": 105
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 5,
@@ -290,7 +294,8 @@
     "coverage": "native",
     "slug": "twenty",
     "tools": 23
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 6,
@@ -351,7 +356,8 @@
     "coverage": "native",
     "slug": "podio",
     "tools": 143
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 7,
@@ -411,7 +417,8 @@
     "coverage": "native",
     "slug": "zoho",
     "tools": 115
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 8,
@@ -447,7 +454,7 @@
     {
      "field": "access",
      "url": "https://www.close.com/pricing",
-     "quote": "14-day free trial, no credit card required."
+     "quote": "try it free for 14 days with no credit card"
     },
     {
      "field": "api_styles",
@@ -467,7 +474,8 @@
     "coverage": "native",
     "slug": "close",
     "tools": 75
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 9,
@@ -525,7 +533,8 @@
     "coverage": "native",
     "slug": "copper",
     "tools": 65
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 10,
@@ -586,7 +595,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 11,
@@ -653,7 +663,8 @@
     "coverage": "native",
     "slug": "zendesk",
     "tools": 483
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 12,
@@ -714,7 +725,8 @@
     "coverage": "native",
     "slug": "intercom",
     "tools": 138
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 13,
@@ -780,7 +792,8 @@
     "coverage": "native",
     "slug": "freshdesk",
     "tools": 184
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 14,
@@ -831,7 +844,8 @@
     "coverage": "native",
     "slug": "front",
     "tools": 180
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 15,
@@ -882,7 +896,8 @@
     "coverage": "mcp_only",
     "slug": "pylon_mcp",
     "tools": 12
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 16,
@@ -937,7 +952,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 17,
@@ -998,7 +1014,8 @@
     "coverage": "native",
     "slug": "plain",
     "tools": 119
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 18,
@@ -1058,7 +1075,8 @@
     "coverage": "native",
     "slug": "help_scout",
     "tools": 129
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 19,
@@ -1114,7 +1132,8 @@
     "coverage": "native",
     "slug": "gorgias",
     "tools": 51
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 20,
@@ -1164,7 +1183,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 21,
@@ -1225,7 +1245,8 @@
     "coverage": "native",
     "slug": "slack",
     "tools": 165
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 22,
@@ -1282,7 +1303,8 @@
     "coverage": "native",
     "slug": "twilio",
     "tools": 452
-   }
+   },
+   "mcp_scope": "no_account"
   },
   {
    "app_id": 23,
@@ -1337,7 +1359,8 @@
     "coverage": "native",
     "slug": "zoho_cliq",
     "tools": 162
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 24,
@@ -1393,7 +1416,8 @@
     "coverage": "native",
     "slug": "lark",
     "tools": 451
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 25,
@@ -1449,7 +1473,8 @@
     "coverage": "native",
     "slug": "pumble",
     "tools": 9
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 26,
@@ -1511,7 +1536,8 @@
     "coverage": "native",
     "slug": "discord",
     "tools": 23
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 27,
@@ -1561,7 +1587,8 @@
     "coverage": "native",
     "slug": "telegram",
     "tools": 18
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 28,
@@ -1622,7 +1649,8 @@
     "coverage": "native",
     "slug": "whatsapp",
     "tools": 127
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 29,
@@ -1683,7 +1711,8 @@
     "coverage": "native",
     "slug": "aircall",
     "tools": 48
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 30,
@@ -1744,7 +1773,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": "unclear"
   },
   {
    "app_id": 31,
@@ -1800,7 +1830,8 @@
     "coverage": "native",
     "slug": "googleads",
     "tools": 78
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 32,
@@ -1856,7 +1887,8 @@
     "coverage": "native",
     "slug": "metaads",
     "tools": 99
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 33,
@@ -1916,7 +1948,8 @@
     "coverage": "native",
     "slug": "linkedin_ads",
     "tools": 28
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 34,
@@ -1972,7 +2005,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 35,
@@ -2033,7 +2067,8 @@
     "coverage": "native",
     "slug": "mailchimp",
     "tools": 275
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 36,
@@ -2089,7 +2124,8 @@
     "coverage": "native",
     "slug": "klaviyo",
     "tools": 233
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 37,
@@ -2144,7 +2180,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 38,
@@ -2199,7 +2236,8 @@
     "coverage": "native",
     "slug": "pinterest",
     "tools": 27
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 39,
@@ -2254,7 +2292,8 @@
     "coverage": "native",
     "slug": "threads",
     "tools": 24
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 40,
@@ -2309,7 +2348,8 @@
     "coverage": "native",
     "slug": "sendgrid",
     "tools": 359
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 41,
@@ -2376,7 +2416,8 @@
     "coverage": "native",
     "slug": "shopify",
     "tools": 386
-   }
+   },
+   "mcp_scope": "no_account"
   },
   {
    "app_id": 42,
@@ -2437,7 +2478,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 43,
@@ -2504,7 +2546,8 @@
     "coverage": "native",
     "slug": "bigcommerce",
     "tools": 532
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 44,
@@ -2559,7 +2602,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 45,
@@ -2622,7 +2666,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": "no_account"
   },
   {
    "app_id": 46,
@@ -2683,7 +2728,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 47,
@@ -2744,7 +2790,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 48,
@@ -2800,7 +2847,8 @@
     "coverage": "native",
     "slug": "gumroad",
     "tools": 13
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 49,
@@ -2861,7 +2909,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 50,
@@ -2911,7 +2960,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 51,
@@ -2976,7 +3026,8 @@
     "coverage": "native",
     "slug": "dataforseo",
     "tools": 354
-   }
+   },
+   "mcp_scope": "unclear"
   },
   {
    "app_id": 52,
@@ -3036,7 +3087,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 53,
@@ -3097,7 +3149,8 @@
     "coverage": "native",
     "slug": "ahrefs",
     "tools": 46
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 54,
@@ -3162,7 +3215,8 @@
     "coverage": "native",
     "slug": "mrscraper",
     "tools": 11
-   }
+   },
+   "mcp_scope": "unclear"
   },
   {
    "app_id": 55,
@@ -3218,7 +3272,8 @@
     "coverage": "native",
     "slug": "apify",
     "tools": 184
-   }
+   },
+   "mcp_scope": "unclear"
   },
   {
    "app_id": 56,
@@ -3273,7 +3328,8 @@
     "coverage": "native",
     "slug": "firecrawl",
     "tools": 245
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 57,
@@ -3328,7 +3384,8 @@
     "coverage": "native",
     "slug": "brightdata",
     "tools": 167
-   }
+   },
+   "mcp_scope": "unclear"
   },
   {
    "app_id": 58,
@@ -3378,7 +3435,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 59,
@@ -3428,7 +3486,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 60,
@@ -3489,7 +3548,8 @@
     "coverage": "native",
     "slug": "clay",
     "tools": 15
-   }
+   },
+   "mcp_scope": "unclear"
   },
   {
    "app_id": 61,
@@ -3552,7 +3612,8 @@
     "coverage": "native",
     "slug": "github",
     "tools": 883
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 62,
@@ -3613,7 +3674,8 @@
     "coverage": "native",
     "slug": "vercel",
     "tools": 399
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 63,
@@ -3674,7 +3736,8 @@
     "coverage": "mcp_only",
     "slug": "netlify_mcp",
     "tools": 9
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 64,
@@ -3735,7 +3798,8 @@
     "coverage": "native",
     "slug": "cloudflare",
     "tools": 171
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 65,
@@ -3796,7 +3860,8 @@
     "coverage": "native",
     "slug": "supabase",
     "tools": 230
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 66,
@@ -3857,7 +3922,8 @@
     "coverage": "native",
     "slug": "neo4j",
     "tools": 21
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 67,
@@ -3919,7 +3985,8 @@
     "coverage": "native",
     "slug": "snowflake",
     "tools": 16
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 68,
@@ -3980,7 +4047,8 @@
     "coverage": "native",
     "slug": "mongodb",
     "tools": 496
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 69,
@@ -4046,7 +4114,8 @@
     "coverage": "native",
     "slug": "datadog",
     "tools": 255
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 70,
@@ -4112,7 +4181,8 @@
     "coverage": "native",
     "slug": "sentry",
     "tools": 210
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 71,
@@ -4168,7 +4238,8 @@
     "coverage": "native",
     "slug": "notion",
     "tools": 59
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 72,
@@ -4224,7 +4295,8 @@
     "coverage": "native",
     "slug": "airtable",
     "tools": 26
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 73,
@@ -4280,7 +4352,8 @@
     "coverage": "native",
     "slug": "linear",
     "tools": 47
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 74,
@@ -4336,7 +4409,8 @@
     "coverage": "native",
     "slug": "jira",
     "tools": 166
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 75,
@@ -4392,7 +4466,8 @@
     "coverage": "native",
     "slug": "asana",
     "tools": 247
-   }
+   },
+   "mcp_scope": "unclear"
   },
   {
    "app_id": 76,
@@ -4448,7 +4523,8 @@
     "coverage": "native",
     "slug": "monday",
     "tools": 122
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 77,
@@ -4504,7 +4580,8 @@
     "coverage": "native",
     "slug": "clickup",
     "tools": 163
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 78,
@@ -4554,7 +4631,8 @@
     "coverage": "native",
     "slug": "coda",
     "tools": 109
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 79,
@@ -4610,7 +4688,8 @@
     "coverage": "native",
     "slug": "smartsheet",
     "tools": 180
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 80,
@@ -4671,7 +4750,8 @@
     "coverage": "native",
     "slug": "harvest",
     "tools": 60
-   }
+   },
+   "mcp_scope": "unclear"
   },
   {
    "app_id": 81,
@@ -4727,7 +4807,8 @@
     "coverage": "native",
     "slug": "stripe",
     "tools": 428
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 82,
@@ -4777,7 +4858,8 @@
     "coverage": "native",
     "slug": "plaid",
     "tools": 70
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 83,
@@ -4828,7 +4910,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 84,
@@ -4878,7 +4961,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 85,
@@ -4929,7 +5013,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": "no_account"
   },
   {
    "app_id": 86,
@@ -4980,7 +5065,8 @@
     "coverage": "native",
     "slug": "quickbooks",
     "tools": 119
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 87,
@@ -5035,7 +5121,8 @@
     "coverage": "native",
     "slug": "xero",
     "tools": 109
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 88,
@@ -5096,7 +5183,8 @@
     "coverage": "native",
     "slug": "brex",
     "tools": 84
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 89,
@@ -5151,7 +5239,8 @@
     "coverage": "native",
     "slug": "ramp",
     "tools": 186
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 90,
@@ -5211,7 +5300,8 @@
     "coverage": "native",
     "slug": "pitchbook",
     "tools": 130
-   }
+   },
+   "mcp_scope": "unclear"
   },
   {
    "app_id": 91,
@@ -5276,7 +5366,8 @@
     "coverage": "native",
     "slug": "notebook_lm",
     "tools": 11
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 92,
@@ -5333,7 +5424,8 @@
     "coverage": "mcp_only",
     "slug": "otter_ai_mcp",
     "tools": 3
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 93,
@@ -5394,7 +5486,8 @@
     "coverage": "native",
     "slug": "fathom",
     "tools": 10
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 94,
@@ -5456,7 +5549,8 @@
     "coverage": "native",
     "slug": "consensus",
     "tools": 1
-   }
+   },
+   "mcp_scope": "no_account"
   },
   {
    "app_id": 95,
@@ -5511,7 +5605,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 96,
@@ -5566,7 +5661,8 @@
     "coverage": "mcp_only",
     "slug": "devin_mcp",
     "tools": 23
-   }
+   },
+   "mcp_scope": "account"
   },
   {
    "app_id": 97,
@@ -5623,7 +5719,8 @@
     "coverage": "native",
     "slug": "higgsfield",
     "tools": 13
-   }
+   },
+   "mcp_scope": "unclear"
   },
   {
    "app_id": 98,
@@ -5674,7 +5771,8 @@
     "coverage": "none",
     "slug": "",
     "tools": 0
-   }
+   },
+   "mcp_scope": ""
   },
   {
    "app_id": 99,
@@ -5729,7 +5827,8 @@
     "coverage": "native",
     "slug": "youtube_transcript",
     "tools": 9
-   }
+   },
+   "mcp_scope": "no_account"
   },
   {
    "app_id": 100,
@@ -5785,63 +5884,15 @@
     "coverage": "native",
     "slug": "grain",
     "tools": 17
-   }
+   },
+   "mcp_scope": "account"
   }
  ],
  "composio": {
   "auth": {
    "checked": 75,
-   "consistent": 65,
+   "consistent": 73,
    "differ": [
-    {
-     "app": "HubSpot",
-     "ours": [
-      "oauth2",
-      "bearer_token"
-     ],
-     "extra_in_composio": [
-      "api_key"
-     ]
-    },
-    {
-     "app": "Front",
-     "ours": [
-      "oauth2",
-      "bearer_token"
-     ],
-     "extra_in_composio": [
-      "api_key"
-     ]
-    },
-    {
-     "app": "Telegram",
-     "ours": [
-      "bearer_token"
-     ],
-     "extra_in_composio": [
-      "api_key"
-     ]
-    },
-    {
-     "app": "WhatsApp Business",
-     "ours": [
-      "bearer_token",
-      "oauth2"
-     ],
-     "extra_in_composio": [
-      "api_key"
-     ]
-    },
-    {
-     "app": "Meta Ads",
-     "ours": [
-      "oauth2",
-      "bearer_token"
-     ],
-     "extra_in_composio": [
-      "api_key"
-     ]
-    },
     {
      "app": "Neo4j",
      "ours": [
@@ -5853,16 +5904,6 @@
      ]
     },
     {
-     "app": "Datadog",
-     "ours": [
-      "api_key",
-      "oauth2"
-     ],
-     "extra_in_composio": [
-      "bearer_token"
-     ]
-    },
-    {
      "app": "Jira",
      "ours": [
       "oauth2",
@@ -5871,29 +5912,18 @@
      "extra_in_composio": [
       "api_key"
      ]
-    },
-    {
-     "app": "Smartsheet",
-     "ours": [
-      "oauth2",
-      "api_key"
-     ],
-     "extra_in_composio": [
-      "bearer_token"
-     ]
-    },
-    {
-     "app": "Brex",
-     "ours": [
-      "bearer_token",
-      "oauth2"
-     ],
-     "extra_in_composio": [
-      "api_key"
-     ]
     }
    ]
   },
+  "gated_but_built": [
+   "Lark (Larksuite)",
+   "Google Ads",
+   "LinkedIn Ads",
+   "Pinterest",
+   "Brex",
+   "Ramp",
+   "PitchBook"
+  ],
   "catalog_fetched": "2026-11-23",
   "catalog_size": 1865,
   "coverage": {
@@ -5939,6 +5969,12 @@
    "official": 84,
    "community": 14,
    "none": 2
+  },
+  "mcp_scope": {
+   "account": 67,
+   "no_account": 6,
+   "unclear": 11,
+   "unverified": 3
   },
   "access_by_category": {
    "CRM and Sales": {
@@ -6221,15 +6257,16 @@
   "links_pass1": {
    "citations": 426,
    "pages": {
-    "live": 403,
-    "refused": 23
+    "live": 402,
+    "refused": 23,
+    "unreachable": 1
    },
    "quotes": {
-    "found": 304,
-    "unchecked": 23,
-    "missing": 99
+    "found": 347,
+    "missing": 55,
+    "unchecked": 24
    },
-   "verified": 304
+   "verified": 347
   },
   "links_pass2": {
    "citations": 540,
@@ -6238,19 +6275,19 @@
     "refused": 24
    },
    "quotes": {
-    "found": 499,
+    "found": 512,
     "unchecked": 24,
-    "missing": 17
+    "missing": 4
    },
-   "verified": 499
+   "verified": 512
   },
   "links_pass2_composio": {
    "citations": 540,
-   "local_found": 499,
-   "remote_found": 517,
-   "both_found": 497,
+   "local_found": 512,
+   "remote_found": 534,
+   "both_found": 510,
    "only_local": 2,
-   "only_remote": 20
+   "only_remote": 24
   },
   "changed_fields": [
    {

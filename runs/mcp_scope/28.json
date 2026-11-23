@@ -1,0 +1,8 @@
+{
+ "app_id": 28,
+ "app": "WhatsApp Business",
+ "scope": "account",
+ "reason": "Tools list businesses, accounts and templates, and send messages, after admin access to the business.",
+ "url": "https://developers.facebook.com/documentation/mcp/whatsapp-business-tools-mcp",
+ "quote": "manage and debug your WhatsApp Business integration from one place"
+}

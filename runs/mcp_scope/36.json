@@ -1,0 +1,8 @@
+{
+ "app_id": 36,
+ "app": "Klaviyo",
+ "scope": "account",
+ "reason": "Server works on the customer's Klaviyo account (profiles, lists, campaigns) with an API key, with an optional read-only mode.",
+ "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+ "quote": "disables any tools which can perform write actions on your Klaviyo account."
+}

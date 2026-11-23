@@ -7,6 +7,7 @@ import re
 import unicodedata
 import urllib.error
 import urllib.request
+import zlib
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
@@ -56,7 +57,10 @@ class Page:
         """Lower-case, unescape and collapse spacing and typographic marks so a quote can match."""
         text = unicodedata.normalize("NFKC", html.unescape(text))
         text = text.translate(str.maketrans("\u2018\u2019\u201c\u201d\u2013\u2014", "''\"\"--"))
-        return re.sub(r"\s+", " ", text).strip().lower()
+        text = re.sub(r"[`*]", "", text)  # markdown marks that a rendered page does not show
+        text = re.sub(r"\s+", " ", text)
+        text = re.sub(r" ([.,;:!?)\]])", r"\1", text)  # stripped tags leave a space before punctuation
+        return re.sub(r"([(\[]) ", r"\1", text).strip().lower()
 
     @staticmethod
     def readable(page: str) -> str:
@@ -66,16 +70,22 @@ class Page:
     @classmethod
     def fetch(cls, url: str) -> "Page":
         try:
-            request = urllib.request.Request(url, headers={"User-Agent": cls.USER_AGENT})
+            request = urllib.request.Request(url, headers={"User-Agent": cls.USER_AGENT, "Accept-Encoding": "gzip"})
             with urllib.request.urlopen(request, timeout=cls.TIMEOUT_SECONDS) as response:
                 raw = response.read(cls.MAX_BYTES + 1)
                 code = response.status
+                packed = response.headers.get("Content-Encoding", "").lower() == "gzip"
         except urllib.error.HTTPError as err:
             return cls(url, PageStatus.for_code(err.code), err.code, "")
         except (OSError, http.client.HTTPException, ValueError):
             # A dead host or an address urllib cannot send is a finding about the
             # evidence, not a failure of the run. UnicodeError is a ValueError.
             return cls(url, PageStatus.UNREACHABLE, 0, "")
+        if packed:
+            try:
+                raw = zlib.decompressobj(16 + zlib.MAX_WBITS).decompress(raw, cls.MAX_BYTES + 1)
+            except zlib.error:
+                return cls(url, PageStatus.UNREACHABLE, 0, "")
         body = raw[:cls.MAX_BYTES].decode("utf-8", errors="replace")
         return cls(url, PageStatus.LIVE, code, cls.normalise(cls.readable(body)), truncated=len(raw) > cls.MAX_BYTES)
 

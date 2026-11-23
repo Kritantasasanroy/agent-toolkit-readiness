@@ -1,0 +1,8 @@
+{
+ "app_id": 87,
+ "app": "Xero",
+ "scope": "account",
+ "reason": "The server has list, create and update tools for contacts, invoices, payments, journals and payroll in a connected Xero organisation.",
+ "url": "https://github.com/XeroAPI/xero-mcp-server",
+ "quote": "This is a Model Context Protocol (MCP) server implementation for Xero."
+}

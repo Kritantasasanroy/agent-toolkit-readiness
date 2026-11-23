@@ -1,0 +1,8 @@
+{
+ "app_id": 8,
+ "app": "Close",
+ "scope": "account",
+ "reason": "MCP server connects agents to the customer's Close CRM with read, write or delete scopes.",
+ "url": "https://developer.close.com/mcp",
+ "quote": "The MCP server URL is https://mcp.close.com/mcp"
+}

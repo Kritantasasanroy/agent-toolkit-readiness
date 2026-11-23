@@ -1,0 +1,8 @@
+{
+ "app_id": 61,
+ "app": "GitHub",
+ "scope": "account",
+ "reason": "Tools read and write issues, pull requests and repositories the signed-in user can access.",
+ "url": "https://github.com/github/github-mcp-server",
+ "quote": "issue_write"
+}

@@ -16,6 +16,7 @@ import sys
 import unicodedata
 import urllib.error
 import urllib.request
+import zlib
 from concurrent.futures import ThreadPoolExecutor
 from typing import Dict, List, Tuple, Union
 
@@ -32,7 +33,10 @@ class Check:
     def normalise(text: str) -> str:
         text = unicodedata.normalize("NFKC", html.unescape(text))
         text = text.translate(str.maketrans("‘’“”–—", "''\"\"--"))
-        return re.sub(r"\s+", " ", text).strip().lower()
+        text = re.sub(r"[`*]", "", text)
+        text = re.sub(r"\s+", " ", text)
+        text = re.sub(r" ([.,;:!?)\]])", r"\1", text)
+        return re.sub(r"([(\[]) ", r"\1", text).strip().lower()
 
     @staticmethod
     def readable(page: str) -> str:
@@ -43,12 +47,14 @@ class Check:
     def page(cls, item: Tuple[str, List[str]]) -> Answer:
         url, quotes = item
         try:
-            request = urllib.request.Request(url, headers={"User-Agent": cls.USER_AGENT})
+            request = urllib.request.Request(url, headers={"User-Agent": cls.USER_AGENT, "Accept-Encoding": "gzip"})
             with urllib.request.urlopen(request, timeout=cls.TIMEOUT_SECONDS) as response:
                 code, body = response.status, response.read(cls.MAX_BYTES)
+                if response.headers.get("Content-Encoding", "").lower() == "gzip":
+                    body = zlib.decompressobj(16 + zlib.MAX_WBITS).decompress(body, cls.MAX_BYTES)
         except urllib.error.HTTPError as err:
             return {"code": err.code, "found": [False] * len(quotes)}
-        except (OSError, http.client.HTTPException, ValueError):
+        except (OSError, http.client.HTTPException, ValueError, zlib.error):
             return {"code": 0, "found": [False] * len(quotes)}
         text = cls.normalise(cls.readable(body.decode("utf-8", "replace")))
         return {"code": code, "found": [cls.normalise(quote) in text for quote in quotes]}

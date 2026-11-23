@@ -1,0 +1,8 @@
+{
+ "app_id": 82,
+ "app": "Plaid",
+ "scope": "account",
+ "reason": "The hosted Dashboard MCP server reads the customer's own Production Items, Link analytics and usage over OAuth. Plaid also ships a separate local Sandbox MCP server for mock data and docs, but the Dashboard one is account.",
+ "url": "https://plaid.com/docs/resources/mcp/",
+ "quote": "Retrieve product usage metrics and API request volumes."
+}

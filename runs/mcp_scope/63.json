@@ -1,0 +1,8 @@
+{
+ "app_id": 63,
+ "app": "Netlify",
+ "scope": "account",
+ "reason": "Server creates, deploys and manages the user's Netlify projects, env vars and access controls.",
+ "url": "https://github.com/netlify/netlify-mcp",
+ "quote": "Create and manage environment variables and secrets"
+}

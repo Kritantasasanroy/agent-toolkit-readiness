@@ -1,0 +1,8 @@
+{
+ "app_id": 1,
+ "app": "Salesforce",
+ "scope": "account",
+ "reason": "The hosted MCP server serves the authenticated user's org data, limited by object permissions, field-level security and sharing rules. The guide page returned 403, so the FAQ was used.",
+ "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/FAQ.md",
+ "quote": "It receives structured tool calls and returns matching data."
+}

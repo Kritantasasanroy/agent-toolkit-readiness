@@ -1,0 +1,8 @@
+{
+ "app_id": 71,
+ "app": "Notion",
+ "scope": "account",
+ "reason": "Assistant can read and update content in the signed-in user's workspace.",
+ "url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+ "quote": "your AI assistant can read and update content that you can access in the selected workspace"
+}
