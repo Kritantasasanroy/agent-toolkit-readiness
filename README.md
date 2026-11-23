@@ -29,6 +29,10 @@ data/apps.csv ──> research agent ──> runs/pass1/<id>.json
   search and page fetch, orchestrated from a Claude Code session. Pass 2 differs from pass 1
   in its inputs, not its model: it receives the first profile and the link-check results,
   and has to prove or fix every field from the raw page text.
+- Composio did not do the research. It is used as a check: `research composio` reads its
+  toolkits API for coverage and a second opinion on auth methods, and `research remote`
+  re-runs the evidence check inside a Composio sandbox (a tool-router session). Both need
+  `COMPOSIO_API_KEY` in the environment, and the key is never written to disk.
 - `research/` is the checking code. It is plain Python 3.9 with no dependencies, so anyone
   can rerun the checks without an API key.
 - `data/handchecks.json` holds reference answers for 20 apps, two per category, drawn with
