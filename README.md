@@ -1,5 +1,7 @@
 # App toolkit readiness: 100 apps
 
+Live case study: https://kritantasasanroy.github.io/agent-toolkit-readiness/
+
 Research on whether 100 apps can become agent toolkits today: how each one authenticates,
 whether a developer can get credentials without talking to anyone, what the API looks like,
 whether an MCP server exists, and what blocks the ones that can't be built yet.
