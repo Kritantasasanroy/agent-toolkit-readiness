@@ -7,8 +7,8 @@
     "oauth2",
     "api_key"
   ],
-  "access": "free_self_serve",
-  "access_note": "Free partner sandbox via Partner Portal, not trial-limited; docs do not state price explicitly.",
+  "access": "free_trial",
+  "access_note": "API credentials are created in a store control panel; a store (trial or paid) is needed. Trial length and free sandbox not verified.",
   "api_styles": [
     "rest",
     "graphql"
@@ -16,9 +16,9 @@
   "api_breadth": "broad",
   "mcp": "official",
   "mcp_url": "https://api.bigcommerce.com/mcp",
-  "verdict": "build_now",
-  "blocker": "none",
-  "blocker_note": "",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Needs a BigCommerce store; trial terms not verified. Multi-store apps are registered in the Developer Portal.",
   "evidence": [
     {
       "field": "auth_methods",
@@ -29,6 +29,16 @@
       "field": "auth_methods",
       "url": "https://docs.bigcommerce.com/docs/start/authentication",
       "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce’s REST APIs"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.bigcommerce.com/docs/start/authentication",
+      "quote": "Merchants generate single-store API credentials when they create API accounts in their store control panel"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.bigcommerce.com/docs/start/about/sandboxes",
+      "quote": "To create a sandbox store, complete the following steps: Navigate to the BigCommerce Partner Portal and sign in using your credentials."
     },
     {
       "field": "api_styles",
@@ -44,11 +54,6 @@
       "field": "mcp",
       "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
       "quote": "Agents connect to https://api.bigcommerce.com/mcp"
-    },
-    {
-      "field": "access",
-      "url": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
-      "quote": "Sandbox stores are intended for developing and testing apps."
     }
   ],
   "confidence": "medium",
@@ -61,22 +66,10 @@
       "reason": "GraphQL was inferred; now quoted. Added sandbox-via-Partner-Portal quote for access."
     },
     {
-      "field": "access",
-      "from": "free_trial",
-      "to": "free_self_serve",
-      "reason": "Independent browser check disagreed; a blind browser ruling backed it. Free partner sandbox via Partner Portal, not trial-limited; docs do not state price explicitly."
-    },
-    {
-      "field": "verdict",
-      "from": "build_with_caveat",
-      "to": "build_now",
-      "reason": "Independent browser check disagreed; a blind browser ruling backed it. Sandbox plus self-created OAuth API accounts and app-level credentials support build_now; weak evidence."
-    },
-    {
-      "field": "blocker",
-      "from": "paid_plan",
-      "to": "none",
-      "reason": "Independent browser check disagreed; a blind browser ruling backed it. No paid plan required for dev work per sandbox docs; weak evidence."
+      "field": "access, verdict, blocker",
+      "from": "free_trial, build_with_caveat, paid_plan",
+      "to": "unchanged",
+      "reason": "An independent check read these as free self-serve, build now, no blocker. The ruling for it rested on a page that says Partner Portal sandbox stores exist but not what they cost, so the answers stay as they were and the disagreement is marked unsettled."
     }
   ]
 }

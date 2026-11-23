@@ -51,7 +51,7 @@
     }
   ],
   "confidence": "medium",
-  "notes": "docs.consensus.app returned 403. Breadth inferred as search-centric. Do not confuse with goconsensus.com (a different company). consensus.app/home/api/ page text only showed a Create API key button and 'Included on every paid plan', conflicting with the approval wording in pricing.md.",
+  "notes": "Consensus's API page says every plan includes API access and the Free plan includes 30 calls a month, so access is free_self_serve. An earlier read of consensus.app/home/api/ said 'Included on every paid plan', which the docs contradict. Breadth inferred as search-centric. Do not confuse with goconsensus.com (a different company).",
   "review": [
     {
       "field": "evidence",

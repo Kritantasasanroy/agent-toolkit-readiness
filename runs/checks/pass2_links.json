@@ -2045,6 +2045,24 @@
  {
   "app_id": 43,
   "app": "BigCommerce",
+  "field": "access",
+  "url": "https://docs.bigcommerce.com/docs/start/authentication",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 43,
+  "app": "BigCommerce",
+  "field": "access",
+  "url": "https://docs.bigcommerce.com/docs/start/about/sandboxes",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 43,
+  "app": "BigCommerce",
   "field": "api_styles",
   "url": "https://docs.bigcommerce.com/docs/start/authentication",
   "page": "refused",
@@ -2065,15 +2083,6 @@
   "app": "BigCommerce",
   "field": "mcp",
   "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
- },
- {
-  "app_id": 43,
-  "app": "BigCommerce",
-  "field": "access",
-  "url": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
   "page": "live",
   "http_code": 200,
   "quote": "found"
@@ -3127,36 +3136,36 @@
   "app": "Supabase",
   "field": "auth_methods",
   "url": "https://supabase.com/docs/reference/api/introduction",
-  "page": "unreachable",
-  "http_code": 0,
-  "quote": "unchecked"
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
  },
  {
   "app_id": 65,
   "app": "Supabase",
   "field": "auth_methods",
   "url": "https://supabase.com/docs/reference/api/introduction",
-  "page": "unreachable",
-  "http_code": 0,
-  "quote": "unchecked"
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
  },
  {
   "app_id": 65,
   "app": "Supabase",
   "field": "access",
   "url": "https://supabase.com/docs/reference/api/introduction",
-  "page": "unreachable",
-  "http_code": 0,
-  "quote": "unchecked"
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
  },
  {
   "app_id": 65,
   "app": "Supabase",
   "field": "api_styles",
   "url": "https://supabase.com/docs/reference/api/introduction",
-  "page": "unreachable",
-  "http_code": 0,
-  "quote": "unchecked"
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
  },
  {
   "app_id": 65,
@@ -3172,9 +3181,9 @@
   "app": "Supabase",
   "field": "access",
   "url": "https://supabase.com/pricing",
-  "page": "unreachable",
-  "http_code": 0,
-  "quote": "unchecked"
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
  },
  {
   "app_id": 66,

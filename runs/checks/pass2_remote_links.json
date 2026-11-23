@@ -1591,6 +1591,20 @@
  {
   "app_id": 43,
   "url": "https://docs.bigcommerce.com/docs/start/authentication",
+  "quote": "Merchants generate single-store API credentials when they create API accounts in their store control panel",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 43,
+  "url": "https://docs.bigcommerce.com/docs/start/about/sandboxes",
+  "quote": "To create a sandbox store, complete the following steps: Navigate to the BigCommerce Partner Portal and sign in using your credentials.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 43,
+  "url": "https://docs.bigcommerce.com/docs/start/authentication",
   "quote": "Most of our REST endpoints and GraphQL Admin API endpoints use the X-Auth-Token header to authenticate to BigCommerce servers.",
   "code": 200,
   "found": true
@@ -1606,13 +1620,6 @@
   "app_id": 43,
   "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
   "quote": "Agents connect to https://api.bigcommerce.com/mcp",
-  "code": 200,
-  "found": true
- },
- {
-  "app_id": 43,
-  "url": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
-  "quote": "Sandbox stores are intended for developing and testing apps.",
   "code": 200,
   "found": true
  },

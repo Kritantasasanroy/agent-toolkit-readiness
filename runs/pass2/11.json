@@ -20,7 +20,7 @@
   "blocker": "app_review",
   "blocker_note": "Multi-customer apps must use global OAuth, obtained via Marketplace registration/submission and the partner program; docs do not name a paid plan as the gate.",
   "confidence": "medium",
-  "notes": "Zendesk docs index (developer.zendesk.com/llms.txt) lists no general ticketing MCP server; a third-party blog (Sept 2026) says the only first-party one is a customer-facing ChatGPT channel EAP, so mcp stays community. Quote for api_styles is auth-page only; REST breadth inferred from the API reference. Auth page marks API tokens deprecated and asks existing customers to migrate to OAuth.",
+  "notes": "Zendesk's help centre documents its own MCP server in early access, so mcp is official. An older developer docs index lists no general ticketing server. Quote for api_styles is auth-page only; REST breadth inferred from the API reference. Auth page marks API tokens deprecated and asks existing customers to migrate to OAuth.",
   "evidence": [
     {
       "field": "auth_methods",

@@ -46,7 +46,7 @@
     }
   ],
   "confidence": "medium",
-  "notes": "Aircall MCP FAQ states it does not offer its own MCP server; only community repos exist (themobilefirstco has about 2 stars, so usage is thin). Pricing page lists Full API access just before the Enterprise tier, i.e. Professional; exact plan floor not confirmed on a dedicated page.",
+  "notes": "Aircall's help centre documents an official MCP server in beta, so mcp is official. Its older developer FAQ says no MCP server is offered, and a small community server also exists. Pricing page lists Full API access just before the Enterprise tier, i.e. Professional; exact plan floor not confirmed on a dedicated page.",
   "review": [
     {
       "field": "verdict",
