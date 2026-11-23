@@ -31,6 +31,8 @@ class BrowserReport:
 
     def combine(self, local: LinkReport, remote: RemoteReport) -> Dict[str, int]:
         """How many citations at least one of the three checks confirmed, and what the browser added."""
+        if [(c.app_id, c.url) for c in local.checks] != [(c.app_id, c.url) for c in remote.checks]:
+            raise ValueError("the local and sandbox reports do not cover the same citations in the same order")
         seen: Set[Tuple[int, str, str]] = {(c.app_id, c.url, c.quote) for c in self.checks if c.found}
         confirmed = by_browser = 0
         for here, there in zip(local.checks, remote.checks):

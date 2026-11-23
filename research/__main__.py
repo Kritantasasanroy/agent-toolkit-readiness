@@ -48,7 +48,12 @@ def links(args: argparse.Namespace) -> int:
 
 def score(args: argparse.Namespace) -> int:
     survey = Survey.load(Path(args.pass_dir))
-    card = Scorecard.compare(survey.profiles, HandCheck.read_all(Path(args.handchecks)))
+    checks = HandCheck.read_all(Path(args.handchecks))
+    if args.skip_missing:
+        skipped = [c.app for c in checks if c.app_id not in survey.profiles]
+        checks = [c for c in checks if c.app_id in survey.profiles]
+        print(f"skipped {len(skipped)} apps with no valid profile: {', '.join(skipped) or 'none'}")
+    card = Scorecard.compare(survey.profiles, checks)
     print(f"{survey.name}: {card.accuracy():.1%} of {len(card.comparisons)} fields correct")
     for field, rate in card.accuracy_by_field().items():
         print(f"  {field.value:<14}{rate:.0%}")
@@ -113,6 +118,7 @@ def main() -> int:
     command = commands.add_parser("score")
     command.add_argument("pass_dir")
     command.add_argument("handchecks")
+    command.add_argument("--skip-missing", action="store_true", help="score only apps that have a valid profile")
     command.set_defaults(run=score)
     commands.add_parser("composio").set_defaults(run=composio)
     command = commands.add_parser("remote")

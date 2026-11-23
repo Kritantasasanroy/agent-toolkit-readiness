@@ -111,6 +111,7 @@ read at load time. Nothing is deleted.
 - An MCP scope answer counts only if its quote is found on the cited page, here or in the sandbox. Otherwise it is shown as unclear.
 - The auth cross-check treats an API key and a bearer token as the same credential, because vendors and Composio label it either way.
 - The first reference sample was written by the author with AI help, so it flatters the pipeline. A second sample, researched blind, gives the lower and more honest score, and the corrections it prompted are reported separately from the raw score.
+- `runs/checks/independent_scores_before.json` freezes the independent scores from before the corrections. Pass 1 is reproduced with `research score runs/pass1 data/independent_checks.json --skip-missing`. The pass 2 figure is reproduced from the profiles in commit f15d962.
 - Standard library only, so the checks run anywhere with Python 3.9.
 - The committed site must equal a fresh build (checked in CI), so the build output carries no date.
 - Numbers on the page are filled from the data when it loads. The conclusions beside them

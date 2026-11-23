@@ -652,7 +652,7 @@
     }
    ],
    "confidence": "medium",
-   "notes": "Zendesk docs index (developer.zendesk.com/llms.txt) lists no general ticketing MCP server; a third-party blog (Sept 2026) says the only first-party one is a customer-facing ChatGPT channel EAP, so mcp stays community. Quote for api_styles is auth-page only; REST breadth inferred from the API reference. Auth page marks API tokens deprecated and asks existing customers to migrate to OAuth.",
+   "notes": "Zendesk's help centre documents its own MCP server in early access, so mcp is official. An older developer docs index lists no general ticketing server. Quote for api_styles is auth-page only; REST breadth inferred from the API reference. Auth page marks API tokens deprecated and asks existing customers to migrate to OAuth.",
    "contested": [],
    "composio": {
     "coverage": "native",
@@ -1690,7 +1690,7 @@
     }
    ],
    "confidence": "medium",
-   "notes": "Aircall MCP FAQ states it does not offer its own MCP server; only community repos exist (themobilefirstco has about 2 stars, so usage is thin). Pricing page lists Full API access just before the Enterprise tier, i.e. Professional; exact plan floor not confirmed on a dedicated page.",
+   "notes": "Aircall's help centre documents an official MCP server in beta, so mcp is official. Its older developer FAQ says no MCP server is offered, and a small community server also exists. Pricing page lists Full API access just before the Enterprise tier, i.e. Professional; exact plan floor not confirmed on a dedicated page.",
    "contested": [],
    "composio": {
     "coverage": "native",
@@ -2475,8 +2475,8 @@
     "oauth2",
     "api_key"
    ],
-   "access": "free_self_serve",
-   "access_note": "Free partner sandbox via Partner Portal, not trial-limited; docs do not state price explicitly.",
+   "access": "free_trial",
+   "access_note": "API credentials are created in a store control panel; a store (trial or paid) is needed. Trial length and free sandbox not verified.",
    "api_styles": [
     "rest",
     "graphql"
@@ -2484,9 +2484,9 @@
    "api_breadth": "broad",
    "mcp": "official",
    "mcp_url": "https://api.bigcommerce.com/mcp",
-   "verdict": "build_now",
-   "blocker": "none",
-   "blocker_note": "",
+   "verdict": "build_with_caveat",
+   "blocker": "paid_plan",
+   "blocker_note": "Needs a BigCommerce store; trial terms not verified. Multi-store apps are registered in the Developer Portal.",
    "evidence": [
     {
      "field": "auth_methods",
@@ -2497,6 +2497,16 @@
      "field": "auth_methods",
      "url": "https://docs.bigcommerce.com/docs/start/authentication",
      "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce\u2019s REST APIs"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.bigcommerce.com/docs/start/authentication",
+     "quote": "Merchants generate single-store API credentials when they create API accounts in their store control panel"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.bigcommerce.com/docs/start/about/sandboxes",
+     "quote": "To create a sandbox store, complete the following steps: Navigate to the BigCommerce Partner Portal and sign in using your credentials."
     },
     {
      "field": "api_styles",
@@ -2512,11 +2522,6 @@
      "field": "mcp",
      "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
      "quote": "Agents connect to https://api.bigcommerce.com/mcp"
-    },
-    {
-     "field": "access",
-     "url": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
-     "quote": "Sandbox stores are intended for developing and testing apps."
     }
    ],
    "confidence": "medium",
@@ -5516,7 +5521,7 @@
     }
    ],
    "confidence": "medium",
-   "notes": "docs.consensus.app returned 403. Breadth inferred as search-centric. Do not confuse with goconsensus.com (a different company). consensus.app/home/api/ page text only showed a Create API key button and 'Included on every paid plan', conflicting with the approval wording in pricing.md.",
+   "notes": "Consensus's API page says every plan includes API access and the Free plan includes 30 calls a month, so access is free_self_serve. An earlier read of consensus.app/home/api/ said 'Included on every paid plan', which the docs contradict. Breadth inferred as search-centric. Do not confuse with goconsensus.com (a different company).",
    "contested": [],
    "composio": {
     "coverage": "native",
@@ -5931,14 +5936,14 @@
    "none": 2
   },
   "verdicts": {
-   "build_now": 40,
-   "build_with_caveat": 49,
+   "build_now": 39,
+   "build_with_caveat": 50,
    "needs_outreach": 9,
    "not_feasible": 2
   },
   "blockers": {
-   "none": 42,
-   "paid_plan": 21,
+   "none": 41,
+   "paid_plan": 22,
    "app_review": 19,
    "partner_program": 9,
    "admin_install": 4,
@@ -5991,8 +5996,8 @@
     "no_public_api": 0
    },
    "Ecommerce": {
-    "free_self_serve": 5,
-    "free_trial": 0,
+    "free_self_serve": 4,
+    "free_trial": 1,
     "paid_plan": 2,
     "admin_approval": 1,
     "partner_gated": 2,
@@ -6250,30 +6255,29 @@
    "verified": 347
   },
   "links_pass2": {
-   "citations": 535,
+   "citations": 536,
    "pages": {
-    "live": 506,
-    "refused": 24,
-    "unreachable": 5
+    "live": 510,
+    "refused": 26
    },
    "quotes": {
-    "found": 502,
-    "unchecked": 29,
+    "found": 506,
+    "unchecked": 26,
     "missing": 4
    },
-   "verified": 502
+   "verified": 506
   },
   "links_pass2_composio": {
-   "citations": 535,
-   "local_found": 502,
-   "remote_found": 529,
-   "both_found": 500,
+   "citations": 536,
+   "local_found": 506,
+   "remote_found": 530,
+   "both_found": 504,
    "only_local": 2,
-   "only_remote": 29
+   "only_remote": 26
   },
   "links_pass2_combined": {
-   "citations": 535,
-   "confirmed": 535,
+   "citations": 536,
+   "confirmed": 536,
    "browser_added": 4
   },
   "changed_fields": [
@@ -6462,36 +6466,6 @@
     ],
     "after": [
      "official"
-    ]
-   },
-   {
-    "app": "BigCommerce",
-    "field": "access",
-    "before": [
-     "free_trial"
-    ],
-    "after": [
-     "free_self_serve"
-    ]
-   },
-   {
-    "app": "BigCommerce",
-    "field": "verdict",
-    "before": [
-     "build_with_caveat"
-    ],
-    "after": [
-     "build_now"
-    ]
-   },
-   {
-    "app": "BigCommerce",
-    "field": "blocker",
-    "before": [
-     "paid_plan"
-    ],
-    "after": [
-     "none"
     ]
    },
    {
@@ -7694,16 +7668,16 @@
     "apps_without_profile": []
    },
    "after": {
-    "accuracy": 0.842,
+    "accuracy": 0.817,
     "fields_checked": 120,
     "apps_checked": 20,
     "by_field": {
      "auth_methods": 0.8,
-     "access": 1.0,
+     "access": 0.95,
      "api_styles": 1.0,
      "mcp": 0.6,
-     "verdict": 0.85,
-     "blocker": 0.8
+     "verdict": 0.8,
+     "blocker": 0.75
     },
     "misses": [
      {
@@ -7796,6 +7770,36 @@
       "truth": [
        "oauth2",
        "bearer_token"
+      ]
+     },
+     {
+      "app": "BigCommerce",
+      "field": "access",
+      "agent": [
+       "free_trial"
+      ],
+      "truth": [
+       "free_self_serve"
+      ]
+     },
+     {
+      "app": "BigCommerce",
+      "field": "verdict",
+      "agent": [
+       "build_with_caveat"
+      ],
+      "truth": [
+       "build_now"
+      ]
+     },
+     {
+      "app": "BigCommerce",
+      "field": "blocker",
+      "agent": [
+       "paid_plan"
+      ],
+      "truth": [
+       "none"
       ]
      },
      {
@@ -7907,10 +7911,10 @@
    "tally": {
     "agent": 11,
     "neither": 2,
-    "reference": 11,
-    "unclear": 6
+    "reference": 8,
+    "unclear": 9
    },
-   "corrected": 11,
+   "corrected": 8,
    "rulings": [
     {
      "item": 1,
@@ -8015,28 +8019,28 @@
      "item": 12,
      "app": "BigCommerce",
      "field": "access",
-     "winner": "reference",
-     "source": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
-     "quote": "Sandbox stores are intended for developing and testing apps.",
-     "note": "Free partner sandbox via Partner Portal, not trial-limited; docs do not state price explicitly."
+     "winner": "unclear",
+     "source": "",
+     "quote": "",
+     "note": "Originally ruled for the independent answer on the quote \"Sandbox stores are intended for developing and testing apps.\". That quote says sandbox stores exist for developing apps, not that they are free, so this is set to unclear."
     },
     {
      "item": 13,
      "app": "BigCommerce",
      "field": "verdict",
-     "winner": "reference",
-     "source": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
-     "quote": "Sandbox stores are intended for developing and testing apps.",
-     "note": "Sandbox plus self-created OAuth API accounts and app-level credentials support build_now; weak evidence."
+     "winner": "unclear",
+     "source": "",
+     "quote": "",
+     "note": "Originally ruled for the independent answer on the quote \"Sandbox stores are intended for developing and testing apps.\". That quote says sandbox stores exist for developing apps, not that they are free, so this is set to unclear."
     },
     {
      "item": 14,
      "app": "BigCommerce",
      "field": "blocker",
-     "winner": "reference",
-     "source": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
-     "quote": "Sandbox stores are intended for developing and testing apps.",
-     "note": "No paid plan required for dev work per sandbox docs; weak evidence."
+     "winner": "unclear",
+     "source": "",
+     "quote": "",
+     "note": "Originally ruled for the independent answer on the quote \"Sandbox stores are intended for developing and testing apps.\". That quote says sandbox stores exist for developing apps, not that they are free, so this is set to unclear."
     },
     {
      "item": 15,

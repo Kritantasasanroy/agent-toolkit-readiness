@@ -3,7 +3,7 @@
 Twenty apps, drawn with a second seed, were researched in a browser by agents that never saw the
 pipeline's answers. Wherever the pipeline and that reference differ, a fresh browser agent saw the
 two answers shuffled and unlabelled and ruled from the vendor's pages. A ruling only counts when its
-quote is found on the cited page, here, in the Composio sandbox or in a browser.
+quote is found on the cited page, here or in the Composio sandbox.
 """
 
 import json
@@ -12,7 +12,6 @@ from pathlib import Path
 from typing import Dict, List, Mapping, Tuple
 
 from research.adjudication import Ruling, Side, Winner
-from research.handcheck import Scorecard
 from research.profile import Doc, Field, ProfileError
 from research.remote import Probe, Sandbox
 
@@ -35,10 +34,6 @@ class Disagreement:
         """Whose answer the docs back. A ruling whose quote nobody could find counts as unclear."""
         return self.ruling.resolve(self.a_is) if self.confirmed else Winner.UNCLEAR
 
-    @property
-    def pipeline_stands(self) -> bool:
-        return self.winner in (Winner.AGENT, Winner.BOTH)
-
 
 @dataclass(frozen=True)
 class IndependentReview:
@@ -56,7 +51,7 @@ class IndependentReview:
         """Which rulings had their quote found here, in the sandbox or in a browser."""
         path = checks_dir / "independent_quotes.json"
         rows = json.loads(path.read_text()) if path.exists() else []
-        return {row["item"]: row["local"] == "found" or bool(row["remote"]) or bool(row.get("browser")) for row in rows}
+        return {row["item"]: row["local"] == "found" or bool(row["remote"]) for row in rows}
 
     @classmethod
     def load(cls, checks_dir: Path) -> "IndependentReview":
@@ -87,11 +82,6 @@ class IndependentReview:
         for item in self.items:
             counts[item.winner.value] = counts.get(item.winner.value, 0) + 1
         return counts
-
-    def reconciled_accuracy(self, card: Scorecard) -> float:
-        """The scorecard's accuracy once misses the docs do not back are the only ones left."""
-        excused = sum(item.pipeline_stands for item in self.items)
-        return (len(card.comparisons) - len(card.misses()) + excused) / len(card.comparisons)
 
     def to_json(self) -> List[Dict[str, object]]:
         return [{"item": i.item, "app": i.app, "field": i.field.value, "winner": i.winner.value,

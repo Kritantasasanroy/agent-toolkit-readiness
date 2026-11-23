@@ -10,7 +10,6 @@ from enum import Enum
 from pathlib import Path
 from typing import Dict, Iterable, List, Mapping, Tuple
 
-from research.composio import CatalogError
 from research.links import Page, QuoteStatus
 from research.profile import Doc, ProfileError
 from research.remote import Probe, Sandbox

@@ -19,6 +19,7 @@ from research.adjudication import Decider, Disputes, Winner
 from research.__main__ import main
 from research.composio import CatalogError, ComposioCatalog, Coverage, Match, Toolkit
 from research.handcheck import HandCheck, HandCheckError, Scorecard
+from research.browser import BrowserCheck, BrowserReport
 from research.independent import IndependentReview
 from research.mcp_scope import McpScopes, Scope, ScopeCheck, ScopeFinding
 from research.links import LinkCheck, LinkReport, Page, PageStatus, QuoteStatus
@@ -501,6 +502,26 @@ class ScopeFileTest(unittest.TestCase):
             self.assertEqual(McpScopes.load(directory, checks).effective(), {5: Scope.ACCOUNT})
 
 
+class BrowserReportTest(unittest.TestCase):
+    def combine(self, local: List[QuoteStatus], remote: List[bool], browser: List[bool]) -> Dict[str, int]:
+        urls = [f"https://x.io/{n}" for n in range(len(local))]
+        report = LinkReport(tuple(LinkCheck(1, "X", "mcp", u, PageStatus.LIVE, 200, q) for u, q in zip(urls, local)))
+        sandbox = RemoteReport(tuple(RemoteCheck(1, u, f"q{n}", 200, hit) for n, (u, hit) in enumerate(zip(urls, remote))))
+        browsed = BrowserReport(tuple(BrowserCheck(1, u, f"q{n}", hit) for n, (u, hit) in enumerate(zip(urls, browser))))
+        return browsed.combine(report, sandbox)
+
+    def test_a_citation_counts_once_and_the_browser_only_adds_what_the_others_missed(self) -> None:
+        found, missing = QuoteStatus.FOUND, QuoteStatus.MISSING
+        counts = self.combine([found, missing, missing, missing], [True, True, False, False], [True, True, True, False])
+        self.assertEqual(counts, {"citations": 4, "confirmed": 3, "browser_added": 1})
+
+    def test_reports_for_different_citations_are_refused(self) -> None:
+        local = LinkReport((LinkCheck(1, "X", "mcp", "https://x.io/a", PageStatus.LIVE, 200, QuoteStatus.FOUND),))
+        sandbox = RemoteReport((RemoteCheck(1, "https://x.io/b", "q", 200, True),))
+        with self.assertRaises(ValueError):
+            BrowserReport(()).combine(local, sandbox)
+
+
 class IndependentReviewTest(unittest.TestCase):
     def write(self, directory: Path, rows: Dict[str, object]) -> None:
         for name, rows_ in rows.items():
@@ -521,7 +542,6 @@ class IndependentReviewTest(unittest.TestCase):
             review = IndependentReview.load(directory)
         self.assertEqual([i.winner.value for i in review.items], ["reference", "agent", "unclear"])
         self.assertEqual(review.tally(), {"reference": 1, "agent": 1, "unclear": 1})
-        self.assertEqual([i.pipeline_stands for i in review.items], [False, True, False])
 
     def test_rulings_must_cover_exactly_the_keyed_items(self) -> None:
         key = [{"item": 1, "app_id": 5, "app": "X", "field": "mcp", "A_is": "pipeline"}]
@@ -611,6 +631,20 @@ class CommandTest(unittest.TestCase):
             self.assertEqual(self.run_main("validate", str(directory)), 0)
             (directory / "62.json").write_text(json.dumps(profile_doc(app_id=62, access="nope")))
             self.assertEqual(self.run_main("validate", str(directory)), 1)
+
+    def test_score_can_skip_apps_that_have_no_valid_profile_and_says_which(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            directory = Path(tmp) / "pass"
+            directory.mkdir()
+            (directory / "61.json").write_text(json.dumps(profile_doc()))
+            checks = Path(tmp) / "checks.json"
+            checks.write_text(json.dumps([hand_check_doc(), hand_check_doc(app_id=99, app="Gone")]))
+            out = io.StringIO()
+            with mock.patch.object(sys, "argv", ["research", "score", str(directory), str(checks), "--skip-missing"]), \
+                    contextlib.redirect_stdout(out):
+                self.assertEqual(main(), 0)
+            self.assertIn("skipped 1 apps with no valid profile: Gone", out.getvalue())
+            self.assertEqual(self.run_main("score", str(directory), str(checks)), 1)
 
     def test_score_reports_a_hand_check_with_no_profile_as_an_error_not_a_traceback(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
