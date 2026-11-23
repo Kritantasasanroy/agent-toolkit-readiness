@@ -1,0 +1,27 @@
+{
+ "app_id": 36,
+ "app": "Klaviyo",
+ "auth_methods": [
+  "api_key",
+  "oauth2"
+ ],
+ "access": [
+  "free_self_serve"
+ ],
+ "api_styles": [
+  "rest"
+ ],
+ "mcp": [
+  "official"
+ ],
+ "verdict": [
+  "build_now"
+ ],
+ "blocker": [
+  "none"
+ ],
+ "sources": [
+  "https://developers.klaviyo.com/en/docs/authenticate_"
+ ],
+ "note": "Private API key created in account settings for server-side calls; OAuth recommended for tech partners (listing/app marketplace). Docs sidebar and footer list a 'Klaviyo MCP server' (page itself not opened, URL not captured). Free plan not verified on a pricing page; test account guide linked ('Create a test account'). Whether OAuth apps need review before multi-tenant use not read."
+}

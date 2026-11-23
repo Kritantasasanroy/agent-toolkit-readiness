@@ -5,7 +5,7 @@
   "summary": "Customer messaging and support platform with inbox, tickets, help center and the Fin AI agent.",
   "auth_methods": [
     "oauth2",
-    "bearer_token"
+    "api_key"
   ],
   "access": "free_self_serve",
   "access_note": "Free development workspaces (unlimited) for public-app developers; private apps use an access token from the Developer Hub on your own workspace; public apps use OAuth.",
@@ -21,16 +21,6 @@
   "confidence": "medium",
   "notes": "Whether publishing a public OAuth app for other workspaces needs App Store review was not read; MCP URL from the Intercom MCP guide (US and EU only).",
   "evidence": [
-    {
-      "field": "auth_methods",
-      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
-      "quote": "An Access Token is for if you're using the API to access data in your own Intercom workspace, in other words, building a private app."
-    },
-    {
-      "field": "auth_methods",
-      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
-      "quote": "OAuth is for if you're building a public app that accesses other people's Intercom data."
-    },
     {
       "field": "mcp",
       "url": "https://developers.intercom.com/docs/guides/mcp",
@@ -50,6 +40,11 @@
       "field": "mcp",
       "url": "https://developers.intercom.com/docs/guides/mcp",
       "quote": "The Intercom MCP Server provides 16 tools for interacting with the Intercom API."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "quote": "OAuth is for if you're building a public app that accesses other people's Intercom data."
     }
   ],
   "review": [
@@ -70,6 +65,18 @@
       "from": "paid_plan",
       "to": "none",
       "reason": "The paid-plan gate was based on the missing free-workspace page; no review requirement found in the docs read."
+    },
+    {
+      "field": "auth_methods",
+      "from": [
+        "oauth2",
+        "bearer_token"
+      ],
+      "to": [
+        "oauth2",
+        "api_key"
+      ],
+      "reason": "Independent browser check disagreed; a blind browser ruling backed it. Intercom offers OAuth and a user-generated Access Token (personal token, api_key); judged against the field definition. Moderate confidence."
     }
   ]
 }

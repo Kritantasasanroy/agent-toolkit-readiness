@@ -1,0 +1,28 @@
+{
+ "app_id": 94,
+ "app": "Consensus",
+ "auth_methods": [
+  "api_key"
+ ],
+ "access": [
+  "free_self_serve"
+ ],
+ "api_styles": [
+  "rest"
+ ],
+ "mcp": [
+  "official"
+ ],
+ "verdict": [
+  "build_now"
+ ],
+ "blocker": [
+  "none"
+ ],
+ "sources": [
+  "https://docs.consensus.app/api-plans-and-access",
+  "https://docs.consensus.app/api-quickstart-search",
+  "https://docs.consensus.app/consensus-mcp"
+ ],
+ "note": "REST API: x-api-key header, self-serve on every plan including Free (30 calls a month, 20 papers per request, no full text). Official MCP supports OAuth sign-in for Claude, ChatGPT and Codex, or an API key as Bearer token; the REST API itself documents only the key. Verdict is build_now for a key-based toolkit."
+}

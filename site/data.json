@@ -614,11 +614,11 @@
     "rest"
    ],
    "api_breadth": "broad",
-   "mcp": "community",
-   "mcp_url": "https://github.com/reminia/zendesk-mcp-server",
+   "mcp": "official",
+   "mcp_url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
    "verdict": "build_with_caveat",
-   "blocker": "paid_plan",
-   "blocker_note": "No permanent free tier; end users need a paid Zendesk plan, and a developer needs a trial or sponsored account.",
+   "blocker": "app_review",
+   "blocker_note": "Multi-customer apps must use global OAuth, obtained via Marketplace registration/submission and the partner program; docs do not name a paid plan as the gate.",
    "evidence": [
     {
      "field": "auth_methods",
@@ -641,19 +641,14 @@
      "quote": "A Zendesk Support account with agent or admin access."
     },
     {
-     "field": "mcp",
-     "url": "https://raw.githubusercontent.com/reminia/zendesk-mcp-server/main/README.md",
-     "quote": "A Model Context Protocol server for Zendesk."
-    },
-    {
-     "field": "mcp",
-     "url": "https://tldv.io/blog/zendesk-mcp/",
-     "quote": "So, as of 3 September 2026, the general-purpose Zendesk MCP server does not appear on Zendesk\u2019s early access programs page."
-    },
-    {
      "field": "api_styles",
      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
      "quote": "Basic authentication is used for API tokens."
+    },
+    {
+     "field": "mcp",
+     "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+     "quote": "Zendesk Bridge provides a way to establish governed connections between the Zendesk MCP Server"
     }
    ],
    "confidence": "medium",
@@ -664,7 +659,7 @@
     "slug": "zendesk",
     "tools": 483
    },
-   "mcp_scope": ""
+   "mcp_scope": "unclear"
   },
   {
    "app_id": 12,
@@ -673,7 +668,7 @@
    "summary": "Customer messaging and support platform with inbox, tickets, help center and the Fin AI agent.",
    "auth_methods": [
     "oauth2",
-    "bearer_token"
+    "api_key"
    ],
    "access": "free_self_serve",
    "access_note": "Free development workspaces (unlimited) for public-app developers; private apps use an access token from the Developer Hub on your own workspace; public apps use OAuth.",
@@ -687,16 +682,6 @@
    "blocker": "none",
    "blocker_note": "MCP server not available for AU-hosted workspaces; end users' own workspaces are paid.",
    "evidence": [
-    {
-     "field": "auth_methods",
-     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
-     "quote": "An Access Token is for if you're using the API to access data in your own Intercom workspace, in other words, building a private app."
-    },
-    {
-     "field": "auth_methods",
-     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
-     "quote": "OAuth is for if you're building a public app that accesses other people's Intercom data."
-    },
     {
      "field": "mcp",
      "url": "https://developers.intercom.com/docs/guides/mcp",
@@ -716,6 +701,11 @@
      "field": "mcp",
      "url": "https://developers.intercom.com/docs/guides/mcp",
      "quote": "The Intercom MCP Server provides 16 tools for interacting with the Intercom API."
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+     "quote": "OAuth is for if you're building a public app that accesses other people's Intercom data."
     }
    ],
    "confidence": "medium",
@@ -1667,8 +1657,8 @@
     "rest"
    ],
    "api_breadth": "broad",
-   "mcp": "community",
-   "mcp_url": "https://github.com/themobilefirstco/aircall-mcp-server",
+   "mcp": "official",
+   "mcp_url": "https://support.aircall.io/en-gb/articles/40743220972573",
    "verdict": "build_with_caveat",
    "blocker": "paid_plan",
    "blocker_note": "No free API path: Basic auth keys require an Aircall customer account (paid plans; the pricing page lists full API access in the Professional tier). OAuth is only for approved Technology Partners.",
@@ -1695,13 +1685,8 @@
     },
     {
      "field": "mcp",
-     "url": "https://developer.aircall.io/docs/mcp-faqs.md",
-     "quote": "As of this writting we don't offer an MCP servier"
-    },
-    {
-     "field": "mcp",
-     "url": "https://github.com/themobilefirstco/aircall-mcp-server",
-     "quote": "Unofficial MCP server for Aircall by Allo - 73 tools for calls, contacts, SMS, users, teams & AI insights"
+     "url": "https://support.aircall.io/en-gb/articles/40743220972573",
+     "quote": "AI assistants such as Claude or ChatGPT connect to Aircall and read your call data"
     }
    ],
    "confidence": "medium",
@@ -1712,7 +1697,7 @@
     "slug": "aircall",
     "tools": 48
    },
-   "mcp_scope": ""
+   "mcp_scope": "account"
   },
   {
    "app_id": 30,
@@ -2490,8 +2475,8 @@
     "oauth2",
     "api_key"
    ],
-   "access": "free_trial",
-   "access_note": "API credentials are created in a store control panel; a store (trial or paid) is needed. Trial length and free sandbox not verified.",
+   "access": "free_self_serve",
+   "access_note": "Free partner sandbox via Partner Portal, not trial-limited; docs do not state price explicitly.",
    "api_styles": [
     "rest",
     "graphql"
@@ -2499,9 +2484,9 @@
    "api_breadth": "broad",
    "mcp": "official",
    "mcp_url": "https://api.bigcommerce.com/mcp",
-   "verdict": "build_with_caveat",
-   "blocker": "paid_plan",
-   "blocker_note": "Needs a BigCommerce store; trial terms not verified. Multi-store apps are registered in the Developer Portal.",
+   "verdict": "build_now",
+   "blocker": "none",
+   "blocker_note": "",
    "evidence": [
     {
      "field": "auth_methods",
@@ -2512,16 +2497,6 @@
      "field": "auth_methods",
      "url": "https://docs.bigcommerce.com/docs/start/authentication",
      "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce\u2019s REST APIs"
-    },
-    {
-     "field": "access",
-     "url": "https://docs.bigcommerce.com/docs/start/authentication",
-     "quote": "Merchants generate single-store API credentials when they create API accounts in their store control panel"
-    },
-    {
-     "field": "access",
-     "url": "https://docs.bigcommerce.com/docs/start/about/sandboxes",
-     "quote": "To create a sandbox store, complete the following steps: Navigate to the BigCommerce Partner Portal and sign in using your credentials."
     },
     {
      "field": "api_styles",
@@ -2537,6 +2512,11 @@
      "field": "mcp",
      "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
      "quote": "Agents connect to https://api.bigcommerce.com/mcp"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
+     "quote": "Sandbox stores are intended for developing and testing apps."
     }
    ],
    "confidence": "medium",
@@ -3096,8 +3076,7 @@
    "category": "Data, SEO and Scraping",
    "summary": "SEO toolset with API v3 and a hosted MCP server for backlink, keyword and site data.",
    "auth_methods": [
-    "api_key",
-    "oauth2"
+    "api_key"
    ],
    "access": "paid_plan",
    "access_note": "Direct API v3 and the remote MCP server need a paid plan from Lite; only workspace owners/admins can create keys.",
@@ -3111,16 +3090,6 @@
    "blocker": "paid_plan",
    "blocker_note": "Paid Ahrefs subscription required; keys limited to workspace owners/admins; API units are consumed from the plan.",
    "evidence": [
-    {
-     "field": "auth_methods",
-     "url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management.md",
-     "quote": "You'll need an API key to send requests via Ahrefs API v3."
-    },
-    {
-     "field": "auth_methods",
-     "url": "https://docs.ahrefs.com/mcp/docs/claude-code.md",
-     "quote": "Login to Ahrefs account, select workspace and click \"Allow\""
-    },
     {
      "field": "access",
      "url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
@@ -3140,6 +3109,11 @@
      "field": "mcp",
      "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
      "quote": "Ahrefs provides a hosted MCP server that allows users with a Lite plan or higher to connect their Ahrefs account to supported AI tools."
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://docs.ahrefs.com/api/docs/introduction",
+     "quote": "To send requests to Ahrefs API, you'll need an API key."
     }
    ],
    "confidence": "medium",
@@ -4988,7 +4962,7 @@
     {
      "field": "auth_methods",
      "url": "https://www.ipayx.ai/.well-known/mcp.json",
-     "quote": "full_forensic_fx_report requires a Bearer API key from https://www.ipayx.ai/developers"
+     "quote": "API keys are optional. Transaction audits and forensic reports share 3 free calls per IP per calendar month. Valid Bearer API keys retain existing access."
     },
     {
      "field": "access",
@@ -5498,18 +5472,17 @@
     "api_key",
     "oauth2"
    ],
-   "access": "paid_plan",
-   "access_note": "REST API keys and MCP require a paid or org plan; Team-tier Search API access is available upon approval and rate limited. MCP also has an anonymous trial mode.",
+   "access": "free_self_serve",
+   "access_note": "Free account creates an API key in the dashboard.",
    "api_styles": [
-    "rest",
-    "rpc"
+    "rest"
    ],
    "api_breadth": "narrow",
    "mcp": "official",
    "mcp_url": "https://mcp.consensus.app/mcp",
-   "verdict": "build_with_caveat",
-   "blocker": "paid_plan",
-   "blocker_note": "API access is tied to paid org tiers and approval; REST reference docs.consensus.app could not be opened.",
+   "verdict": "build_now",
+   "blocker": "none",
+   "blocker_note": "",
    "evidence": [
     {
      "field": "auth_methods",
@@ -5522,16 +5495,6 @@
      "quote": "OAuth-based authentication, dynamic client registration, streaming-friendly."
     },
     {
-     "field": "access",
-     "url": "https://consensus.app/.well-known/pricing.md",
-     "quote": "Optional access to the Consensus Search API (available upon approval, rate limited"
-    },
-    {
-     "field": "api_styles",
-     "url": "https://consensus.app/llms-full.txt",
-     "quote": "The REST API is the canonical machine surface for organizations."
-    },
-    {
      "field": "mcp",
      "url": "https://consensus.app/llms-full.txt",
      "quote": "Endpoint: https://mcp.consensus.app/mcp"
@@ -5540,6 +5503,16 @@
      "field": "mcp",
      "url": "https://consensus.app/llms-full.txt",
      "quote": "The Model Context Protocol server is the recommended surface for any LLM client"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.consensus.app/api-get-started",
+     "quote": "Every plan includes API access, and the Free plan includes 30 calls a month."
+    },
+    {
+     "field": "api_styles",
+     "url": "https://docs.consensus.app/api-get-started",
+     "quote": "with the Consensus REST API"
     }
    ],
    "confidence": "medium",
@@ -5670,8 +5643,7 @@
    "category": "AI, Research and Media-native",
    "summary": "Generative AI image and video studio with a CLI, MCP server and a REST generation API.",
    "auth_methods": [
-    "api_key",
-    "oauth2"
+    "api_key"
    ],
    "access": "paid_plan",
    "access_note": "API is billed against a prepaid account balance on console.higgsfield.ai; docs show no free tier. MCP/CLI sign in through the browser and spend plan credits.",
@@ -5686,11 +5658,6 @@
    "blocker": "paid_plan",
    "blocker_note": "Generation is charged to a prepaid balance; no free API tier found in docs.",
    "evidence": [
-    {
-     "field": "auth_methods",
-     "url": "https://docs.higgsfield.ai/docs/authentication.md",
-     "quote": "Each credential consists of a key ID and a secret."
-    },
     {
      "field": "access",
      "url": "https://docs.higgsfield.ai/docs/concepts/billing-and-retention.md",
@@ -5710,6 +5677,11 @@
      "field": "mcp",
      "url": "https://higgsfield.ai/mcp",
      "quote": "Generate Images & Videos in Claude with Higgsfield"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://docs.higgsfield.ai/docs/authentication",
+     "quote": "Authorization: Key YOUR_KEY_ID:YOUR_KEY_SECRET"
     }
    ],
    "confidence": "medium",
@@ -5891,8 +5863,17 @@
  "composio": {
   "auth": {
    "checked": 75,
-   "consistent": 73,
+   "consistent": 72,
    "differ": [
+    {
+     "app": "Ahrefs",
+     "ours": [
+      "api_key"
+     ],
+     "extra_in_composio": [
+      "oauth2"
+     ]
+    },
     {
      "app": "Neo4j",
      "ours": [
@@ -5942,23 +5923,23 @@
    "other": 1
   },
   "auth_mix": {
-   "oauth2": 73,
-   "api_key": 61,
-   "bearer_token": 14,
+   "oauth2": 71,
+   "api_key": 62,
+   "bearer_token": 13,
    "other": 10,
    "basic": 9,
    "none": 2
   },
   "verdicts": {
-   "build_now": 38,
-   "build_with_caveat": 51,
+   "build_now": 40,
+   "build_with_caveat": 49,
    "needs_outreach": 9,
    "not_feasible": 2
   },
   "blockers": {
-   "none": 40,
-   "paid_plan": 24,
-   "app_review": 18,
+   "none": 42,
+   "paid_plan": 21,
+   "app_review": 19,
    "partner_program": 9,
    "admin_install": 4,
    "no_public_api": 2,
@@ -5966,14 +5947,14 @@
    "region_or_kyc": 1
   },
   "mcp": {
-   "official": 84,
-   "community": 14,
+   "official": 86,
+   "community": 12,
    "none": 2
   },
   "mcp_scope": {
-   "account": 67,
+   "account": 68,
    "no_account": 6,
-   "unclear": 11,
+   "unclear": 12,
    "unverified": 3
   },
   "access_by_category": {
@@ -6010,8 +5991,8 @@
     "no_public_api": 0
    },
    "Ecommerce": {
-    "free_self_serve": 4,
-    "free_trial": 1,
+    "free_self_serve": 5,
+    "free_trial": 0,
     "paid_plan": 2,
     "admin_approval": 1,
     "partner_gated": 2,
@@ -6050,9 +6031,9 @@
     "no_public_api": 0
    },
    "AI, Research and Media-native": {
-    "free_self_serve": 5,
+    "free_self_serve": 6,
     "free_trial": 0,
-    "paid_plan": 4,
+    "paid_plan": 3,
     "admin_approval": 0,
     "partner_gated": 0,
     "no_public_api": 1
@@ -6092,11 +6073,11 @@
     0.6
    ],
    [
-    "Ecommerce",
-    0.5
+    "AI, Research and Media-native",
+    0.6
    ],
    [
-    "AI, Research and Media-native",
+    "Ecommerce",
     0.5
    ]
   ]
@@ -6269,25 +6250,31 @@
    "verified": 347
   },
   "links_pass2": {
-   "citations": 540,
+   "citations": 535,
    "pages": {
-    "live": 516,
-    "refused": 24
+    "live": 506,
+    "refused": 24,
+    "unreachable": 5
    },
    "quotes": {
-    "found": 512,
-    "unchecked": 24,
+    "found": 502,
+    "unchecked": 29,
     "missing": 4
    },
-   "verified": 512
+   "verified": 502
   },
   "links_pass2_composio": {
-   "citations": 540,
-   "local_found": 512,
-   "remote_found": 534,
-   "both_found": 510,
+   "citations": 535,
+   "local_found": 502,
+   "remote_found": 529,
+   "both_found": 500,
    "only_local": 2,
-   "only_remote": 24
+   "only_remote": 29
+  },
+  "links_pass2_combined": {
+   "citations": 535,
+   "confirmed": 535,
+   "browser_added": 4
   },
   "changed_fields": [
    {
@@ -6318,6 +6305,38 @@
     ],
     "after": [
      "free_trial"
+    ]
+   },
+   {
+    "app": "Zendesk",
+    "field": "mcp",
+    "before": [
+     "community"
+    ],
+    "after": [
+     "official"
+    ]
+   },
+   {
+    "app": "Zendesk",
+    "field": "blocker",
+    "before": [
+     "paid_plan"
+    ],
+    "after": [
+     "app_review"
+    ]
+   },
+   {
+    "app": "Intercom",
+    "field": "auth_methods",
+    "before": [
+     "oauth2",
+     "bearer_token"
+    ],
+    "after": [
+     "oauth2",
+     "api_key"
     ]
    },
    {
@@ -6407,6 +6426,16 @@
    },
    {
     "app": "Aircall",
+    "field": "mcp",
+    "before": [
+     "community"
+    ],
+    "after": [
+     "official"
+    ]
+   },
+   {
+    "app": "Aircall",
     "field": "verdict",
     "before": [
      "needs_outreach"
@@ -6433,6 +6462,36 @@
     ],
     "after": [
      "official"
+    ]
+   },
+   {
+    "app": "BigCommerce",
+    "field": "access",
+    "before": [
+     "free_trial"
+    ],
+    "after": [
+     "free_self_serve"
+    ]
+   },
+   {
+    "app": "BigCommerce",
+    "field": "verdict",
+    "before": [
+     "build_with_caveat"
+    ],
+    "after": [
+     "build_now"
+    ]
+   },
+   {
+    "app": "BigCommerce",
+    "field": "blocker",
+    "before": [
+     "paid_plan"
+    ],
+    "after": [
+     "none"
     ]
    },
    {
@@ -6463,6 +6522,17 @@
     ],
     "after": [
      "official"
+    ]
+   },
+   {
+    "app": "Ahrefs",
+    "field": "auth_methods",
+    "before": [
+     "api_key",
+     "oauth2"
+    ],
+    "after": [
+     "api_key"
     ]
    },
    {
@@ -6527,6 +6597,58 @@
     ],
     "after": [
      "narrow_api"
+    ]
+   },
+   {
+    "app": "Consensus",
+    "field": "access",
+    "before": [
+     "paid_plan"
+    ],
+    "after": [
+     "free_self_serve"
+    ]
+   },
+   {
+    "app": "Consensus",
+    "field": "api_styles",
+    "before": [
+     "rest",
+     "rpc"
+    ],
+    "after": [
+     "rest"
+    ]
+   },
+   {
+    "app": "Consensus",
+    "field": "verdict",
+    "before": [
+     "build_with_caveat"
+    ],
+    "after": [
+     "build_now"
+    ]
+   },
+   {
+    "app": "Consensus",
+    "field": "blocker",
+    "before": [
+     "paid_plan"
+    ],
+    "after": [
+     "none"
+    ]
+   },
+   {
+    "app": "higgsfield",
+    "field": "auth_methods",
+    "before": [
+     "api_key",
+     "oauth2"
+    ],
+    "after": [
+     "api_key"
     ]
    }
   ],
@@ -6901,6 +7023,1167 @@
   "to_review": 14,
   "human_reviewed": 0,
   "rechecked": 13,
+  "independent": {
+   "apps": 20,
+   "before_pass1": {
+    "accuracy": 0.728,
+    "fields_checked": 114,
+    "apps_checked": 19,
+    "by_field": {
+     "auth_methods": 0.632,
+     "access": 0.842,
+     "api_styles": 0.947,
+     "mcp": 0.684,
+     "verdict": 0.684,
+     "blocker": 0.579
+    },
+    "misses": [
+     {
+      "app": "Pipedrive",
+      "field": "verdict",
+      "agent": [
+       "build_with_caveat"
+      ],
+      "truth": [
+       "build_now"
+      ]
+     },
+     {
+      "app": "Pipedrive",
+      "field": "blocker",
+      "agent": [
+       "app_review"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Twenty",
+      "field": "mcp",
+      "agent": [
+       "official"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Zendesk",
+      "field": "mcp",
+      "agent": [
+       "community"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Zendesk",
+      "field": "blocker",
+      "agent": [
+       "paid_plan"
+      ],
+      "truth": [
+       "app_review",
+       "partner_program"
+      ]
+     },
+     {
+      "app": "Intercom",
+      "field": "auth_methods",
+      "agent": [
+       "oauth2",
+       "bearer_token"
+      ],
+      "truth": [
+       "oauth2",
+       "api_key"
+      ]
+     },
+     {
+      "app": "Intercom",
+      "field": "access",
+      "agent": [
+       "free_trial"
+      ],
+      "truth": [
+       "free_self_serve"
+      ]
+     },
+     {
+      "app": "Intercom",
+      "field": "blocker",
+      "agent": [
+       "paid_plan"
+      ],
+      "truth": [
+       "none",
+       "app_review"
+      ]
+     },
+     {
+      "app": "WhatsApp Business",
+      "field": "mcp",
+      "agent": [
+       "official"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Aircall",
+      "field": "mcp",
+      "agent": [
+       "community"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Aircall",
+      "field": "verdict",
+      "agent": [
+       "needs_outreach"
+      ],
+      "truth": [
+       "build_with_caveat"
+      ]
+     },
+     {
+      "app": "Aircall",
+      "field": "blocker",
+      "agent": [
+       "partner_program"
+      ],
+      "truth": [
+       "paid_plan"
+      ]
+     },
+     {
+      "app": "systeme.io",
+      "field": "verdict",
+      "agent": [
+       "build_with_caveat"
+      ],
+      "truth": [
+       "build_now"
+      ]
+     },
+     {
+      "app": "BigCommerce",
+      "field": "auth_methods",
+      "agent": [
+       "oauth2",
+       "api_key"
+      ],
+      "truth": [
+       "oauth2",
+       "bearer_token"
+      ]
+     },
+     {
+      "app": "BigCommerce",
+      "field": "access",
+      "agent": [
+       "free_trial"
+      ],
+      "truth": [
+       "free_self_serve"
+      ]
+     },
+     {
+      "app": "BigCommerce",
+      "field": "verdict",
+      "agent": [
+       "build_with_caveat"
+      ],
+      "truth": [
+       "build_now"
+      ]
+     },
+     {
+      "app": "BigCommerce",
+      "field": "blocker",
+      "agent": [
+       "paid_plan"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Ahrefs",
+      "field": "auth_methods",
+      "agent": [
+       "api_key",
+       "oauth2"
+      ],
+      "truth": [
+       "api_key"
+      ]
+     },
+     {
+      "app": "Sentry",
+      "field": "auth_methods",
+      "agent": [
+       "api_key"
+      ],
+      "truth": [
+       "oauth2",
+       "bearer_token"
+      ]
+     },
+     {
+      "app": "Binance",
+      "field": "mcp",
+      "agent": [
+       "community"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Binance",
+      "field": "verdict",
+      "agent": [
+       "build_with_caveat"
+      ],
+      "truth": [
+       "build_now"
+      ]
+     },
+     {
+      "app": "Binance",
+      "field": "blocker",
+      "agent": [
+       "region_or_kyc"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Brex",
+      "field": "auth_methods",
+      "agent": [
+       "bearer_token",
+       "oauth2"
+      ],
+      "truth": [
+       "bearer_token"
+      ]
+     },
+     {
+      "app": "Brex",
+      "field": "mcp",
+      "agent": [
+       "official"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Brex",
+      "field": "blocker",
+      "agent": [
+       "partner_program"
+      ],
+      "truth": [
+       "admin_install"
+      ]
+     },
+     {
+      "app": "Consensus",
+      "field": "auth_methods",
+      "agent": [
+       "api_key",
+       "oauth2"
+      ],
+      "truth": [
+       "api_key"
+      ]
+     },
+     {
+      "app": "Consensus",
+      "field": "access",
+      "agent": [
+       "paid_plan"
+      ],
+      "truth": [
+       "free_self_serve"
+      ]
+     },
+     {
+      "app": "Consensus",
+      "field": "api_styles",
+      "agent": [
+       "rest",
+       "rpc"
+      ],
+      "truth": [
+       "rest"
+      ]
+     },
+     {
+      "app": "Consensus",
+      "field": "verdict",
+      "agent": [
+       "build_with_caveat"
+      ],
+      "truth": [
+       "build_now"
+      ]
+     },
+     {
+      "app": "Consensus",
+      "field": "blocker",
+      "agent": [
+       "paid_plan"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "higgsfield",
+      "field": "auth_methods",
+      "agent": [
+       "api_key",
+       "oauth2"
+      ],
+      "truth": [
+       "api_key"
+      ]
+     }
+    ],
+    "apps_without_profile": [
+     "Salesforce Commerce Cloud"
+    ]
+   },
+   "before_pass2": {
+    "accuracy": 0.75,
+    "fields_checked": 120,
+    "apps_checked": 20,
+    "by_field": {
+     "auth_methods": 0.65,
+     "access": 0.9,
+     "api_styles": 0.95,
+     "mcp": 0.6,
+     "verdict": 0.75,
+     "blocker": 0.65
+    },
+    "misses": [
+     {
+      "app": "Pipedrive",
+      "field": "verdict",
+      "agent": [
+       "build_with_caveat"
+      ],
+      "truth": [
+       "build_now"
+      ]
+     },
+     {
+      "app": "Pipedrive",
+      "field": "blocker",
+      "agent": [
+       "app_review"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Twenty",
+      "field": "mcp",
+      "agent": [
+       "official"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Zendesk",
+      "field": "mcp",
+      "agent": [
+       "community"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Zendesk",
+      "field": "blocker",
+      "agent": [
+       "paid_plan"
+      ],
+      "truth": [
+       "app_review",
+       "partner_program"
+      ]
+     },
+     {
+      "app": "Intercom",
+      "field": "auth_methods",
+      "agent": [
+       "oauth2",
+       "bearer_token"
+      ],
+      "truth": [
+       "oauth2",
+       "api_key"
+      ]
+     },
+     {
+      "app": "WhatsApp Business",
+      "field": "mcp",
+      "agent": [
+       "official"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Aircall",
+      "field": "mcp",
+      "agent": [
+       "community"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "systeme.io",
+      "field": "mcp",
+      "agent": [
+       "official"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "systeme.io",
+      "field": "verdict",
+      "agent": [
+       "build_with_caveat"
+      ],
+      "truth": [
+       "build_now"
+      ]
+     },
+     {
+      "app": "BigCommerce",
+      "field": "auth_methods",
+      "agent": [
+       "oauth2",
+       "api_key"
+      ],
+      "truth": [
+       "oauth2",
+       "bearer_token"
+      ]
+     },
+     {
+      "app": "BigCommerce",
+      "field": "access",
+      "agent": [
+       "free_trial"
+      ],
+      "truth": [
+       "free_self_serve"
+      ]
+     },
+     {
+      "app": "BigCommerce",
+      "field": "verdict",
+      "agent": [
+       "build_with_caveat"
+      ],
+      "truth": [
+       "build_now"
+      ]
+     },
+     {
+      "app": "BigCommerce",
+      "field": "blocker",
+      "agent": [
+       "paid_plan"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Salesforce Commerce Cloud",
+      "field": "mcp",
+      "agent": [
+       "official"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Salesforce Commerce Cloud",
+      "field": "blocker",
+      "agent": [
+       "partner_program"
+      ],
+      "truth": [
+       "paid_plan"
+      ]
+     },
+     {
+      "app": "Ahrefs",
+      "field": "auth_methods",
+      "agent": [
+       "api_key",
+       "oauth2"
+      ],
+      "truth": [
+       "api_key"
+      ]
+     },
+     {
+      "app": "Sentry",
+      "field": "auth_methods",
+      "agent": [
+       "api_key",
+       "oauth2"
+      ],
+      "truth": [
+       "oauth2",
+       "bearer_token"
+      ]
+     },
+     {
+      "app": "Binance",
+      "field": "mcp",
+      "agent": [
+       "community"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Binance",
+      "field": "verdict",
+      "agent": [
+       "build_with_caveat"
+      ],
+      "truth": [
+       "build_now"
+      ]
+     },
+     {
+      "app": "Binance",
+      "field": "blocker",
+      "agent": [
+       "region_or_kyc"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Brex",
+      "field": "auth_methods",
+      "agent": [
+       "bearer_token",
+       "oauth2"
+      ],
+      "truth": [
+       "bearer_token"
+      ]
+     },
+     {
+      "app": "Brex",
+      "field": "mcp",
+      "agent": [
+       "official"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Brex",
+      "field": "blocker",
+      "agent": [
+       "partner_program"
+      ],
+      "truth": [
+       "admin_install"
+      ]
+     },
+     {
+      "app": "Consensus",
+      "field": "auth_methods",
+      "agent": [
+       "api_key",
+       "oauth2"
+      ],
+      "truth": [
+       "api_key"
+      ]
+     },
+     {
+      "app": "Consensus",
+      "field": "access",
+      "agent": [
+       "paid_plan"
+      ],
+      "truth": [
+       "free_self_serve"
+      ]
+     },
+     {
+      "app": "Consensus",
+      "field": "api_styles",
+      "agent": [
+       "rest",
+       "rpc"
+      ],
+      "truth": [
+       "rest"
+      ]
+     },
+     {
+      "app": "Consensus",
+      "field": "verdict",
+      "agent": [
+       "build_with_caveat"
+      ],
+      "truth": [
+       "build_now"
+      ]
+     },
+     {
+      "app": "Consensus",
+      "field": "blocker",
+      "agent": [
+       "paid_plan"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "higgsfield",
+      "field": "auth_methods",
+      "agent": [
+       "api_key",
+       "oauth2"
+      ],
+      "truth": [
+       "api_key"
+      ]
+     }
+    ],
+    "apps_without_profile": []
+   },
+   "after": {
+    "accuracy": 0.842,
+    "fields_checked": 120,
+    "apps_checked": 20,
+    "by_field": {
+     "auth_methods": 0.8,
+     "access": 1.0,
+     "api_styles": 1.0,
+     "mcp": 0.6,
+     "verdict": 0.85,
+     "blocker": 0.8
+    },
+    "misses": [
+     {
+      "app": "Pipedrive",
+      "field": "verdict",
+      "agent": [
+       "build_with_caveat"
+      ],
+      "truth": [
+       "build_now"
+      ]
+     },
+     {
+      "app": "Pipedrive",
+      "field": "blocker",
+      "agent": [
+       "app_review"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Twenty",
+      "field": "mcp",
+      "agent": [
+       "official"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Zendesk",
+      "field": "mcp",
+      "agent": [
+       "official"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "WhatsApp Business",
+      "field": "mcp",
+      "agent": [
+       "official"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Aircall",
+      "field": "mcp",
+      "agent": [
+       "official"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "systeme.io",
+      "field": "mcp",
+      "agent": [
+       "official"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "systeme.io",
+      "field": "verdict",
+      "agent": [
+       "build_with_caveat"
+      ],
+      "truth": [
+       "build_now"
+      ]
+     },
+     {
+      "app": "BigCommerce",
+      "field": "auth_methods",
+      "agent": [
+       "oauth2",
+       "api_key"
+      ],
+      "truth": [
+       "oauth2",
+       "bearer_token"
+      ]
+     },
+     {
+      "app": "Salesforce Commerce Cloud",
+      "field": "mcp",
+      "agent": [
+       "official"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Salesforce Commerce Cloud",
+      "field": "blocker",
+      "agent": [
+       "partner_program"
+      ],
+      "truth": [
+       "paid_plan"
+      ]
+     },
+     {
+      "app": "Sentry",
+      "field": "auth_methods",
+      "agent": [
+       "api_key",
+       "oauth2"
+      ],
+      "truth": [
+       "oauth2",
+       "bearer_token"
+      ]
+     },
+     {
+      "app": "Binance",
+      "field": "mcp",
+      "agent": [
+       "community"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Binance",
+      "field": "verdict",
+      "agent": [
+       "build_with_caveat"
+      ],
+      "truth": [
+       "build_now"
+      ]
+     },
+     {
+      "app": "Binance",
+      "field": "blocker",
+      "agent": [
+       "region_or_kyc"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Brex",
+      "field": "auth_methods",
+      "agent": [
+       "bearer_token",
+       "oauth2"
+      ],
+      "truth": [
+       "bearer_token"
+      ]
+     },
+     {
+      "app": "Brex",
+      "field": "mcp",
+      "agent": [
+       "official"
+      ],
+      "truth": [
+       "none"
+      ]
+     },
+     {
+      "app": "Brex",
+      "field": "blocker",
+      "agent": [
+       "partner_program"
+      ],
+      "truth": [
+       "admin_install"
+      ]
+     },
+     {
+      "app": "Consensus",
+      "field": "auth_methods",
+      "agent": [
+       "api_key",
+       "oauth2"
+      ],
+      "truth": [
+       "api_key"
+      ]
+     }
+    ]
+   },
+   "tally": {
+    "agent": 11,
+    "neither": 2,
+    "reference": 11,
+    "unclear": 6
+   },
+   "corrected": 11,
+   "rulings": [
+    {
+     "item": 1,
+     "app": "Pipedrive",
+     "field": "verdict",
+     "winner": "agent",
+     "source": "https://pipedrive.readme.io/docs/marketplace-app-approval-process",
+     "quote": "Each new public app submitted to the Pipedrive Marketplace has to pass our approval process",
+     "note": "Public apps need marketplace review, so a caveat applies; not build_now."
+    },
+    {
+     "item": 2,
+     "app": "Pipedrive",
+     "field": "blocker",
+     "winner": "agent",
+     "source": "https://pipedrive.readme.io/docs/marketplace-app-approval-process",
+     "quote": "Each new public app submitted to the Pipedrive Marketplace has to pass our approval process",
+     "note": "app_review is the blocker for a public multi-user app."
+    },
+    {
+     "item": 3,
+     "app": "Twenty",
+     "field": "mcp",
+     "winner": "agent",
+     "source": "https://docs.twenty.com/user-guide/ai/capabilities/mcp",
+     "quote": "Twenty exposes an MCP server so that AI assistants",
+     "note": "Vendor docs document a Twenty-hosted MCP server."
+    },
+    {
+     "item": 4,
+     "app": "Zendesk",
+     "field": "mcp",
+     "winner": "neither",
+     "source": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+     "quote": "Zendesk Bridge provides a way to establish governed connections between the Zendesk MCP Server",
+     "note": "Zendesk publishes its own MCP server, so official, not none or community."
+    },
+    {
+     "item": 5,
+     "app": "Zendesk",
+     "field": "blocker",
+     "winner": "reference",
+     "source": "https://developer.zendesk.com/documentation/marketplace/",
+     "quote": "Use global OAuth access tokens for authentication to authenticate Zendesk API requests.",
+     "note": "Multi-customer apps must use global OAuth, obtained via Marketplace registration/submission and the partner program; docs do not name a paid plan as the gate."
+    },
+    {
+     "item": 6,
+     "app": "Intercom",
+     "field": "auth_methods",
+     "winner": "reference",
+     "source": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+     "quote": "OAuth is for if you're building a public app that accesses other people's Intercom data.",
+     "note": "Intercom offers OAuth and a user-generated Access Token (personal token, api_key); judged against the field definition. Moderate confidence."
+    },
+    {
+     "item": 7,
+     "app": "WhatsApp Business",
+     "field": "mcp",
+     "winner": "agent",
+     "source": "https://developers.facebook.com/documentation/mcp/whatsapp-business-tools-mcp",
+     "quote": "https://mcp.facebook.com/whatsapp_business_tools",
+     "note": "Meta hosts an official WhatsApp Business Tools MCP (beta)."
+    },
+    {
+     "item": 8,
+     "app": "Aircall",
+     "field": "mcp",
+     "winner": "neither",
+     "source": "https://support.aircall.io/en-gb/articles/40743220972573",
+     "quote": "AI assistants such as Claude or ChatGPT connect to Aircall and read your call data",
+     "note": "Aircall help center documents an official Aircall MCP (Beta); an older developer FAQ says no MCP server, but the newer help center supersedes it. The help page renders via JS."
+    },
+    {
+     "item": 9,
+     "app": "systeme.io",
+     "field": "mcp",
+     "winner": "agent",
+     "source": "https://help.systeme.io/category/11216-model-context-protocol-mcp",
+     "quote": "How to use the systeme.io MCP server (Model Context Protocol)",
+     "note": "Vendor help center has a dedicated MCP category with official MCP-key guides for ChatGPT and Claude; article bodies did not render."
+    },
+    {
+     "item": 10,
+     "app": "systeme.io",
+     "field": "verdict",
+     "winner": "unclear",
+     "source": "",
+     "quote": "",
+     "note": "Could not load systeme.io API/access docs to judge caveat vs build_now."
+    },
+    {
+     "item": 11,
+     "app": "BigCommerce",
+     "field": "auth_methods",
+     "winner": "agent",
+     "source": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+     "quote": "Merchants generate single-store API credentials when they create API accounts in their store control panel",
+     "note": "OAuth-based accounts plus merchant-generated store-level credentials fit oauth2 + api_key; no bot/system token flow described."
+    },
+    {
+     "item": 12,
+     "app": "BigCommerce",
+     "field": "access",
+     "winner": "reference",
+     "source": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
+     "quote": "Sandbox stores are intended for developing and testing apps.",
+     "note": "Free partner sandbox via Partner Portal, not trial-limited; docs do not state price explicitly."
+    },
+    {
+     "item": 13,
+     "app": "BigCommerce",
+     "field": "verdict",
+     "winner": "reference",
+     "source": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
+     "quote": "Sandbox stores are intended for developing and testing apps.",
+     "note": "Sandbox plus self-created OAuth API accounts and app-level credentials support build_now; weak evidence."
+    },
+    {
+     "item": 14,
+     "app": "BigCommerce",
+     "field": "blocker",
+     "winner": "reference",
+     "source": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
+     "quote": "Sandbox stores are intended for developing and testing apps.",
+     "note": "No paid plan required for dev work per sandbox docs; weak evidence."
+    },
+    {
+     "item": 15,
+     "app": "Salesforce Commerce Cloud",
+     "field": "mcp",
+     "winner": "unclear",
+     "source": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/agentic-mcp-shopper-tools-quick-start.html",
+     "quote": "The B2C Commerce MCP Service is a fully-hosted service for linking an AI agent to real-time B2C Commerce data access.",
+     "note": "Vendor-hosted MCP service (pilot); vendor also publishes a B2C DX MCP server."
+    },
+    {
+     "item": 16,
+     "app": "Salesforce Commerce Cloud",
+     "field": "blocker",
+     "winner": "unclear",
+     "source": "",
+     "quote": "",
+     "note": "Vendor docs viewed do not state whether access is paid-plan or partner-gated."
+    },
+    {
+     "item": 17,
+     "app": "Ahrefs",
+     "field": "auth_methods",
+     "winner": "reference",
+     "source": "https://docs.ahrefs.com/api/docs/introduction",
+     "quote": "To send requests to Ahrefs API, you'll need an API key.",
+     "note": "API v3 documents only API keys; no OAuth."
+    },
+    {
+     "item": 18,
+     "app": "Sentry",
+     "field": "auth_methods",
+     "winner": "agent",
+     "source": "https://docs.sentry.io/api/auth/",
+     "quote": "These auth tokens can be created within Sentry on the \"User settings\" page (User settings > Personal Tokens) and assigned specific scopes.",
+     "note": "User-generated personal tokens (api_key) plus OAuth2 for third-party apps."
+    },
+    {
+     "item": 19,
+     "app": "Binance",
+     "field": "mcp",
+     "winner": "unclear",
+     "source": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic",
+     "quote": "Connect your AI agent to Binance with a single URL.",
+     "note": "Binance documents its own MCP server operated by Binance's AI team, so official; page body did not render in the browser, text read from the page's markdown source."
+    },
+    {
+     "item": 20,
+     "app": "Binance",
+     "field": "verdict",
+     "winner": "unclear",
+     "source": "https://developers.binance.com/en/docs/products/login/introduction",
+     "quote": "Binance Login(Oauth2.0), is only provided to close ecosystem partners now.",
+     "note": "OAuth is partner-only; users can still connect through their own API keys, so build with caveat."
+    },
+    {
+     "item": 21,
+     "app": "Binance",
+     "field": "blocker",
+     "winner": "unclear",
+     "source": "",
+     "quote": "",
+     "note": "No vendor page found that states a region or KYC gate or its absence; OAuth is partner-gated, which would point to partner_program."
+    },
+    {
+     "item": 22,
+     "app": "Brex",
+     "field": "auth_methods",
+     "winner": "agent",
+     "source": "https://developer.brex.com/guides/partner_authentication",
+     "quote": "you will implement the Authorization Code Grant, which implements a web-based redirection flow to request permission from the Brex client to access their account.",
+     "note": "User tokens (bearer) plus OAuth2 for partners."
+    },
+    {
+     "item": 23,
+     "app": "Brex",
+     "field": "mcp",
+     "winner": "agent",
+     "source": "https://developer.brex.com/docs/mcp",
+     "quote": "The Brex MCP server lets AI assistants interact directly with your Brex account",
+     "note": "Vendor-hosted MCP at api.brex.com/mcp (beta)."
+    },
+    {
+     "item": 24,
+     "app": "Brex",
+     "field": "blocker",
+     "winner": "agent",
+     "source": "https://developer.brex.com/guides/partner_authentication",
+     "quote": "Please contact our developer support team to be issued a client ID and client secret for partner authentication.",
+     "note": "OAuth for other users' accounts needs partner credentials from Brex."
+    },
+    {
+     "item": 25,
+     "app": "Consensus",
+     "field": "auth_methods",
+     "winner": "agent",
+     "source": "https://docs.consensus.app/consensus-mcp",
+     "quote": "OAuth login is only supported for streamable HTTP servers (Codex)",
+     "note": "REST API uses x-api-key; the vendor MCP connects by OAuth for most clients, so both api_key and oauth2."
+    },
+    {
+     "item": 26,
+     "app": "Consensus",
+     "field": "access",
+     "winner": "reference",
+     "source": "https://docs.consensus.app/api-get-started",
+     "quote": "Every plan includes API access, and the Free plan includes 30 calls a month.",
+     "note": "Free account creates an API key in the dashboard."
+    },
+    {
+     "item": 27,
+     "app": "Consensus",
+     "field": "api_styles",
+     "winner": "reference",
+     "source": "https://docs.consensus.app/api-get-started",
+     "quote": "with the Consensus REST API",
+     "note": "Docs describe a REST API only."
+    },
+    {
+     "item": 28,
+     "app": "Consensus",
+     "field": "verdict",
+     "winner": "reference",
+     "source": "https://docs.consensus.app/api-get-started",
+     "quote": "Every plan includes API access, and the Free plan includes 30 calls a month.",
+     "note": "Free self-serve keys, no approval; call quota is low but no gate."
+    },
+    {
+     "item": 29,
+     "app": "Consensus",
+     "field": "blocker",
+     "winner": "reference",
+     "source": "https://docs.consensus.app/api-get-started",
+     "quote": "Every plan includes API access, and the Free plan includes 30 calls a month.",
+     "note": "No paid plan required to get API access."
+    },
+    {
+     "item": 30,
+     "app": "higgsfield",
+     "field": "auth_methods",
+     "winner": "reference",
+     "source": "https://docs.higgsfield.ai/docs/authentication",
+     "quote": "Authorization: Key YOUR_KEY_ID:YOUR_KEY_SECRET",
+     "note": "Only key ID and secret credentials documented; no OAuth."
+    }
+   ]
+  },
   "hand_checks": [
    {
     "app": "HubSpot",

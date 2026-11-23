@@ -14,11 +14,11 @@
     "rest"
   ],
   "api_breadth": "broad",
-  "mcp": "community",
-  "mcp_url": "https://github.com/reminia/zendesk-mcp-server",
+  "mcp": "official",
+  "mcp_url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
   "verdict": "build_with_caveat",
-  "blocker": "paid_plan",
-  "blocker_note": "No permanent free tier; end users need a paid Zendesk plan, and a developer needs a trial or sponsored account.",
+  "blocker": "app_review",
+  "blocker_note": "Multi-customer apps must use global OAuth, obtained via Marketplace registration/submission and the partner program; docs do not name a paid plan as the gate.",
   "confidence": "medium",
   "notes": "Zendesk docs index (developer.zendesk.com/llms.txt) lists no general ticketing MCP server; a third-party blog (Sept 2026) says the only first-party one is a customer-facing ChatGPT channel EAP, so mcp stays community. Quote for api_styles is auth-page only; REST breadth inferred from the API reference. Auth page marks API tokens deprecated and asks existing customers to migrate to OAuth.",
   "evidence": [
@@ -43,19 +43,14 @@
       "quote": "A Zendesk Support account with agent or admin access."
     },
     {
-      "field": "mcp",
-      "url": "https://raw.githubusercontent.com/reminia/zendesk-mcp-server/main/README.md",
-      "quote": "A Model Context Protocol server for Zendesk."
-    },
-    {
-      "field": "mcp",
-      "url": "https://tldv.io/blog/zendesk-mcp/",
-      "quote": "So, as of 3 September 2026, the general-purpose Zendesk MCP server does not appear on Zendesk’s early access programs page."
-    },
-    {
       "field": "api_styles",
       "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
       "quote": "Basic authentication is used for API tokens."
+    },
+    {
+      "field": "mcp",
+      "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+      "quote": "Zendesk Bridge provides a way to establish governed connections between the Zendesk MCP Server"
     }
   ],
   "review": [
@@ -64,6 +59,18 @@
       "from": "tldv blog quote about a first-party MCP launch",
       "to": "GitHub README quote for the community server",
       "reason": "The old quote described a customer-facing ChatGPT server and did not support the community-server claim; the README states the server exists."
+    },
+    {
+      "field": "mcp",
+      "from": "community",
+      "to": "official",
+      "reason": "Independent browser check disagreed; a blind browser ruling backed it. Zendesk publishes its own MCP server, so official, not none or community."
+    },
+    {
+      "field": "blocker",
+      "from": "paid_plan",
+      "to": "app_review",
+      "reason": "Independent browser check disagreed; a blind browser ruling backed it. Multi-customer apps must use global OAuth, obtained via Marketplace registration/submission and the partner program; docs do not name a paid plan as the gate."
     }
   ]
 }

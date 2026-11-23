@@ -1,0 +1,27 @@
+{
+ "app_id": 83,
+ "app": "Binance",
+ "auth_methods": [
+  "api_key",
+  "other"
+ ],
+ "access": [
+  "free_self_serve"
+ ],
+ "api_styles": [
+  "rest"
+ ],
+ "mcp": [
+  "none"
+ ],
+ "verdict": [
+  "build_now"
+ ],
+ "blocker": [
+  "none"
+ ],
+ "sources": [
+  "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md"
+ ],
+ "note": "developers.binance.com renders an empty body in the browser for every docs page, including the Agent Native page, llms.txt and the spot REST page; I read Binance's own spot-api-docs repo text instead. It shows X-MBX-APIKEY header plus HMAC, RSA or Ed25519 signed requests. REST only was read; websocket/FIX not confirmed here. MCP: could not check (Agent Native page empty), so none means not found. Account sign-up, KYC and regional limits were not readable, so blocker none is unverified."
+}

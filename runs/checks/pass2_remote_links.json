@@ -414,36 +414,15 @@
  },
  {
   "app_id": 11,
-  "url": "https://raw.githubusercontent.com/reminia/zendesk-mcp-server/main/README.md",
-  "quote": "A Model Context Protocol server for Zendesk.",
-  "code": 200,
-  "found": true
- },
- {
-  "app_id": 11,
-  "url": "https://tldv.io/blog/zendesk-mcp/",
-  "quote": "So, as of 3 September 2026, the general-purpose Zendesk MCP server does not appear on Zendesk\u2019s early access programs page.",
-  "code": 200,
-  "found": true
- },
- {
-  "app_id": 11,
   "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
   "quote": "Basic authentication is used for API tokens.",
   "code": 200,
   "found": true
  },
  {
-  "app_id": 12,
-  "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
-  "quote": "An Access Token is for if you're using the API to access data in your own Intercom workspace, in other words, building a private app.",
-  "code": 200,
-  "found": true
- },
- {
-  "app_id": 12,
-  "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
-  "quote": "OAuth is for if you're building a public app that accesses other people's Intercom data.",
+  "app_id": 11,
+  "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+  "quote": "Zendesk Bridge provides a way to establish governed connections between the Zendesk MCP Server",
   "code": 200,
   "found": true
  },
@@ -472,6 +451,13 @@
   "app_id": 12,
   "url": "https://developers.intercom.com/docs/guides/mcp",
   "quote": "The Intercom MCP Server provides 16 tools for interacting with the Intercom API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 12,
+  "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+  "quote": "OAuth is for if you're building a public app that accesses other people's Intercom data.",
   "code": 200,
   "found": true
  },
@@ -1086,15 +1072,8 @@
  },
  {
   "app_id": 29,
-  "url": "https://developer.aircall.io/docs/mcp-faqs.md",
-  "quote": "As of this writting we don't offer an MCP servier",
-  "code": 200,
-  "found": true
- },
- {
-  "app_id": 29,
-  "url": "https://github.com/themobilefirstco/aircall-mcp-server",
-  "quote": "Unofficial MCP server for Aircall by Allo - 73 tools for calls, contacts, SMS, users, teams & AI insights",
+  "url": "https://support.aircall.io/en-gb/articles/40743220972573",
+  "quote": "AI assistants such as Claude or ChatGPT connect to Aircall and read your call data",
   "code": 200,
   "found": true
  },
@@ -1612,20 +1591,6 @@
  {
   "app_id": 43,
   "url": "https://docs.bigcommerce.com/docs/start/authentication",
-  "quote": "Merchants generate single-store API credentials when they create API accounts in their store control panel",
-  "code": 200,
-  "found": true
- },
- {
-  "app_id": 43,
-  "url": "https://docs.bigcommerce.com/docs/start/about/sandboxes",
-  "quote": "To create a sandbox store, complete the following steps: Navigate to the BigCommerce Partner Portal and sign in using your credentials.",
-  "code": 200,
-  "found": true
- },
- {
-  "app_id": 43,
-  "url": "https://docs.bigcommerce.com/docs/start/authentication",
   "quote": "Most of our REST endpoints and GraphQL Admin API endpoints use the X-Auth-Token header to authenticate to BigCommerce servers.",
   "code": 200,
   "found": true
@@ -1641,6 +1606,13 @@
   "app_id": 43,
   "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
   "quote": "Agents connect to https://api.bigcommerce.com/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 43,
+  "url": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
+  "quote": "Sandbox stores are intended for developing and testing apps.",
   "code": 200,
   "found": true
  },
@@ -2003,20 +1975,6 @@
  },
  {
   "app_id": 53,
-  "url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management.md",
-  "quote": "You'll need an API key to send requests via Ahrefs API v3.",
-  "code": 200,
-  "found": true
- },
- {
-  "app_id": 53,
-  "url": "https://docs.ahrefs.com/mcp/docs/claude-code.md",
-  "quote": "Login to Ahrefs account, select workspace and click \"Allow\"",
-  "code": 200,
-  "found": true
- },
- {
-  "app_id": 53,
   "url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
   "quote": "Users on any paid plan can test Ahrefs API by running a limited set of free test queries.",
   "code": 200,
@@ -2040,6 +1998,13 @@
   "app_id": 53,
   "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
   "quote": "Ahrefs provides a hosted MCP server that allows users with a Lite plan or higher to connect their Ahrefs account to supported AI tools.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 53,
+  "url": "https://docs.ahrefs.com/api/docs/introduction",
+  "quote": "To send requests to Ahrefs API, you'll need an API key.",
   "code": 200,
   "found": true
  },
@@ -3201,7 +3166,7 @@
  {
   "app_id": 85,
   "url": "https://www.ipayx.ai/.well-known/mcp.json",
-  "quote": "full_forensic_fx_report requires a Bearer API key from https://www.ipayx.ai/developers",
+  "quote": "API keys are optional. Transaction audits and forensic reports share 3 free calls per IP per calendar month. Valid Bearer API keys retain existing access.",
   "code": 200,
   "found": true
  },
@@ -3550,20 +3515,6 @@
  },
  {
   "app_id": 94,
-  "url": "https://consensus.app/.well-known/pricing.md",
-  "quote": "Optional access to the Consensus Search API (available upon approval, rate limited",
-  "code": 200,
-  "found": true
- },
- {
-  "app_id": 94,
-  "url": "https://consensus.app/llms-full.txt",
-  "quote": "The REST API is the canonical machine surface for organizations.",
-  "code": 200,
-  "found": true
- },
- {
-  "app_id": 94,
   "url": "https://consensus.app/llms-full.txt",
   "quote": "Endpoint: https://mcp.consensus.app/mcp",
   "code": 200,
@@ -3573,6 +3524,20 @@
   "app_id": 94,
   "url": "https://consensus.app/llms-full.txt",
   "quote": "The Model Context Protocol server is the recommended surface for any LLM client",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 94,
+  "url": "https://docs.consensus.app/api-get-started",
+  "quote": "Every plan includes API access, and the Free plan includes 30 calls a month.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 94,
+  "url": "https://docs.consensus.app/api-get-started",
+  "quote": "with the Consensus REST API",
   "code": 200,
   "found": true
  },
@@ -3648,13 +3613,6 @@
  },
  {
   "app_id": 97,
-  "url": "https://docs.higgsfield.ai/docs/authentication.md",
-  "quote": "Each credential consists of a key ID and a secret.",
-  "code": 200,
-  "found": true
- },
- {
-  "app_id": 97,
   "url": "https://docs.higgsfield.ai/docs/concepts/billing-and-retention.md",
   "quote": "Higgsfield charges successful generation requests to your account balance.",
   "code": 200,
@@ -3678,6 +3636,13 @@
   "app_id": 97,
   "url": "https://higgsfield.ai/mcp",
   "quote": "Generate Images & Videos in Claude with Higgsfield",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 97,
+  "url": "https://docs.higgsfield.ai/docs/authentication",
+  "quote": "Authorization: Key YOUR_KEY_ID:YOUR_KEY_SECRET",
   "code": 200,
   "found": true
  },

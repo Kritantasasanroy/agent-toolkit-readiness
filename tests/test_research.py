@@ -19,6 +19,7 @@ from research.adjudication import Decider, Disputes, Winner
 from research.__main__ import main
 from research.composio import CatalogError, ComposioCatalog, Coverage, Match, Toolkit
 from research.handcheck import HandCheck, HandCheckError, Scorecard
+from research.independent import IndependentReview
 from research.mcp_scope import McpScopes, Scope, ScopeCheck, ScopeFinding
 from research.links import LinkCheck, LinkReport, Page, PageStatus, QuoteStatus
 from research.profile import Access, ApiStyle, AuthMethod, Doc, Field, Profile, ProfileError
@@ -498,6 +499,37 @@ class ScopeFileTest(unittest.TestCase):
             (directory / "5.json").write_text(json.dumps(doc))
             checks.write_text(json.dumps([ScopeCheck(5, QuoteStatus.FOUND, False).to_json()]))
             self.assertEqual(McpScopes.load(directory, checks).effective(), {5: Scope.ACCOUNT})
+
+
+class IndependentReviewTest(unittest.TestCase):
+    def write(self, directory: Path, rows: Dict[str, object]) -> None:
+        for name, rows_ in rows.items():
+            (directory / name).write_text(json.dumps(rows_))
+
+    def test_a_ruling_counts_only_when_its_quote_was_found_and_maps_back_to_whose_answer_it_backs(self) -> None:
+        key = [{"item": 1, "app_id": 5, "app": "X", "field": "mcp", "A_is": "independent"},
+               {"item": 2, "app_id": 5, "app": "X", "field": "access", "A_is": "pipeline"},
+               {"item": 3, "app_id": 6, "app": "Y", "field": "mcp", "A_is": "pipeline"}]
+        ruling = {"source": "https://x.io", "quote": "q", "note": "n"}
+        rulings = [dict(ruling, item=1, ruling="A"), dict(ruling, item=2, ruling="A"), dict(ruling, item=3, ruling="B")]
+        quotes = [{"item": 1, "local": "found", "remote": False}, {"item": 2, "local": "missing", "remote": True},
+                  {"item": 3, "local": "missing", "remote": False}]
+        with tempfile.TemporaryDirectory() as tmp:
+            directory = Path(tmp)
+            self.write(directory, {"independent_key.json": key, "independent_rulings_0.json": rulings,
+                                   "independent_quotes.json": quotes})
+            review = IndependentReview.load(directory)
+        self.assertEqual([i.winner.value for i in review.items], ["reference", "agent", "unclear"])
+        self.assertEqual(review.tally(), {"reference": 1, "agent": 1, "unclear": 1})
+        self.assertEqual([i.pipeline_stands for i in review.items], [False, True, False])
+
+    def test_rulings_must_cover_exactly_the_keyed_items(self) -> None:
+        key = [{"item": 1, "app_id": 5, "app": "X", "field": "mcp", "A_is": "pipeline"}]
+        with tempfile.TemporaryDirectory() as tmp:
+            directory = Path(tmp)
+            self.write(directory, {"independent_key.json": key, "independent_rulings_0.json": []})
+            with self.assertRaisesRegex(ProfileError, "rulings cover"):
+                IndependentReview.load(directory)
 
 
 class CatalogTest(unittest.TestCase):

@@ -1,0 +1,28 @@
+{
+ "app_id": 29,
+ "app": "Aircall",
+ "auth_methods": [
+  "oauth2",
+  "basic"
+ ],
+ "access": [
+  "paid_plan"
+ ],
+ "api_styles": [
+  "rest"
+ ],
+ "mcp": [
+  "none"
+ ],
+ "verdict": [
+  "build_with_caveat"
+ ],
+ "blocker": [
+  "paid_plan"
+ ],
+ "sources": [
+  "https://developer.aircall.io/api-references/",
+  "https://aircall.io/pricing/"
+ ],
+ "note": "Basic Auth (api_id/api_token from company Settings > API Keys) for customers; OAuth2 for Technology Partners needs client_id/secret requested from Aircall via a form (vendor approval). No free plan seen on pricing page (Essentials/Professional/Enterprise; 'Get free access' CTA suggests a trial, terms not read). No MCP page found in the API docs read; no dedicated MCP search done."
+}

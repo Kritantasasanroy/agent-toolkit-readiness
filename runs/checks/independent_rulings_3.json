@@ -1,0 +1,8 @@
+[
+{"item":25,"ruling":"B","source":"https://docs.consensus.app/consensus-mcp","quote":"OAuth login is only supported for streamable HTTP servers (Codex)","note":"REST API uses x-api-key; the vendor MCP connects by OAuth for most clients, so both api_key and oauth2."},
+{"item":26,"ruling":"A","source":"https://docs.consensus.app/api-get-started","quote":"Every plan includes API access, and the Free plan includes 30 calls a month.","note":"Free account creates an API key in the dashboard."},
+{"item":27,"ruling":"B","source":"https://docs.consensus.app/api-get-started","quote":"with the Consensus REST API","note":"Docs describe a REST API only."},
+{"item":28,"ruling":"A","source":"https://docs.consensus.app/api-get-started","quote":"Every plan includes API access, and the Free plan includes 30 calls a month.","note":"Free self-serve keys, no approval; call quota is low but no gate."},
+{"item":29,"ruling":"A","source":"https://docs.consensus.app/api-get-started","quote":"Every plan includes API access, and the Free plan includes 30 calls a month.","note":"No paid plan required to get API access."},
+{"item":30,"ruling":"B","source":"https://docs.higgsfield.ai/docs/authentication","quote":"Authorization: Key YOUR_KEY_ID:YOUR_KEY_SECRET","note":"Only key ID and secret credentials documented; no OAuth."}
+]

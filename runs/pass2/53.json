@@ -4,8 +4,7 @@
   "category": "Data, SEO and Scraping",
   "summary": "SEO toolset with API v3 and a hosted MCP server for backlink, keyword and site data.",
   "auth_methods": [
-    "api_key",
-    "oauth2"
+    "api_key"
   ],
   "access": "paid_plan",
   "access_note": "Direct API v3 and the remote MCP server need a paid plan from Lite; only workspace owners/admins can create keys.",
@@ -19,16 +18,6 @@
   "blocker": "paid_plan",
   "blocker_note": "Paid Ahrefs subscription required; keys limited to workspace owners/admins; API units are consumed from the plan.",
   "evidence": [
-    {
-      "field": "auth_methods",
-      "url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management.md",
-      "quote": "You'll need an API key to send requests via Ahrefs API v3."
-    },
-    {
-      "field": "auth_methods",
-      "url": "https://docs.ahrefs.com/mcp/docs/claude-code.md",
-      "quote": "Login to Ahrefs account, select workspace and click \"Allow\""
-    },
     {
       "field": "access",
       "url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
@@ -48,6 +37,11 @@
       "field": "mcp",
       "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
       "quote": "Ahrefs provides a hosted MCP server that allows users with a Lite plan or higher to connect their Ahrefs account to supported AI tools."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.ahrefs.com/api/docs/introduction",
+      "quote": "To send requests to Ahrefs API, you'll need an API key."
     }
   ],
   "confidence": "medium",
@@ -58,6 +52,17 @@
       "from": "mcp/access quote missing (cited introduction page returned 404 in pass 1)",
       "to": "introduction.md page now loads; quotes re-copied",
       "reason": "REST is now quoted from llms.txt; paid-plan gate quoted from the free-test-queries and MCP intro pages."
+    },
+    {
+      "field": "auth_methods",
+      "from": [
+        "api_key",
+        "oauth2"
+      ],
+      "to": [
+        "api_key"
+      ],
+      "reason": "Independent browser check disagreed; a blind browser ruling backed it. API v3 documents only API keys; no OAuth."
     }
   ]
 }

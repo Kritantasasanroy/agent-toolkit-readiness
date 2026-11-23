@@ -1,0 +1,27 @@
+{
+ "app_id": 37,
+ "app": "systeme.io",
+ "auth_methods": [
+  "api_key"
+ ],
+ "access": [
+  "free_self_serve"
+ ],
+ "api_styles": [
+  "rest"
+ ],
+ "mcp": [
+  "none"
+ ],
+ "verdict": [
+  "build_now"
+ ],
+ "blocker": [
+  "none"
+ ],
+ "sources": [
+  "https://developer.systeme.io/reference/api",
+  "https://systeme.io/pricing"
+ ],
+ "note": "Only auth is X-API-Key header, key generated in profile settings. Pricing page FAQ says a never-expiring free plan exists; docs do not say whether the Public API is available on the free plan. No OAuth. No MCP found in pages read."
+}

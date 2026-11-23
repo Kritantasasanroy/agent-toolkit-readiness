@@ -1,0 +1,212 @@
+[
+ {
+  "item": 1,
+  "app_id": 3,
+  "app": "Pipedrive",
+  "field": "verdict",
+  "A_is": "independent"
+ },
+ {
+  "item": 2,
+  "app_id": 3,
+  "app": "Pipedrive",
+  "field": "blocker",
+  "A_is": "independent"
+ },
+ {
+  "item": 3,
+  "app_id": 5,
+  "app": "Twenty",
+  "field": "mcp",
+  "A_is": "independent"
+ },
+ {
+  "item": 4,
+  "app_id": 11,
+  "app": "Zendesk",
+  "field": "mcp",
+  "A_is": "independent"
+ },
+ {
+  "item": 5,
+  "app_id": 11,
+  "app": "Zendesk",
+  "field": "blocker",
+  "A_is": "pipeline"
+ },
+ {
+  "item": 6,
+  "app_id": 12,
+  "app": "Intercom",
+  "field": "auth_methods",
+  "A_is": "pipeline"
+ },
+ {
+  "item": 7,
+  "app_id": 28,
+  "app": "WhatsApp Business",
+  "field": "mcp",
+  "A_is": "independent"
+ },
+ {
+  "item": 8,
+  "app_id": 29,
+  "app": "Aircall",
+  "field": "mcp",
+  "A_is": "pipeline"
+ },
+ {
+  "item": 9,
+  "app_id": 37,
+  "app": "systeme.io",
+  "field": "mcp",
+  "A_is": "independent"
+ },
+ {
+  "item": 10,
+  "app_id": 37,
+  "app": "systeme.io",
+  "field": "verdict",
+  "A_is": "independent"
+ },
+ {
+  "item": 11,
+  "app_id": 43,
+  "app": "BigCommerce",
+  "field": "auth_methods",
+  "A_is": "pipeline"
+ },
+ {
+  "item": 12,
+  "app_id": 43,
+  "app": "BigCommerce",
+  "field": "access",
+  "A_is": "pipeline"
+ },
+ {
+  "item": 13,
+  "app_id": 43,
+  "app": "BigCommerce",
+  "field": "verdict",
+  "A_is": "pipeline"
+ },
+ {
+  "item": 14,
+  "app_id": 43,
+  "app": "BigCommerce",
+  "field": "blocker",
+  "A_is": "pipeline"
+ },
+ {
+  "item": 15,
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "field": "mcp",
+  "A_is": "pipeline"
+ },
+ {
+  "item": 16,
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "field": "blocker",
+  "A_is": "independent"
+ },
+ {
+  "item": 17,
+  "app_id": 53,
+  "app": "Ahrefs",
+  "field": "auth_methods",
+  "A_is": "independent"
+ },
+ {
+  "item": 18,
+  "app_id": 70,
+  "app": "Sentry",
+  "field": "auth_methods",
+  "A_is": "pipeline"
+ },
+ {
+  "item": 19,
+  "app_id": 83,
+  "app": "Binance",
+  "field": "mcp",
+  "A_is": "independent"
+ },
+ {
+  "item": 20,
+  "app_id": 83,
+  "app": "Binance",
+  "field": "verdict",
+  "A_is": "pipeline"
+ },
+ {
+  "item": 21,
+  "app_id": 83,
+  "app": "Binance",
+  "field": "blocker",
+  "A_is": "independent"
+ },
+ {
+  "item": 22,
+  "app_id": 88,
+  "app": "Brex",
+  "field": "auth_methods",
+  "A_is": "independent"
+ },
+ {
+  "item": 23,
+  "app_id": 88,
+  "app": "Brex",
+  "field": "mcp",
+  "A_is": "pipeline"
+ },
+ {
+  "item": 24,
+  "app_id": 88,
+  "app": "Brex",
+  "field": "blocker",
+  "A_is": "pipeline"
+ },
+ {
+  "item": 25,
+  "app_id": 94,
+  "app": "Consensus",
+  "field": "auth_methods",
+  "A_is": "independent"
+ },
+ {
+  "item": 26,
+  "app_id": 94,
+  "app": "Consensus",
+  "field": "access",
+  "A_is": "independent"
+ },
+ {
+  "item": 27,
+  "app_id": 94,
+  "app": "Consensus",
+  "field": "api_styles",
+  "A_is": "pipeline"
+ },
+ {
+  "item": 28,
+  "app_id": 94,
+  "app": "Consensus",
+  "field": "verdict",
+  "A_is": "independent"
+ },
+ {
+  "item": 29,
+  "app_id": 94,
+  "app": "Consensus",
+  "field": "blocker",
+  "A_is": "independent"
+ },
+ {
+  "item": 30,
+  "app_id": 97,
+  "app": "higgsfield",
+  "field": "auth_methods",
+  "A_is": "pipeline"
+ }
+]

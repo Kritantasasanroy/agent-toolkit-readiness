@@ -1,0 +1,589 @@
+[
+ {
+  "app_id": 3,
+  "app": "Pipedrive",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "access": [
+   "free_self_serve",
+   "free_trial"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://pipedrive.readme.io/docs/getting-started",
+   "https://pipedrive.readme.io/docs/developer-sandbox-account",
+   "https://pipedrive.readme.io/docs/marketplace-oauth-authorization",
+   "https://developers.pipedrive.com/docs/api/v1",
+   "https://www.pipedrive.com/en/pricing",
+   "https://www.pipedrive.com/en/features/mcp-server"
+  ],
+  "note": "Docs say 'create public or private apps using OAuth 2.0 and integrations via API token'. Developer sandbox account is free via a form (free_self_serve); the regular pricing page only offers 'Try it free' (trial), hence both access readings. Official MCP: Pipedrive page says it is an official connector in Claude and ChatGPT. I did not read the app approval page (404 / rate limited), so whether a public multi-tenant OAuth app needs marketplace review is unconfirmed; blocker left as none."
+ },
+ {
+  "app_id": 5,
+  "app": "Twenty",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "mcp": [
+   "none"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://docs.twenty.com/developers/introduction",
+   "https://docs.twenty.com/developers/api-and-webhooks/api.md",
+   "https://docs.twenty.com/developers/extend/oauth.md",
+   "https://docs.twenty.com/llms.txt",
+   "https://docs.twenty.com/_llms/en/developers.txt",
+   "https://docs.twenty.com/_llms/en/user-guide.txt"
+  ],
+  "note": "API key created in Settings > Developers > API, sent as 'Authorization: Bearer YOUR_API_KEY'; OAuth 2.0 (auth code + PKCE, client credentials, dynamic client registration). Core and metadata APIs in REST and GraphQL, schema generated per workspace. Access: open-source and self-hostable (Docker Compose) plus Twenty Cloud; I did not read a cloud pricing page, so the free tier/trial of the hosted product is unverified, self-host path is what supports free_self_serve. MCP: the developer and user-guide doc indexes contain no MCP page, so none; I did not check twenty.com marketing pages or GitHub."
+ },
+ {
+  "app_id": 11,
+  "app": "Zendesk",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "basic"
+  ],
+  "access": [
+   "free_trial",
+   "partner_gated"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "none"
+  ],
+  "verdict": [
+   "build_with_caveat",
+   "needs_outreach"
+  ],
+  "blocker": [
+   "app_review",
+   "partner_program"
+  ],
+  "sources": [
+   "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+   "https://developer.zendesk.com/documentation/marketplace/building-a-marketplace-app/set-up-a-global-oauth-client/",
+   "https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-trial-or-sponsored-account-for-development.md",
+   "https://developer.zendesk.com/api-reference/introduction/plan/",
+   "https://developer.zendesk.com/llms.txt"
+  ],
+  "note": "Auth: OAuth access token (local client per account), global OAuth token, and API token (marked deprecated; sent as email/token basic auth, which I did not read in detail). For an app used by multiple Zendesk customers the docs say global OAuth tokens are required and 'Zendesk doesn't allow developers to create their own global OAuth clients', so Zendesk must grant one (app_review, tied to Marketplace partner path; the exact approval/partner conditions were not read in full). Access: 'free, 14-day trial account' for anyone; non-expiring sponsored accounts only for Marketplace developer partners. API availability follows the customer's plan, so end users need a paid plan. MCP: no MCP page in developer.zendesk.com/llms.txt or the pages read; I did not check Zendesk help center, so a vendor MCP elsewhere is not ruled out. Only REST seen in reference."
+ },
+ {
+  "app_id": 12,
+  "app": "Intercom",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_now",
+   "build_with_caveat"
+  ],
+  "blocker": [
+   "none",
+   "app_review"
+  ],
+  "sources": [
+   "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+   "https://developers.intercom.com/docs/build-an-integration/getting-started",
+   "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis",
+   "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+   "https://developers.intercom.com/docs/guides/mcp"
+  ],
+  "note": "Access Token (personal token issued when you create an app in the Developer Hub) for private apps; OAuth for public apps that access other people's data. Development workspaces are free and unlimited. Official hosted MCP server, US and EU regions only (AU not supported). Two readings on verdict/blocker: the OAuth setup page mentions redirect URLs 'will go up for review when you submit your app for review', but I did not find a page stating review is mandatory before other workspaces can install, so app_review is possible but unconfirmed. Intercom API is REST; I found no GraphQL page (the guessed URL 404'd). Dev workspace limitations text was cut off before I read it."
+ },
+ {
+  "app_id": 28,
+  "app": "WhatsApp Business",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "access": [
+   "free_self_serve",
+   "partner_gated"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "none"
+  ],
+  "verdict": [
+   "build_with_caveat"
+  ],
+  "blocker": [
+   "app_review"
+  ],
+  "sources": [
+   "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+   "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens",
+   "https://developers.facebook.com/documentation/development/create-an-app/whatsapp-use-case",
+   "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview"
+  ],
+  "note": "Direct developers create a Meta app and a System User, then generate a permanent access token (bearer_token); Tech Providers serving other businesses use Business Integration System User tokens obtained via Embedded Signup (Facebook Login for Business, OAuth-like). Sign-up and test messaging are self-serve for your own account. Serving other businesses requires Business verification, App Review with video evidence and Tech Provider onboarding, hence the app_review blocker and the partner_gated reading. API is the Graph API (REST over HTTP) with webhooks; Meta also links an OpenAPI spec. No MCP page found in the WhatsApp docs I read; I did not search Meta's wider site. Per-message pricing page returned no extractable text, so cost terms are not confirmed. The URL developers.facebook.com/docs/whatsapp redirected to /documentation/business-messaging/whatsapp/..."
+ },
+ {
+  "app_id": 29,
+  "app": "Aircall",
+  "auth_methods": [
+   "oauth2",
+   "basic"
+  ],
+  "access": [
+   "paid_plan"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "none"
+  ],
+  "verdict": [
+   "build_with_caveat"
+  ],
+  "blocker": [
+   "paid_plan"
+  ],
+  "sources": [
+   "https://developer.aircall.io/api-references/",
+   "https://aircall.io/pricing/"
+  ],
+  "note": "Basic Auth (api_id/api_token from company Settings > API Keys) for customers; OAuth2 for Technology Partners needs client_id/secret requested from Aircall via a form (vendor approval). No free plan seen on pricing page (Essentials/Professional/Enterprise; 'Get free access' CTA suggests a trial, terms not read). No MCP page found in the API docs read; no dedicated MCP search done."
+ },
+ {
+  "app_id": 36,
+  "app": "Klaviyo",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://developers.klaviyo.com/en/docs/authenticate_"
+  ],
+  "note": "Private API key created in account settings for server-side calls; OAuth recommended for tech partners (listing/app marketplace). Docs sidebar and footer list a 'Klaviyo MCP server' (page itself not opened, URL not captured). Free plan not verified on a pricing page; test account guide linked ('Create a test account'). Whether OAuth apps need review before multi-tenant use not read."
+ },
+ {
+  "app_id": 37,
+  "app": "systeme.io",
+  "auth_methods": [
+   "api_key"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "none"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://developer.systeme.io/reference/api",
+   "https://systeme.io/pricing"
+  ],
+  "note": "Only auth is X-API-Key header, key generated in profile settings. Pricing page FAQ says a never-expiring free plan exists; docs do not say whether the Public API is available on the free plan. No OAuth. No MCP found in pages read."
+ },
+ {
+  "app_id": 43,
+  "app": "BigCommerce",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "mcp": [
+   "official",
+   "none"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://developer.bigcommerce.com/docs/start/authentication",
+   "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts"
+  ],
+  "note": "Store-level API accounts (client id/secret plus access token sent as X-Auth-Token), app-level OAuth accounts via Developer Portal. REST (V2/V3) and GraphQL Admin/Storefront. Sidebar lists a 'Docs MCP Server' (docs search only, not store operations), hence official+none. Docs sidebar has a 'Sandboxes' page, not opened, so free access is inferred; a store (trial/sandbox) is needed. App review for marketplace listing not read."
+ },
+ {
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "access": [
+   "partner_gated"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "none"
+  ],
+  "verdict": [
+   "needs_outreach"
+  ],
+  "blocker": [
+   "paid_plan"
+  ],
+  "sources": [
+   "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+   "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html"
+  ],
+  "note": "SCAPI Admin APIs use an API client created in Account Manager (client credentials) and Shopper APIs use SLAS clients; both require an existing B2C Commerce tenant/instance. Page text was mostly not rendered in the accessibility snapshot, so the need for a paid contract is inferred from the product, not quoted. No MCP found in pages read."
+ },
+ {
+  "app_id": 53,
+  "app": "Ahrefs",
+  "auth_methods": [
+   "api_key"
+  ],
+  "access": [
+   "paid_plan"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_with_caveat"
+  ],
+  "blocker": [
+   "paid_plan"
+  ],
+  "sources": [
+   "https://docs.ahrefs.com/en/api/docs/introduction",
+   "https://docs.ahrefs.com/en/mcp/docs/introduction"
+  ],
+  "note": "API v3 'is available on eligible paid plans'; other plans get only limited free test queries. Keys created by workspace owner/admin in Account settings. Hosted MCP for Lite plan or higher uses OAuth consent (creates a dedicated API key); 'Ahrefs Connect' OAuth 2.0 is an integration program with an application step (not read in detail). Docs home page /api rendered empty at first load and loaded after a wait."
+ },
+ {
+  "app_id": 59,
+  "app": "Waterfall.io",
+  "auth_methods": [
+   "api_key"
+  ],
+  "access": [
+   "partner_gated"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "none"
+  ],
+  "verdict": [
+   "needs_outreach"
+  ],
+  "blocker": [
+   "partner_program"
+  ],
+  "sources": [
+   "https://www.waterfall.io/",
+   "https://docs.waterfall.io/v1/introduction",
+   "https://docs.waterfall.io/v1/authentication",
+   "https://docs.waterfall.io/v1/quickstart",
+   "https://docs.waterfall.io/llms.txt"
+  ],
+  "note": "Docs say 'send your API key in the x-api-key header' and 'Contact the team for API access and pricing'; the homepage has a 'Request API key' email form and 'Book a Call', so key issuance appears vendor-mediated (no self-serve signup seen). Could also be read as free_self_serve if the form issues keys instantly; docs do not say. Account-level keys (master key and sub-keys), not per-end-user OAuth. No MCP page found in docs index (llms.txt lists only API pages; the docs mention 'Agent Skills'). Product is a single customer's data API, so it is account-scoped. All pages loaded."
+ },
+ {
+  "app_id": 65,
+  "app": "Supabase",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://supabase.com/docs/guides/api",
+   "https://supabase.com/docs/guides/integrations/build-a-supabase-oauth-integration",
+   "https://supabase.com/docs/guides/ai-tools/mcp"
+  ],
+  "note": "Management API (api.supabase.com) supports an OAuth 2.0 authorization-code flow for third-party apps (authorize and token endpoints seen) and personal access tokens; per-project Data API (PostgREST) uses project API keys from Settings > API Keys. Official hosted MCP server documented with OAuth login and manual access-token mode for CI. I did not read pricing, so free-plan availability of the Management API is inferred from there being no plan gate on the pages read; the page's 'Current limitations' section was not read (collapsed in snapshot). Also exposes GraphQL via pg_graphql in the product, not checked, so not listed."
+ },
+ {
+  "app_id": 70,
+  "app": "Sentry",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://docs.sentry.io/api/",
+   "https://docs.sentry.io/api/auth/",
+   "https://mcp.sentry.dev/",
+   "https://sentry.io/pricing/"
+  ],
+  "note": "API auth page documents OAuth 2.0 authorization code with PKCE, a device-code flow (RFC 8628) and Bearer auth tokens (internal integration / personal tokens). Pricing page shows a Free/$0 Developer plan; the page text read did not show whether the API row is included in that plan, so free API access is inferred from docs having no plan gate. Docs URL docs.sentry.io/ai/mcp/ redirected to the vendor-hosted mcp.sentry.dev (official Sentry MCP). Sentry's API is broad REST (dozens of resource groups in the reference sidebar)."
+ },
+ {
+  "app_id": 76,
+  "app": "Monday.com",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "graphql"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://developer.monday.com/api-reference/docs/authentication",
+   "https://developer.monday.com/apps/docs/oauth"
+  ],
+  "note": "Auth page: personal V2 API tokens sent in the Authorization header; 'create a free developer account to get an API token'. App OAuth flow (authorization code, scopes, bearer access tokens that do not expire, no refresh tokens) is documented. The OAuth page says an admin may need to install the app in an account (force_install_if_needed), and the app marketplace has a review checklist; I did not confirm whether review is required for multi-tenant OAuth use, so blocker could arguably be app_review or admin_install. Official platform MCP documented in the API docs sidebar (token and own-OAuth-app auth). API is GraphQL only (api.monday.com/v2)."
+ },
+ {
+  "app_id": 77,
+  "app": "ClickUp",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://developer.clickup.com/docs/authentication",
+   "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server"
+  ],
+  "note": "Personal token (pk_) from Settings > Apps; OAuth2 for apps used by others. Official MCP server on all plans, Free Forever capped at 100 MCP calls per rolling 24h. I did not open the API-availability-by-plan page, so per-plan REST limits are unchecked."
+ },
+ {
+  "app_id": 83,
+  "app": "Binance",
+  "auth_methods": [
+   "api_key",
+   "other"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "none"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md"
+  ],
+  "note": "developers.binance.com renders an empty body in the browser for every docs page, including the Agent Native page, llms.txt and the spot REST page; I read Binance's own spot-api-docs repo text instead. It shows X-MBX-APIKEY header plus HMAC, RSA or Ed25519 signed requests. REST only was read; websocket/FIX not confirmed here. MCP: could not check (Agent Native page empty), so none means not found. Account sign-up, KYC and regional limits were not readable, so blocker none is unverified."
+ },
+ {
+  "app_id": 88,
+  "app": "Brex",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "access": [
+   "admin_approval"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "none"
+  ],
+  "verdict": [
+   "build_with_caveat"
+  ],
+  "blocker": [
+   "admin_install"
+  ],
+  "sources": [
+   "https://developer.brex.com/guides/authentication"
+  ],
+  "note": "User token is created in the Brex dashboard by an account admin or card admin after accepting the developer API agreement, sent as Authorization: Bearer. Needs an existing Brex customer account. The sidebar lists Partner authentication but that page would not load (blank, Page not found), so OAuth for partners is unconfirmed. Onboarding page also would not load. No MCP page found."
+ },
+ {
+  "app_id": 94,
+  "app": "Consensus",
+  "auth_methods": [
+   "api_key"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://docs.consensus.app/api-plans-and-access",
+   "https://docs.consensus.app/api-quickstart-search",
+   "https://docs.consensus.app/consensus-mcp"
+  ],
+  "note": "REST API: x-api-key header, self-serve on every plan including Free (30 calls a month, 20 papers per request, no full text). Official MCP supports OAuth sign-in for Claude, ChatGPT and Codex, or an API key as Bearer token; the REST API itself documents only the key. Verdict is build_now for a key-based toolkit."
+ },
+ {
+  "app_id": 97,
+  "app": "higgsfield",
+  "auth_methods": [
+   "api_key"
+  ],
+  "access": [
+   "free_self_serve",
+   "paid_plan"
+  ],
+  "api_styles": [
+   "rest",
+   "cli"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_with_caveat"
+  ],
+  "blocker": [
+   "paid_plan"
+  ],
+  "sources": [
+   "https://docs.higgsfield.ai/docs/authentication",
+   "https://docs.higgsfield.ai/docs/quickstart",
+   "https://higgsfield.ai/cli"
+  ],
+  "note": "REST API uses key ID plus secret from the Higgsfield Console (Authorization: Key id:secret). Official MCP and CLI sign in through the user's Higgsfield account in the browser; the OAuth version was not stated. Generation spends account credits, but I did not read a page saying whether a free tier can use the API, hence both access readings. The billing and FAQ docs pages returned Page Not Found."
+ }
+]

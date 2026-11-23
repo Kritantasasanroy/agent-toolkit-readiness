@@ -533,24 +533,6 @@
  {
   "app_id": 11,
   "app": "Zendesk",
-  "field": "mcp",
-  "url": "https://raw.githubusercontent.com/reminia/zendesk-mcp-server/main/README.md",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
- },
- {
-  "app_id": 11,
-  "app": "Zendesk",
-  "field": "mcp",
-  "url": "https://tldv.io/blog/zendesk-mcp/",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
- },
- {
-  "app_id": 11,
-  "app": "Zendesk",
   "field": "api_styles",
   "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
   "page": "live",
@@ -558,19 +540,10 @@
   "quote": "found"
  },
  {
-  "app_id": 12,
-  "app": "Intercom",
-  "field": "auth_methods",
-  "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
- },
- {
-  "app_id": 12,
-  "app": "Intercom",
-  "field": "auth_methods",
-  "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+  "app_id": 11,
+  "app": "Zendesk",
+  "field": "mcp",
+  "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
   "page": "live",
   "http_code": 200,
   "quote": "found"
@@ -607,6 +580,15 @@
   "app": "Intercom",
   "field": "mcp",
   "url": "https://developers.intercom.com/docs/guides/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 12,
+  "app": "Intercom",
+  "field": "auth_methods",
+  "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
   "page": "live",
   "http_code": 200,
   "quote": "found"
@@ -1398,16 +1380,7 @@
   "app_id": 29,
   "app": "Aircall",
   "field": "mcp",
-  "url": "https://developer.aircall.io/docs/mcp-faqs.md",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
- },
- {
-  "app_id": 29,
-  "app": "Aircall",
-  "field": "mcp",
-  "url": "https://github.com/themobilefirstco/aircall-mcp-server",
+  "url": "https://support.aircall.io/en-gb/articles/40743220972573",
   "page": "live",
   "http_code": 200,
   "quote": "found"
@@ -2072,24 +2045,6 @@
  {
   "app_id": 43,
   "app": "BigCommerce",
-  "field": "access",
-  "url": "https://docs.bigcommerce.com/docs/start/authentication",
-  "page": "refused",
-  "http_code": 308,
-  "quote": "unchecked"
- },
- {
-  "app_id": 43,
-  "app": "BigCommerce",
-  "field": "access",
-  "url": "https://docs.bigcommerce.com/docs/start/about/sandboxes",
-  "page": "refused",
-  "http_code": 308,
-  "quote": "unchecked"
- },
- {
-  "app_id": 43,
-  "app": "BigCommerce",
   "field": "api_styles",
   "url": "https://docs.bigcommerce.com/docs/start/authentication",
   "page": "refused",
@@ -2110,6 +2065,15 @@
   "app": "BigCommerce",
   "field": "mcp",
   "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 43,
+  "app": "BigCommerce",
+  "field": "access",
+  "url": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
   "page": "live",
   "http_code": 200,
   "quote": "found"
@@ -2576,24 +2540,6 @@
  {
   "app_id": 53,
   "app": "Ahrefs",
-  "field": "auth_methods",
-  "url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management.md",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
- },
- {
-  "app_id": 53,
-  "app": "Ahrefs",
-  "field": "auth_methods",
-  "url": "https://docs.ahrefs.com/mcp/docs/claude-code.md",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
- },
- {
-  "app_id": 53,
-  "app": "Ahrefs",
   "field": "access",
   "url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
   "page": "live",
@@ -2623,6 +2569,15 @@
   "app": "Ahrefs",
   "field": "mcp",
   "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 53,
+  "app": "Ahrefs",
+  "field": "auth_methods",
+  "url": "https://docs.ahrefs.com/api/docs/introduction",
   "page": "live",
   "http_code": 200,
   "quote": "found"
@@ -3172,36 +3127,36 @@
   "app": "Supabase",
   "field": "auth_methods",
   "url": "https://supabase.com/docs/reference/api/introduction",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
+  "page": "unreachable",
+  "http_code": 0,
+  "quote": "unchecked"
  },
  {
   "app_id": 65,
   "app": "Supabase",
   "field": "auth_methods",
   "url": "https://supabase.com/docs/reference/api/introduction",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
+  "page": "unreachable",
+  "http_code": 0,
+  "quote": "unchecked"
  },
  {
   "app_id": 65,
   "app": "Supabase",
   "field": "access",
   "url": "https://supabase.com/docs/reference/api/introduction",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
+  "page": "unreachable",
+  "http_code": 0,
+  "quote": "unchecked"
  },
  {
   "app_id": 65,
   "app": "Supabase",
   "field": "api_styles",
   "url": "https://supabase.com/docs/reference/api/introduction",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
+  "page": "unreachable",
+  "http_code": 0,
+  "quote": "unchecked"
  },
  {
   "app_id": 65,
@@ -3217,9 +3172,9 @@
   "app": "Supabase",
   "field": "access",
   "url": "https://supabase.com/pricing",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
+  "page": "unreachable",
+  "http_code": 0,
+  "quote": "unchecked"
  },
  {
   "app_id": 66,
@@ -4565,38 +4520,38 @@
  {
   "app_id": 94,
   "app": "Consensus",
-  "field": "access",
-  "url": "https://consensus.app/.well-known/pricing.md",
+  "field": "mcp",
+  "url": "https://consensus.app/llms-full.txt",
   "page": "live",
   "http_code": 200,
   "quote": "found"
+ },
+ {
+  "app_id": 94,
+  "app": "Consensus",
+  "field": "mcp",
+  "url": "https://consensus.app/llms-full.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 94,
+  "app": "Consensus",
+  "field": "access",
+  "url": "https://docs.consensus.app/api-get-started",
+  "page": "refused",
+  "http_code": 403,
+  "quote": "unchecked"
  },
  {
   "app_id": 94,
   "app": "Consensus",
   "field": "api_styles",
-  "url": "https://consensus.app/llms-full.txt",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
- },
- {
-  "app_id": 94,
-  "app": "Consensus",
-  "field": "mcp",
-  "url": "https://consensus.app/llms-full.txt",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
- },
- {
-  "app_id": 94,
-  "app": "Consensus",
-  "field": "mcp",
-  "url": "https://consensus.app/llms-full.txt",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
+  "url": "https://docs.consensus.app/api-get-started",
+  "page": "refused",
+  "http_code": 403,
+  "quote": "unchecked"
  },
  {
   "app_id": 95,
@@ -4691,15 +4646,6 @@
  {
   "app_id": 97,
   "app": "higgsfield",
-  "field": "auth_methods",
-  "url": "https://docs.higgsfield.ai/docs/authentication.md",
-  "page": "live",
-  "http_code": 200,
-  "quote": "found"
- },
- {
-  "app_id": 97,
-  "app": "higgsfield",
   "field": "access",
   "url": "https://docs.higgsfield.ai/docs/concepts/billing-and-retention.md",
   "page": "live",
@@ -4729,6 +4675,15 @@
   "app": "higgsfield",
   "field": "mcp",
   "url": "https://higgsfield.ai/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 97,
+  "app": "higgsfield",
+  "field": "auth_methods",
+  "url": "https://docs.higgsfield.ai/docs/authentication",
   "page": "live",
   "http_code": 200,
   "quote": "found"

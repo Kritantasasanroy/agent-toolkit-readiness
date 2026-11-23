@@ -1,0 +1,30 @@
+{
+ "app_id": 97,
+ "app": "higgsfield",
+ "auth_methods": [
+  "api_key"
+ ],
+ "access": [
+  "free_self_serve",
+  "paid_plan"
+ ],
+ "api_styles": [
+  "rest",
+  "cli"
+ ],
+ "mcp": [
+  "official"
+ ],
+ "verdict": [
+  "build_with_caveat"
+ ],
+ "blocker": [
+  "paid_plan"
+ ],
+ "sources": [
+  "https://docs.higgsfield.ai/docs/authentication",
+  "https://docs.higgsfield.ai/docs/quickstart",
+  "https://higgsfield.ai/cli"
+ ],
+ "note": "REST API uses key ID plus secret from the Higgsfield Console (Authorization: Key id:secret). Official MCP and CLI sign in through the user's Higgsfield account in the browser; the OAuth version was not stated. Generation spends account credits, but I did not read a page saying whether a free tier can use the API, hence both access readings. The billing and FAQ docs pages returned Page Not Found."
+}

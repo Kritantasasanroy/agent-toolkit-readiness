@@ -4,8 +4,7 @@
   "category": "AI, Research and Media-native",
   "summary": "Generative AI image and video studio with a CLI, MCP server and a REST generation API.",
   "auth_methods": [
-    "api_key",
-    "oauth2"
+    "api_key"
   ],
   "access": "paid_plan",
   "access_note": "API is billed against a prepaid account balance on console.higgsfield.ai; docs show no free tier. MCP/CLI sign in through the browser and spend plan credits.",
@@ -20,11 +19,6 @@
   "blocker": "paid_plan",
   "blocker_note": "Generation is charged to a prepaid balance; no free API tier found in docs.",
   "evidence": [
-    {
-      "field": "auth_methods",
-      "url": "https://docs.higgsfield.ai/docs/authentication.md",
-      "quote": "Each credential consists of a key ID and a secret."
-    },
     {
       "field": "access",
       "url": "https://docs.higgsfield.ai/docs/concepts/billing-and-retention.md",
@@ -44,6 +38,11 @@
       "field": "mcp",
       "url": "https://higgsfield.ai/mcp",
       "quote": "Generate Images & Videos in Claude with Higgsfield"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.higgsfield.ai/docs/authentication",
+      "quote": "Authorization: Key YOUR_KEY_ID:YOUR_KEY_SECRET"
     }
   ],
   "confidence": "medium",
@@ -72,6 +71,17 @@
       "from": "pass1 quotes",
       "to": "replaced",
       "reason": "Pass 1 api_styles quote missing and the other quotes did not support the claims; replaced."
+    },
+    {
+      "field": "auth_methods",
+      "from": [
+        "api_key",
+        "oauth2"
+      ],
+      "to": [
+        "api_key"
+      ],
+      "reason": "Independent browser check disagreed; a blind browser ruling backed it. Only key ID and secret credentials documented; no OAuth."
     }
   ]
 }

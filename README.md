@@ -34,6 +34,10 @@ data/apps.csv ──> research agent ──> runs/pass1/<id>.json
   docs support two readings, both are accepted and the note says why.
 - `agent/prompts/mcp_scope.md` is a third brief. For each official MCP server it records whether the
   server can reach a customer's account or only serves docs, public data or tooling, with a quote.
+- `data/independent_checks.json` is a second reference: 20 more apps (seed 2027) researched blind in a browser
+  by agents that never saw the pipeline's answers, with `agent/prompts/independent_check.md`. Every disagreement went to a
+  browser agent for a ruling (`agent/prompts/adjudicate_browser.md`), and `runs/checks/pass2_browser_links.json` holds the
+  browser pass of the evidence check (`research/browser_check.js`).
 - Composio is used as a check, not as the research engine. `research composio` reads its toolkits
   API for coverage and a second opinion on auth methods, and `research remote` re-runs the
   evidence check inside a Composio sandbox. Both read `COMPOSIO_API_KEY` from the environment.
@@ -51,6 +55,7 @@ python3 -m research score runs/pass2 data/handchecks.json
 COMPOSIO_API_KEY=... python3 -m research composio            # refresh the Composio catalog snapshot (optional)
 COMPOSIO_API_KEY=... python3 -m research remote runs/pass2   # re-run the evidence check in a Composio sandbox (optional)
 COMPOSIO_API_KEY=... python3 -m research scope               # check the quotes behind the MCP scope answers (optional)
+COMPOSIO_API_KEY=... python3 -m research review              # check the quotes behind the independent-sample rulings (optional)
 python3 -m research site                         # builds site/index.html and site/data.json
 python3 -m unittest discover -s tests -t .
 ```
@@ -65,7 +70,7 @@ not care which model wrote the file, only whether it holds up.
 
 ## What it got wrong
 
-The case study lists every miss. The ones to know about: the reference sample was written with AI
-help, so it is a sanity check and not independent proof. The "official MCP" count includes
+The case study lists every miss. The ones to know about: the first reference sample was written with AI
+help and flatters the pipeline (95.8%). On a second sample researched blind in a browser the pipeline scores 72.8% for pass 1 and 75.0% for pass 2. The "official MCP" count includes
 servers that serve only docs, public data or tooling. The page splits them, and the split comes from agent reading with quote checks. Copper's API access during a trial is still open. Several vendor
 sites refuse automated requests, so some quotes could not be confirmed.

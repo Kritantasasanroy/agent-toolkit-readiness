@@ -22,7 +22,7 @@
     {
       "field": "auth_methods",
       "url": "https://www.ipayx.ai/.well-known/mcp.json",
-      "quote": "full_forensic_fx_report requires a Bearer API key from https://www.ipayx.ai/developers"
+      "quote": "API keys are optional. Transaction audits and forensic reports share 3 free calls per IP per calendar month. Valid Bearer API keys retain existing access."
     },
     {
       "field": "access",
@@ -60,6 +60,12 @@
       "from": "medium",
       "to": "low",
       "reason": "Free key access not proven and free-tier limits conflict across vendor files."
+    },
+    {
+      "field": "evidence",
+      "from": "full_forensic_fx_report requires a Bearer API key from https://www.ipayx.ai/developers",
+      "to": "API keys are optional. Transaction audits and forensic reports share 3 free calls per IP per calendar month. Valid Bearer API keys retain existing access.",
+      "reason": "The first quote is not on the page any more. The replacement is in the page's authentication notes."
     }
   ]
 }

@@ -115,6 +115,12 @@ function verification() {
   const fields = Object.keys(v.pass1.by_field);
   document.getElementById("vfields").innerHTML = `<table><tr><th>Field</th><th>Pass 1</th><th>Pass 2</th></tr>` +
     fields.map(f => `<tr><td>${label(f)}</td><td class="num">${pct(v.pass1.by_field[f])}</td><td class="num">${pct(v.pass2.by_field[f])}</td></tr>`).join("") + "</table>";
+  const ind = v.independent, indFields = Object.keys(ind.after.by_field);
+  document.getElementById("ivfields").innerHTML = `<table><tr><th>Field</th><th>Pass 1</th><th>Pass 2</th><th>After corrections</th></tr>` +
+    indFields.map(f => `<tr><td>${label(f)}</td><td class="num">${pct(ind.before_pass1.by_field[f])}</td><td class="num">${pct(ind.before_pass2.by_field[f])}</td><td class="num">${pct(ind.after.by_field[f])}</td></tr>`).join("") + "</table>";
+  const backed = {agent: "my answer", reference: "the independent check", both: "both", neither: "neither", unclear: "unsettled"};
+  document.getElementById("irulings").innerHTML = `<table><tr><th>App</th><th>Field</th><th>Docs back</th><th>Source</th></tr>` +
+    ind.rulings.map(r => `<tr><td>${esc(r.app)}</td><td>${label(r.field)}</td><td>${backed[r.winner]}</td><td class="hide-sm small">${r.source ? `<a href="${esc(r.source)}" target="_blank" rel="noopener">link</a> ` : ""}${esc(r.note || "")}</td></tr>`).join("") + "</table>";
   const missTable = misses => misses.length ? `<table class="miss"><tr><th>App</th><th>Field</th><th>Agent said</th><th>Docs say</th></tr>` +
     misses.map(m => `<tr><td>${esc(m.app)}</td><td>${label(m.field)}</td><td>${esc(m.agent.join(", "))}</td><td>${esc(m.truth.join(" or "))}</td></tr>`).join("") + "</table>" : "<p>None.</p>";
   document.getElementById("miss2").innerHTML = missTable(v.pass2.misses);
@@ -152,7 +158,7 @@ function stats() {
   const rank = D.patterns.self_serve_by_category;
   const rate = l => Math.round(100 * l.verified / l.pages.live);
   return {
-    n: A.length, cAuthN: D.composio.auth.checked, cAuthOk: D.composio.auth.consistent, cAuthDiffN: D.composio.auth.differ.length, cAuthDiff: D.composio.auth.differ.map(d => d.app + " (+" + d.extra_in_composio.join(", ") + ")").join("; "), cGated: D.composio.gated_but_built.length, cGatedList: D.composio.gated_but_built.join(", "), mAcct: D.patterns.mcp_scope.account, mNo: D.patterns.mcp_scope.no_account, mUnclear: D.patterns.mcp_scope.unclear, mUnverified: D.patterns.mcp_scope.unverified, cNative: D.composio.coverage.native, cMcp: D.composio.coverage.mcp_only, cNone: D.composio.coverage.none,
+    n: A.length, cAuthN: D.composio.auth.checked, cAuthOk: D.composio.auth.consistent, cAuthDiffN: D.composio.auth.differ.length, cAuthDiff: D.composio.auth.differ.map(d => d.app + " (+" + d.extra_in_composio.join(", ") + ")").join("; "), indApps: D.verification.independent.apps, indP1: pct(D.verification.independent.before_pass1.accuracy), indP2: pct(D.verification.independent.before_pass2.accuracy), indAfter: pct(D.verification.independent.after.accuracy), indDis: D.verification.independent.rulings.length, indAgent: D.verification.independent.tally.agent || 0, indRef: D.verification.independent.tally.reference || 0, indNeither: D.verification.independent.tally.neither || 0, indUnclear: D.verification.independent.tally.unclear || 0, indFixed: D.verification.independent.corrected, indP1Apps: D.verification.independent.before_pass1.apps_checked, cGated: D.composio.gated_but_built.length, cGatedList: D.composio.gated_but_built.join(", "), mAcct: D.patterns.mcp_scope.account, mNo: D.patterns.mcp_scope.no_account, mUnclear: D.patterns.mcp_scope.unclear, mUnverified: D.patterns.mcp_scope.unverified, cNative: D.composio.coverage.native, cMcp: D.composio.coverage.mcp_only, cNone: D.composio.coverage.none,
     cSize: D.composio.catalog_size, cDate: D.composio.catalog_fetched,
     cNowNative: c(a => a.verdict === "build_now" && a.composio.coverage === "native"),
     cGaps: A.filter(a => a.verdict === "build_now" && a.composio.coverage !== "native").map(a => a.app + (a.composio.coverage === "mcp_only" ? " (MCP only)" : "")).join(", "),

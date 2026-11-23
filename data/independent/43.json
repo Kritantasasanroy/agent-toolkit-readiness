@@ -1,0 +1,30 @@
+{
+ "app_id": 43,
+ "app": "BigCommerce",
+ "auth_methods": [
+  "oauth2",
+  "bearer_token"
+ ],
+ "access": [
+  "free_self_serve"
+ ],
+ "api_styles": [
+  "rest",
+  "graphql"
+ ],
+ "mcp": [
+  "official",
+  "none"
+ ],
+ "verdict": [
+  "build_now"
+ ],
+ "blocker": [
+  "none"
+ ],
+ "sources": [
+  "https://developer.bigcommerce.com/docs/start/authentication",
+  "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts"
+ ],
+ "note": "Store-level API accounts (client id/secret plus access token sent as X-Auth-Token), app-level OAuth accounts via Developer Portal. REST (V2/V3) and GraphQL Admin/Storefront. Sidebar lists a 'Docs MCP Server' (docs search only, not store operations), hence official+none. Docs sidebar has a 'Sandboxes' page, not opened, so free access is inferred; a store (trial/sandbox) is needed. App review for marketplace listing not read."
+}

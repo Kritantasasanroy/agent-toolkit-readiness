@@ -27,6 +27,7 @@ it matters, by a person.
 | Doc | One JSON object from a pass, read with the checks the brief's contract needs (`enum`, `enums`, `text`). | value |
 | RemoteReport | The evidence check run a second time in a Composio sandbox: one RemoteCheck per citation, compared with the local LinkReport. | entity |
 | Sandbox | A Composio tool-router session with a remote shell, used to run `research/remote_check.py`. | value |
+| IndependentReview | A second twenty-app sample researched blind in a browser, and a ruling on every disagreement with the pipeline. A ruling counts only when its quote is found on its page. | entity |
 | McpScopes | What each official MCP server can reach (a customer's account, or only docs, public data and tooling), one finding per app with a quote that is checked on the page. | entity |
 | Disputes | Every dispute, with the tally, the contested apps and the review count. | entity |
 | CaseStudy | Everything the published page shows, assembled from the saved passes and checks, plus the page it renders. | value |
@@ -109,6 +110,7 @@ read at load time. Nothing is deleted.
   `.../create-auth-token/`, so its answers are matched to citations by position.
 - An MCP scope answer counts only if its quote is found on the cited page, here or in the sandbox. Otherwise it is shown as unclear.
 - The auth cross-check treats an API key and a bearer token as the same credential, because vendors and Composio label it either way.
+- The first reference sample was written by the author with AI help, so it flatters the pipeline. A second sample, researched blind, gives the lower and more honest score, and the corrections it prompted are reported separately from the raw score.
 - Standard library only, so the checks run anywhere with Python 3.9.
 - The committed site must equal a fresh build (checked in CI), so the build output carries no date.
 - Numbers on the page are filled from the data when it loads. The conclusions beside them

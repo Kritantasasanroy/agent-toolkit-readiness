@@ -1,0 +1,26 @@
+{
+ "app_id": 88,
+ "app": "Brex",
+ "auth_methods": [
+  "bearer_token"
+ ],
+ "access": [
+  "admin_approval"
+ ],
+ "api_styles": [
+  "rest"
+ ],
+ "mcp": [
+  "none"
+ ],
+ "verdict": [
+  "build_with_caveat"
+ ],
+ "blocker": [
+  "admin_install"
+ ],
+ "sources": [
+  "https://developer.brex.com/guides/authentication"
+ ],
+ "note": "User token is created in the Brex dashboard by an account admin or card admin after accepting the developer API agreement, sent as Authorization: Bearer. Needs an existing Brex customer account. The sidebar lists Partner authentication but that page would not load (blank, Page not found), so OAuth for partners is unconfirmed. Onboarding page also would not load. No MCP page found."
+}

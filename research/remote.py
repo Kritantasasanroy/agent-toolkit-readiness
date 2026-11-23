@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Mapping, Tuple
 
 from research.composio import CatalogError
-from research.links import LinkReport, QuoteStatus
+from research.links import LinkReport, Page, QuoteStatus
 from research.profile import Profile
 
 
@@ -158,3 +158,29 @@ class RemoteReport:
             "only_local": here - both,
             "only_remote": there - both,
         }
+
+
+@dataclass(frozen=True)
+class Probe:
+    """Whether one quote was found on its page, from this machine and from the sandbox."""
+
+    local: QuoteStatus
+    remote: bool
+
+    @property
+    def is_found(self) -> bool:
+        return self.local is QuoteStatus.FOUND or self.remote
+
+    @classmethod
+    def run(cls, cited: List[Tuple[str, str]], sandbox: Sandbox) -> List["Probe"]:
+        """Look for each (url, quote) here first, then in the sandbox for the ones this machine missed."""
+        local = [Page.fetch(url).quote_status(quote) for url, quote in cited]
+        retry = [i for i, status in enumerate(local) if status is not QuoteStatus.FOUND]
+        remote: Dict[int, bool] = {}
+        for start in range(0, len(retry), RemoteReport.BATCH):
+            batch = retry[start:start + RemoteReport.BATCH]
+            answers = sandbox.check_pages([(cited[i][0], [cited[i][1]]) for i in batch])
+            if len(answers) != len(batch):
+                raise CatalogError(f"the sandbox answered {len(answers)} pages for {len(batch)}")
+            remote.update({i: answer.found[0] for i, answer in zip(batch, answers)})
+        return [cls(status, remote.get(i, False)) for i, status in enumerate(local)]

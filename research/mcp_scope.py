@@ -13,7 +13,7 @@ from typing import Dict, Iterable, List, Mapping, Tuple
 from research.composio import CatalogError
 from research.links import Page, QuoteStatus
 from research.profile import Doc, ProfileError
-from research.remote import Sandbox
+from research.remote import Probe, Sandbox
 
 
 class Scope(Enum):
@@ -81,16 +81,8 @@ class McpScopes:
     def verify(cls, findings: Iterable[ScopeFinding], sandbox: Sandbox) -> Tuple[ScopeCheck, ...]:
         """Look for each quote here first, then in the sandbox for the ones this machine could not find."""
         findings = list(findings)
-        local = {f.app_id: Page.fetch(f.url).quote_status(f.quote) for f in findings}
-        retry = [f for f in findings if local[f.app_id] is not QuoteStatus.FOUND]
-        remote: Dict[int, bool] = {}
-        for start in range(0, len(retry), 20):
-            batch = retry[start:start + 20]
-            answers = sandbox.check_pages([(f.url, [f.quote]) for f in batch])
-            if len(answers) != len(batch):
-                raise CatalogError(f"the sandbox answered {len(answers)} pages for {len(batch)}")
-            remote.update({f.app_id: answer.found[0] for f, answer in zip(batch, answers)})
-        return tuple(ScopeCheck(f.app_id, local[f.app_id], remote.get(f.app_id, False)) for f in findings)
+        probes = Probe.run([(f.url, f.quote) for f in findings], sandbox)
+        return tuple(ScopeCheck(f.app_id, probe.local, probe.remote) for f, probe in zip(findings, probes))
 
     def effective(self) -> Dict[int, Scope]:
         """The scope each app keeps once its quote is checked. A quote nobody could find downgrades it to unclear."""

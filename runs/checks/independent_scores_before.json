@@ -1,0 +1,670 @@
+{
+ "pass1": {
+  "accuracy": 0.728,
+  "fields_checked": 114,
+  "apps_checked": 19,
+  "by_field": {
+   "auth_methods": 0.632,
+   "access": 0.842,
+   "api_styles": 0.947,
+   "mcp": 0.684,
+   "verdict": 0.684,
+   "blocker": 0.579
+  },
+  "misses": [
+   {
+    "app": "Pipedrive",
+    "field": "verdict",
+    "agent": [
+     "build_with_caveat"
+    ],
+    "truth": [
+     "build_now"
+    ]
+   },
+   {
+    "app": "Pipedrive",
+    "field": "blocker",
+    "agent": [
+     "app_review"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Twenty",
+    "field": "mcp",
+    "agent": [
+     "official"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Zendesk",
+    "field": "mcp",
+    "agent": [
+     "community"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Zendesk",
+    "field": "blocker",
+    "agent": [
+     "paid_plan"
+    ],
+    "truth": [
+     "app_review",
+     "partner_program"
+    ]
+   },
+   {
+    "app": "Intercom",
+    "field": "auth_methods",
+    "agent": [
+     "oauth2",
+     "bearer_token"
+    ],
+    "truth": [
+     "oauth2",
+     "api_key"
+    ]
+   },
+   {
+    "app": "Intercom",
+    "field": "access",
+    "agent": [
+     "free_trial"
+    ],
+    "truth": [
+     "free_self_serve"
+    ]
+   },
+   {
+    "app": "Intercom",
+    "field": "blocker",
+    "agent": [
+     "paid_plan"
+    ],
+    "truth": [
+     "none",
+     "app_review"
+    ]
+   },
+   {
+    "app": "WhatsApp Business",
+    "field": "mcp",
+    "agent": [
+     "official"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Aircall",
+    "field": "mcp",
+    "agent": [
+     "community"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Aircall",
+    "field": "verdict",
+    "agent": [
+     "needs_outreach"
+    ],
+    "truth": [
+     "build_with_caveat"
+    ]
+   },
+   {
+    "app": "Aircall",
+    "field": "blocker",
+    "agent": [
+     "partner_program"
+    ],
+    "truth": [
+     "paid_plan"
+    ]
+   },
+   {
+    "app": "systeme.io",
+    "field": "verdict",
+    "agent": [
+     "build_with_caveat"
+    ],
+    "truth": [
+     "build_now"
+    ]
+   },
+   {
+    "app": "BigCommerce",
+    "field": "auth_methods",
+    "agent": [
+     "oauth2",
+     "api_key"
+    ],
+    "truth": [
+     "oauth2",
+     "bearer_token"
+    ]
+   },
+   {
+    "app": "BigCommerce",
+    "field": "access",
+    "agent": [
+     "free_trial"
+    ],
+    "truth": [
+     "free_self_serve"
+    ]
+   },
+   {
+    "app": "BigCommerce",
+    "field": "verdict",
+    "agent": [
+     "build_with_caveat"
+    ],
+    "truth": [
+     "build_now"
+    ]
+   },
+   {
+    "app": "BigCommerce",
+    "field": "blocker",
+    "agent": [
+     "paid_plan"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Ahrefs",
+    "field": "auth_methods",
+    "agent": [
+     "api_key",
+     "oauth2"
+    ],
+    "truth": [
+     "api_key"
+    ]
+   },
+   {
+    "app": "Sentry",
+    "field": "auth_methods",
+    "agent": [
+     "api_key"
+    ],
+    "truth": [
+     "oauth2",
+     "bearer_token"
+    ]
+   },
+   {
+    "app": "Binance",
+    "field": "mcp",
+    "agent": [
+     "community"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Binance",
+    "field": "verdict",
+    "agent": [
+     "build_with_caveat"
+    ],
+    "truth": [
+     "build_now"
+    ]
+   },
+   {
+    "app": "Binance",
+    "field": "blocker",
+    "agent": [
+     "region_or_kyc"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Brex",
+    "field": "auth_methods",
+    "agent": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "truth": [
+     "bearer_token"
+    ]
+   },
+   {
+    "app": "Brex",
+    "field": "mcp",
+    "agent": [
+     "official"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Brex",
+    "field": "blocker",
+    "agent": [
+     "partner_program"
+    ],
+    "truth": [
+     "admin_install"
+    ]
+   },
+   {
+    "app": "Consensus",
+    "field": "auth_methods",
+    "agent": [
+     "api_key",
+     "oauth2"
+    ],
+    "truth": [
+     "api_key"
+    ]
+   },
+   {
+    "app": "Consensus",
+    "field": "access",
+    "agent": [
+     "paid_plan"
+    ],
+    "truth": [
+     "free_self_serve"
+    ]
+   },
+   {
+    "app": "Consensus",
+    "field": "api_styles",
+    "agent": [
+     "rest",
+     "rpc"
+    ],
+    "truth": [
+     "rest"
+    ]
+   },
+   {
+    "app": "Consensus",
+    "field": "verdict",
+    "agent": [
+     "build_with_caveat"
+    ],
+    "truth": [
+     "build_now"
+    ]
+   },
+   {
+    "app": "Consensus",
+    "field": "blocker",
+    "agent": [
+     "paid_plan"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "higgsfield",
+    "field": "auth_methods",
+    "agent": [
+     "api_key",
+     "oauth2"
+    ],
+    "truth": [
+     "api_key"
+    ]
+   }
+  ],
+  "apps_without_profile": [
+   "Salesforce Commerce Cloud"
+  ]
+ },
+ "pass2": {
+  "accuracy": 0.75,
+  "fields_checked": 120,
+  "apps_checked": 20,
+  "by_field": {
+   "auth_methods": 0.65,
+   "access": 0.9,
+   "api_styles": 0.95,
+   "mcp": 0.6,
+   "verdict": 0.75,
+   "blocker": 0.65
+  },
+  "misses": [
+   {
+    "app": "Pipedrive",
+    "field": "verdict",
+    "agent": [
+     "build_with_caveat"
+    ],
+    "truth": [
+     "build_now"
+    ]
+   },
+   {
+    "app": "Pipedrive",
+    "field": "blocker",
+    "agent": [
+     "app_review"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Twenty",
+    "field": "mcp",
+    "agent": [
+     "official"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Zendesk",
+    "field": "mcp",
+    "agent": [
+     "community"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Zendesk",
+    "field": "blocker",
+    "agent": [
+     "paid_plan"
+    ],
+    "truth": [
+     "app_review",
+     "partner_program"
+    ]
+   },
+   {
+    "app": "Intercom",
+    "field": "auth_methods",
+    "agent": [
+     "oauth2",
+     "bearer_token"
+    ],
+    "truth": [
+     "oauth2",
+     "api_key"
+    ]
+   },
+   {
+    "app": "WhatsApp Business",
+    "field": "mcp",
+    "agent": [
+     "official"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Aircall",
+    "field": "mcp",
+    "agent": [
+     "community"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "systeme.io",
+    "field": "mcp",
+    "agent": [
+     "official"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "systeme.io",
+    "field": "verdict",
+    "agent": [
+     "build_with_caveat"
+    ],
+    "truth": [
+     "build_now"
+    ]
+   },
+   {
+    "app": "BigCommerce",
+    "field": "auth_methods",
+    "agent": [
+     "oauth2",
+     "api_key"
+    ],
+    "truth": [
+     "oauth2",
+     "bearer_token"
+    ]
+   },
+   {
+    "app": "BigCommerce",
+    "field": "access",
+    "agent": [
+     "free_trial"
+    ],
+    "truth": [
+     "free_self_serve"
+    ]
+   },
+   {
+    "app": "BigCommerce",
+    "field": "verdict",
+    "agent": [
+     "build_with_caveat"
+    ],
+    "truth": [
+     "build_now"
+    ]
+   },
+   {
+    "app": "BigCommerce",
+    "field": "blocker",
+    "agent": [
+     "paid_plan"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Salesforce Commerce Cloud",
+    "field": "mcp",
+    "agent": [
+     "official"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Salesforce Commerce Cloud",
+    "field": "blocker",
+    "agent": [
+     "partner_program"
+    ],
+    "truth": [
+     "paid_plan"
+    ]
+   },
+   {
+    "app": "Ahrefs",
+    "field": "auth_methods",
+    "agent": [
+     "api_key",
+     "oauth2"
+    ],
+    "truth": [
+     "api_key"
+    ]
+   },
+   {
+    "app": "Sentry",
+    "field": "auth_methods",
+    "agent": [
+     "api_key",
+     "oauth2"
+    ],
+    "truth": [
+     "oauth2",
+     "bearer_token"
+    ]
+   },
+   {
+    "app": "Binance",
+    "field": "mcp",
+    "agent": [
+     "community"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Binance",
+    "field": "verdict",
+    "agent": [
+     "build_with_caveat"
+    ],
+    "truth": [
+     "build_now"
+    ]
+   },
+   {
+    "app": "Binance",
+    "field": "blocker",
+    "agent": [
+     "region_or_kyc"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Brex",
+    "field": "auth_methods",
+    "agent": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "truth": [
+     "bearer_token"
+    ]
+   },
+   {
+    "app": "Brex",
+    "field": "mcp",
+    "agent": [
+     "official"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "Brex",
+    "field": "blocker",
+    "agent": [
+     "partner_program"
+    ],
+    "truth": [
+     "admin_install"
+    ]
+   },
+   {
+    "app": "Consensus",
+    "field": "auth_methods",
+    "agent": [
+     "api_key",
+     "oauth2"
+    ],
+    "truth": [
+     "api_key"
+    ]
+   },
+   {
+    "app": "Consensus",
+    "field": "access",
+    "agent": [
+     "paid_plan"
+    ],
+    "truth": [
+     "free_self_serve"
+    ]
+   },
+   {
+    "app": "Consensus",
+    "field": "api_styles",
+    "agent": [
+     "rest",
+     "rpc"
+    ],
+    "truth": [
+     "rest"
+    ]
+   },
+   {
+    "app": "Consensus",
+    "field": "verdict",
+    "agent": [
+     "build_with_caveat"
+    ],
+    "truth": [
+     "build_now"
+    ]
+   },
+   {
+    "app": "Consensus",
+    "field": "blocker",
+    "agent": [
+     "paid_plan"
+    ],
+    "truth": [
+     "none"
+    ]
+   },
+   {
+    "app": "higgsfield",
+    "field": "auth_methods",
+    "agent": [
+     "api_key",
+     "oauth2"
+    ],
+    "truth": [
+     "api_key"
+    ]
+   }
+  ],
+  "apps_without_profile": []
+ }
+}

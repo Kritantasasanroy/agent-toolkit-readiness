@@ -7,18 +7,17 @@
     "api_key",
     "oauth2"
   ],
-  "access": "paid_plan",
-  "access_note": "REST API keys and MCP require a paid or org plan; Team-tier Search API access is available upon approval and rate limited. MCP also has an anonymous trial mode.",
+  "access": "free_self_serve",
+  "access_note": "Free account creates an API key in the dashboard.",
   "api_styles": [
-    "rest",
-    "rpc"
+    "rest"
   ],
   "api_breadth": "narrow",
   "mcp": "official",
   "mcp_url": "https://mcp.consensus.app/mcp",
-  "verdict": "build_with_caveat",
-  "blocker": "paid_plan",
-  "blocker_note": "API access is tied to paid org tiers and approval; REST reference docs.consensus.app could not be opened.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
   "evidence": [
     {
       "field": "auth_methods",
@@ -31,16 +30,6 @@
       "quote": "OAuth-based authentication, dynamic client registration, streaming-friendly."
     },
     {
-      "field": "access",
-      "url": "https://consensus.app/.well-known/pricing.md",
-      "quote": "Optional access to the Consensus Search API (available upon approval, rate limited"
-    },
-    {
-      "field": "api_styles",
-      "url": "https://consensus.app/llms-full.txt",
-      "quote": "The REST API is the canonical machine surface for organizations."
-    },
-    {
       "field": "mcp",
       "url": "https://consensus.app/llms-full.txt",
       "quote": "Endpoint: https://mcp.consensus.app/mcp"
@@ -49,6 +38,16 @@
       "field": "mcp",
       "url": "https://consensus.app/llms-full.txt",
       "quote": "The Model Context Protocol server is the recommended surface for any LLM client"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.consensus.app/api-get-started",
+      "quote": "Every plan includes API access, and the Free plan includes 30 calls a month."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.consensus.app/api-get-started",
+      "quote": "with the Consensus REST API"
     }
   ],
   "confidence": "medium",
@@ -59,6 +58,35 @@
       "from": "pass1 quotes",
       "to": "replaced",
       "reason": "Pass 1 quotes were missing (page text differs); re-quoted from llms-full.txt and pricing.md. 'Treat as a secret' quote was not tied to a claim and was dropped."
+    },
+    {
+      "field": "access",
+      "from": "paid_plan",
+      "to": "free_self_serve",
+      "reason": "Independent browser check disagreed; a blind browser ruling backed it. Free account creates an API key in the dashboard."
+    },
+    {
+      "field": "api_styles",
+      "from": [
+        "rest",
+        "rpc"
+      ],
+      "to": [
+        "rest"
+      ],
+      "reason": "Independent browser check disagreed; a blind browser ruling backed it. Docs describe a REST API only."
+    },
+    {
+      "field": "verdict",
+      "from": "build_with_caveat",
+      "to": "build_now",
+      "reason": "Independent browser check disagreed; a blind browser ruling backed it. Free self-serve keys, no approval; call quota is low but no gate."
+    },
+    {
+      "field": "blocker",
+      "from": "paid_plan",
+      "to": "none",
+      "reason": "Independent browser check disagreed; a blind browser ruling backed it. No paid plan required to get API access."
     }
   ]
 }

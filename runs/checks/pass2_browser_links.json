@@ -1,0 +1,170 @@
+[
+ {
+  "app_id": 5,
+  "url": "https://docs.twenty.com/developers/extend/mcp",
+  "quote": "Twenty exposes an MCP server so that AI assistants",
+  "found": true
+ },
+ {
+  "app_id": 8,
+  "url": "https://www.close.com/pricing",
+  "quote": "try it free for 14 days with no credit card",
+  "found": false
+ },
+ {
+  "app_id": 17,
+  "url": "https://plain.com/docs/agents/mcp-server",
+  "quote": "The Plain MCP server at https://mcp.plain.com/mcp lets tools like Claude, ChatGPT, and Cursor work with your support data directly.",
+  "found": true
+ },
+ {
+  "app_id": 17,
+  "url": "https://plain.com/docs/graphql/authentication",
+  "quote": "To call the API as a user in your workspace, use an OAuth app",
+  "found": true
+ },
+ {
+  "app_id": 19,
+  "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-gorgias-6310546",
+  "quote": "the connection URL is the same: https://mcp.gorgias.com/mcp",
+  "found": true
+ },
+ {
+  "app_id": 20,
+  "url": "https://www.gladly.com/",
+  "quote": "Get a demo",
+  "found": true
+ },
+ {
+  "app_id": 22,
+  "url": "https://www.twilio.com/docs/mcp",
+  "quote": "it does not connect to a Twilio account or execute any API calls.",
+  "found": true
+ },
+ {
+  "app_id": 35,
+  "url": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+  "quote": "This page walks through implementing OAuth 2 so your application can access the Marketing API on behalf of other Mailchimp users",
+  "found": true
+ },
+ {
+  "app_id": 35,
+  "url": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+  "quote": "Registering gives you the client_id and client_secret your server needs",
+  "found": true
+ },
+ {
+  "app_id": 35,
+  "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+  "quote": "The Marketing API generally follows REST conventions, with some deviations",
+  "found": true
+ },
+ {
+  "app_id": 43,
+  "url": "https://docs.bigcommerce.com/docs/start/authentication",
+  "quote": "Most of our REST endpoints and GraphQL Admin API endpoints use the X-Auth-Token header to authenticate to BigCommerce servers.",
+  "found": true
+ },
+ {
+  "app_id": 43,
+  "url": "https://docs.bigcommerce.com/docs/start/authentication",
+  "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce\u2019s REST APIs",
+  "found": true
+ },
+ {
+  "app_id": 43,
+  "url": "https://docs.bigcommerce.com/docs/start/authentication",
+  "quote": "Merchants generate single-store API credentials when they create API accounts in their store control panel",
+  "found": true
+ },
+ {
+  "app_id": 43,
+  "url": "https://docs.bigcommerce.com/docs/start/about/sandboxes",
+  "quote": "To create a sandbox store, complete the following steps: Navigate to the BigCommerce Partner Portal and sign in using your credentials.",
+  "found": true
+ },
+ {
+  "app_id": 43,
+  "url": "https://docs.bigcommerce.com/docs/start/authentication",
+  "quote": "Most of our REST endpoints and GraphQL Admin API endpoints use the X-Auth-Token header to authenticate to BigCommerce servers.",
+  "found": true
+ },
+ {
+  "app_id": 48,
+  "url": "https://gumroad.com/help/article/280-create-application-api",
+  "quote": "To create an application for general use, you'll need to build a Redirect URI handler to generate access tokens for each of your users.",
+  "found": true
+ },
+ {
+  "app_id": 48,
+  "url": "https://gumroad.com/help/article/280-create-application-api",
+  "quote": "Your access token is used in the request header of every request to the API and should be kept secret, like a password.",
+  "found": true
+ },
+ {
+  "app_id": 48,
+  "url": "https://gumroad.com/help/article/280-create-application-api",
+  "quote": "if you only want to use the API on your own Gumroad account, you can manually generate an access token",
+  "found": true
+ },
+ {
+  "app_id": 48,
+  "url": "https://gumroad.com/help/article/280-create-application-api",
+  "quote": "curl https://api.gumroad.com/v2/products",
+  "found": true
+ },
+ {
+  "app_id": 57,
+  "url": "https://docs.brightdata.com/api-reference/introduction",
+  "quote": "An API key is a secure hashed token used to authenticate with Bright Data API.",
+  "found": true
+ },
+ {
+  "app_id": 57,
+  "url": "https://docs.brightdata.com/api-reference/introduction",
+  "quote": "Authorization: Bearer <token>",
+  "found": true
+ },
+ {
+  "app_id": 59,
+  "url": "https://docs.waterfall.io",
+  "quote": "The Waterfall API is available at `https://api.waterfall.io`.",
+  "found": true
+ },
+ {
+  "app_id": 62,
+  "url": "https://vercel.com/kb/guide/how-do-i-use-a-vercel-api-access-token",
+  "quote": "Pass the token as a Bearer token in the `Authorization` header of your request.",
+  "found": true
+ },
+ {
+  "app_id": 65,
+  "url": "https://supabase.com/docs/guides/getting-started/mcp",
+  "quote": "Remote MCP installation Choose your Supabase platform, project, and MCP client and follow the installation instructions",
+  "found": true
+ },
+ {
+  "app_id": 71,
+  "url": "https://developers.notion.com/docs/authorization",
+  "quote": "Internal connections use a static credential called an internal connection API token",
+  "found": true
+ },
+ {
+  "app_id": 71,
+  "url": "https://developers.notion.com/docs/authorization",
+  "quote": "OAuth integrations follow the OAuth 2.0 protocol to authorize a connection to interact with a workspace",
+  "found": true
+ },
+ {
+  "app_id": 92,
+  "url": "https://claude.com/connectors/otter-ai",
+  "quote": "Made by Otter.ai",
+  "found": true
+ },
+ {
+  "app_id": 92,
+  "url": "https://claude.com/connectors/otter-ai",
+  "quote": "Connector URL https://mcp.otter.ai/mcp",
+  "found": true
+ }
+]

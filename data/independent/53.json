@@ -1,0 +1,4 @@
+{"app_id": 53, "app": "Ahrefs", "auth_methods": ["api_key"], "access": ["paid_plan"], "api_styles": ["rest"],
+ "mcp": ["official"], "verdict": ["build_with_caveat"], "blocker": ["paid_plan"],
+ "sources": ["https://docs.ahrefs.com/en/api/docs/introduction", "https://docs.ahrefs.com/en/mcp/docs/introduction"],
+ "note": "API v3 'is available on eligible paid plans'; other plans get only limited free test queries. Keys created by workspace owner/admin in Account settings. Hosted MCP for Lite plan or higher uses OAuth consent (creates a dedicated API key); 'Ahrefs Connect' OAuth 2.0 is an integration program with an application step (not read in detail). Docs home page /api rendered empty at first load and loaded after a wait."}

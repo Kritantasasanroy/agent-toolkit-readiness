@@ -7,8 +7,8 @@
     "oauth2",
     "api_key"
   ],
-  "access": "free_trial",
-  "access_note": "API credentials are created in a store control panel; a store (trial or paid) is needed. Trial length and free sandbox not verified.",
+  "access": "free_self_serve",
+  "access_note": "Free partner sandbox via Partner Portal, not trial-limited; docs do not state price explicitly.",
   "api_styles": [
     "rest",
     "graphql"
@@ -16,9 +16,9 @@
   "api_breadth": "broad",
   "mcp": "official",
   "mcp_url": "https://api.bigcommerce.com/mcp",
-  "verdict": "build_with_caveat",
-  "blocker": "paid_plan",
-  "blocker_note": "Needs a BigCommerce store; trial terms not verified. Multi-store apps are registered in the Developer Portal.",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
   "evidence": [
     {
       "field": "auth_methods",
@@ -28,17 +28,7 @@
     {
       "field": "auth_methods",
       "url": "https://docs.bigcommerce.com/docs/start/authentication",
-      "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce\u2019s REST APIs"
-    },
-    {
-      "field": "access",
-      "url": "https://docs.bigcommerce.com/docs/start/authentication",
-      "quote": "Merchants generate single-store API credentials when they create API accounts in their store control panel"
-    },
-    {
-      "field": "access",
-      "url": "https://docs.bigcommerce.com/docs/start/about/sandboxes",
-      "quote": "To create a sandbox store, complete the following steps: Navigate to the BigCommerce Partner Portal and sign in using your credentials."
+      "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce’s REST APIs"
     },
     {
       "field": "api_styles",
@@ -54,6 +44,11 @@
       "field": "mcp",
       "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
       "quote": "Agents connect to https://api.bigcommerce.com/mcp"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
+      "quote": "Sandbox stores are intended for developing and testing apps."
     }
   ],
   "confidence": "medium",
@@ -64,6 +59,24 @@
       "from": "REST-only quote",
       "to": "quote naming REST and GraphQL Admin API",
       "reason": "GraphQL was inferred; now quoted. Added sandbox-via-Partner-Portal quote for access."
+    },
+    {
+      "field": "access",
+      "from": "free_trial",
+      "to": "free_self_serve",
+      "reason": "Independent browser check disagreed; a blind browser ruling backed it. Free partner sandbox via Partner Portal, not trial-limited; docs do not state price explicitly."
+    },
+    {
+      "field": "verdict",
+      "from": "build_with_caveat",
+      "to": "build_now",
+      "reason": "Independent browser check disagreed; a blind browser ruling backed it. Sandbox plus self-created OAuth API accounts and app-level credentials support build_now; weak evidence."
+    },
+    {
+      "field": "blocker",
+      "from": "paid_plan",
+      "to": "none",
+      "reason": "Independent browser check disagreed; a blind browser ruling backed it. No paid plan required for dev work per sandbox docs; weak evidence."
     }
   ]
 }

@@ -1,0 +1,27 @@
+{
+ "app_id": 44,
+ "app": "Salesforce Commerce Cloud",
+ "auth_methods": [
+  "oauth2"
+ ],
+ "access": [
+  "partner_gated"
+ ],
+ "api_styles": [
+  "rest"
+ ],
+ "mcp": [
+  "none"
+ ],
+ "verdict": [
+  "needs_outreach"
+ ],
+ "blocker": [
+  "paid_plan"
+ ],
+ "sources": [
+  "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+  "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html"
+ ],
+ "note": "SCAPI Admin APIs use an API client created in Account Manager (client credentials) and Shopper APIs use SLAS clients; both require an existing B2C Commerce tenant/instance. Page text was mostly not rendered in the accessibility snapshot, so the need for a paid contract is inferred from the product, not quoted. No MCP found in pages read."
+}

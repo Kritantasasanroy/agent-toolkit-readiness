@@ -6,6 +6,7 @@
     python3 -m research composio    (needs COMPOSIO_API_KEY)
     python3 -m research remote runs/pass2    (needs COMPOSIO_API_KEY)
     python3 -m research scope    (needs COMPOSIO_API_KEY)
+    python3 -m research review   (needs COMPOSIO_API_KEY)
     python3 -m research site
 """
 
@@ -17,6 +18,7 @@ from pathlib import Path
 
 from research.composio import CatalogError, ComposioCatalog
 from research.handcheck import HandCheck, HandCheckError, Scorecard
+from research.independent import IndependentReview
 from research.links import LinkReport
 from research.mcp_scope import McpScopes
 from research.paths import ROOT
@@ -86,6 +88,14 @@ def scope(_args: argparse.Namespace) -> int:
     return 0
 
 
+def review(_args: argparse.Namespace) -> int:
+    checks = ROOT / "runs" / "checks"
+    IndependentReview.probe(checks / "independent_quotes.json", checks, Sandbox.open(os.environ.get("COMPOSIO_API_KEY", "")))
+    print(json.dumps(IndependentReview.load(checks).tally()))
+    print("wrote runs/checks/independent_quotes.json")
+    return 0
+
+
 def site(_args: argparse.Namespace) -> int:
     study = CaseStudy.build(ROOT)
     study.render(ROOT)
@@ -109,6 +119,7 @@ def main() -> int:
     command.add_argument("pass_dir")
     command.set_defaults(run=remote)
     commands.add_parser("scope").set_defaults(run=scope)
+    commands.add_parser("review").set_defaults(run=review)
     commands.add_parser("site").set_defaults(run=site)
     args = parser.parse_args()
     try:

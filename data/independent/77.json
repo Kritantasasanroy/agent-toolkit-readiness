@@ -1,0 +1,28 @@
+{
+ "app_id": 77,
+ "app": "ClickUp",
+ "auth_methods": [
+  "oauth2",
+  "api_key"
+ ],
+ "access": [
+  "free_self_serve"
+ ],
+ "api_styles": [
+  "rest"
+ ],
+ "mcp": [
+  "official"
+ ],
+ "verdict": [
+  "build_now"
+ ],
+ "blocker": [
+  "none"
+ ],
+ "sources": [
+  "https://developer.clickup.com/docs/authentication",
+  "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server"
+ ],
+ "note": "Personal token (pk_) from Settings > Apps; OAuth2 for apps used by others. Official MCP server on all plans, Free Forever capped at 100 MCP calls per rolling 24h. I did not open the API-availability-by-plan page, so per-plan REST limits are unchecked."
+}

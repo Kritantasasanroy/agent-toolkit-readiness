@@ -1,0 +1,10 @@
+[
+{"item":9,"ruling":"B","source":"https://help.systeme.io/category/11216-model-context-protocol-mcp","quote":"How to use the systeme.io MCP server (Model Context Protocol)","note":"Vendor help center has a dedicated MCP category with official MCP-key guides for ChatGPT and Claude; article bodies did not render."},
+{"item":10,"ruling":"unclear","source":"","quote":"","note":"Could not load systeme.io API/access docs to judge caveat vs build_now."},
+{"item":11,"ruling":"A","source":"https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts","quote":"Merchants generate single-store API credentials when they create API accounts in their store control panel","note":"OAuth-based accounts plus merchant-generated store-level credentials fit oauth2 + api_key; no bot/system token flow described."},
+{"item":12,"ruling":"B","source":"https://docs.bigcommerce.com/developer/docs/overview/sandboxes","quote":"Sandbox stores are intended for developing and testing apps.","note":"Free partner sandbox via Partner Portal, not trial-limited; docs do not state price explicitly."},
+{"item":13,"ruling":"B","source":"https://docs.bigcommerce.com/developer/docs/overview/sandboxes","quote":"Sandbox stores are intended for developing and testing apps.","note":"Sandbox plus self-created OAuth API accounts and app-level credentials support build_now; weak evidence."},
+{"item":14,"ruling":"B","source":"https://docs.bigcommerce.com/developer/docs/overview/sandboxes","quote":"Sandbox stores are intended for developing and testing apps.","note":"No paid plan required for dev work per sandbox docs; weak evidence."},
+{"item":15,"ruling":"A","source":"https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/agentic-mcp-shopper-tools-quick-start.html","quote":"The B2C Commerce MCP Service is a fully-hosted service for linking an AI agent to real-time B2C Commerce data access.","note":"Vendor-hosted MCP service (pilot); vendor also publishes a B2C DX MCP server."},
+{"item":16,"ruling":"unclear","source":"","quote":"","note":"Vendor docs viewed do not state whether access is paid-plan or partner-gated."}
+]

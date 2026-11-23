@@ -1,0 +1,4 @@
+{"app_id": 70, "app": "Sentry", "auth_methods": ["oauth2", "bearer_token"], "access": ["free_self_serve"], "api_styles": ["rest"],
+ "mcp": ["official"], "verdict": ["build_now"], "blocker": ["none"],
+ "sources": ["https://docs.sentry.io/api/", "https://docs.sentry.io/api/auth/", "https://mcp.sentry.dev/", "https://sentry.io/pricing/"],
+ "note": "API auth page documents OAuth 2.0 authorization code with PKCE, a device-code flow (RFC 8628) and Bearer auth tokens (internal integration / personal tokens). Pricing page shows a Free/$0 Developer plan; the page text read did not show whether the API row is included in that plan, so free API access is inferred from docs having no plan gate. Docs URL docs.sentry.io/ai/mcp/ redirected to the vendor-hosted mcp.sentry.dev (official Sentry MCP). Sentry's API is broad REST (dozens of resource groups in the reference sidebar)."}
