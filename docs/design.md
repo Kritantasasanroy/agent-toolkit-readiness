@@ -25,6 +25,8 @@ it matters, by a person.
 | Dispute | One answer two sources disagreed on, and who settled it from the docs. | entity |
 | ComposioCatalog | Composio's toolkit catalog at one date, used to say whether an app already has a native toolkit, an MCP-only one, or none, and which auth methods that toolkit offers beyond the ones the research lists. | value |
 | Doc | One JSON object from a pass, read with the checks the brief's contract needs (`enum`, `enums`, `text`). | value |
+| RemoteReport | The evidence check run a second time in a Composio sandbox: one RemoteCheck per citation, compared with the local LinkReport. | entity |
+| Sandbox | A Composio tool-router session with a remote shell, used to run `research/remote_check.py`. | value |
 | Disputes | Every dispute, with the tally, the contested apps and the review count. | entity |
 | CaseStudy | Everything the published page shows, assembled from the saved passes and checks, plus the page it renders. | value |
 | Sample | The reference sample: two apps per category, drawn with seed 2026 so anyone can reproduce it. | value |
@@ -46,6 +48,7 @@ App
 
 Survey                 all profiles from one pass (runs/pass1, runs/pass2)
 LinkReport             one LinkCheck per citation in a Survey
+RemoteReport           the same citations checked from a Composio sandbox
  └─ LinkCheck          built from a Page fetched once per distinct URL
 Scorecard              Survey compared against HandChecks on the sampled apps
 
@@ -101,6 +104,8 @@ read at load time. Nothing is deleted.
   check was shown to be wrong at least once (Podio's MCP server).
 - Composio's catalog is a second source for auth methods that no research agent wrote. A
   difference is reported, not corrected: Composio often offers fewer methods than the vendor.
+- The sandbox redacts anything that looks like a secret, including addresses such as
+  `.../create-auth-token/`, so its answers are matched to citations by position.
 - Standard library only, so the checks run anywhere with Python 3.9.
 - The committed site must equal a fresh build (checked in CI), so the build output carries no date.
 - Numbers on the page are filled from the data when it loads. The conclusions beside them

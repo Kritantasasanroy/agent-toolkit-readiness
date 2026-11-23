@@ -15,9 +15,11 @@ from research.adjudication import Decider, Disputes, Winner
 from research.__main__ import main
 from research.composio import CatalogError, ComposioCatalog, Coverage, Match, Toolkit
 from research.handcheck import HandCheck, HandCheckError, Scorecard
-from research.links import LinkReport, Page, PageStatus, QuoteStatus
+from research.links import LinkCheck, LinkReport, Page, PageStatus, QuoteStatus
 from research.profile import Access, ApiStyle, AuthMethod, Doc, Field, Profile, ProfileError
 from research.paths import ROOT
+from research import remote_check
+from research.remote import PageAnswer, RemoteCheck, RemoteReport, Sandbox
 from research.report import CaseStudy
 from research.sample import Sample
 from research.survey import Survey
@@ -352,6 +354,43 @@ class SampleTest(unittest.TestCase):
         hand_checked = [row["app_id"] for row in json.loads((root / "data" / "handchecks.json").read_text())]
         self.assertEqual(len(drawn), 20)
         self.assertEqual(sorted(drawn), sorted(hand_checked))
+
+
+class RemoteTest(unittest.TestCase):
+    def test_the_sandbox_script_reads_pages_as_the_local_check_does(self) -> None:
+        for text in ("Create an <b>API\u00a0key</b>", "It\u2019s \u201cOAuth\u201d \u2013 two  words &amp; more"):
+            self.assertEqual(remote_check.normalise(text), Page.normalise(text))
+        page = "<p>keep</p><script>drop()</script><style>x{}</style>"
+        self.assertEqual(remote_check.readable(page), Page.readable(page))
+
+    def test_answers_are_matched_to_citations_by_position_not_by_address(self) -> None:
+        class Fake:
+            def check_pages(self, pages):  # the real sandbox may redact an address, so only order is kept
+                return [PageAnswer(200, (True,) * len(quotes)) for _, quotes in pages]
+
+        evidence = [{"field": f, "url": "https://x.io/create-auth-token", "quote": "q"}
+                    for f in ("auth_methods", "access", "api_styles", "mcp")]
+        report = RemoteReport.run([Profile.from_json(profile_doc(evidence=evidence))], Fake())
+        self.assertEqual([c.found for c in report.checks], [True] * 4)
+
+    def test_compare_counts_agreement_and_refuses_reports_for_different_citations(self) -> None:
+        def local(found: List[bool]) -> LinkReport:
+            return LinkReport(tuple(
+                LinkCheck(61, "GitHub", "mcp", "https://x.io", PageStatus.LIVE, 200,
+                          QuoteStatus.FOUND if hit else QuoteStatus.MISSING) for hit in found))
+
+        remote = RemoteReport(tuple(RemoteCheck(61, "https://x.io", "q", 200, hit) for hit in (True, True, False)))
+        self.assertEqual(remote.compare(local([True, False, False])), {
+            "citations": 3, "local_found": 1, "remote_found": 2, "both_found": 1, "only_local": 0, "only_remote": 1})
+        with self.assertRaises(ValueError):
+            remote.compare(local([True]))
+
+    def test_the_sandbox_needs_a_key_and_reports_a_failed_command(self) -> None:
+        with self.assertRaisesRegex(CatalogError, "COMPOSIO_API_KEY"):
+            Sandbox.open("")
+        with mock.patch.object(Sandbox, "_post", return_value={"error": "boom", "data": {}}):
+            with self.assertRaisesRegex(CatalogError, "boom"):
+                Sandbox("key", "session").bash("true")
 
 
 class CatalogTest(unittest.TestCase):

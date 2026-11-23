@@ -45,6 +45,7 @@ python3 -m research validate runs/pass2
 python3 -m research links runs/pass2
 python3 -m research score runs/pass2 data/handchecks.json
 COMPOSIO_API_KEY=... python3 -m research composio   # refreshes the Composio catalog snapshot (optional)
+COMPOSIO_API_KEY=... python3 -m research remote runs/pass2   # re-runs the evidence check in a Composio sandbox (optional)
 python3 -m research site                         # builds site/index.html and site/data.json
 python3 -m unittest discover -s tests -t .
 ```
@@ -64,6 +65,7 @@ above. The checks don't care which model wrote the file, only whether it holds u
 | --- | --- |
 | `data/apps.csv` | The 100 apps from the brief |
 | `data/handchecks.json` | Reference answers for the 20-app sample |
+| `runs/checks/pass2_remote_links.json` | The evidence check re-run inside a Composio sandbox |
 | `data/composio_toolkits.json` | Snapshot of Composio's toolkit catalog, used to mark which apps already have a toolkit |
 | `data/decisions.json`, `data/overrides.json` | How each contested answer was settled, with the reasoning |
 | `agent/prompts/` | Research and review briefs |

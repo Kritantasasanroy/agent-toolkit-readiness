@@ -4,6 +4,7 @@
     python3 -m research links runs/pass1
     python3 -m research score runs/pass1 data/handchecks.json
     python3 -m research composio    (needs COMPOSIO_API_KEY)
+    python3 -m research remote runs/pass2    (needs COMPOSIO_API_KEY)
     python3 -m research site
 """
 
@@ -18,6 +19,7 @@ from research.handcheck import HandCheck, HandCheckError, Scorecard
 from research.links import LinkReport
 from research.paths import ROOT
 from research.profile import ProfileError
+from research.remote import RemoteReport, Sandbox
 from research.report import CaseStudy
 from research.survey import Survey
 
@@ -58,6 +60,17 @@ def composio(_args: argparse.Namespace) -> int:
     return 0
 
 
+def remote(args: argparse.Namespace) -> int:
+    survey = Survey.load(Path(args.pass_dir))
+    report = RemoteReport.run(survey.all(), Sandbox.open(os.environ.get("COMPOSIO_API_KEY", "")))
+    out = ROOT / "runs" / "checks" / f"{survey.name}_remote_links.json"
+    report.write(out)
+    local = LinkReport.read(ROOT / "runs" / "checks" / f"{survey.name}_links.json")
+    print(json.dumps(report.compare(local), indent=1))
+    print(f"wrote {out.relative_to(ROOT)}")
+    return 0
+
+
 def site(_args: argparse.Namespace) -> int:
     study = CaseStudy.build(ROOT)
     study.render(ROOT)
@@ -77,6 +90,9 @@ def main() -> int:
     command.add_argument("handchecks")
     command.set_defaults(run=score)
     commands.add_parser("composio").set_defaults(run=composio)
+    command = commands.add_parser("remote")
+    command.add_argument("pass_dir")
+    command.set_defaults(run=remote)
     commands.add_parser("site").set_defaults(run=site)
     args = parser.parse_args()
     try:

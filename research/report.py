@@ -11,6 +11,7 @@ from research.handcheck import HandCheck, Scorecard
 from research.links import LinkReport
 from research.paths import ROOT
 from research.profile import Field
+from research.remote import RemoteReport
 from research.survey import Survey
 
 
@@ -22,6 +23,7 @@ class CaseStudy:
     disputes: Disputes
     links_first: LinkReport
     links_final: LinkReport
+    remote_final: RemoteReport
     catalog: ComposioCatalog
 
     @classmethod
@@ -33,6 +35,7 @@ class CaseStudy:
             disputes=Disputes.load(root),
             links_first=LinkReport.read(root / "runs" / "checks" / "pass1_links.json"),
             links_final=LinkReport.read(root / "runs" / "checks" / "pass2_links.json"),
+            remote_final=RemoteReport.read(root / "runs" / "checks" / "pass2_remote_links.json"),
             catalog=ComposioCatalog.read(root / "data" / "composio_toolkits.json"),
         )
 
@@ -72,6 +75,7 @@ class CaseStudy:
                 "reference_leniency": HandCheck.leniency(self.checks),
                 "links_pass1": self.links_first.totals(),
                 "links_pass2": self.links_final.totals(),
+                "links_pass2_composio": self.remote_final.compare(self.links_final),
                 "changed_fields": self.final.changes_since(self.first),
                 "disputes": [d.to_json() for d in self.disputes.items],
                 "dispute_tally": self.disputes.tally(),

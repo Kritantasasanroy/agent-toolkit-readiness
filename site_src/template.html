@@ -172,6 +172,7 @@ function stats() {
     p2won: t.pass2 || 0, p1won: t.pass1 || 0, unsettled: (t.unclear || 0) + (t.neither || 0), both: t.both || 0,
     disputes: V.disputes.length,
     q1: V.links_pass1.verified, q1live: V.links_pass1.pages.live, q1pct: rate(V.links_pass1),
+    rCit: V.links_pass2_composio.citations, rLocal: V.links_pass2_composio.local_found, rRemote: V.links_pass2_composio.remote_found, rOnlyRemote: V.links_pass2_composio.only_remote, rOnlyLocal: V.links_pass2_composio.only_local,
     q2: V.links_pass2.verified, q2live: V.links_pass2.pages.live, q2pct: rate(V.links_pass2),
     unchecked2: V.links_pass2.quotes.unchecked || 0, citations2: V.links_pass2.citations,
     acc1: pct(V.pass1.accuracy), acc2: pct(V.pass2.accuracy), sample: V.pass1.apps_checked,

@@ -1,0 +1,3768 @@
+[
+ {
+  "app_id": 1,
+  "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/FAQ.md",
+  "quote": "Connected Apps are a legacy construct and are not supported for MCP authentication.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 1,
+  "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/Confirming-Availability.md",
+  "quote": "orgs can also use MCP servers.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 1,
+  "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/FAQ.md",
+  "quote": "Servers are disabled by default",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 1,
+  "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/FAQ.md",
+  "quote": "If the user can't do it in the Lightning UI or via the REST API, they can't do it via MCP.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 1,
+  "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/FAQ.md",
+  "quote": "The processing of the MCP server is completely deterministic.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 1,
+  "url": "https://github.com/forcedotcom/mcp-hosted",
+  "quote": "Salesforce\u2019s hosted MCP servers allow AI assistants like Claude, ChatGPT, and more connect securely to your Salesforce logic and assets",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 2,
+  "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview.md",
+  "quote": "OAuth is required for multiple accounts, while static auth access tokens are used for installing in a single account at a time.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 2,
+  "url": "https://developers.hubspot.com/docs/getting-started/account-types.md",
+  "quote": "Developer test accounts are free HubSpot accounts with access to a 90-day trial of many enterprise features",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 2,
+  "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/overview.md",
+  "quote": "are available to query via a private app access token or public app OAuth token.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 2,
+  "url": "https://developers.hubspot.com/docs/build-with-ai/remote-mcp-server.md",
+  "quote": "The remote HubSpot MCP server is a publicly hosted endpoint for connecting external AI tools and applications to HubSpot's CRM.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 3,
+  "url": "https://pipedrive.readme.io/docs/getting-started",
+  "quote": "You can use our API to create public or private apps using OAuth 2.0 and integrations via API token",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 3,
+  "url": "https://pipedrive.readme.io/docs/getting-started",
+  "quote": "Create a developer sandbox account Testing in a risk-free environment.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 3,
+  "url": "https://pipedrive.readme.io/docs/getting-started",
+  "quote": "featuring an intuitive RESTful API",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 3,
+  "url": "https://support.pipedrive.com/en/article/mcp-tools",
+  "quote": "MCP, it can use these tools to access information and perform actions on your behalf, based on the permissions you grant.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 4,
+  "url": "https://docs.attio.com/rest-api/guides/authentication",
+  "quote": "Attio implements the standard OAuth 2.0 specification",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 4,
+  "url": "https://docs.attio.com/rest-api/guides/authentication",
+  "quote": "you can generate an API key in the developer settings page of your apps",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 4,
+  "url": "https://attio.com/pricing",
+  "quote": "Free For individuals to get started with Attio.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 4,
+  "url": "https://docs.attio.com/rest-api/guides/authentication",
+  "quote": "An unpublished app can be installed in up to 25 workspaces.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 4,
+  "url": "https://docs.attio.com/rest-api/overview",
+  "quote": "Attio provides a public REST API which exchanges JSON over HTTPS.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 4,
+  "url": "https://docs.attio.com/mcp/overview",
+  "quote": "Attio MCP uses OAuth authentication, so you simply log in with your Attio account",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 4,
+  "url": "https://docs.attio.com/mcp/overview",
+  "quote": "https://mcp.attio.com/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 5,
+  "url": "https://docs.twenty.com/developers/extend/api",
+  "quote": "Authorization: Bearer YOUR_API_KEY",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 5,
+  "url": "https://docs.twenty.com/developers/extend/api",
+  "quote": "For OAuth-based access (external apps acting on behalf of users), see OAuth",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 5,
+  "url": "https://github.com/twentyhq/twenty",
+  "quote": "Run Twenty on your own infrastructure with Docker Compose",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 5,
+  "url": "https://twenty.com/pricing",
+  "quote": "Start your free trial today without credit card.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 5,
+  "url": "https://docs.twenty.com/developers/extend/api",
+  "quote": "REST and GraphQL APIs",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 5,
+  "url": "https://docs.twenty.com/developers/extend/mcp",
+  "quote": "Twenty exposes an MCP server so that AI assistants",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 6,
+  "url": "https://developers.podio.com/authentication",
+  "quote": "The Podio API uses the OAuth2 protocol for authentication.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 6,
+  "url": "https://developers.podio.com/api-key",
+  "quote": "go to the API key tab in your settings.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 6,
+  "url": "https://developers.podio.com/api-key",
+  "quote": "You just have to sign in or sign up with Podio",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 6,
+  "url": "https://www.progress.com/podio/pricing",
+  "quote": "Start structuring your work $ 0 per user per month",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 6,
+  "url": "https://developers.podio.com/",
+  "quote": "The Podio API is a complete programmable interface to all Podio functionality.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 6,
+  "url": "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide.md",
+  "quote": "The server is live at **[https://mcp.podio.com](https://mcp.podio.com/)**",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 7,
+  "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+  "quote": "The Zoho CRM API uses the OAuth 2.0 protocol for authentication.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 7,
+  "url": "https://www.zoho.com/crm/pricing/",
+  "quote": "Free forever for 3 users.",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 7,
+  "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+  "quote": "Free Edition 5000 credits 5000 credits",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 7,
+  "url": "https://www.zoho.com/accounts/protocol/oauth/self-client/overview.html",
+  "quote": "If you want your app to fetch data from your own Zoho account",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 7,
+  "url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+  "quote": "integrate with any third party application through flexible RESTful endpoints.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 7,
+  "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+  "quote": "Zoho CRM provides these as pre-built MCP servers, so you don't need to build, host, or maintain any infrastructure.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 8,
+  "url": "https://developer.close.com/api/overview/api-key-authentication",
+  "quote": "API keys use HTTP Basic client side authentication",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 8,
+  "url": "https://developer.close.com/api/overview/api-key-authentication",
+  "quote": "API keys can be created and managed in your Close account under Settings",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 8,
+  "url": "https://www.close.com/pricing",
+  "quote": "14-day free trial, no credit card required.",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 8,
+  "url": "https://developer.close.com/",
+  "quote": "REST API Reference Full endpoint docs with schemas, examples, and an interactive API explorer.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 8,
+  "url": "https://developer.close.com/mcp",
+  "quote": "The MCP server URL is https://mcp.close.com/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 9,
+  "url": "https://developer.copper.com/introduction/authentication.html",
+  "quote": "There are two ways to access the Copper Developer API: API keys and OAuth2.0",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 9,
+  "url": "https://www.copper.com/pricing",
+  "quote": "Start free, no credit card required.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 9,
+  "url": "https://developer.copper.com/introduction/oauth/index.html",
+  "quote": "To register your application, contact us",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 9,
+  "url": "https://developer.copper.com/",
+  "quote": "provides a RESTful interface with JSON-formatted responses to access most Copper resources.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 9,
+  "url": "https://www.copper.com/mcp",
+  "quote": "Copper is launching an official MCP server, built and hosted by Copper. The beta launches in November 2026.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 10,
+  "url": "https://api.docs.dealcloud.com/docs/token",
+  "quote": "DealCloud uses the OAuth2 Client Credentials flow to generate a bearer token",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 10,
+  "url": "https://api.docs.dealcloud.com/docs/apikeys",
+  "quote": "Scroll down to the API Key section and click Enable",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 10,
+  "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+  "quote": "DealCloud with Celeste license.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 10,
+  "url": "https://api.docs.dealcloud.com/docs/apikeys",
+  "quote": "If you do not see the Admin section, contact your organization's admin or DealCloud Customer Success Manager (CSM) for assistance.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 10,
+  "url": "https://api.docs.dealcloud.com/docs/token",
+  "quote": "Required when accessing the Data or Schema API endpoints (api/rest/v4/data or api/rest/v4/schema).",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 10,
+  "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+  "quote": "DealCloud provides a default MCP Server out-of-the-box without any configuration required.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 11,
+  "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+  "quote": "Zendesk supports using OAuth access tokens to authenticate API requests.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 11,
+  "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+  "quote": "API tokens are auto-generated passwords in the Zendesk Admin Center.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 11,
+  "url": "https://developer.zendesk.com/documentation/developer-tools/getting-started/getting-a-trial-or-sponsored-account-for-development/",
+  "quote": "You can try out the Zendesk platform with a free, 14-day trial account.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 11,
+  "url": "https://developer.zendesk.com/documentation/ticketing/getting-started/zendesk-api-quick-start/",
+  "quote": "A Zendesk Support account with agent or admin access.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 11,
+  "url": "https://raw.githubusercontent.com/reminia/zendesk-mcp-server/main/README.md",
+  "quote": "A Model Context Protocol server for Zendesk.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 11,
+  "url": "https://tldv.io/blog/zendesk-mcp/",
+  "quote": "So, as of 3 September 2026, the general-purpose Zendesk MCP server does not appear on Zendesk\u2019s early access programs page.",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 11,
+  "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+  "quote": "Basic authentication is used for API tokens.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 12,
+  "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+  "quote": "An Access Token is for if you're using the API to access data in your own Intercom workspace, in other words, building a private app.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 12,
+  "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+  "quote": "OAuth is for if you're building a public app that accesses other people's Intercom data.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 12,
+  "url": "https://developers.intercom.com/docs/guides/mcp",
+  "quote": "The Intercom MCP server is available for US and EU hosted workspaces.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 12,
+  "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+  "quote": "Development workspaces are free and intended for development purposes only.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 12,
+  "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io/",
+  "quote": "The production API server https://api.intercom.io",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 12,
+  "url": "https://developers.intercom.com/docs/guides/mcp",
+  "quote": "The Intercom MCP Server provides 16 tools for interacting with the Intercom API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 13,
+  "url": "https://developers.freshdesk.com/api/",
+  "quote": "Your API key will be available below the change password section to your right",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 13,
+  "url": "https://developers.freshdesk.com/api/",
+  "quote": "curl -v -u abcdefghij1234567890:X -H \"Content-Type: application/json\" -X GET 'https://domain.freshdesk.com/api/v2/tickets'",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 13,
+  "url": "https://partnersupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+  "quote": "Currently, Freshdesk allows you to authenticate requests involved in MCP integration by using an API key only.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 13,
+  "url": "https://partnersupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+  "quote": "Starting September 10, 2026 , the Freshworks MCP integration is generally available.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 13,
+  "url": "https://developers.freshdesk.com/api/",
+  "quote": "Create a Ticket post /api/v2/tickets OAuth 2.0 Scope 1 freshdesk.tickets.create",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 13,
+  "url": "https://www.freshworks.com/freshdesk/pricing/",
+  "quote": "How does the 14-day free trial work? When you sign up, you instantly get access to our Enterprise plan for 14 days.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 13,
+  "url": "https://partnersupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+  "quote": "Ensure to use your Freshdesk base domain in the following format: https://<subdomain>.freshdesk.com/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 14,
+  "url": "https://dev.frontapp.com/docs/authentication",
+  "quote": "There are two ways to get a Bearer token \u2014 through API tokens in your settings or through an OAuth implementation",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 14,
+  "url": "https://front.com/pricing",
+  "quote": "Try for Free",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 14,
+  "url": "https://dev.frontapp.com/docs/authentication",
+  "quote": "The Core API uses Bearer tokens to authenticate its user.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 14,
+  "url": "https://dev.frontapp.com/docs/mcp-server",
+  "quote": "lets AI agents act on Front conversation data using a single OAuth-authenticated endpoint.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 15,
+  "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+  "quote": "The Pylon API uses Bearer authentication.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 15,
+  "url": "https://www.usepylon.com/pricing",
+  "quote": "Pylon offers free trials for prospects. Your sales representative will work with you on setting up the demo organization.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 15,
+  "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+  "quote": "Pylon\u2019s API can be used to programmatically access and take action on data within Pylon.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 15,
+  "url": "https://docs.usepylon.com/pylon-docs/integrations/mcp",
+  "quote": "Server URL (US): https://mcp.usepylon.com",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 16,
+  "url": "https://support.liveagent.com/741982-API-key",
+  "quote": "While logged in as an admin navigate to Configuration> System> API which loads the API v3 section where you find existing API keys or add a new one.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 16,
+  "url": "https://www.liveagent.com/pricing/",
+  "quote": "30-day free trial, no credit card",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 16,
+  "url": "https://support.liveagent.com/567924-Documentation",
+  "quote": "You can find whole LiveAgent API documentation within your LiveAgent account",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 16,
+  "url": "https://support.liveagent.com/647358-MCP-Integration-for-Agents",
+  "quote": "MCP server URL https://<your-liveagent-domain>/api/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 16,
+  "url": "https://www.liveagent.com/pricing/",
+  "quote": "What is the MCP server on Business and Enterprise?",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 17,
+  "url": "https://www.plain.com/docs/graphql/authentication",
+  "quote": "GraphQL API Authentication Create a machine user and an API key, and scope it with fine-grained permissions.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 17,
+  "url": "https://www.plain.com/docs/graphql/authentication",
+  "quote": "Authorization: Bearer plainApiKey_xxx",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 17,
+  "url": "https://www.plain.com/pricing",
+  "quote": "Plain Pricing \u2014 Plans from $45/user/month | 7-Day Free Trial",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 17,
+  "url": "https://plain.com/docs/agents/mcp-server",
+  "quote": "The Plain MCP server at https://mcp.plain.com/mcp lets tools like Claude, ChatGPT, and Cursor work with your support data directly.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 17,
+  "url": "https://www.plain.com/docs/graphql/authentication",
+  "quote": "GraphQL API Authentication",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 17,
+  "url": "https://plain.com/docs/graphql/authentication",
+  "quote": "To call the API as a user in your workspace, use an OAuth app",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 18,
+  "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+  "quote": "This integration is available on the Standard, Plus, and Pro plans \u2014 any plan that includes Help Scout API access.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 18,
+  "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+  "quote": "Set the remote MCP server URL to https://mcp.helpscout.net/mcp .",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 18,
+  "url": "https://www.helpscout.com/pricing/",
+  "quote": "When you sign up for a free trial of the Standard or Plus plan",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 18,
+  "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+  "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 18,
+  "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+  "quote": "https://api.helpscout.net/v2/users/me",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 18,
+  "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+  "quote": "The connector is read-only.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 19,
+  "url": "https://developers.gorgias.com/reference/authentication",
+  "quote": "The Gorgias API supports two authentication methods: \ud83d\udd10 Private app \u2192 API key \ud83d\udc65 Public app \u2192 OAuth2",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 19,
+  "url": "https://www.gorgias.com/pricing",
+  "quote": "Start free trial No credit card required",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 19,
+  "url": "https://developers.gorgias.com/reference/introduction",
+  "quote": "Gorgias REST API",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 19,
+  "url": "https://updates.gorgias.com/publications/gorgias-mcp-is-now-in-open-beta",
+  "quote": "a first-party server that plugs your workspace into Claude, ChatGPT, Cursor, and any MCP-compatible tool",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 19,
+  "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-gorgias-6310546",
+  "quote": "the connection URL is the same: https://mcp.gorgias.com/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 20,
+  "url": "https://www.gladly.com/",
+  "quote": "Get a demo",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 20,
+  "url": "https://developer.gladly.com/rest/",
+  "quote": "To create and use an API token, your user must have the API User permission.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 20,
+  "url": "https://registry.modelcontextprotocol.io/v0/servers?search=gladly",
+  "quote": "Find customers, read conversations, items and tasks; add internal notes in Gladly.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 20,
+  "url": "https://developer.gladly.com/rest/",
+  "quote": "Gladly API uses token-based Basic Authentication",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 21,
+  "url": "https://docs.slack.dev/authentication/installing-with-oauth",
+  "quote": "Slack apps are installed with a v2 OAuth 2.0 flow.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 21,
+  "url": "https://docs.slack.dev/authentication/tokens",
+  "quote": "Bot token strings begin with xoxb-",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 21,
+  "url": "https://docs.slack.dev/authentication/installing-with-oauth",
+  "quote": "sends it to the oauth.v2.access API endpoint to exchange that code for an access token.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 21,
+  "url": "https://docs.slack.dev/distribution/",
+  "quote": "When you create a Slack app, it resides in one workspace.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 21,
+  "url": "https://docs.slack.dev/apis/web-api/",
+  "quote": "The Web API is a collection of HTTP RPC-style methods",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 21,
+  "url": "https://docs.slack.dev/ai/mcp-server",
+  "quote": "Only directory-published apps or internal apps may use MCP.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 22,
+  "url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+  "quote": "Use your API key SID as the username and your API key secret as the password.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 22,
+  "url": "https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account",
+  "quote": "You can only send to verified phone numbers (up to 5 per account).",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 22,
+  "url": "https://www.twilio.com/docs/usage/api",
+  "quote": "The Twilio APIs are organized around REST",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 22,
+  "url": "https://www.twilio.com/docs/mcp",
+  "quote": "it does not connect to a Twilio account or execute any API calls.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 23,
+  "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+  "quote": "Zoho Cliq's Rest API's follows the OAuth 2.0 protocol to authorize and authenticate requests.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 23,
+  "url": "https://www.zoho.com/cliq/pricing.html",
+  "quote": "Free Chat plans for all Teams size",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 23,
+  "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+  "quote": "Each API request must include an OAuth token in order to receive a success response.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 23,
+  "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+  "quote": "Cliq API is standardized around REST",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 23,
+  "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+  "quote": "Any AI model or agent can use our official MCP server to access your Cliq data",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 24,
+  "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+  "quote": "\u81ea\u5efa\u5e94\u7528\u901a\u8fc7\u6b64\u63a5\u53e3\u83b7\u53d6 `tenant_access_token`\u3002",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 24,
+  "url": "https://open.larksuite.com/llms.txt",
+  "quote": "\u83b7\u53d6 user_access_token \u662f\u6807\u51c6\u7684 OAuth 2.0",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 24,
+  "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes.md",
+  "quote": "\u5e94\u7528\u5f00\u53d1\u8005\u7533\u8bf7\u7684\u6743\u9650\u9700\u8981\u901a\u8fc7 **\u79df\u6237\u7ba1\u7406\u5458** \u7684\u5ba1\u6838\u3002",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 24,
+  "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+  "quote": "https://open.larksuite.com/open-apis/auth/v3/tenant_access_token/internal",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 24,
+  "url": "https://github.com/larksuite/lark-openapi-mcp",
+  "quote": "This is the Feishu/Lark official OpenAPI MCP (Model Context Protocol) tool",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 25,
+  "url": "https://pumble.com/help/integrations/add-pumble-apps-to-your-workspace/api-keys/",
+  "quote": "This addon lets you generate an API key that allows you to send messages, reactions, and more via simple HTTP requests.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 25,
+  "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+  "quote": "make sure to copy the App key, user token, and bot token.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 25,
+  "url": "https://pumble.com/help/integrations/add-pumble-apps-to-your-workspace/api-keys/",
+  "quote": "Available on all plans",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 25,
+  "url": "https://pumble.com/help/integrations/add-pumble-apps-to-your-workspace/api-keys/",
+  "quote": "The full list of available actions is available in the Swagger documentation.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 25,
+  "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+  "quote": "you can connect third-party AI agents",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 26,
+  "url": "https://docs.discord.com/developers/topics/oauth2",
+  "quote": "Bot users are automatically added to all apps",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 26,
+  "url": "https://docs.discord.com/developers/topics/oauth2",
+  "quote": "We support the authorization code grant, the implicit grant, client credentials",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 26,
+  "url": "https://docs.discord.com/developers/reference",
+  "quote": "Using a bot token found on the Bot page within your app",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 26,
+  "url": "https://docs.discord.com/developers/reference",
+  "quote": "The Discord API is a REST API that allows you to interact with Discord data from your own applications",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 26,
+  "url": "https://docs.discord.com/developers/topics/oauth2",
+  "quote": "bot users have full access to most API routes without using bearer tokens, and can connect to the Real Time Gateway",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 26,
+  "url": "https://github.com/SaseQ/discord-mcp",
+  "quote": "A MCP server for the Discord integration. Enable your AI assistants to seamlessly interact with Discord",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 27,
+  "url": "https://core.telegram.org/bots/api",
+  "quote": "Each bot is given a unique authentication token when it is created",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 27,
+  "url": "https://core.telegram.org/bots/api",
+  "quote": "Each bot is given a unique authentication token when it is created",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 27,
+  "url": "https://core.telegram.org/bots/api",
+  "quote": "The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 27,
+  "url": "https://github.com/guangxiangdebizi/telegram-mcp",
+  "quote": "A comprehensive Telegram Bot API server built on the Model Context Protocol (MCP)",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 28,
+  "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/overview",
+  "quote": "Authentication uses OAuth (not 2.0) access tokens",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 28,
+  "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+  "quote": "Create a system user and generate a permanent access token",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 28,
+  "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+  "quote": "Click Generate access token to generate a temporary access token to send a test message",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 28,
+  "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/overview",
+  "quote": "The WhatsApp Business Platform is built on Graph API and uses HTTP protocol",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 28,
+  "url": "https://developers.facebook.com/documentation/mcp/whatsapp-business-tools-mcp",
+  "quote": "Endpoint https://mcp.facebook.com/whatsapp_business_tools",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 28,
+  "url": "https://developers.facebook.com/blog/post/2026/09/15/whatsapp-business-messaging-mcp-ai-agent/",
+  "quote": "This release is built for development and testing workflows, not production sending at scale",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 29,
+  "url": "https://developers.aircall.io/api-references",
+  "quote": "With Aircall Public API, Authentication can be done through OAuth or Basic Auth",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 29,
+  "url": "https://developers.aircall.io/api-references",
+  "quote": "As an Aircall customer, an api_id and api_token are needed to use Aircall Public API",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 29,
+  "url": "https://aircall.io/pricing/",
+  "quote": "Full API access",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 29,
+  "url": "https://developers.aircall.io/api-references",
+  "quote": "Aircall Public API is a classic REST API",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 29,
+  "url": "https://developer.aircall.io/docs/mcp-faqs.md",
+  "quote": "As of this writting we don't offer an MCP servier",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 29,
+  "url": "https://github.com/themobilefirstco/aircall-mcp-server",
+  "quote": "Unofficial MCP server for Aircall by Allo - 73 tools for calls, contacts, SMS, users, teams & AI insights",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 30,
+  "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+  "quote": "A number of newer Vonage APIs require authentication to be done using an API key and secret sent Base64 encoded in the Authorization header",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 30,
+  "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+  "quote": "Messages supports both JWT and Basic authentication",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 30,
+  "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+  "quote": "When you create a Vonage account, an API key and secret will be created for you",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 30,
+  "url": "https://developer.vonage.com/en/getting-started/overview",
+  "quote": "give you some free credit when you first open your account",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 30,
+  "url": "https://developer.vonage.com/llms.txt",
+  "quote": "APIs are REST-based with JSON payloads",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 30,
+  "url": "https://developer.vonage.com/en/mcp-server/overview",
+  "quote": "The Vonage MCP Server enables AI agents and developer tools to discover, describe, and use Vonage capabilities",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 31,
+  "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+  "quote": "Just like other Google APIs, Google Ads API uses the OAuth 2.0 protocol for authentication and authorization.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 31,
+  "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+  "quote": "If you need Standard access, you need a manual review.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 31,
+  "url": "https://developers.google.com/google-ads/api/rest/overview",
+  "quote": "The Google Ads API can be called either using gRPC or REST.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 31,
+  "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+  "quote": "The Google Ads MCP server provides a standardized bridge to the Google Ads API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 31,
+  "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+  "quote": "you can apply on the Google Ads API Overview page for Explorer access (automated review and approval in most cases",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 32,
+  "url": "https://developers.facebook.com/blog/post/2026/07/16/meta-ads-mcp-server/",
+  "quote": "or pass a pre-obtained access token if you manage your own token lifecycle",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 32,
+  "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+  "quote": "If your app is only managing your ad account, standard access to the ads_read and ads_management permissions are sufficient",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 32,
+  "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+  "quote": "Advanced access must be approved through the App Review process on an individual permission and feature basis",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 32,
+  "url": "https://developers.facebook.com/docs/graph-api/overview",
+  "quote": "The Graph API is the primary way to get data into and out of the Facebook platform",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 32,
+  "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+  "quote": "The ads MCP server is a Meta-hosted Model Context Protocol",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 33,
+  "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+  "quote": "All these permission scopes are 3-legged permissions requiring explicit consent from a LinkedIn member",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 33,
+  "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+  "quote": "The 2-legged client credentials flow is not available for any marketing use cases",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 33,
+  "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access",
+  "quote": "are open to all approved developers",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 33,
+  "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access",
+  "quote": "All applications start with Development tier. You must apply separately to upgrade to the Standard tier",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 33,
+  "url": "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/concepts/methods",
+  "quote": "This method leverages the traditional HTTP GET method",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 33,
+  "url": "https://github.com/danielpopamd/linkedin-ads-mcp",
+  "quote": "LinkedIn Ads MCP server with full write access: 25 tools across campaigns, creatives, audiences, conversions, and analytics",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 34,
+  "url": "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken",
+  "quote": "Private Integrations, to put it simply, are static/fixed OAuth2 Access Tokens",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 34,
+  "url": "https://www.gohighlevel.com/pricing",
+  "quote": "Start with a FREE 14-day trial on any plan below",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 34,
+  "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+  "quote": "access to certain API endpoints depends on your subscription plan and the permissions assigned to the",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 34,
+  "url": "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken",
+  "quote": "Private Integration tokens are used in the Authorization header, just like other Access Tokens",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 34,
+  "url": "https://marketplace.gohighlevel.com/docs/other/mcp.md",
+  "quote": "Connect HighLevel to your AI assistant, then ask it to find a contact, book an appointment, send a message",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 35,
+  "url": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+  "quote": "This page walks through implementing OAuth 2 so your application can access the Marketing API on behalf of other Mailchimp users",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 35,
+  "url": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+  "quote": "Registering gives you the client_id and client_secret your server needs",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 35,
+  "url": "https://mailchimp.com/pricing/marketing/",
+  "quote": "Cancel or downgrade to our basic Free plan at any time",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 35,
+  "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+  "quote": "The Marketing API generally follows REST conventions, with some deviations",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 35,
+  "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server.md",
+  "quote": "This searches documentation, not your Mailchimp account",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 35,
+  "url": "https://github.com/damientilman/mailchimp-mcp-server",
+  "quote": "The most complete Mailchimp Marketing API MCP server: 227 tools across campaigns, audiences, reports, segments",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 36,
+  "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+  "quote": "Private API keys can be used to read and write data to your Klaviyo account",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 36,
+  "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+  "quote": "To manage API keys, you must have an Owner, Admin, or Manager role on your Klaviyo account",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 36,
+  "url": "https://www.klaviyo.com/pricing",
+  "quote": "Start Free with Email & SMS",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 36,
+  "url": "https://developers.klaviyo.com/en/reference/api_overview",
+  "quote": "Every endpoint in the Klaviyo REST API, with its authentication, parameters, request and response bodies, and an example request",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 36,
+  "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+  "quote": "Remote MCP server URL: https://mcp.klaviyo.com/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 37,
+  "url": "https://developer.systeme.io/reference/api.md",
+  "quote": "your only option right now is to attach your API key to the `X-API-Key` header of each request",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 37,
+  "url": "https://developer.systeme.io/reference/api.md",
+  "quote": "Simply navigate to the profile settings within your Systeme.io dashboard",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 37,
+  "url": "https://systeme.io/pricing",
+  "quote": "Start for free now",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 37,
+  "url": "https://developer.systeme.io/reference/api.md",
+  "quote": "Adhering to RESTful conventions, our API ensures an intuitive and consistent interaction pattern for all users",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 37,
+  "url": "https://developer.systeme.io/docs/mcp-server.md",
+  "quote": "The Systeme.io MCP server is in its initial release",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 38,
+  "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+  "quote": "Our implementation of grant types and access tokens follows OAuth 2.0 specifications",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 38,
+  "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+  "quote": "Application requests are reviewed by Pinterest",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 38,
+  "url": "https://github.com/pinterest/api-description",
+  "quote": "This repository contains OpenAPI (version 3.0.3) descriptions for Pinterest",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 38,
+  "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+  "quote": "Be the first to know when it launches",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 38,
+  "url": "https://github.com/collactivelabs/pinterest-mcp-server",
+  "quote": "A Model Context Protocol (MCP) server for integrating the Pinterest API with AI agents and LLMs",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 39,
+  "url": "https://developers.facebook.com/docs/threads/get-started",
+  "quote": "API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 39,
+  "url": "https://developers.facebook.com/docs/threads/get-started",
+  "quote": "To access the Threads API, create an app and pick the Threads use case",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 39,
+  "url": "https://developers.facebook.com/docs/threads/get-started",
+  "quote": "each permission must first be approved through the App Review process, and your app must be published",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 39,
+  "url": "https://developers.facebook.com/docs/threads/overview",
+  "quote": "The Threads API can be accessed by either graph.threads.com or graph.threads.net",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 39,
+  "url": "https://github.com/quinnjr/threads-mcp",
+  "quote": "Production-ready Model Context Protocol server for Threads.com API",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 40,
+  "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+  "quote": "The Twilio SendGrid Web API v3 supports API keys",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 40,
+  "url": "https://www.twilio.com/en-us/changelog/sendgrid-free-plan",
+  "quote": "After that, an upgrade to a paid plan will be required to continue sending email and accessing key tools",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 40,
+  "url": "https://www.twilio.com/en-us/sendgrid/pricing",
+  "quote": "Sign up for a free trial",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 40,
+  "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+  "quote": "The SendGrid v3 Web API provides a REST interface to send email at scale",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 40,
+  "url": "https://github.com/Garoth/sendgrid-mcp",
+  "quote": "Allows AI Agents to interact with the Twilio SendGrid v3 API, managing contact lists, templates, single sends, and stats",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 41,
+  "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+  "quote": "Your app sends the token in the X-Shopify-Access-Token header on every GraphQL Admin API request.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 41,
+  "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+  "quote": "Authorization code grant , for apps that run outside the Shopify admin.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 41,
+  "url": "https://shopify.dev/docs/apps/build/dev-dashboard",
+  "quote": "You own them, for building and testing without touching a live store.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 41,
+  "url": "https://shopify.dev/docs/apps/launch/distribution",
+  "quote": "Public distribution also requires registering for the Shopify App Store, which has a one-time fee.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 41,
+  "url": "https://shopify.dev/docs/api/admin-rest",
+  "quote": "The REST Admin API is a legacy API as of October 1, 2024.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 41,
+  "url": "https://shopify.dev/docs/api/admin-rest",
+  "quote": "Starting April 1, 2025, all new public apps must be built exclusively with the GraphQL Admin API .",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 41,
+  "url": "https://shopify.dev/docs/apps/build/devmcp",
+  "quote": "If you prefer MCP, you can connect to Shopify's developer resources through the Dev MCP server.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 42,
+  "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+  "quote": "You may use HTTP Basic Auth by providing the REST API Consumer Key as the username",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 42,
+  "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+  "quote": "You must use OAuth 1.0a \"one-legged\" authentication to ensure REST API credentials cannot be intercepted",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 42,
+  "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+  "quote": "New keys can be generated either through the WordPress admin interface or they can be auto-generated through an endpoint.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 42,
+  "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+  "quote": "Each set of keys is linked to a WordPress user on your site.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 42,
+  "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+  "quote": "WooCommerce (WC) 2.6+ is fully integrated with the WordPress REST API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 42,
+  "url": "https://developer.woocommerce.com/docs/features/mcp/",
+  "quote": "The MCP implementation in WooCommerce is currently in developer preview.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 43,
+  "url": "https://docs.bigcommerce.com/docs/start/authentication",
+  "quote": "Most of our REST endpoints and GraphQL Admin API endpoints use the X-Auth-Token header to authenticate to BigCommerce servers.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 43,
+  "url": "https://docs.bigcommerce.com/docs/start/authentication",
+  "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce\u2019s REST APIs",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 43,
+  "url": "https://docs.bigcommerce.com/docs/start/authentication",
+  "quote": "Merchants generate single-store API credentials when they create API accounts in their store control panel",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 43,
+  "url": "https://docs.bigcommerce.com/docs/start/about/sandboxes",
+  "quote": "To create a sandbox store, complete the following steps: Navigate to the BigCommerce Partner Portal and sign in using your credentials.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 43,
+  "url": "https://docs.bigcommerce.com/docs/start/authentication",
+  "quote": "Most of our REST endpoints and GraphQL Admin API endpoints use the X-Auth-Token header to authenticate to BigCommerce servers.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 43,
+  "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+  "quote": "Store Management MCP is in early access and available to all stores.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 43,
+  "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+  "quote": "Agents connect to https://api.bigcommerce.com/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 44,
+  "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication",
+  "quote": "This requires the API Administrator or Account Administrator role",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 44,
+  "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication",
+  "quote": "With a client secret configured, the CLI uses client credentials.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 44,
+  "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication",
+  "quote": "This requires the API Administrator or Account Administrator role",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 44,
+  "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication",
+  "quote": "Use SCAPI instead",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 44,
+  "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp",
+  "quote": "The B2C MCP server connects your AI assistant to Salesforce B2C Commerce tools, documentation, and workflow skills.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 45,
+  "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+  "quote": "Use this token in applications to authorize an Admin user and access Admin-related APIs.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 45,
+  "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+  "quote": "This method is a good choice for integrating with a third-party system that supports OAuth 1.0a.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 45,
+  "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+  "quote": "After activating an integration (self activated), you can use the generated consumer key, consumer secret, access token, and access token secret",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 45,
+  "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+  "quote": "Adobe Commerce and Magento Open Source allow developers to define web API resources and their permissions in the webapi.xml configuration file.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 45,
+  "url": "https://developer.adobe.com/commerce/webapi/",
+  "quote": "The Web API documentation is divided into three guides: REST, GraphQL, and Getting Started.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 45,
+  "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/tools-overview",
+  "quote": "Adobe Commerce App Builder MCP server",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 46,
+  "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+  "quote": "Depending on your development needs, you can use a generated API key or start the OAuth process with Squarespace to become a registered OAuth client.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 46,
+  "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+  "quote": "With Squarespace's Commerce Advanced plan, you can develop a custom application for a Squarespace merchant site.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 46,
+  "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+  "quote": "Registering an OAuth client, and having it reviewed and approved, only allows OAuth connections with Squarespace.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 46,
+  "url": "https://developers.squarespace.com/commerce-apis/overview",
+  "quote": "All Commerce APIs are built on HTTPS and designed with REST principles in mind.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 46,
+  "url": "https://developers.squarespace.com/mcp/overview",
+  "quote": "The Squarespace MCP server is a remote server.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 46,
+  "url": "https://developers.squarespace.com/mcp/overview",
+  "quote": "Your MCP client connects directly to: Code https://mcp.squarespace.com/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 47,
+  "url": "https://docs.ecwid.com/api-reference/rest-api/overview",
+  "quote": "We use OAuth 2.0 authorization simplified for single-store customizations, JSON-formatted data, and a clear structure.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 47,
+  "url": "https://docs.ecwid.com/llms-full.txt",
+  "quote": "Secret tokens exposed on the storefront put the store data at risk.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 47,
+  "url": "https://docs.ecwid.com/llms-full.txt",
+  "quote": "Only stores on paid plans can access API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 47,
+  "url": "https://docs.ecwid.com/llms-full.txt",
+  "quote": "Ecwid provides a **free upgrade to a paid plan** if you:",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 47,
+  "url": "https://docs.ecwid.com/llms-full.txt",
+  "quote": "Access tokens authorize REST API requests for the specific app in the specific store.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 47,
+  "url": "https://zapier.com/mcp/ecwid",
+  "quote": "Use Ecwid by Lightspeed MCP to take action in your AI tools",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 48,
+  "url": "https://gumroad.com/help/article/280-create-application-api",
+  "quote": "To create an application for general use, you'll need to build a Redirect URI handler to generate access tokens for each of your users.",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 48,
+  "url": "https://gumroad.com/help/article/280-create-application-api",
+  "quote": "Your access token is used in the request header of every request to the API and should be kept secret, like a password.",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 48,
+  "url": "https://gumroad.com/help/article/280-create-application-api",
+  "quote": "if you only want to use the API on your own Gumroad account, you can manually generate an access token",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 48,
+  "url": "https://gumroad.com/help/article/280-create-application-api",
+  "quote": "curl https://api.gumroad.com/v2/products",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 48,
+  "url": "https://gumroad.com/mcp",
+  "quote": "Every assistant connects to its own URL and asks for OAuth access to your Gumroad account.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 49,
+  "url": "https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api",
+  "quote": "An LWA access token expires one hour after it is issued.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 49,
+  "url": "https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api",
+  "quote": "you include a Restricted Data Token (RDT)",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 49,
+  "url": "https://developer-docs.amazon/sp-api/docs/sp-api-registration-overview",
+  "quote": "you must have a professional selling account to develop SP-API private seller applications.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 49,
+  "url": "https://developer-docs.amazon/sp-api/docs/sp-api-registration-overview",
+  "quote": "public developers must list their app in the Amazon Selling Partner Appstore.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 49,
+  "url": "https://developer-docs.amazon/sp-api/llms.txt",
+  "quote": "This topic describes the REST-based Selling Partner API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 49,
+  "url": "https://github.com/amzn/selling-partner-api-samples",
+  "quote": "A local MCP server that bundles SP-API developer tools into a single npm package",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 50,
+  "url": "https://commas.com/enterprises",
+  "quote": "Checkout embedded in your stack. APIs and embeddable components, live in days not quarters.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 50,
+  "url": "https://commas.com/enterprises",
+  "quote": "Enterprise sellers make more money here.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 50,
+  "url": "https://commas.com/",
+  "quote": "Embedded checkouts, multi-rail payouts, APIs and SDKs.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 50,
+  "url": "https://commas.com/",
+  "quote": "MCP beta Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 51,
+  "url": "https://docs.dataforseo.com/v3/auth/",
+  "quote": "Authorization: Basic login:password",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 51,
+  "url": "https://docs.dataforseo.com/v3/auth/",
+  "quote": "go to the API Access tab in the account dashboard to find your API login and password",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 51,
+  "url": "https://dataforseo.com/pricing",
+  "quote": "You can sign up for free and use your $1 trial credit available to new accounts",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 51,
+  "url": "https://dataforseo.com/pricing",
+  "quote": "The minimum account top-up is $50.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 51,
+  "url": "https://docs.dataforseo.com/v3/auth/",
+  "quote": "call our APIs with almost any programming language, Postman app, REST API platforms, and all major frameworks.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 51,
+  "url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+  "quote": "Use this URL (no local setup). https://mcp.dataforseo.com/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 51,
+  "url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+  "quote": "Setting Up the Official DataForSEO MCP Server: Simple Guide",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 52,
+  "url": "https://seranking.com/api/data/getting-started/",
+  "quote": "Include an Authorization header in your request, with the value Token YOUR_API_KEY .",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 52,
+  "url": "https://seranking.com/api/data/getting-started/",
+  "quote": "First, you\u2019ll need to generate a unique API key from your account dashboard.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 52,
+  "url": "https://seranking.com/api/data/getting-started/",
+  "quote": "Our Data API credit plans are available as annual packages.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 52,
+  "url": "https://seranking.com/api/",
+  "quote": "API access is included in every SE Ranking plan",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 52,
+  "url": "https://seranking.com/api/data/getting-started/",
+  "quote": "curl -X GET 'https://api.seranking.com/v1/account/subscription'",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 52,
+  "url": "https://seranking.com/api/mcp/",
+  "quote": "This transport uses OAuth 2.1 with dynamic client registration for authentication at the following address: Copy https://api.seranking.com/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 53,
+  "url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management.md",
+  "quote": "You'll need an API key to send requests via Ahrefs API v3.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 53,
+  "url": "https://docs.ahrefs.com/mcp/docs/claude-code.md",
+  "quote": "Login to Ahrefs account, select workspace and click \"Allow\"",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 53,
+  "url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
+  "quote": "Users on any paid plan can test Ahrefs API by running a limited set of free test queries.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 53,
+  "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+  "quote": "Ahrefs provides a hosted MCP server that allows users with a Lite plan or higher to connect their Ahrefs account to supported AI tools.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 53,
+  "url": "https://docs.ahrefs.com/llms.txt",
+  "quote": "The Ahrefs API is organized into **tools**, each a self-contained group of REST endpoints.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 53,
+  "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+  "quote": "Ahrefs provides a hosted MCP server that allows users with a Lite plan or higher to connect their Ahrefs account to supported AI tools.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 54,
+  "url": "https://docs.mrscraper.com/docs/api/authentication",
+  "quote": "Include your API token in the x-api-token HTTP header on every request",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 54,
+  "url": "https://docs.mrscraper.com/docs/api/authentication",
+  "quote": "For Marketplace endpoints , authenticate using the standard RFC 6750 Authorization header with a Bearer token",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 54,
+  "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+  "quote": "The Free plan includes 100 tokens per month with no credit card required.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 54,
+  "url": "https://docs.mrscraper.com/docs/api/authentication",
+  "quote": "API tokens are managed directly from your MrScraper dashboard.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 54,
+  "url": "https://docs.mrscraper.com/docs/api/overview",
+  "quote": "Built on REST principles, our API offers predictable resource-oriented URLs",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 54,
+  "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+  "quote": "MrScraper MCP is the official Model Context Protocol server for MrScraper.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 54,
+  "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+  "quote": "Use this exact URL, including the /mcp path.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 55,
+  "url": "https://docs.apify.com/api/v2",
+  "quote": "You can create an API token on the Integrations page in the Apify Console.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 55,
+  "url": "https://docs.apify.com/integrations/mcp.md",
+  "quote": "The recommended remote connection signs you in with OAuth instead.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 55,
+  "url": "https://apify.com/pricing",
+  "quote": "Start for free No credit card required.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 55,
+  "url": "https://docs.apify.com/api/v2",
+  "quote": "The API is organized around RESTful HTTP endpoints.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 55,
+  "url": "https://docs.apify.com/integrations/mcp.md",
+  "quote": "On first connection, your browser opens so you can sign in to Apify and approve access.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 56,
+  "url": "https://docs.firecrawl.dev/api-reference/introduction",
+  "quote": "The header should contain `Bearer fc-123456789`, where `fc-123456789` represents your API Key.",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 56,
+  "url": "https://docs.firecrawl.dev/introduction",
+  "quote": "Add an API key when you need higher limits.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 56,
+  "url": "https://docs.firecrawl.dev/api-reference/introduction",
+  "quote": "All requests contain the following base URL:",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 56,
+  "url": "https://docs.firecrawl.dev/mcp-server",
+  "quote": "Set up Firecrawl MCP with keyless access, account sign-in, or an API key.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 56,
+  "url": "https://www.firecrawl.dev/pricing",
+  "quote": "Free Plan A lightweight way to get started. No cost, no card, no hassle.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 57,
+  "url": "https://docs.brightdata.com/api-reference/introduction",
+  "quote": "An API key is a secure hashed token used to authenticate with Bright Data API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 57,
+  "url": "https://docs.brightdata.com/api-reference/authentication",
+  "quote": "If you don't see the 'API key' section, switch to an admin account.",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 57,
+  "url": "https://docs.brightdata.com/api-reference/introduction",
+  "quote": "Authorization: Bearer <token>",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 57,
+  "url": "https://github.com/brightdata/brightdata-mcp",
+  "quote": "Free tier: 5,000 requests per month.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 57,
+  "url": "https://github.com/brightdata/brightdata-mcp",
+  "quote": "Free tier: 5,000 requests per month. No credit card required. Renews monthly.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 58,
+  "url": "https://github.com/sherlock-project/sherlock",
+  "quote": "Hunt down social media accounts by username across 400+ social networks",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 58,
+  "url": "https://github.com/sherlock-project/sherlock",
+  "quote": "pipx install sherlock-project",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 58,
+  "url": "https://github.com/sherlock-project/sherlock",
+  "quote": "Accounts found will be stored in an individual text file with the corresponding username",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 58,
+  "url": "https://glama.ai/mcp/servers/Burnsedia/sherlock-mcp",
+  "quote": "Seamlessly search social media accounts across 400+ platforms using the Model Context Protocol.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 59,
+  "url": "https://docs.waterfall.io",
+  "quote": "The Waterfall API is available at `https://api.waterfall.io`.",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 59,
+  "url": "https://docs.waterfall.io/v1/book-demo.md",
+  "quote": "API access is available by approval.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 59,
+  "url": "https://docs.waterfall.io/v1/authentication.md",
+  "quote": "Authenticate data and account API requests with your Waterfall API key in the x-api-key header.",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 59,
+  "url": "https://docs.waterfall.io/v1/skills-overview.md",
+  "quote": "Waterfall provides two skills: one for making API calls during a task, and one for creating integration code you maintain.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 60,
+  "url": "https://developers.clay.com/public-api/quickstart.md",
+  "quote": "Requests authenticate with a Clay API key in the `clay-api-key` header.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 60,
+  "url": "https://developers.clay.com/public-api/quickstart.md",
+  "quote": "You can create an API key three ways:",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 60,
+  "url": "https://developers.clay.com/public-api/quickstart.md",
+  "quote": "Use the Public API to call Clay from your own applications and services",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 60,
+  "url": "https://developers.clay.com/llms.txt",
+  "quote": "Use Clay with coding agents, MCP clients, local scripts, and JSON-first automations.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 60,
+  "url": "https://www.clay.com/pricing",
+  "quote": "Free Start building in Clay for free. No strings attached.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 60,
+  "url": "https://developers.clay.com/use-cases/agent-workflows.md",
+  "quote": "Use MCP to call Clay functions from a coding agent like Claude Code, Codex, or Cursor.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 61,
+  "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+  "quote": "You can also create an OAuth token with an OAuth app to access the REST API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 61,
+  "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+  "quote": "If you want to use the API for an organization or on behalf of another user, GitHub recommends that you use a GitHub App.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 61,
+  "url": "https://docs.github.com/en/get-started/learning-about-github/githubs-plans",
+  "quote": "GitHub offers free and paid plans for storing and collaborating on code.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 61,
+  "url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api",
+  "quote": "Every request to the REST API includes an HTTP method and a path.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 61,
+  "url": "https://github.com/github/github-mcp-server",
+  "quote": "The remote GitHub MCP Server is hosted by GitHub and provides the easiest method for getting up and running.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 61,
+  "url": "https://docs.github.com/en/graphql/overview/about-the-graphql-api",
+  "quote": "GitHub chose GraphQL because it offers significantly more flexibility for our integrators.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 62,
+  "url": "https://vercel.com/kb/guide/how-do-i-use-a-vercel-api-access-token",
+  "quote": "Pass the token as a Bearer token in the `Authorization` header of your request.",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 62,
+  "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+  "quote": "It's a remote MCP with OAuth that gives AI tools secure access to your Vercel projects available at:",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 62,
+  "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+  "quote": "Vercel MCP is available on all plans and your use is subject to",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 62,
+  "url": "https://vercel.com/docs/rest-api",
+  "quote": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 62,
+  "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+  "quote": "Vercel MCP is Vercel's official MCP server.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 62,
+  "url": "https://vercel.com/pricing",
+  "quote": "Hobby $0 /mo. The perfect starting place for your web app.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 63,
+  "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+  "quote": "Netlify uses OAuth2 for authentication",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 63,
+  "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+  "quote": "Use your PAT for manual authentication in shell scripts or commands that use the Netlify API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 63,
+  "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+  "quote": "If you're making a public integration with Netlify for others to enjoy, you must use OAuth2.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 63,
+  "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+  "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 63,
+  "url": "https://docs.netlify.com/build/build-with-ai/netlify-mcp-server/",
+  "quote": "remote MCP server by running this command and following the prompts to select the agents you want to configure: npx -y add-mcp https://mcp.netlify.com/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 63,
+  "url": "https://www.netlify.com/pricing/",
+  "quote": "Start free. Pay for what your app actually uses.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 64,
+  "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+  "quote": "Whenever possible, use API tokens to interact with the Cloudflare API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 64,
+  "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+  "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 64,
+  "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+  "quote": "Create an API token to grant access to the API to perform actions.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 64,
+  "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+  "quote": "Using the Cloudflare API requires authentication",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 64,
+  "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+  "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 64,
+  "url": "https://www.cloudflare.com/plans/",
+  "quote": "Free For personal or hobby projects that aren't business-critical.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 65,
+  "url": "https://supabase.com/docs/reference/api/introduction",
+  "quote": "PATs are tokens with a custom expiry that you manually generate to access the Management API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 65,
+  "url": "https://supabase.com/docs/reference/api/introduction",
+  "quote": "OAuth2 allows your application to generate tokens on behalf of a Supabase user",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 65,
+  "url": "https://supabase.com/docs/reference/api/introduction",
+  "quote": "All API requests must be authenticated and made over HTTPS.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 65,
+  "url": "https://supabase.com/docs/reference/api/introduction",
+  "quote": "Manage your Supabase organizations and projects programmatically.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 65,
+  "url": "https://supabase.com/docs/guides/getting-started/mcp",
+  "quote": "Remote MCP installation Choose your Supabase platform, project, and MCP client and follow the installation instructions",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 65,
+  "url": "https://supabase.com/pricing",
+  "quote": "Free Perfect for passion projects & simple websites.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 66,
+  "url": "https://neo4j.com/docs/aura/api/authentication/",
+  "quote": "The Aura API uses OAuth 2.0 for API authentication.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 66,
+  "url": "https://neo4j.com/docs/aura/api/authentication/",
+  "quote": "All tiers can create Aura API credentials.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 66,
+  "url": "https://neo4j.com/docs/query-api/current/",
+  "quote": "The Query API allows to execute Cypher statements against a Neo4j server through HTTP requests.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 66,
+  "url": "https://neo4j.com/docs/aura/api/overview/",
+  "quote": "The current version of the Aura API is v1",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 66,
+  "url": "https://neo4j.com/docs/mcp/current/",
+  "quote": "Neo4j MCP implements the Model Context Protocol (MCP), an open standard that lets applications connect to external data",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 66,
+  "url": "https://neo4j.com/docs/query-api/current/query/",
+  "quote": "Authorization: Basic bmVvNGo6dmVyeXNlY3JldA==",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 67,
+  "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+  "quote": "When you send a request, the request must include authentication information.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 67,
+  "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+  "quote": "PROGRAMMATIC_ACCESS_TOKEN (for programmatic access tokens)",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 67,
+  "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+  "quote": "The trial continues for 30 days (from the sign-up date)",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 67,
+  "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+  "quote": "The Snowflake SQL API is a REST API that you can use to access and update data in a Snowflake database.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 67,
+  "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+  "quote": "Snowflake-managed MCP server lets AI agents securely retrieve data from Snowflake accounts without needing to deploy separate infrastructure.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 67,
+  "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+  "quote": "The trial continues for 30 days (from the sign-up date) or until you\u2019ve depleted your free usage balance, whichever occurs first.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 68,
+  "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+  "quote": "Service accounts are the recommended method to manage authentication to the Atlas Administration API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 68,
+  "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+  "quote": "API keys are a legacy method of authenticating to the Atlas Administration API that uses HTTP Digest Authentication.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 68,
+  "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+  "quote": "You have an Atlas account. To create one, see",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 68,
+  "url": "https://www.mongodb.com/docs/atlas/api/",
+  "quote": "Programmatically perform administrative tasks on your Atlas cluster outside of the Atlas UI with the Atlas Administration API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 68,
+  "url": "https://www.mongodb.com/docs/mcp-server/",
+  "quote": "The MongoDB MCP Server lets you connect to MongoDB from your agentic AI tools, assistants, and platforms.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 68,
+  "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+  "quote": "To create a service account or API keys for an organization, you must have Organization Owner access to that organization.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 69,
+  "url": "https://docs.datadoghq.com/api/latest/",
+  "quote": "Authenticate to the API with an API key using the header `DD-API-KEY`.",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 69,
+  "url": "https://docs.datadoghq.com/mcp_server/setup/",
+  "quote": "For most users, OAuth 2.0 is the recommended authentication method, and your MCP client handles it during setup.",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 69,
+  "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+  "quote": "To add a Datadog application key, navigate to Organization Settings > Application Keys.",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 69,
+  "url": "https://docs.datadoghq.com/api/latest/",
+  "quote": "The Datadog API is an HTTP REST API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 69,
+  "url": "https://docs.datadoghq.com/bits_ai/mcp_server/",
+  "quote": "The Datadog MCP Server acts as a bridge between your observability data in Datadog and any AI agents that support the Model Context Protocol (MCP)",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 69,
+  "url": "https://www.datadoghq.com/pricing/",
+  "quote": "Flexible, transparent pricing designed to scale with your business Multi-Year/Volume discounts available Free Trial Contact Us",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 69,
+  "url": "https://docs.datadoghq.com/mcp_server/setup/",
+  "quote": "US1 datadoghq.com https://mcp.datadoghq.com/v1/mcp",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 70,
+  "url": "https://docs.sentry.io/api/auth/",
+  "quote": "You can create authentication tokens within Sentry by creating an internal integration.",
+  "code": 200,
+  "found": false
+ },
+ {
+  "app_id": 70,
+  "url": "https://docs.sentry.io/api/guides/create-auth-token/",
+  "quote": "To use Sentry's APIs, you must have an authentication token.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 70,
+  "url": "https://docs.sentry.io/api/auth/",
+  "quote": "Authorization: Bearer {TOKEN}",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 70,
+  "url": "https://mcp.sentry.dev/",
+  "quote": "The base MCP server address is: https://mcp.sentry.dev/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 70,
+  "url": "https://mcp.sentry.dev/",
+  "quote": "All connections use OAuth.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 70,
+  "url": "https://sentry.io/pricing/",
+  "quote": "Pricing: Free Developer Plan, Pay as You Grow",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 71,
+  "url": "https://developers.notion.com/docs/authorization",
+  "quote": "Internal connections use a static credential called an internal connection API token",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 71,
+  "url": "https://developers.notion.com/docs/authorization",
+  "quote": "OAuth integrations follow the OAuth 2.0 protocol to authorize a connection to interact with a workspace",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 71,
+  "url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+  "quote": "Free Workspace owners only. Not configurable.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 71,
+  "url": "https://developers.notion.com/reference/intro",
+  "quote": "Send requests over HTTPS to https://api.notion.com",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 71,
+  "url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+  "quote": "The remote server URL is https://mcp.notion.com/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 72,
+  "url": "https://airtable.com/developers/web/api/authentication.md",
+  "quote": "Any integrations that allow other users to grant access to Airtable should use OAuth.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 72,
+  "url": "https://airtable.com/developers/web/api/authentication.md",
+  "quote": "Personal access tokens act as your user account",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 72,
+  "url": "https://airtable.com/developers/agents/mcp/getting-started",
+  "quote": "The server is available to all users on all plans.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 72,
+  "url": "https://airtable.com/developers/web/api/introduction.md",
+  "quote": "The API closely follows REST",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 72,
+  "url": "https://airtable.com/developers/agents/mcp/getting-started",
+  "quote": "Server URL: https://mcp.airtable.com/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 73,
+  "url": "https://linear.app/developers/oauth-2-0-authentication",
+  "quote": "Linear supports OAuth2 authentication, which is recommended if you're building applications to integrate with Linear.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 73,
+  "url": "https://linear.app/developers/graphql",
+  "quote": "For personal scripts API keys are the easiest way to access the API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 73,
+  "url": "https://linear.app/pricing",
+  "quote": "Free for everyone Unlimited members 2 teams 250 issues",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 73,
+  "url": "https://linear.app/developers/graphql",
+  "quote": "It supports introspection so you can query the whole schema.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 73,
+  "url": "https://linear.app/docs/mcp",
+  "quote": "Read-write access is provided through https://mcp.linear.app/mcp by default.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 74,
+  "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+  "quote": "OAuth 2.0 (3LO) allows external applications and services to access Atlassian product APIs on a user's behalf.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 74,
+  "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+  "quote": "Basic auth requires API tokens.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 74,
+  "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+  "quote": "You generate an API token for your Atlassian account and use it to authenticate anywhere where you would have used a password.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 74,
+  "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+  "quote": "The Jira REST API enables you to interact with Jira programmatically.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 74,
+  "url": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/",
+  "quote": "claude mcp add --transport http atlassian https://mcp.atlassian.com/v2/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 75,
+  "url": "https://developers.asana.com/docs/authentication",
+  "quote": "A personal access token (PAT) is the quickest and simplest way to authenticate in the API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 75,
+  "url": "https://developers.asana.com/docs/authentication",
+  "quote": "This is the best choice if multiple users need to sign in to your app.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 75,
+  "url": "https://developers.asana.com/docs/rate-limits",
+  "quote": "Limits are based on minute-long windows and differ depending on whether the domain is free or paid",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 75,
+  "url": "https://developers.asana.com/reference/rest-api-reference",
+  "quote": "To begin making requests against the REST API, see the quick start guide.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 75,
+  "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+  "quote": "The Asana MCP V2 server is available at: https://mcp.asana.com/v2/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 76,
+  "url": "https://developer.monday.com/apps/docs/oauth",
+  "quote": "OAuth 2.0 is a protocol that lets your app request authorization to read or modify data in a user's monday account.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 76,
+  "url": "https://developer.monday.com/api-reference/docs/authentication",
+  "quote": "These tokens are unique to each user",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 76,
+  "url": "https://developer.monday.com/api-reference/docs/authentication",
+  "quote": "create a free developer account to get an API token and start testing",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 76,
+  "url": "https://developer.monday.com/api-reference/docs/introduction-to-graphql",
+  "quote": "The monday.com API is built with GraphQL, a flexible query language",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 76,
+  "url": "https://github.com/mondaycom/mcp",
+  "quote": "Our hosted MCP service handles all the infrastructure for you",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 77,
+  "url": "https://developer.clickup.com/docs/authentication",
+  "quote": "Use a personal API token for individual or testing purposes.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 77,
+  "url": "https://developer.clickup.com/docs/authentication",
+  "quote": "To allow others to use your app, implement the OAuth2 flow so each user has their own token",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 77,
+  "url": "https://developer.clickup.com/docs/rate-limits",
+  "quote": "FreeForever 100 Unlimited 100 Business 100",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 77,
+  "url": "https://developer.clickup.com/reference/gettasks",
+  "quote": "View the tasks in a List. Responses are limited to 100 tasks per page.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 77,
+  "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+  "quote": "Our MCP server URL is https://mcp.clickup.com/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 78,
+  "url": "https://docs.superhuman.com/developers/apis/v1",
+  "quote": "The API token is invalid or has expired.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 78,
+  "url": "https://docs.superhuman.com/developers/apis/v1",
+  "quote": "We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 78,
+  "url": "https://docs.superhuman.com/developers/apis/v1",
+  "quote": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 78,
+  "url": "https://docs.superhuman.com/resources/guides/getting_started_with_coda_mcp",
+  "quote": "Under the hood, Superhuman Docs runs an MCP server built on the open Model Context Protocol standard",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 79,
+  "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+  "quote": "The API authenticates using access tokens (API keys).",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 79,
+  "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+  "quote": "OAuth 2.0 (OAuth) provides a way for your app users to grant limited access to their Smartsheet resources.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 79,
+  "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+  "quote": "Required plan: Business, Enterprise, or Advanced Work Management",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 79,
+  "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+  "quote": "You'll find SDK code examples alongside REST snippets throughout the API documentation.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 79,
+  "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+  "quote": "Region Environment MCP server URL United States US production https://mcp.smartsheet.com",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 80,
+  "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+  "quote": "Personal Access Tokens are the preferred method when you want to write your own scripts that consume our API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 80,
+  "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+  "quote": "If you are interested in building integrations that other users can use, you will need to register an OAuth2 Application",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 80,
+  "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+  "quote": "The API can be accessed by creating a Personal Access Token from the Developers section of Harvest ID.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 80,
+  "url": "https://www.getharvest.com/pricing",
+  "quote": "Free Built for individual freelancers starting from $0 forever",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 80,
+  "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+  "quote": "The Harvest V2 API is a REST API that allows you to interact with your Harvest account programmatically.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 80,
+  "url": "https://api.harvestapp.com/.well-known/oauth-protected-resource/mcp",
+  "quote": "\"resource\":\"https://api.harvestapp.com/mcp\"",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 81,
+  "url": "https://docs.stripe.com/api/authentication",
+  "quote": "Provide your API key as the basic auth username value.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 81,
+  "url": "https://docs.stripe.com/mcp",
+  "quote": "Use OAuth when a client accesses Stripe on behalf of your Stripe user account.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 81,
+  "url": "https://docs.stripe.com/api",
+  "quote": "You can use the Stripe API in sandboxes without affecting your live data or interacting with banking networks.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 81,
+  "url": "https://docs.stripe.com/api",
+  "quote": "The Stripe API is organized around REST",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 81,
+  "url": "https://docs.stripe.com/mcp",
+  "quote": "Stripe's MCP server supports two authentication methods",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 82,
+  "url": "https://plaid.com/docs/api/",
+  "quote": "These may be sent either in the request body or in the headers PLAID-CLIENT-ID and PLAID-SECRET",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 82,
+  "url": "https://plaid.com/docs/sandbox/",
+  "quote": "The Plaid Sandbox is a free and fully-featured environment for application development and testing.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 82,
+  "url": "https://plaid.com/docs/api/",
+  "quote": "The Plaid API is JSON over HTTP.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 82,
+  "url": "https://plaid.com/docs/resources/mcp/",
+  "quote": "The Dashboard MCP server is a remote MCP server hosted by Plaid.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 83,
+  "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md",
+  "quote": "We support HMAC, RSA, and Ed25519 keys.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 83,
+  "url": "https://testnet.binance.vision/",
+  "quote": "Step 1: Log in on this website, and generate an API Key.",
+  "code": 451,
+  "found": false
+ },
+ {
+  "app_id": 83,
+  "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md",
+  "quote": "# Public Rest API for Binance",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 83,
+  "url": "https://github.com/AnalyticAce/binance-mcp-server",
+  "quote": "Unofficial tools and server implementation for Binance's Model Context Protocol (MCP).",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 84,
+  "url": "https://docs.nmi.com/reference/authentication",
+  "quote": "Authentication across our APIs is done via secure API keys.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 84,
+  "url": "https://www.nmi.com/resources/payments-101/faq/",
+  "quote": "NMI operates exclusively through a partner channel. We don\u2019t directly onboard individual merchants as end users.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 84,
+  "url": "https://docs.nmi.com/llms.txt",
+  "quote": "For new integrations, start with the Payment Component and NMI REST API guides, API reference, SDKs, and recipes.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 84,
+  "url": "https://docs.nmi.com/docs/mcp-api",
+  "quote": "It runs locally on your machine and talks to the NMI REST API with your own merchant API key.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 85,
+  "url": "https://www.ipayx.ai/.well-known/mcp.json",
+  "quote": "full_forensic_fx_report requires a Bearer API key from https://www.ipayx.ai/developers",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 85,
+  "url": "https://www.ipayx.ai/.well-known/mcp.json",
+  "quote": "3 audits per IP per calendar month (renews monthly)",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 85,
+  "url": "https://ipayx.ai/llms.txt",
+  "quote": "POST https://api.ipayx.ai/functions/v1/fx-audit-engine",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 85,
+  "url": "https://ipayx.ai/llms.txt",
+  "quote": "Endpoint: https://mcp.ipayx.ai/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 86,
+  "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+  "quote": "This server uses OAuth 2.0 to authenticate to a QuickBooks Online company.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 86,
+  "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+  "quote": "If you only want to read your own company's data, you still need to set up an app",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 86,
+  "url": "https://github.com/intuit/QuickBooks-V3-Java-SDK",
+  "quote": "ipp-v3-java-devkit - core component, contains REST API support.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 86,
+  "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+  "quote": "this is a local MCP server. It runs as a stdio subprocess on the developer's or partner's machine",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 87,
+  "url": "https://github.com/XeroAPI/Xero-OpenAPI",
+  "quote": "An OpenAPI (Swagger) specification for the Xero API with OAuth 2.0 security schema.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 87,
+  "url": "https://github.com/XeroAPI/xero-node",
+  "quote": "Create a free Xero user account",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 87,
+  "url": "https://github.com/XeroAPI/xero-node",
+  "quote": "Basic app showing Custom Connections - a Xero premium option for building M2M integrations to a single org",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 87,
+  "url": "https://github.com/XeroAPI/Xero-OpenAPI",
+  "quote": "This repository holds the official Xero OpenAPI descriptions.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 87,
+  "url": "https://github.com/XeroAPI/xero-mcp-server",
+  "quote": "This is a Model Context Protocol (MCP) server implementation for Xero.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 88,
+  "url": "https://developer.brex.com/docs/authentication/",
+  "quote": "To start making calls to Brex APIs, generate a user token from your Brex dashboard and pass it along in your API call headers.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 88,
+  "url": "https://developer.brex.com/docs/faq.md",
+  "quote": "is used when building partner applications to authenticate other Brex accounts.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 88,
+  "url": "https://developer.brex.com/docs/partner_onboarding.md",
+  "quote": "Once your application is approved, you'll receive credentials for the staging environment using SendSafely.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 88,
+  "url": "https://developer.brex.com/docs/mcp.md",
+  "quote": "This is different from the Brex Developer API, which requires admin-provisioned API tokens.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 88,
+  "url": "https://developer.brex.com/",
+  "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 88,
+  "url": "https://developer.brex.com/docs/mcp.md",
+  "quote": "The Brex MCP server lets AI assistants interact directly with your Brex account",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 89,
+  "url": "https://docs.ramp.com/llms-full.txt",
+  "quote": "Obtain an access token using client credentials",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 89,
+  "url": "https://docs.ramp.com/llms-full.txt",
+  "quote": "First, you'll need to create a developer app to get your API credentials.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 89,
+  "url": "https://docs.ramp.com/llms-full.txt",
+  "quote": "to learn about partnership requirements and production access.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 89,
+  "url": "https://docs.ramp.com/llms-full.txt",
+  "quote": "Canonical OpenAPI schema for the Developer API",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 89,
+  "url": "https://docs.ramp.com/llms-full.txt",
+  "quote": "Ramp runs two MCP servers, one for your Ramp account and one for Ramp Data benchmarks.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 90,
+  "url": "https://documenter.gw.postman.com/view/metadata/TzCV1iRc",
+  "quote": "PitchBook will provide you with a unique API key that will allow you to make calls to the API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 90,
+  "url": "https://documenter.gw.postman.com/view/metadata/TzCV1iRc",
+  "quote": "Please reach out to your account manager to request a sandbox key.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 90,
+  "url": "https://documenter.gw.postman.com/view/metadata/TzCV1iRc",
+  "quote": "In addition to an API key, please make sure you have purchased API credits.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 90,
+  "url": "https://documenter.gw.postman.com/view/metadata/TzCV1iRc",
+  "quote": "This API is a RESTFUL implementation that can be easily accessed by most HTTP clients in the language of your choosing.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 90,
+  "url": "https://claude.com/marketplace/connectors/pitchbook",
+  "quote": "Made by PitchBook",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 90,
+  "url": "https://claude.com/marketplace/connectors/pitchbook",
+  "quote": "Powered by our MCP server, PitchBook clients can seamlessly search and analyze firms, deals, funds, and key players",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 91,
+  "url": "https://developers.google.com/notebook/docs/authentication",
+  "quote": "The Gemini Notebook API uses OAuth 2.0 to authenticate requests on behalf of a Google user.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 91,
+  "url": "https://developers.google.com/notebook/docs/rate-limits",
+  "quote": "The Gemini Notebook API is free to use during the Public Preview period",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 91,
+  "url": "https://developers.google.com/notebook/docs/authentication",
+  "quote": "During the Public Preview, the Gemini Notebook API is only available for personal Google Accounts.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 91,
+  "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+  "quote": "require an authenticated user account with an active Gemini Notebook Enterprise license",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 91,
+  "url": "https://developers.google.com/notebook",
+  "quote": "The Gemini Notebook API is a REST interface for programmatically creating and managing notebooks and sources in Gemini Notebook.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 91,
+  "url": "https://developers.google.com/notebook/docs/mcp",
+  "quote": "Streamable HTTP (JSON-RPC 2.0)",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 91,
+  "url": "https://developers.google.com/notebook/docs/mcp",
+  "quote": "The Gemini Notebook API provides a remote Model Context Protocol (MCP) server at https://notebook.googleapis.com/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 92,
+  "url": "https://www.scalekit.com/blog/otter-mcp-vs-api",
+  "quote": "the Public API is gated to Enterprise workspaces and authenticates with Bearer API keys only, no OAuth.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 92,
+  "url": "https://www.scalekit.com/blog/otter-mcp-vs-api",
+  "quote": "available to Enterprise workspaces only.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 92,
+  "url": "https://www.scalekit.com/blog/otter-mcp-vs-api",
+  "quote": "The Public API is a REST surface at api.otter.ai/v1",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 92,
+  "url": "https://claude.com/connectors/otter-ai",
+  "quote": "Made by Otter.ai",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 92,
+  "url": "https://claude.com/connectors/otter-ai",
+  "quote": "Connector URL https://mcp.otter.ai/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 93,
+  "url": "https://developers.fathom.ai/api-overview",
+  "quote": "All REST API resources are authenticated with API keys generated via the Fathom website's settings area.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 93,
+  "url": "https://developers.fathom.ai/oauth",
+  "quote": "If you\u2019re developing a public app that you wish to integrate with Fathom, you should build it using OAuth.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 93,
+  "url": "https://developers.fathom.ai/oauth",
+  "quote": "They are subject to review to ensure the best experience for all users.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 93,
+  "url": "https://developers.fathom.ai/quickstart",
+  "quote": "Head to the API Access section of your User Settings and generate an API key.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 93,
+  "url": "https://developers.fathom.ai/api-overview",
+  "quote": "This documentation describes Fathom's REST API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 93,
+  "url": "https://developers.fathom.ai/mcp-docs/claude",
+  "quote": "Fathom is available as an official connector in Claude",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 94,
+  "url": "https://consensus.app/llms-full.txt",
+  "quote": "stable, versioned JSON endpoints with bearer-token authentication",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 94,
+  "url": "https://consensus.app/llms-full.txt",
+  "quote": "OAuth-based authentication, dynamic client registration, streaming-friendly.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 94,
+  "url": "https://consensus.app/.well-known/pricing.md",
+  "quote": "Optional access to the Consensus Search API (available upon approval, rate limited",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 94,
+  "url": "https://consensus.app/llms-full.txt",
+  "quote": "The REST API is the canonical machine surface for organizations.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 94,
+  "url": "https://consensus.app/llms-full.txt",
+  "quote": "Endpoint: https://mcp.consensus.app/mcp",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 94,
+  "url": "https://consensus.app/llms-full.txt",
+  "quote": "The Model Context Protocol server is the recommended surface for any LLM client",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 95,
+  "url": "https://docs.reducto.ai/llms.txt",
+  "quote": "Manage API keys, usage, billing, and organization settings in Reducto Studio",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 95,
+  "url": "https://docs.reducto.ai/mcp-server",
+  "quote": "Auth Bearer token in headers Browser login or env var",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 95,
+  "url": "https://reducto.ai/pricing",
+  "quote": "Free $150 in free usage",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 95,
+  "url": "https://docs.reducto.ai/agent-guide/index.md",
+  "quote": "| No SDK | REST |",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 95,
+  "url": "https://docs.reducto.ai/mcp-server",
+  "quote": "The hosted server runs at https://mcp.reducto.ai/mcp .",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 96,
+  "url": "https://docs.devin.ai/api-reference/authentication",
+  "quote": "All API credentials use the cog_ prefix format.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 96,
+  "url": "https://docs.devin.ai/api-reference/authentication",
+  "quote": "Personal Access Token (PAT) For human programmatic access under your own identity",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 96,
+  "url": "https://docs.devin.ai/api-reference/getting-started/teams-quickstart",
+  "quote": "Set up Devin API access for a teams or standard organization: provision a service user, copy the API key, and create your first session.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 96,
+  "url": "https://docs.devin.ai/api-reference/overview",
+  "quote": "Learn how to programmatically interact with Devin using our REST APIs",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 96,
+  "url": "https://docs.devin.ai/work-with-devin/devin-mcp.md",
+  "quote": "To use the Devin MCP server, you need a Devin API key:",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 97,
+  "url": "https://docs.higgsfield.ai/docs/authentication.md",
+  "quote": "Each credential consists of a key ID and a secret.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 97,
+  "url": "https://docs.higgsfield.ai/docs/concepts/billing-and-retention.md",
+  "quote": "Higgsfield charges successful generation requests to your account balance.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 97,
+  "url": "https://docs.higgsfield.ai/docs/quickstart.md",
+  "quote": "This guide uses the REST API so you can see the complete request lifecycle.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 97,
+  "url": "https://higgsfield.ai/cli",
+  "quote": "Higgsfield CLI for any AI Create images and videos directly from your prompts in any AI tool",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 97,
+  "url": "https://higgsfield.ai/mcp",
+  "quote": "Generate Images & Videos in Claude with Higgsfield",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 98,
+  "url": "https://github.com/mermaid-js/mermaid-cli",
+  "quote": "Command line tool for the Mermaid library",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 98,
+  "url": "https://github.com/mermaid-js/mermaid-cli",
+  "quote": "Command line tool for the Mermaid library",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 98,
+  "url": "https://github.com/mermaid-js/mermaid-cli",
+  "quote": "It's possible to call mermaid-cli via a Node.JS API.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 98,
+  "url": "https://github.com/hustcc/mcp-mermaid",
+  "quote": "Generate mermaid diagram and chart with AI MCP dynamically.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 99,
+  "url": "https://transcriptapi.com/docs/api/",
+  "quote": "The API uses Bearer token authentication.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 99,
+  "url": "https://transcriptapi.com/docs/mcp/",
+  "quote": "OAuth Authentication API Key Authentication",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 99,
+  "url": "https://transcriptapi.com",
+  "quote": "new accounts get 100 free credits, no card required",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 99,
+  "url": "https://transcriptapi.com",
+  "quote": "extract playlists via REST API or YouTube MCP",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 99,
+  "url": "https://transcriptapi.com/docs/mcp/",
+  "quote": "YouTube Transcript MCP Server",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 100,
+  "url": "https://support.grain.com/en/articles/15507288-grain-api",
+  "quote": "Required if you are building an integration to distribute to others.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 100,
+  "url": "https://support.grain.com/en/articles/15507288-grain-api",
+  "quote": "Available on every plan, including Free.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 100,
+  "url": "https://developers.grain.com",
+  "quote": "The Grain API lets you read and manage recordings, highlights, uploads, and more.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 100,
+  "url": "https://developers.grain.com",
+  "quote": "https://api.grain.com/_/public-api/v2/token-info",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 100,
+  "url": "https://developers.grain.com/mcp",
+  "quote": "Official Grain MCP Server: Quick Start Guide",
+  "code": 200,
+  "found": true
+ }
+]
