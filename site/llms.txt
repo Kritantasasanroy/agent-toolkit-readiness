@@ -9,6 +9,11 @@ without talking to the vendor, API surface, MCP servers, and what blocks the res
   and every disputed answer with the source that settled it.
 - index.html: the same data as a human-readable case study.
 
+## Composio
+- `composio` in data.json holds catalog coverage and an auth cross-check against Composio's toolkits.
+- `verification.links_pass2_composio` compares the evidence check run locally with the same check run in a Composio sandbox.
+- Composio was a checker here. The research itself was done by Claude sub-agents.
+
 ## Field values
 auth_methods: oauth2, api_key, basic, bearer_token, other, none
 access: free_self_serve, free_trial, paid_plan, admin_approval, partner_gated, no_public_api
