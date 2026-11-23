@@ -4106,7 +4106,7 @@
     }
    ],
    "confidence": "medium",
-   "notes": "Docs do not name a plan requirement; a free plan is assumed from general knowledge. REST not stated in a fetched sentence (inferred from Bearer header and endpoint docs). Sentry OAuth for public integrations not read, so oauth2 omitted from auth_methods.",
+   "notes": "Docs do not name a plan requirement; a free plan is assumed from general knowledge. REST not stated in a fetched sentence (inferred from Bearer header and endpoint docs). Sentry OAuth2 was added after the Composio auth cross-check; see the review entry.",
    "contested": [],
    "composio": {
     "coverage": "native",
