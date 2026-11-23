@@ -79,10 +79,10 @@ raised           pass 2 changed a field, or an agent answer missed the reference
   -> blind check a fresh agent sees two shuffled, unlabelled options and rules A, B,
                   both, neither or unclear from the vendor's docs
   -> override     optional: a correction recorded with its evidence
-                  (data/overrides.json, shown as "evidence override"; the file says who made it)
+                  (data/overrides.json, shown as "live test"; the file says how it was made)
   -> decision     optional: pass1, pass2 or both, written to data/decisions.json with a note.
-                  Without a "by" it is a human review; with "by": "claude" it is a strict
-                  re-check from the docs, shown separately and never counted as a person
+                  Without a "by" it is a review by hand; with "by": "agent" it is a re-read
+                  of the docs, shown separately and never counted as a hand review
 ```
 
 The later layer wins. A dispute is never edited or deleted; the page shows who decided it.

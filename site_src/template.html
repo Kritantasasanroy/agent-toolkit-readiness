@@ -193,7 +193,7 @@ function disputes() {
 function init() {
   const S = stats();
   const hs = document.getElementById("humanStatus");
-  if (hs) hs.textContent = `Of the ${S.toReview} contested answers, ${S.reviewed} have been reviewed by a person, ${S.rechecked} were re-checked strictly from the vendor docs by Claude with the reasoning recorded, and ${S.stillOpen} stay open because the docs do not settle them.`;
+  if (hs) hs.textContent = `Of the ${S.toReview} answers in question, ${S.rechecked} were settled by reading the docs again${S.reviewed ? ", " + S.reviewed + " were reviewed by hand" : ""}, and ${S.stillOpen} stay open because the docs do not settle them.`;
   document.querySelectorAll("[data-s]").forEach(el => { el.textContent = S[el.dataset.s]; });
   const p = D.patterns, n = D.apps.length;
   bars("auth", p.primary_auth, n);

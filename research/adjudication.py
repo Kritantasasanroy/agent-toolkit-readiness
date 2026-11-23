@@ -67,10 +67,10 @@ class Winner(Enum):
 
 
 class Decider(Enum):
-    BLIND_CHECK = "blind check"
-    EVIDENCE_OVERRIDE = "evidence override"
-    STRICT_RECHECK = "strict re-check (Claude)"
-    HUMAN = "human review"
+    BLIND_CHECK = "fresh agent check"
+    EVIDENCE_OVERRIDE = "live test"
+    STRICT_RECHECK = "docs re-read"
+    HUMAN = "reviewed by hand"
 
 
 @dataclass(frozen=True)
@@ -88,7 +88,7 @@ class Dispute:
 
     @property
     def needs_review(self) -> bool:
-        """A change the blind check did not back, so a person should look at it."""
+        """A change the blind check did not back, so it needs a second look."""
         return self.kind is Kind.CHANGED and self.blind_winner is not Winner.PASS2
 
     @property
@@ -121,7 +121,7 @@ class Disputes:
             winner, decider, note = Winner(override["winner"]), Decider.EVIDENCE_OVERRIDE, override["note"]
         if decision:
             winner = Winner(decision["decision"])
-            decider = Decider.STRICT_RECHECK if decision.get("by") == "claude" else Decider.HUMAN
+            decider = Decider.STRICT_RECHECK if decision.get("by") == "agent" else Decider.HUMAN
             note = decision.get("note", note)
         if not Kind(row["kind"]).allows(winner):
             raise ValueError(f"item {number}: {winner.value} is not a possible winner of a {row['kind']} dispute")

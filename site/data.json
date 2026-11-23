@@ -6500,7 +6500,7 @@
     "field": "verdict",
     "kind": "changed",
     "winner": "pass2",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://docs.attio.com/share/publishing-to-the-app-store.md",
     "quote": "All apps are reviewed by the Attio team before they are published.",
     "note": "Unpublished apps limited to 25 workspaces; wide use needs review, so caveat."
@@ -6511,7 +6511,7 @@
     "field": "blocker",
     "kind": "changed",
     "winner": "pass2",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://docs.attio.com/rest-api/guides/authentication",
     "quote": "An unpublished app can be installed in up to 25 workspaces.",
     "note": "Beyond 25 workspaces needs publish and review."
@@ -6522,7 +6522,7 @@
     "field": "auth_methods",
     "kind": "changed",
     "winner": "pass1",
-    "decided_by": "strict re-check (Claude)",
+    "decided_by": "docs re-read",
     "source": "https://developer.close.com/topics/authentication/",
     "quote": "API keys use HTTP Basic client side authentication",
     "note": "Close's docs say API keys use HTTP Basic client side authentication. Basic is the transport for the key, not a separate login method, so the auth method is api_key plus oauth2."
@@ -6533,7 +6533,7 @@
     "field": "access",
     "kind": "changed",
     "winner": "unclear",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://www.copper.com/pricing",
     "quote": "",
     "note": "No vendor page found stating API tier; only third-party sources say Professional+ (paid). Trial exists but unconfirmed as gate."
@@ -6544,7 +6544,7 @@
     "field": "access",
     "kind": "changed",
     "winner": "pass2",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://developers.intercom.com/docs/build-an-integration/getting-started",
     "quote": "Development workspaces are free and intended for development purposes only.",
     "note": "Free dev workspaces, unlimited."
@@ -6555,7 +6555,7 @@
     "field": "verdict",
     "kind": "changed",
     "winner": "pass2",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://developers.intercom.com/docs/build-an-integration/getting-started",
     "quote": "Development workspaces are free",
     "note": "Self-serve OAuth in dev workspace; no gate."
@@ -6566,7 +6566,7 @@
     "field": "blocker",
     "kind": "changed",
     "winner": "pass2",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://developers.intercom.com/docs/build-an-integration/getting-started",
     "quote": "Development workspaces are free",
     "note": "No paid plan needed for public app development."
@@ -6577,7 +6577,7 @@
     "field": "auth_methods",
     "kind": "changed",
     "winner": "pass2",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://developers.freshdesk.com/api/",
     "quote": "OAuth 2.0 Scope freshdesk.tickets.create",
     "note": "Docs list OAuth 2.0 scopes per endpoint alongside API key."
@@ -6588,7 +6588,7 @@
     "field": "access",
     "kind": "changed",
     "winner": "pass2",
-    "decided_by": "strict re-check (Claude)",
+    "decided_by": "docs re-read",
     "source": "https://www.helpscout.com/pricing/",
     "quote": "API access Read/write data and connect more key systems with Help Scout.",
     "note": "Help Scout has no free plan, but a developer can get API access during the 15-day Standard or Plus trial, which is the free_trial tier as defined in the brief. Consistent with Zendesk and Freshdesk."
@@ -6599,7 +6599,7 @@
     "field": "mcp",
     "kind": "changed",
     "winner": "pass2",
-    "decided_by": "strict re-check (Claude)",
+    "decided_by": "docs re-read",
     "source": "https://developer.gladly.com/",
     "quote": "",
     "note": "The MCP registry lists third-party Gladly servers. Gladly publishes none, so the right value is community, not none."
@@ -6610,7 +6610,7 @@
     "field": "auth_methods",
     "kind": "changed",
     "winner": "pass2",
-    "decided_by": "strict re-check (Claude)",
+    "decided_by": "docs re-read",
     "source": "https://pumble.com/help/integrations/add-pumble-apps/api-keys-integration",
     "quote": "This addon lets you generate an API key",
     "note": "Pumble's MCP guide requires the user and bot tokens issued when an app is installed, which fits bearer_token as defined (a token issued some other way), alongside the API key addon."
@@ -6621,7 +6621,7 @@
     "field": "auth_methods",
     "kind": "changed",
     "winner": "pass1",
-    "decided_by": "strict re-check (Claude)",
+    "decided_by": "docs re-read",
     "source": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
     "quote": "Embedded Signup",
     "note": "WhatsApp's multi-tenant path is Embedded Signup, which uses Facebook Login (OAuth). System-user tokens cover only a business's own account, so oauth2 belongs in the list."
@@ -6632,7 +6632,7 @@
     "field": "verdict",
     "kind": "changed",
     "winner": "pass2",
-    "decided_by": "strict re-check (Claude)",
+    "decided_by": "docs re-read",
     "source": "https://developer.aircall.io/docs/public-vs-private-app",
     "quote": "A public app requires you to first join the Aircall Technology Partner Program",
     "note": "Aircall customers can create Basic-auth API keys on their own account without any partner step. A toolkit that takes customer-supplied keys is buildable; only the OAuth path needs the Technology Partner Program."
@@ -6643,7 +6643,7 @@
     "field": "blocker",
     "kind": "changed",
     "winner": "both",
-    "decided_by": "strict re-check (Claude)",
+    "decided_by": "docs re-read",
     "source": "https://developer.aircall.io/docs/public-vs-private-app",
     "quote": "A public app requires you to first join the Aircall Technology Partner Program",
     "note": "Partner programme blocks the OAuth path; a paid plan may gate the key path (the plan floor comes only from the pricing page). Both readings are supported."
@@ -6654,7 +6654,7 @@
     "field": "mcp",
     "kind": "changed",
     "winner": "pass2",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
     "quote": "systeme.io MCP server",
     "note": "Built-in official MCP, also systeme.io/mcp."
@@ -6665,7 +6665,7 @@
     "field": "access",
     "kind": "changed",
     "winner": "both",
-    "decided_by": "strict re-check (Claude)",
+    "decided_by": "docs re-read",
     "source": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
     "quote": "",
     "note": "Magento Open Source is free and self-hosted; Adobe Commerce is licensed. The docs cover both editions."
@@ -6676,7 +6676,7 @@
     "field": "blocker",
     "kind": "changed",
     "winner": "pass2",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
     "quote": "each administrator or integration user can have a unique set of permissions which is configured in the Admin",
     "note": "Integrations are registered by an Admin; Magento Open Source is free, so paid_plan is not the gate"
@@ -6687,7 +6687,7 @@
     "field": "mcp",
     "kind": "changed",
     "winner": "pass2",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://developers.squarespace.com/mcp",
     "quote": "The Squarespace MCP server connects AI assistants to Squarespace.",
     "note": "Vendor-hosted MCP docs on developers.squarespace.com"
@@ -6698,7 +6698,7 @@
     "field": "api_styles",
     "kind": "changed",
     "winner": "pass2",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://docs.github.com/en/graphql",
     "quote": "use the GitHub GraphQL API",
     "note": "Official REST and GraphQL APIs both documented"
@@ -6709,7 +6709,7 @@
     "field": "auth_methods",
     "kind": "changed",
     "winner": "pass2",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://developers.notion.com/docs/authorization",
     "quote": "Personal access token authentication",
     "note": "Internal connection tokens and PATs are user-generated, so api_key; OAuth also supported"
@@ -6720,7 +6720,7 @@
     "field": "mcp",
     "kind": "changed",
     "winner": "both",
-    "decided_by": "strict re-check (Claude)",
+    "decided_by": "docs re-read",
     "source": "https://www.paygent.co.jp/",
     "quote": "",
     "note": "NMI publishes an official MCP server, but no Paygent-branded server was found and the Paygent Connect product could not be matched. Official applies to NMI only."
@@ -6731,7 +6731,7 @@
     "field": "api_styles",
     "kind": "changed",
     "winner": "pass1",
-    "decided_by": "strict re-check (Claude)",
+    "decided_by": "docs re-read",
     "source": "",
     "quote": "",
     "note": "Intuit documents GraphQL APIs for QuickBooks Online (developer.intuit.com, Develop your app with the GraphQL API), so graphql belongs in the list."
@@ -6742,7 +6742,7 @@
     "field": "access",
     "kind": "changed",
     "winner": "both",
-    "decided_by": "strict re-check (Claude)",
+    "decided_by": "docs re-read",
     "source": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
     "quote": "Get licenses for Gemini Notebook for business",
     "note": "The public Gemini Notebook API is free in preview for personal Google accounts; the separate Enterprise API needs a licence. Both exist."
@@ -6753,7 +6753,7 @@
     "field": "api_styles",
     "kind": "changed",
     "winner": "pass1",
-    "decided_by": "strict re-check (Claude)",
+    "decided_by": "docs re-read",
     "source": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
     "quote": "curl -X POST -H \"Authorization:Bearer ...\" \"https://ENDPOINT_LOCATION-discoveryengine.googleapis.com/v1alpha/projects/...\"",
     "note": "The pass 2 evidence for rpc is the MCP server's JSON-RPC transport, which is the MCP wire format and not the API style. The API itself is REST."
@@ -6764,7 +6764,7 @@
     "field": "blocker",
     "kind": "changed",
     "winner": "both",
-    "decided_by": "strict re-check (Claude)",
+    "decided_by": "docs re-read",
     "source": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
     "quote": "Get licenses for Gemini Notebook for business",
     "note": "A licence is needed for the Enterprise API and the public API is narrow. Both readings are supported."
@@ -6775,7 +6775,7 @@
     "field": "auth_methods",
     "kind": "sample_miss",
     "winner": "reference",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://developers.podio.com/authentication",
     "quote": "The Podio API uses the OAuth2 protocol for authentication.",
     "note": "All four flows, including app authentication, are OAuth2 variants; no separate API key"
@@ -6786,7 +6786,7 @@
     "field": "mcp",
     "kind": "sample_miss",
     "winner": "agent",
-    "decided_by": "evidence override",
+    "decided_by": "live test",
     "source": "https://developers.podio.com/doc",
     "quote": "",
     "note": "Overridden after a live request: mcp.podio.com answers as an MCP server and Progress documents it, so the agents were right and the blind check was wrong."
@@ -6797,7 +6797,7 @@
     "field": "mcp",
     "kind": "sample_miss",
     "winner": "agent",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://developers.gorgias.com/docs/mcp",
     "quote": "gorgias-developers hosts a remote MCP server at https://developers.gorgias.com/mcp",
     "note": "Vendor-hosted MCP (docs and API)"
@@ -6808,7 +6808,7 @@
     "field": "api_styles",
     "kind": "sample_miss",
     "winner": "unclear",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://api.clay.com/v3",
     "quote": "",
     "note": "Could not load Clay API or CLI docs"
@@ -6819,7 +6819,7 @@
     "field": "auth_methods",
     "kind": "sample_miss",
     "winner": "both",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
     "quote": "Endpoints for GitHub App installation tokens",
     "note": "PAT is api_key; app installation tokens fit bearer_token (or other for JWT); docs do not choose a label"
@@ -6830,7 +6830,7 @@
     "field": "api_styles",
     "kind": "sample_miss",
     "winner": "unclear",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "https://www.ipayx.ai",
     "quote": "",
     "note": "No public API docs found, only a landing page and a third-party MCP repo"
@@ -6841,7 +6841,7 @@
     "field": "api_styles",
     "kind": "sample_miss",
     "winner": "unclear",
-    "decided_by": "blind check",
+    "decided_by": "fresh agent check",
     "source": "",
     "quote": "",
     "note": "Otter developer and help pages blocked or empty"

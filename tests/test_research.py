@@ -191,7 +191,7 @@ class DisputeFixtureTest(unittest.TestCase):
         self.assertEqual(disputes.to_review(), 1)
 
     def test_a_recheck_resolves_a_contest_but_is_not_counted_as_a_person(self) -> None:
-        decisions = [{"item": 2, "decision": "pass2", "by": "claude", "note": "why"}]
+        decisions = [{"item": 2, "decision": "pass2", "by": "agent", "note": "why"}]
         with tempfile.TemporaryDirectory() as tmp:
             disputes = Disputes.load(self.make_root(tmp, self.RULINGS, decisions))
         aircall = disputes.items[1]

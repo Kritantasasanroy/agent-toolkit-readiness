@@ -2,79 +2,79 @@
  {
   "item": 3,
   "decision": "pass1",
-  "by": "claude",
+  "by": "agent",
   "note": "Close's docs say API keys use HTTP Basic client side authentication. Basic is the transport for the key, not a separate login method, so the auth method is api_key plus oauth2."
  },
  {
   "item": 9,
   "decision": "pass2",
-  "by": "claude",
+  "by": "agent",
   "note": "Help Scout has no free plan, but a developer can get API access during the 15-day Standard or Plus trial, which is the free_trial tier as defined in the brief. Consistent with Zendesk and Freshdesk."
  },
  {
   "item": 10,
   "decision": "pass2",
-  "by": "claude",
+  "by": "agent",
   "note": "The MCP registry lists third-party Gladly servers. Gladly publishes none, so the right value is community, not none."
  },
  {
   "item": 11,
   "decision": "pass2",
-  "by": "claude",
+  "by": "agent",
   "note": "Pumble's MCP guide requires the user and bot tokens issued when an app is installed, which fits bearer_token as defined (a token issued some other way), alongside the API key addon."
  },
  {
   "item": 12,
   "decision": "pass1",
-  "by": "claude",
+  "by": "agent",
   "note": "WhatsApp's multi-tenant path is Embedded Signup, which uses Facebook Login (OAuth). System-user tokens cover only a business's own account, so oauth2 belongs in the list."
  },
  {
   "item": 13,
   "decision": "pass2",
-  "by": "claude",
+  "by": "agent",
   "note": "Aircall customers can create Basic-auth API keys on their own account without any partner step. A toolkit that takes customer-supplied keys is buildable; only the OAuth path needs the Technology Partner Program."
  },
  {
   "item": 14,
   "decision": "both",
-  "by": "claude",
+  "by": "agent",
   "note": "Partner programme blocks the OAuth path; a paid plan may gate the key path (the plan floor comes only from the pricing page). Both readings are supported."
  },
  {
   "item": 16,
   "decision": "both",
-  "by": "claude",
+  "by": "agent",
   "note": "Magento Open Source is free and self-hosted; Adobe Commerce is licensed. The docs cover both editions."
  },
  {
   "item": 21,
   "decision": "both",
-  "by": "claude",
+  "by": "agent",
   "note": "NMI publishes an official MCP server, but no Paygent-branded server was found and the Paygent Connect product could not be matched. Official applies to NMI only."
  },
  {
   "item": 22,
   "decision": "pass1",
-  "by": "claude",
+  "by": "agent",
   "note": "Intuit documents GraphQL APIs for QuickBooks Online (developer.intuit.com, Develop your app with the GraphQL API), so graphql belongs in the list."
  },
  {
   "item": 23,
   "decision": "both",
-  "by": "claude",
+  "by": "agent",
   "note": "The public Gemini Notebook API is free in preview for personal Google accounts; the separate Enterprise API needs a licence. Both exist."
  },
  {
   "item": 24,
   "decision": "pass1",
-  "by": "claude",
+  "by": "agent",
   "note": "The pass 2 evidence for rpc is the MCP server's JSON-RPC transport, which is the MCP wire format and not the API style. The API itself is REST."
  },
  {
   "item": 25,
   "decision": "both",
-  "by": "claude",
+  "by": "agent",
   "note": "A licence is needed for the Enterprise API and the public API is narrow. Both readings are supported."
  }
 ]

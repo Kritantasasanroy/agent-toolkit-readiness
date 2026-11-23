@@ -2,7 +2,7 @@
  {
   "item": 27,
   "winner": "agent",
-  "by": "Claude, from a live request to mcp.podio.com and the vendor guide",
+  "by": "a live request to mcp.podio.com and the vendor guide",
   "note": "Overridden after a live request: mcp.podio.com answers as an MCP server and Progress documents it, so the agents were right and the blind check was wrong."
  }
 ]

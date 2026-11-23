@@ -12,7 +12,7 @@ without talking to the vendor, API surface, MCP servers, and what blocks the res
 ## Composio
 - `composio` in data.json holds catalog coverage and an auth cross-check against Composio's toolkits.
 - `verification.links_pass2_composio` compares the evidence check run locally with the same check run in a Composio sandbox.
-- Composio was a checker here. The research itself was done by Claude sub-agents.
+- Composio was used as a check. The research itself was done by separate research agents.
 
 ## Field values
 auth_methods: oauth2, api_key, basic, bearer_token, other, none
@@ -24,5 +24,5 @@ blocker: none, partner_program, paid_plan, app_review, admin_install, no_public_
 narrow_api, region_or_kyc, unofficial_only
 
 ## Caveats
-- `contested` on an app lists fields where a blind docs check disagreed with the second pass.
+- `contested` on an app lists fields where a fresh agent check disagreed with the second pass.
 - confidence low means the vendor's docs could not be read or were contradictory; see `notes`.
