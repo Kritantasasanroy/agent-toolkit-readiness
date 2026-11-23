@@ -37,8 +37,11 @@ class ScopeFinding:
         app_id = doc.get("app_id")
         if not isinstance(app_id, int):
             raise ProfileError(f"app_id: expected a number, got {app_id!r}")
-        return cls(app_id, fields.text("app"), fields.enum(Scope, "scope"), fields.text("reason"),
-                   fields.text("url"), fields.text("quote"))
+        finding = cls(app_id, fields.text("app"), fields.enum(Scope, "scope"), fields.text("reason"),
+                      fields.text("url"), fields.text("quote"))
+        if finding.scope is not Scope.UNCLEAR and not Page.normalise(finding.quote):
+            raise ProfileError(f"app {app_id}: a {finding.scope.value} answer needs a quote")
+        return finding
 
 
 @dataclass(frozen=True)

@@ -57,7 +57,8 @@ class Check:
         except (OSError, http.client.HTTPException, ValueError, zlib.error):
             return {"code": 0, "found": [False] * len(quotes)}
         text = cls.normalise(cls.readable(body.decode("utf-8", "replace")))
-        return {"code": code, "found": [cls.normalise(quote) in text for quote in quotes]}
+        needles = [cls.normalise(quote) for quote in quotes]
+        return {"code": code, "found": [bool(needle) and needle in text for needle in needles]}
 
     @classmethod
     def run(cls, items: List[Tuple[str, List[str]]]) -> List[Answer]:

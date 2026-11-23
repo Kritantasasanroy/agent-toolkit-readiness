@@ -92,7 +92,10 @@ class Page:
     def quote_status(self, quote: str) -> QuoteStatus:
         if self.status is not PageStatus.LIVE:
             return QuoteStatus.UNCHECKED
-        if self.normalise(quote) in self.text:
+        needle = self.normalise(quote)
+        if not needle:
+            return QuoteStatus.UNCHECKED  # nothing to look for is not a match
+        if needle in self.text:
             return QuoteStatus.FOUND
         # A quote beyond the size cap may exist; only a complete page can prove it absent.
         return QuoteStatus.UNCHECKED if self.truncated else QuoteStatus.MISSING

@@ -276,6 +276,16 @@ class FetchTest(unittest.TestCase):
         page = Page.fetch(self.base + "/zipped")
         self.assertIs(page.quote_status("Send the key in the x-api-key header."), QuoteStatus.FOUND)
 
+    def test_an_empty_quote_is_never_found_here_or_in_the_sandbox_script(self) -> None:
+        page = Page.fetch(self.base + "/ok")
+        self.assertIs(page.quote_status(" ** "), QuoteStatus.UNCHECKED)
+        answer = remote_check.Check.page((self.base + "/ok", ["", "API key", " ** "]))
+        self.assertEqual(answer["found"], [False, True, False])
+
+    def test_the_sandbox_script_reads_a_compressed_page(self) -> None:
+        answer = remote_check.Check.page((self.base + "/zipped", ["x-api-key header."]))
+        self.assertEqual((answer["code"], answer["found"]), (200, [True]))
+
     def test_finds_a_quote_on_a_fetched_page(self) -> None:
         page = Page.fetch(self.base + "/ok")
         self.assertIs(page.quote_status("create an API key in settings"), QuoteStatus.FOUND)
@@ -478,6 +488,8 @@ class ScopeFileTest(unittest.TestCase):
         self.assertIs(ScopeFinding.from_json(doc).scope, Scope.ACCOUNT)
         with self.assertRaisesRegex(ProfileError, "scope"):
             ScopeFinding.from_json(dict(doc, scope="everything"))
+        with self.assertRaisesRegex(ProfileError, "needs a quote"):
+            ScopeFinding.from_json(dict(doc, quote=" ** "))
         with tempfile.TemporaryDirectory() as tmp:
             directory, checks = Path(tmp) / "scope", Path(tmp) / "checks.json"
             directory.mkdir()
