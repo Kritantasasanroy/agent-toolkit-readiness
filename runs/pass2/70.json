@@ -4,7 +4,8 @@
   "category": "Developer, Infra and Data platforms",
   "summary": "Application monitoring platform that tracks errors, performance and releases.",
   "auth_methods": [
-    "api_key"
+    "api_key",
+    "oauth2"
   ],
   "access": "free_self_serve",
   "access_note": "Organization auth tokens via an internal integration; requires Manager or Admin org role.",
@@ -47,9 +48,26 @@
       "field": "access",
       "url": "https://sentry.io/pricing/",
       "quote": "Pricing: Free Developer Plan, Pay as You Grow"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.sentry.io/api/auth/",
+      "quote": "OAuth2 for third-party applications that need to access Sentry on behalf of users"
     }
   ],
   "confidence": "medium",
   "notes": "Docs do not name a plan requirement; a free plan is assumed from general knowledge. REST not stated in a fetched sentence (inferred from Bearer header and endpoint docs). Sentry OAuth for public integrations not read, so oauth2 omitted from auth_methods.",
-  "review": []
+  "review": [
+    {
+      "field": "auth_methods",
+      "from": [
+        "api_key"
+      ],
+      "to": [
+        "api_key",
+        "oauth2"
+      ],
+      "reason": "Sentry's own auth page, already cited here, describes OAuth2 with the authorization code grant. The first pass listed only API keys. Composio's Sentry toolkit also lists OAuth2."
+    }
+  ]
 }

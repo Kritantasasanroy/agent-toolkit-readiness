@@ -185,8 +185,8 @@
   "app_id": 5,
   "url": "https://docs.twenty.com/developers/extend/mcp",
   "quote": "Twenty exposes an MCP server so that AI assistants",
-  "code": 200,
-  "found": true
+  "code": 500,
+  "found": false
  },
  {
   "app_id": 6,
@@ -829,6 +829,13 @@
   "app_id": 22,
   "url": "https://www.twilio.com/docs/mcp",
   "quote": "it does not connect to a Twilio account or execute any API calls.",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 22,
+  "url": "https://www.twilio.com/docs/iam/oauth-apps/overview",
+  "quote": "OAuth apps are how you set this up in Twilio",
   "code": 200,
   "found": true
  },
@@ -2712,6 +2719,13 @@
   "app_id": 70,
   "url": "https://sentry.io/pricing/",
   "quote": "Pricing: Free Developer Plan, Pay as You Grow",
+  "code": 200,
+  "found": true
+ },
+ {
+  "app_id": 70,
+  "url": "https://docs.sentry.io/api/auth/",
+  "quote": "OAuth2 for third-party applications that need to access Sentry on behalf of users",
   "code": 200,
   "found": true
  },

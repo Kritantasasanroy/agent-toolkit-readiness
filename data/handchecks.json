@@ -125,7 +125,8 @@
   "app": "Twilio",
   "auth_methods": [
    "basic",
-   "api_key"
+   "api_key",
+   "oauth2"
   ],
   "access": [
    "free_trial",
@@ -147,9 +148,10 @@
   ],
   "sources": [
    "https://www.twilio.com/docs/usage/requests-to-twilio",
-   "https://github.com/twilio-labs/mcp"
+   "https://github.com/twilio-labs/mcp",
+   "https://www.twilio.com/docs/iam/oauth-apps/overview"
   ],
-  "note": "Trial is credit-limited rather than time-limited, so both readings accepted."
+  "note": "Trial is credit-limited rather than time-limited, so both readings accepted. Added oauth2 after the Composio auth cross-check; the reference had missed it."
  },
  {
   "app_id": 24,

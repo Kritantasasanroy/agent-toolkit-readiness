@@ -1071,6 +1071,15 @@
   "quote": "unchecked"
  },
  {
+  "app_id": 22,
+  "app": "Twilio",
+  "field": "auth_methods",
+  "url": "https://www.twilio.com/docs/iam/oauth-apps/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
   "app_id": 23,
   "app": "Zoho Cliq",
   "field": "auth_methods",
@@ -3487,6 +3496,15 @@
   "app": "Sentry",
   "field": "access",
   "url": "https://sentry.io/pricing/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 70,
+  "app": "Sentry",
+  "field": "auth_methods",
+  "url": "https://docs.sentry.io/api/auth/",
   "page": "live",
   "http_code": 200,
   "quote": "found"

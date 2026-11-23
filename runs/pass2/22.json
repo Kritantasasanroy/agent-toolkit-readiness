@@ -5,7 +5,8 @@
   "summary": "Cloud communications platform with APIs for SMS, voice, video, email and verification.",
   "auth_methods": [
     "basic",
-    "api_key"
+    "api_key",
+    "oauth2"
   ],
   "access": "free_trial",
   "access_note": "Free trial account with verified-recipient limits; production use requires upgrading to a paid pay-as-you-go account.",
@@ -38,6 +39,11 @@
       "field": "mcp",
       "url": "https://www.twilio.com/docs/mcp",
       "quote": "it does not connect to a Twilio account or execute any API calls."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://www.twilio.com/docs/iam/oauth-apps/overview",
+      "quote": "OAuth apps are how you set this up in Twilio"
     }
   ],
   "confidence": "medium",
@@ -48,6 +54,19 @@
       "from": "api_styles quote missing; mcp page refused checker",
       "to": "re-quoted",
       "reason": "The page text has a space before the period after REST; mcp quote re-copied from the live page. The mcp server is vendor-hosted but docs-only; no account-action server was verified."
+    },
+    {
+      "field": "auth_methods",
+      "from": [
+        "basic",
+        "api_key"
+      ],
+      "to": [
+        "basic",
+        "api_key",
+        "oauth2"
+      ],
+      "reason": "Twilio's OAuth apps overview describes OAuth 2.0 access tokens for calling Twilio APIs; the first pass listed only Basic and API keys. Composio's Twilio toolkit also lists OAuth2."
     }
   ]
 }
