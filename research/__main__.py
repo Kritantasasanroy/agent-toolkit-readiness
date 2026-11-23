@@ -59,8 +59,8 @@ def composio(_args: argparse.Namespace) -> int:
 
 
 def site(_args: argparse.Namespace) -> int:
-    study = CaseStudy.build()
-    study.render()
+    study = CaseStudy.build(ROOT)
+    study.render(ROOT)
     print(f"wrote site/data.json and site/index.html ({len(study.final.profiles)} apps)")
     return 0
 

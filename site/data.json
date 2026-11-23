@@ -1,5 +1,4 @@
 {
- "generated": "2026-11-23",
  "apps": [
   {
    "app_id": 1,
@@ -5778,6 +5777,130 @@
   }
  ],
  "composio": {
+  "auth": {
+   "checked": 75,
+   "consistent": 63,
+   "differ": [
+    {
+     "app": "HubSpot",
+     "ours": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "extra_in_composio": [
+      "api_key"
+     ]
+    },
+    {
+     "app": "Front",
+     "ours": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "extra_in_composio": [
+      "api_key"
+     ]
+    },
+    {
+     "app": "Twilio",
+     "ours": [
+      "basic",
+      "api_key"
+     ],
+     "extra_in_composio": [
+      "oauth2"
+     ]
+    },
+    {
+     "app": "Telegram",
+     "ours": [
+      "bearer_token"
+     ],
+     "extra_in_composio": [
+      "api_key"
+     ]
+    },
+    {
+     "app": "WhatsApp Business",
+     "ours": [
+      "bearer_token",
+      "oauth2"
+     ],
+     "extra_in_composio": [
+      "api_key"
+     ]
+    },
+    {
+     "app": "Meta Ads",
+     "ours": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "extra_in_composio": [
+      "api_key"
+     ]
+    },
+    {
+     "app": "Neo4j",
+     "ours": [
+      "oauth2",
+      "basic"
+     ],
+     "extra_in_composio": [
+      "api_key"
+     ]
+    },
+    {
+     "app": "Datadog",
+     "ours": [
+      "api_key",
+      "oauth2"
+     ],
+     "extra_in_composio": [
+      "bearer_token"
+     ]
+    },
+    {
+     "app": "Sentry",
+     "ours": [
+      "api_key"
+     ],
+     "extra_in_composio": [
+      "oauth2"
+     ]
+    },
+    {
+     "app": "Jira",
+     "ours": [
+      "oauth2",
+      "basic"
+     ],
+     "extra_in_composio": [
+      "api_key"
+     ]
+    },
+    {
+     "app": "Smartsheet",
+     "ours": [
+      "oauth2",
+      "api_key"
+     ],
+     "extra_in_composio": [
+      "bearer_token"
+     ]
+    },
+    {
+     "app": "Brex",
+     "ours": [
+      "bearer_token",
+      "oauth2"
+     ],
+     "extra_in_composio": [
+      "api_key"
+     ]
+    }
+   ]
+  },
   "catalog_fetched": "2026-11-23",
   "catalog_size": 1865,
   "coverage": {

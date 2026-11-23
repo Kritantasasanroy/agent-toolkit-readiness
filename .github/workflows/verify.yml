@@ -1,7 +1,9 @@
 name: Verify the research
 
 # Run from the Actions tab ("Run workflow"). Needs no API key: it re-checks the saved
-# profiles, scores both passes against the hand-checked sample, and rebuilds the page data.
+# profiles, scores both passes against the hand-checked sample, and rebuilds the page,
+# failing if the committed site differs. The code targets Python 3.9, but the hosted runner
+# no longer ships it, so CI runs 3.12.
 on:
   workflow_dispatch:
     inputs:
@@ -29,8 +31,10 @@ jobs:
         run: |
           python -m research score runs/pass1 data/handchecks.json
           python -m research score runs/pass2 data/handchecks.json
+      - name: Rebuild the page and check the committed copy is current
+        run: |
+          python -m research site
+          git diff --exit-code -- site
       - name: Re-check evidence links
         if: ${{ inputs.check_links }}
         run: python -m research links runs/pass2
-      - name: Rebuild the page data
-        run: python -m research site

@@ -20,6 +20,11 @@ class Kind(Enum):
     CHANGED = "changed"          # pass 2 changed what pass 1 said
     SAMPLE_MISS = "sample_miss"  # the agent disagreed with the reference sample
 
+    def allows(self, winner: "Winner") -> bool:
+        """Whether the winner is one of the possible outcomes for this kind of dispute."""
+        sides = (Winner.PASS1, Winner.PASS2) if self is Kind.CHANGED else (Winner.AGENT, Winner.REFERENCE)
+        return winner in sides + (Winner.BOTH, Winner.NEITHER, Winner.UNCLEAR)
+
 
 class Side(Enum):
     PASS1 = "pass1"
@@ -61,12 +66,6 @@ class Winner(Enum):
     UNCLEAR = "unclear"
 
 
-LEGAL_WINNERS = {
-    Kind.CHANGED: {Winner.PASS1, Winner.PASS2, Winner.BOTH, Winner.NEITHER, Winner.UNCLEAR},
-    Kind.SAMPLE_MISS: {Winner.AGENT, Winner.REFERENCE, Winner.BOTH, Winner.NEITHER, Winner.UNCLEAR},
-}
-
-
 class Decider(Enum):
     BLIND_CHECK = "blind check"
     EVIDENCE_OVERRIDE = "evidence override"
@@ -104,22 +103,42 @@ class Dispute:
         }
 
 
-def _read_rows(path: Path) -> List[Mapping[str, object]]:
-    return json.loads(path.read_text()) if path.exists() else []
-
-
 @dataclass(frozen=True)
 class Disputes:
     items: Tuple[Dispute, ...]
 
+    @staticmethod
+    def _read_rows(path: Path) -> List[Mapping[str, object]]:
+        return json.loads(path.read_text()) if path.exists() else []
+
+    @staticmethod
+    def _settle(number: int, row: Mapping[str, object], ruling: Mapping[str, object],
+                override: Mapping[str, object], decision: Mapping[str, object]) -> Dispute:
+        """The blind ruling, replaced by an override, then by a decision: the later layer wins."""
+        blind = Ruling(ruling["ruling"]).resolve(Side(row["A_is"]))
+        winner, decider, note = blind, Decider.BLIND_CHECK, ruling.get("note", "")
+        if override:
+            winner, decider, note = Winner(override["winner"]), Decider.EVIDENCE_OVERRIDE, override["note"]
+        if decision:
+            winner = Winner(decision["decision"])
+            decider = Decider.STRICT_RECHECK if decision.get("by") == "claude" else Decider.HUMAN
+            note = decision.get("note", note)
+        if not Kind(row["kind"]).allows(winner):
+            raise ValueError(f"item {number}: {winner.value} is not a possible winner of a {row['kind']} dispute")
+        return Dispute(
+            item=number, app=row["app"], field=Field(row["field"]), kind=Kind(row["kind"]),
+            source=ruling.get("source", ""), quote=ruling.get("quote", ""), note=note,
+            winner=winner, decider=decider, blind_winner=blind,
+        )
+
     @classmethod
     def load(cls, root: Path = ROOT) -> "Disputes":
         checks = root / "runs" / "checks"
-        key = {row["item"]: row for row in _read_rows(checks / "adjudication_key.json")}
+        key = {row["item"]: row for row in cls._read_rows(checks / "adjudication_key.json")}
         rulings = {row["item"]: row for suffix in ("a", "b")
-                   for row in _read_rows(checks / f"adjudication_rulings_{suffix}.json")}
-        overrides = {row["item"]: row for row in _read_rows(root / "data" / "overrides.json")}
-        decisions = {row["item"]: row for row in _read_rows(root / "data" / "decisions.json")}
+                   for row in cls._read_rows(checks / f"adjudication_rulings_{suffix}.json")}
+        overrides = {row["item"]: row for row in cls._read_rows(root / "data" / "overrides.json")}
+        decisions = {row["item"]: row for row in cls._read_rows(root / "data" / "decisions.json")}
         for name, rows in (("rulings", rulings), ("overrides", overrides), ("decisions", decisions)):
             unknown = sorted(set(rows) - set(key))
             if unknown:
@@ -127,25 +146,8 @@ class Disputes:
         missing = sorted(set(key) - set(rulings))
         if missing:
             raise ValueError(f"no ruling for items {missing}")
-        items = []
-        for number, row in sorted(key.items()):
-            blind = Ruling(rulings[number]["ruling"]).resolve(Side(row["A_is"]))
-            winner, decider, note = blind, Decider.BLIND_CHECK, rulings[number].get("note", "")
-            if number in overrides:
-                winner, decider, note = Winner(overrides[number]["winner"]), Decider.EVIDENCE_OVERRIDE, overrides[number]["note"]
-            if number in decisions:
-                by_claude = decisions[number].get("by") == "claude"
-                winner = Winner(decisions[number]["decision"])
-                decider = Decider.STRICT_RECHECK if by_claude else Decider.HUMAN
-                note = decisions[number].get("note", note)
-            if winner not in LEGAL_WINNERS[Kind(row["kind"])]:
-                raise ValueError(f"item {number}: {winner.value} is not a possible winner of a {row['kind']} dispute")
-            items.append(Dispute(
-                item=number, app=row["app"], field=Field(row["field"]), kind=Kind(row["kind"]),
-                source=rulings[number].get("source", ""),
-                quote=rulings[number].get("quote", ""), note=note,
-                winner=winner, decider=decider, blind_winner=blind,
-            ))
+        items = [cls._settle(number, row, rulings[number], overrides.get(number, {}), decisions.get(number, {}))
+                 for number, row in sorted(key.items())]
         return cls(tuple(items))
 
     def tally(self) -> Dict[str, Dict[str, int]]:

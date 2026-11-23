@@ -13,10 +13,10 @@ from unittest import mock
 
 from research.adjudication import Decider, Disputes, Winner
 from research.__main__ import main
-from research.composio import CatalogError, ComposioCatalog, Coverage, Toolkit
+from research.composio import CatalogError, ComposioCatalog, Coverage, Match, Toolkit
 from research.handcheck import HandCheck, HandCheckError, Scorecard
 from research.links import LinkReport, Page, PageStatus, QuoteStatus
-from research.profile import Field, Profile, ProfileError
+from research.profile import Access, ApiStyle, AuthMethod, Doc, Field, Profile, ProfileError
 from research.paths import ROOT
 from research.report import CaseStudy
 from research.sample import Sample
@@ -91,6 +91,12 @@ class ScorecardTest(unittest.TestCase):
         self.assertTrue(check.accepts(Field.AUTH_METHODS, ["oauth2"]))
         self.assertFalse(check.accepts(Field.AUTH_METHODS, ["oauth2", "basic"]))
         self.assertFalse(check.accepts(Field.AUTH_METHODS, []))
+
+    def test_a_single_value_field_accepts_any_listed_reading_and_nothing_else(self) -> None:
+        check = HandCheck.from_json(hand_check_doc(access=["free_self_serve", "free_trial"]))
+        self.assertTrue(check.accepts(Field.ACCESS, ["free_trial"]))
+        self.assertFalse(check.accepts(Field.ACCESS, ["paid_plan"]))
+        self.assertFalse(check.accepts(Field.ACCESS, ["free_trial", "free_self_serve"]))
 
     def test_counts_misses_per_field(self) -> None:
         profiles = {61: Profile.from_json(profile_doc(mcp="none", mcp_url=""))}
@@ -205,6 +211,27 @@ class DisputeFixtureTest(unittest.TestCase):
                 Disputes.load(self.make_root(tmp, rulings, decisions))
 
 
+class ChangesTest(unittest.TestCase):
+    def test_lists_every_scored_field_a_later_pass_changed(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            first, final = Path(tmp) / "pass1", Path(tmp) / "pass2"
+            for directory, doc in ((first, profile_doc()), (final, profile_doc(access="paid_plan", auth_methods=["oauth2"]))):
+                directory.mkdir()
+                (directory / "61.json").write_text(json.dumps(doc))
+            changes = Survey.load(final).changes_since(Survey.load(first))
+        self.assertEqual(
+            [(c["field"], c["before"], c["after"]) for c in changes],
+            [("auth_methods", ["oauth2", "api_key"], ["oauth2"]), ("access", ["free_self_serve"], ["paid_plan"])],
+        )
+
+    def test_an_unchanged_pass_has_no_changes(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            directory = Path(tmp)
+            (directory / "61.json").write_text(json.dumps(profile_doc()))
+            survey = Survey.load(directory)
+        self.assertEqual(survey.changes_since(survey), [])
+
+
 class FetchTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
@@ -243,6 +270,24 @@ class FetchTest(unittest.TestCase):
         self.assertIs(Page.fetch("http://[bad").status, PageStatus.UNREACHABLE)
         self.assertIs(Page.fetch("https://exämple.com/é").status, PageStatus.UNREACHABLE)
 
+    def test_links_command_writes_one_entry_per_citation_with_page_and_quote_status(self) -> None:
+        evidence = [{"field": f, "url": self.base + path, "quote": "API key"}
+                    for f, path in (("auth_methods", "/ok"), ("access", "/ok"), ("api_styles", "/gone"), ("mcp", "/ok"))]
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            directory = root / "runs" / "pass9"
+            directory.mkdir(parents=True)
+            (directory / "61.json").write_text(json.dumps(profile_doc(evidence=evidence)))
+            out = io.StringIO()
+            with mock.patch("research.__main__.ROOT", root), mock.patch.object(sys, "argv", ["research", "links", str(directory)]), \
+                    contextlib.redirect_stdout(out):
+                self.assertEqual(main(), 0)
+            written = json.loads((root / "runs" / "checks" / "pass9_links.json").read_text())
+        self.assertEqual([(e["field"], e["page"], e["quote"]) for e in written],
+                         [("auth_methods", "live", "found"), ("access", "live", "found"),
+                          ("api_styles", "not_found", "unchecked"), ("mcp", "live", "found")])
+        self.assertIn('"citations": 4', out.getvalue())
+
     def test_link_report_writes_one_entry_per_citation_and_fetches_each_url_once(self) -> None:
         cited = [{"field": f, "url": self.base + "/ok", "quote": "create an API key"}
                  for f in ("auth_methods", "access", "api_styles")]
@@ -268,8 +313,20 @@ class BoundaryTest(unittest.TestCase):
             with self.assertRaises(ProfileError, msg=bad):
                 Profile.from_json(profile_doc(evidence=[{"field": "mcp", "url": bad, "quote": "q"}]))
 
+    def test_doc_reads_enums_and_text_or_names_the_bad_key(self) -> None:
+        doc = Doc({"access": "paid_plan", "styles": ["rest", "soap"], "note": 5})
+        self.assertIs(doc.enum(Access, "access"), Access.PAID_PLAN)
+        self.assertEqual(len(doc.enums(ApiStyle, "styles")), 2)
+        with self.assertRaisesRegex(ProfileError, "note"):
+            doc.text("note")
+        with self.assertRaisesRegex(ProfileError, "styles"):
+            Doc({"styles": []}).enums(ApiStyle, "styles")
+
+    def test_the_cited_fields_exclude_the_judgements(self) -> None:
+        self.assertEqual(set(Field.cited()), set(Field) - {Field.VERDICT, Field.BLOCKER})
+
     def test_evidence_field_must_be_a_known_field(self) -> None:
-        with self.assertRaisesRegex(ProfileError, "evidence field"):
+        with self.assertRaisesRegex(ProfileError, "evidence field: 'mpc'"):
             Profile.from_json(profile_doc(evidence=[{"field": "mpc", "url": "https://x.io", "quote": "q"}]))
 
     def test_survey_lists_odd_files_instead_of_crashing(self) -> None:
@@ -322,6 +379,14 @@ class CatalogTest(unittest.TestCase):
         with self.assertRaisesRegex(CatalogError, "COMPOSIO_API_KEY"):
             ComposioCatalog.fetch("")
 
+    def test_composio_auth_is_read_as_the_briefs_methods_and_only_extras_are_reported(self) -> None:
+        toolkit = Toolkit("x", "X", 1, ("OAUTH2", "DCR_OAUTH", "API_KEY", "SAML"))
+        self.assertEqual(toolkit.auth_methods(), {AuthMethod.OAUTH2, AuthMethod.API_KEY, AuthMethod.OTHER})
+        match = Match(Coverage.NATIVE, toolkit)
+        self.assertEqual(match.auth_not_in((AuthMethod.OAUTH2,)), ["api_key", "other"])
+        self.assertEqual(match.auth_not_in((AuthMethod.OAUTH2, AuthMethod.API_KEY, AuthMethod.OTHER, AuthMethod.BASIC)), [])
+        self.assertEqual(Match(Coverage.NONE, None).auth_not_in(()), [])
+
     def test_the_snapshot_round_trips(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "catalog.json"
@@ -373,6 +438,21 @@ class CommandTest(unittest.TestCase):
             checks = Path(tmp) / "checks.json"
             checks.write_text(json.dumps([hand_check_doc()]))
             self.assertEqual(self.run_main("score", tmp, str(checks)), 1)
+
+    def test_site_command_writes_the_page_data_under_the_root_and_prints_the_count(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for name in ("site_src", "data", "runs"):
+                shutil.copytree(ROOT / name, root / name)
+            (root / "site").mkdir()
+            out = io.StringIO()
+            with mock.patch("research.__main__.ROOT", root), mock.patch.object(sys, "argv", ["research", "site"]), \
+                    contextlib.redirect_stdout(out):
+                self.assertEqual(main(), 0)
+            data = json.loads((root / "site" / "data.json").read_text())
+            self.assertTrue((root / "site" / "index.html").exists())
+        self.assertEqual(len(data["apps"]), 100)
+        self.assertIn("(100 apps)", out.getvalue())
 
 
 if __name__ == "__main__":

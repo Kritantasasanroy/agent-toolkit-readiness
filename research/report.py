@@ -2,15 +2,15 @@
 
 import json
 from dataclasses import dataclass
-from datetime import date
 from pathlib import Path
 from typing import Dict, List
 
 from research.adjudication import Disputes
-from research.composio import ComposioCatalog, Coverage
+from research.composio import ComposioCatalog, Coverage, Match
 from research.handcheck import HandCheck, Scorecard
 from research.links import LinkReport
 from research.paths import ROOT
+from research.profile import Field
 from research.survey import Survey
 
 
@@ -36,14 +36,23 @@ class CaseStudy:
             catalog=ComposioCatalog.read(root / "data" / "composio_toolkits.json"),
         )
 
+    def auth_check(self, coverage: Dict[str, Match]) -> Dict[str, object]:
+        """Our auth answers against Composio's, for apps with a native toolkit: a source the
+        research agents did not write."""
+        native = [p for p in self.final.all() if coverage[p.app].coverage is Coverage.NATIVE]
+        extras = {p.app: (p, coverage[p.app].auth_not_in(p.auth_methods)) for p in native}
+        differ = [{"app": app, "ours": p.answer(Field.AUTH_METHODS), "extra_in_composio": extra}
+                  for app, (p, extra) in extras.items() if extra]
+        return {"checked": len(native), "consistent": len(native) - len(differ), "differ": differ}
+
     def to_json(self) -> Dict[str, object]:
         contested = self.disputes.contested_fields()
         coverage = {p.app: self.catalog.lookup(p.app) for p in self.final.all()}
         return {
-            "generated": date.today().isoformat(),
             "apps": [dict(p.to_json(), contested=contested.get(p.app, []), composio=coverage[p.app].to_json())
                      for p in self.final.all()],
             "composio": {
+                "auth": self.auth_check(coverage),
                 "catalog_fetched": self.catalog.fetched,
                 "catalog_size": len(self.catalog.toolkits),
                 "coverage": {c.value: sum(m.coverage is c for m in coverage.values()) for c in Coverage},

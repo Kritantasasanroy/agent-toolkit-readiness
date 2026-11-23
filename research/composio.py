@@ -13,7 +13,9 @@ from dataclasses import dataclass
 from datetime import date
 from enum import Enum
 from pathlib import Path
-from typing import Dict, List, Mapping, Optional, Tuple
+from typing import Dict, FrozenSet, List, Mapping, Optional, Tuple
+
+from research.profile import AuthMethod
 
 
 class CatalogError(ValueError):
@@ -43,6 +45,16 @@ class Toolkit:
             auth=tuple(str(scheme) for scheme in doc.get("auth_schemes") or ()),
         )
 
+    # Composio's scheme names, read as the brief's auth methods.
+    SCHEMES = {
+        "OAUTH2": AuthMethod.OAUTH2, "DCR_OAUTH": AuthMethod.OAUTH2, "S2S_OAUTH2": AuthMethod.OAUTH2,
+        "API_KEY": AuthMethod.API_KEY, "BASIC": AuthMethod.BASIC, "BASIC_WITH_JWT": AuthMethod.BASIC,
+        "BEARER_TOKEN": AuthMethod.BEARER_TOKEN, "NO_AUTH": AuthMethod.NONE,
+    }
+
+    def auth_methods(self) -> FrozenSet[AuthMethod]:
+        return frozenset(self.SCHEMES.get(scheme, AuthMethod.OTHER) for scheme in self.auth)
+
     def to_json(self) -> Dict[str, object]:
         return {"slug": self.slug, "name": self.name, "tools": self.tools, "auth": list(self.auth)}
 
@@ -51,6 +63,16 @@ class Toolkit:
 class Match:
     coverage: Coverage
     toolkit: Optional[Toolkit]
+
+    def auth_not_in(self, ours: Tuple[AuthMethod, ...]) -> List[str]:
+        """Auth methods Composio's toolkit offers that the research profile does not list.
+
+        Empty when the app has no toolkit, or when every method Composio offers is one the
+        profile names. Composio often supports fewer methods than the vendor, so the other
+        direction is not a disagreement."""
+        if self.toolkit is None:
+            return []
+        return sorted(m.value for m in self.toolkit.auth_methods() - set(ours))
 
     def to_json(self) -> Dict[str, object]:
         return {

@@ -100,9 +100,10 @@ class Field(Enum):
             Field.MCP: Mcp, Field.VERDICT: Verdict, Field.BLOCKER: Blocker,
         }[self]
 
-
-# The brief requires a citation for each of these; verdict and blocker are judgements.
-CITED_FIELDS = (Field.AUTH_METHODS, Field.ACCESS, Field.API_STYLES, Field.MCP)
+    @classmethod
+    def cited(cls) -> Tuple["Field", ...]:
+        """The fields the brief requires a citation for; verdict and blocker are judgements."""
+        return (cls.AUTH_METHODS, cls.ACCESS, cls.API_STYLES, cls.MCP)
 
 
 class ProfileError(ValueError):
@@ -112,25 +113,34 @@ class ProfileError(ValueError):
 E = TypeVar("E", bound=Enum)
 
 
-def _enum(kind: Type[E], raw: object, name: str) -> E:
-    try:
-        return kind(raw)
-    except ValueError:
-        allowed = ", ".join(member.value for member in kind)
-        raise ProfileError(f"{name}: {raw!r} is not one of {allowed}") from None
+class Doc:
+    """One JSON object from a pass, read with the checks the brief's contract needs."""
 
+    def __init__(self, raw: Mapping[str, object]) -> None:
+        self.raw = raw
 
-def _enums(kind: Type[E], raw: object, name: str) -> Tuple[E, ...]:
-    if not isinstance(raw, list) or not raw:
-        raise ProfileError(f"{name}: expected a non-empty list, got {raw!r}")
-    return tuple(_enum(kind, item, name) for item in raw)
+    def enum(self, kind: Type[E], key: str) -> E:
+        return self._coerce(kind, key, self.raw.get(key))
 
+    @staticmethod
+    def _coerce(kind: Type[E], key: str, value: object) -> E:
+        try:
+            return kind(value)
+        except ValueError:
+            allowed = ", ".join(member.value for member in kind)
+            raise ProfileError(f"{key}: {value!r} is not one of {allowed}") from None
 
-def _text(doc: Mapping[str, object], key: str) -> str:
-    value = doc.get(key, "")
-    if not isinstance(value, str):
-        raise ProfileError(f"{key}: expected text, got {value!r}")
-    return value
+    def enums(self, kind: Type[E], key: str) -> Tuple[E, ...]:
+        value = self.raw.get(key)
+        if not isinstance(value, list) or not value:
+            raise ProfileError(f"{key}: expected a non-empty list, got {value!r}")
+        return tuple(self._coerce(kind, key, item) for item in value)
+
+    def text(self, key: str) -> str:
+        value = self.raw.get(key, "")
+        if not isinstance(value, str):
+            raise ProfileError(f"{key}: expected text, got {value!r}")
+        return value
 
 
 @dataclass(frozen=True)
@@ -143,7 +153,11 @@ class Evidence:
     def from_json(cls, doc: object) -> "Evidence":
         if not isinstance(doc, dict):
             raise ProfileError(f"evidence: expected an object, got {doc!r}")
-        evidence = cls(_enum(Field, doc.get("field"), "evidence field"), _text(doc, "url"), _text(doc, "quote"))
+        fields = Doc(doc)
+        try:
+            evidence = cls(fields.enum(Field, "field"), fields.text("url"), fields.text("quote"))
+        except ProfileError as err:
+            raise ProfileError(f"evidence {err}") from err
         if not evidence.is_fetchable():
             raise ProfileError(f"evidence: {evidence.url!r} is not an ASCII web address")
         return evidence
@@ -179,7 +193,7 @@ class Profile:
 
     def __post_init__(self) -> None:
         cited = {item.field for item in self.evidence}
-        missing = [field.value for field in CITED_FIELDS if field not in cited]
+        missing = [field.value for field in Field.cited() if field not in cited]
         if missing:
             raise ProfileError(f"no evidence for {', '.join(missing)}")
         if self.mcp is not Mcp.NONE and not self.mcp_url:
@@ -193,24 +207,25 @@ class Profile:
         evidence = doc.get("evidence")
         if not isinstance(evidence, list):
             raise ProfileError(f"evidence: expected a list, got {evidence!r}")
+        fields = Doc(doc)
         return cls(
             app_id=app_id,
-            app=_text(doc, "app"),
-            category=_text(doc, "category"),
-            summary=_text(doc, "summary"),
-            auth_methods=_enums(AuthMethod, doc.get("auth_methods"), "auth_methods"),
-            access=_enum(Access, doc.get("access"), "access"),
-            access_note=_text(doc, "access_note"),
-            api_styles=_enums(ApiStyle, doc.get("api_styles"), "api_styles"),
-            api_breadth=_enum(ApiBreadth, doc.get("api_breadth"), "api_breadth"),
-            mcp=_enum(Mcp, doc.get("mcp"), "mcp"),
-            mcp_url=_text(doc, "mcp_url"),
-            verdict=_enum(Verdict, doc.get("verdict"), "verdict"),
-            blocker=_enum(Blocker, doc.get("blocker"), "blocker"),
-            blocker_note=_text(doc, "blocker_note"),
+            app=fields.text("app"),
+            category=fields.text("category"),
+            summary=fields.text("summary"),
+            auth_methods=fields.enums(AuthMethod, "auth_methods"),
+            access=fields.enum(Access, "access"),
+            access_note=fields.text("access_note"),
+            api_styles=fields.enums(ApiStyle, "api_styles"),
+            api_breadth=fields.enum(ApiBreadth, "api_breadth"),
+            mcp=fields.enum(Mcp, "mcp"),
+            mcp_url=fields.text("mcp_url"),
+            verdict=fields.enum(Verdict, "verdict"),
+            blocker=fields.enum(Blocker, "blocker"),
+            blocker_note=fields.text("blocker_note"),
             evidence=tuple(Evidence.from_json(item) for item in evidence),
-            confidence=_enum(Confidence, doc.get("confidence"), "confidence"),
-            notes=_text(doc, "notes"),
+            confidence=fields.enum(Confidence, "confidence"),
+            notes=fields.text("notes"),
         )
 
     @classmethod
