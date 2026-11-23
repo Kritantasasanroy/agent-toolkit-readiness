@@ -1,0 +1,58 @@
+{
+  "app_id": 81,
+  "app": "Stripe",
+  "category": "Finance and Fintech",
+  "summary": "Payments platform for accepting payments, billing, invoicing, payouts and issuing cards online.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free Stripe account with sandboxes; secret or restricted API keys created in the Dashboard. OAuth for MCP and Connect platforms.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.stripe.com",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.stripe.com/api/authentication",
+      "quote": "Provide your API key as the basic auth username value."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.stripe.com/mcp",
+      "quote": "Use OAuth when a client accesses Stripe on behalf of your Stripe user account."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.stripe.com/api",
+      "quote": "You can use the Stripe API in sandboxes without affecting your live data or interacting with banking networks."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.stripe.com/api",
+      "quote": "The Stripe API is organized around REST"
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.stripe.com/mcp",
+      "quote": "Stripe's MCP server supports two authentication methods"
+    }
+  ],
+  "confidence": "high",
+  "notes": "Stripe MCP will stop accepting full-access secret keys from 2027-01-11 (agent API keys or OAuth only); OAuth refresh tokens expire after 14 days. Multi-tenant use of OAuth for end users goes through Stripe Connect/Apps, not reviewed here.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "api_styles/mcp quotes",
+      "to": "verbatim quotes",
+      "reason": "REST quote carried a trailing period the page does not have in plain text; MCP quote truncated mid-sentence."
+    }
+  ]
+}

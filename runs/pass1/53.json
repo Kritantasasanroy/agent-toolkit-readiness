@@ -1,0 +1,45 @@
+{
+  "app_id": 53,
+  "app": "Ahrefs",
+  "category": "Data, SEO and Scraping",
+  "summary": "SEO toolset with API v3 and a hosted MCP server for backlink, keyword and site data.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "paid_plan",
+  "access_note": "Direct API v3 and the remote MCP server need a paid plan from Lite; only workspace owners/admins can create keys.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://api.ahrefs.com/mcp/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid Ahrefs subscription required; keys limited to workspace owners/admins; API units are consumed from the plan.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management.md",
+      "quote": "Authorization: Bearer YOUR_API_KEY"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+      "quote": "available on paid plans starting from Lite."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management.md",
+      "quote": "only workspace owners and admins have access to this section."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+      "quote": "Streamable HTTP: https://api.ahrefs.com/mcp/mcp"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "The docs introduction page returned 404; REST style inferred from bearer-key HTTP API. The MCP quote about paid plans refers to the MCP server; the direct API paid-plan claim (Lite and up) came only from a search summary, not a fetched page. Ahrefs says scripted use of the MCP endpoint is not permitted."
+}

@@ -1,0 +1,45 @@
+{
+  "app_id": 4,
+  "app": "Attio",
+  "category": "CRM and Sales",
+  "summary": "Modern customizable CRM for managing relationships, deals, and workflows on a flexible data model.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free plan for up to 3 users; API keys generated in developer settings; OAuth for apps.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.attio.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "Unpublished OAuth apps are reportedly limited to 25 workspaces until published (from a page summary).",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.attio.com/rest-api/guides/authentication",
+      "quote": "Attio implements the standard OAuth 2.0 specification"
+    },
+    {
+      "field": "access",
+      "url": "https://attio.com/pricing",
+      "quote": "For individuals to get started with Attio."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.attio.com/rest-api/overview",
+      "quote": "Learn about the REST API"
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.attio.com/mcp/overview",
+      "quote": "Attio MCP uses OAuth authentication, so you simply log in with your Attio account"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "MCP URL from search result, not seen on the fetched docs text. 25-workspace cap for unpublished apps came from a fetch summary and was not independently checked against the raw page."
+}

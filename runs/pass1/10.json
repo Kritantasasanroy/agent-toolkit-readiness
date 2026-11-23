@@ -1,0 +1,45 @@
+{
+  "app_id": 10,
+  "app": "DealCloud",
+  "category": "CRM and Sales",
+  "summary": "Deal and relationship management CRM for investment banks, private equity, and other financial firms (Intapp).",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "partner_gated",
+  "access_note": "Customer-only: API access is enabled per user by the customer's admin or DealCloud Customer Success Manager inside a licensed tenant; no self-serve sandbox found.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://api.docs.dealcloud.com/mcp",
+  "verdict": "needs_outreach",
+  "blocker": "partner_program",
+  "blocker_note": "Enterprise product; no public signup, API enabled only inside licensed customer tenants.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://api.docs.dealcloud.com/docs/token",
+      "quote": "DealCloud uses the OAuth2 Client Credentials flow to generate a bearer token, which is then used in the HTTP Authentication header for API requests."
+    },
+    {
+      "field": "access",
+      "url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "quote": "If you do not see the Admin section, contact your organization's admin or DealCloud Customer Success Manager (CSM) for assistance."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://api.docs.dealcloud.com/docs/token",
+      "quote": "Tokens expire after 900 seconds (15 minutes) and must be refreshed by repeating the flow."
+    },
+    {
+      "field": "mcp",
+      "url": "https://api.docs.dealcloud.com/mcp/authentication",
+      "quote": "DealCloud MCP uses OAuth to authenticate, letting AI assistants connect on behalf of an individual user."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Customer-only gating is inferred from the docs referencing admin/CSM and the absence of any self-serve signup; no page explicitly states docs are customer-only. REST inferred from bearer-token HTTP API; MCP endpoint URL not shown, docs hub URL used."
+}

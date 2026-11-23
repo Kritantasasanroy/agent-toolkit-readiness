@@ -1,0 +1,45 @@
+{
+  "app_id": 34,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "GoHighLevel",
+  "summary": "All-in-one CRM, funnel and marketing automation platform for agencies and small businesses.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "paid_plan",
+  "access_note": "Needs a HighLevel account (paid subscription or trial); Private Integration tokens created in Settings.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://services.leadconnectorhq.com/mcp/",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "No free tier found; some endpoints depend on subscription plan. Public OAuth marketplace apps require HighLevel listing.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken",
+      "quote": "Private Integrations, to put it simply, are static/fixed OAuth2 Access Tokens."
+    },
+    {
+      "field": "access",
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+      "quote": "However, access to certain API endpoints depends on your subscription plan and the permissions assigned to the token."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken",
+      "quote": "Private Integration tokens are used in the Authorization header, just like other Access Tokens."
+    },
+    {
+      "field": "mcp",
+      "url": "https://marketplace.gohighlevel.com/docs/other/mcp.md",
+      "quote": "No API key to create or paste."
+    }
+  ],
+  "confidence": "low",
+  "notes": "Docs site is JS rendered (stoplight/marketplace); REST is inferred from bearer-token header usage, not an explicit statement. Free-tier absence not verified from a page."
+}

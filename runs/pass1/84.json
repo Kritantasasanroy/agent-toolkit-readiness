@@ -1,0 +1,44 @@
+{
+  "app_id": 84,
+  "app": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "summary": "Payment gateway product reportedly built on NMI's gateway platform for merchants to accept card payments.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "partner_gated",
+  "access_note": "Could not find any Paygent-branded docs; the underlying NMI gateway works only through its partner channel and does not onboard individual merchants.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "none",
+  "mcp_url": "",
+  "verdict": "needs_outreach",
+  "blocker": "partner_program",
+  "blocker_note": "No public Paygent Connect developer docs found; NMI says it operates exclusively through a partner channel.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.nmi.com/reference/authentication",
+      "quote": "Authentication across our APIs is done via secure API keys."
+    },
+    {
+      "field": "access",
+      "url": "https://www.nmi.com/resources/payments-101/faq/",
+      "quote": "NMI operates exclusively through a partner channel. We don’t directly onboard individual merchants as end users."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.nmi.com/reference",
+      "quote": "For new integrations, start with the Payment Component and NMI REST API guides, API reference, SDKs, and recipes."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.nmi.com/reference",
+      "quote": "For new integrations, start with the Payment Component and NMI REST API guides, API reference, SDKs, and recipes."
+    }
+  ],
+  "confidence": "low",
+  "notes": "Could not research Paygent Connect properly: several searches found no Paygent Connect site or docs, and the NMI link comes only from the task hint. All fields describe NMI's gateway as a proxy. MCP evidence is weak (NMI docs do not mention MCP; no MCP found in searches). Other 'Paygent' products found (Japanese Paygent, an unrelated agent-card tool) were not matched."
+}

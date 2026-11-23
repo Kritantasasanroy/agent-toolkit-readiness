@@ -1,0 +1,69 @@
+{
+  "app_id": 37,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "systeme.io",
+  "summary": "All-in-one funnel builder, email marketing and course platform.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "API key attached to X-API-Key header; plan requirement for API access not verified.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://developer.systeme.io/docs/mcp-server.md",
+  "verdict": "build_with_caveat",
+  "blocker": "none",
+  "blocker_note": "API key only, no OAuth; per-user key paste. Plan gating for API unverified.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.systeme.io/reference/api.md",
+      "quote": "your only option right now is to attach your API key to the `X-API-Key` header of each request"
+    },
+    {
+      "field": "access",
+      "url": "https://developer.systeme.io/reference/api.md",
+      "quote": "Simply navigate to the profile settings within your Systeme.io dashboard"
+    },
+    {
+      "field": "access",
+      "url": "https://systeme.io/pricing",
+      "quote": "Start for free now"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.systeme.io/reference/api.md",
+      "quote": "Adhering to RESTful conventions, our API ensures an intuitive and consistent interaction pattern for all users"
+    },
+    {
+      "field": "mcp",
+      "url": "https://developer.systeme.io/docs/mcp-server.md",
+      "quote": "The Systeme.io MCP server is in its initial release"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Official MCP exists but is narrow: contacts, tags, contact fields and newsletters only; authenticates with an MCP key (X-MCP-Key header or mcpKey query parameter). Whether API/MCP keys are available on the free plan was not confirmed on a page, so verdict stays build_with_caveat.",
+  "review": [
+    {
+      "field": "mcp",
+      "from": "none",
+      "to": "official",
+      "reason": "Vendor developer docs include an MCP Server page (initial release, key-based, contacts/tags/newsletters)."
+    },
+    {
+      "field": "mcp_url",
+      "from": "",
+      "to": "https://developer.systeme.io/docs/mcp-server.md",
+      "reason": "Official MCP doc page."
+    },
+    {
+      "field": "evidence",
+      "from": "access, api_styles and mcp quotes",
+      "to": "replaced",
+      "reason": "Old quotes (rate limit sentence, Contact collection) did not support their claims; replaced with the API intro, key-generation and MCP page text."
+    }
+  ]
+}

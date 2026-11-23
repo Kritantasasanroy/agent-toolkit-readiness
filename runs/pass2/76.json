@@ -1,0 +1,58 @@
+{
+  "app_id": 76,
+  "app": "Monday.com",
+  "category": "Productivity and Project Management",
+  "summary": "Work operating system for managing projects, workflows and teams on customizable boards.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Personal API token from Developer Center for users with API access; OAuth apps registered in Developer Center.",
+  "api_styles": [
+    "graphql"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.monday.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.monday.com/apps/docs/oauth",
+      "quote": "OAuth 2.0 is a protocol that lets your app request authorization to read or modify data in a user's monday account."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developer.monday.com/api-reference/docs/authentication",
+      "quote": "These tokens are unique to each user"
+    },
+    {
+      "field": "access",
+      "url": "https://developer.monday.com/api-reference/docs/authentication",
+      "quote": "create a free developer account to get an API token and start testing"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.monday.com/api-reference/docs/introduction-to-graphql",
+      "quote": "The monday.com API is built with GraphQL, a flexible query language"
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/mondaycom/mcp",
+      "quote": "Our hosted MCP service handles all the infrastructure for you"
+    }
+  ],
+  "confidence": "high",
+  "notes": "Free developer account gives an API token. MCP URL confirmed on the vendor's GitHub README. Marketplace review for public apps not checked.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "access quote",
+      "to": "free developer account quote",
+      "reason": "Old quote did not show a free path."
+    }
+  ]
+}

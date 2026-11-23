@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>App Toolkit Readiness</title>
+<meta name="description" content="Which of 100 apps can become agent toolkits today, what blocks the rest, and how accurate the research was.">
+<link rel="alternate" type="application/json" href="data.json" title="All findings as JSON">
+<style>
+:root {
+  --bg: #fbfaf7; --panel: #ffffff; --ink: #1d1c1a; --muted: #6b675f; --line: #e6e2d9;
+  --accent: #2d5bd7; --good: #1f8a4c; --warn: #b7791f; --bad: #c0392b; --none: #8a857b;
+  --chip: #f1eee7;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151514; --panel: #1d1d1b; --ink: #ecebe6; --muted: #a29e94; --line: #34332f;
+    --accent: #7c9cf5; --good: #4cc27f; --warn: #e3a948; --bad: #ef6b5b; --none: #8f8b82; --chip: #2a2a27;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif; }
+main { max-width: 1080px; margin: 0 auto; padding: 32px 16px 80px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.01em; }
+h2 { font-size: 1.3rem; margin: 56px 0 12px; padding-top: 8px; border-top: 1px solid var(--line); }
+h3 { font-size: 1rem; margin: 24px 0 8px; }
+p { margin: 0 0 12px; max-width: 72ch; }
+a { color: var(--accent); }
+.lede { color: var(--muted); font-size: 1.05rem; }
+.links { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 16px 0 0; font-size: .95rem; }
+.findings { counter-reset: f; list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 12px; }
+.findings li { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px 14px 52px; position: relative; }
+.findings li::before { counter-increment: f; content: counter(f); position: absolute; left: 16px; top: 13px; width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #fff; font-size: .8rem; font-weight: 600; display: grid; place-items: center; }
+.findings b { font-weight: 600; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 20px 0; }
+.stat { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.stat .n { font-size: 1.7rem; font-weight: 650; font-variant-numeric: tabular-nums; }
+.stat .l { color: var(--muted); font-size: .85rem; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; overflow-x: auto; }
+.bar { display: grid; grid-template-columns: 130px 1fr 36px; align-items: center; gap: 8px; font-size: .88rem; margin: 6px 0; }
+.bar .track { background: var(--chip); border-radius: 4px; height: 14px; overflow: hidden; }
+.bar .fill { background: var(--accent); height: 100%; }
+.bar .v { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); }
+table { border-collapse: collapse; width: 100%; font-size: .86rem; }
+th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .03em; }
+td.num { text-align: center; font-variant-numeric: tabular-nums; }
+.heat td.num { font-weight: 600; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: .78rem; background: var(--chip); white-space: nowrap; }
+.v-build_now { color: var(--good); } .v-build_with_caveat { color: var(--warn); }
+.v-needs_outreach { color: var(--bad); } .v-not_feasible { color: var(--none); }
+.pipeline { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; counter-reset: s; }
+.step { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; font-size: .9rem; }
+.step b { display: block; margin-bottom: 4px; }
+.step.human { border-color: var(--warn); }
+.tag { font-size: .72rem; color: var(--warn); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.controls input, .controls select { font: inherit; font-size: .9rem; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--ink); }
+.controls input { flex: 1 1 220px; }
+details summary { cursor: pointer; }
+.ev { font-size: .8rem; color: var(--muted); margin: 4px 0 0; padding-left: 16px; }
+.ev li { margin: 2px 0; word-break: break-word; }
+.miss td:nth-child(3) { color: var(--bad); }
+.small { font-size: .85rem; color: var(--muted); }
+.flag { color: var(--warn); font-size: .75rem; font-weight: 600; }
+.win-pass2 { color: var(--good); } .win-pass1 { color: var(--bad); } .win-reference, .win-agent { color: var(--accent); }
+.win-unclear, .win-both, .win-neither { color: var(--muted); }
+.note { border-left: 3px solid var(--warn); padding: 6px 12px; background: var(--panel); border-radius: 0 8px 8px 0; margin: 12px 0; max-width: 72ch; }
+footer { margin-top: 56px; color: var(--muted); font-size: .85rem; }
+@media (max-width: 640px) { h1 { font-size: 1.6rem; } .bar { grid-template-columns: 100px 1fr 32px; } .hide-sm { display: none; } }
+</style>
+</head>
+<body>
+<main>
+<!--COPY-->
+</main>
+<script id="data" type="application/json">/*DATA*/</script>
+<script>
+const D = JSON.parse(document.getElementById("data").textContent);
+const label = s => s.replace(/_/g, " ");
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pct = x => Math.round(x * 100) + "%";
+
+function bars(el, counts, total) {
+  const max = Math.max(...Object.values(counts));
+  document.getElementById(el).innerHTML = Object.entries(counts).map(([k, v]) =>
+    `<div class="bar"><span>${esc(label(k))}</span><span class="track"><span class="fill" style="width:${v / max * 100}%;display:block"></span></span><span class="v">${v}</span></div>`
+  ).join("") + (total ? `<p class="small">Out of ${total} apps.</p>` : "");
+}
+
+function heat() {
+  const rows = D.patterns.access_by_category;
+  const cols = ["free_self_serve", "free_trial", "paid_plan", "admin_approval", "partner_gated", "no_public_api"];
+  const shade = v => v ? `background: color-mix(in srgb, var(--accent) ${Math.min(v * 9, 70)}%, transparent)` : "";
+  let h = `<table class="heat"><tr><th>Category</th>${cols.map(c => `<th>${label(c)}</th>`).join("")}</tr>`;
+  for (const [cat, row] of Object.entries(rows)) {
+    h += `<tr><td>${esc(cat)}</td>${cols.map(c => `<td class="num" style="${shade(row[c])}">${row[c] || ""}</td>`).join("")}</tr>`;
+  }
+  document.getElementById("heat").innerHTML = h + "</table>";
+}
+
+function verdictList(el, verdict) {
+  const apps = D.apps.filter(a => a.verdict === verdict);
+  document.getElementById(el).innerHTML = apps.map(a =>
+    `<li><b>${esc(a.app)}</b> <span class="small">${esc(label(a.blocker === "none" ? a.access : a.blocker))}${a.blocker_note ? ": " + esc(a.blocker_note) : ""}</span></li>`
+  ).join("");
+}
+
+function verification() {
+  const v = D.verification;
+  const card = (name, s) => `<div class="stat"><div class="n">${pct(s.accuracy)}</div><div class="l">${name}: ${s.fields_checked} fields on ${s.apps_checked} hand-checked apps</div></div>`;
+  const link = (name, l) => `<div class="stat"><div class="n">${l.verified}/${l.citations}</div><div class="l">${name}: quotes found word for word on a live page</div></div>`;
+  document.getElementById("vstats").innerHTML = card("Pass 1", v.pass1) + card("Pass 2", v.pass2) + link("Pass 1", v.links_pass1) + link("Pass 2", v.links_pass2);
+  const fields = Object.keys(v.pass1.by_field);
+  document.getElementById("vfields").innerHTML = `<table><tr><th>Field</th><th>Pass 1</th><th>Pass 2</th></tr>` +
+    fields.map(f => `<tr><td>${label(f)}</td><td class="num">${pct(v.pass1.by_field[f])}</td><td class="num">${pct(v.pass2.by_field[f])}</td></tr>`).join("") + "</table>";
+  const missTable = misses => misses.length ? `<table class="miss"><tr><th>App</th><th>Field</th><th>Agent said</th><th>Docs say</th></tr>` +
+    misses.map(m => `<tr><td>${esc(m.app)}</td><td>${label(m.field)}</td><td>${esc(m.agent.join(", "))}</td><td>${esc(m.truth.join(" or "))}</td></tr>`).join("") + "</table>" : "<p>None.</p>";
+  document.getElementById("miss2").innerHTML = missTable(v.pass2.misses);
+}
+
+function table() {
+  const q = document.getElementById("q").value.toLowerCase();
+  const cat = document.getElementById("cat").value;
+  const ver = document.getElementById("ver").value;
+  const rows = D.apps.filter(a =>
+    (!cat || a.category === cat) && (!ver || a.verdict === ver) &&
+    (!q || (a.app + " " + a.summary + " " + a.notes).toLowerCase().includes(q)));
+  document.getElementById("count").textContent = `${rows.length} of ${D.apps.length} apps`;
+  document.getElementById("apps").innerHTML = `<table><tr><th>App</th><th>Auth</th><th>Access</th><th class="hide-sm">API</th><th class="hide-sm">MCP</th><th class="hide-sm">Composio</th><th>Verdict</th></tr>` +
+    rows.map(a => `<tr>
+      <td><details><summary><b>${esc(a.app)}</b></summary>
+        <p class="small">${esc(a.category)}. ${esc(a.summary)}</p>
+        ${a.access_note ? `<p class="small">Access: ${esc(a.access_note)}</p>` : ""}
+        ${a.blocker !== "none" ? `<p class="small">Blocker: ${esc(label(a.blocker))}${a.blocker_note ? ". " + esc(a.blocker_note) : ""}</p>` : ""}
+        ${a.notes ? `<p class="small">Notes: ${esc(a.notes)}</p>` : ""}
+        <ul class="ev">${a.evidence.map(e => `<li>${esc(label(e.field))}: <a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.url)}</a><br>"${esc(e.quote)}"</li>`).join("")}</ul>
+      </details></td>
+      <td>${a.auth_methods.map(label).join(", ")}</td>
+      <td>${label(a.access)}</td>
+      <td class="hide-sm">${a.api_styles.map(label).join(", ")}<br><span class="small">${label(a.api_breadth)}</span></td>
+      <td class="hide-sm">${label(a.mcp)}</td>
+      <td class="hide-sm">${label(a.composio.coverage)}</td>
+      <td><span class="pill v-${a.verdict}">${label(a.verdict)}</span><br><span class="small">${esc(a.confidence)} confidence</span>${a.contested.length ? `<br><span class="flag">contested: ${a.contested.map(label).join(", ")}</span>` : ""}</td>
+    </tr>`).join("") + "</table>";
+}
+
+function stats() {
+  const A = D.apps, V = D.verification, c = f => A.filter(f).length;
+  const t = V.dispute_tally.changed || {};
+  const rank = D.patterns.self_serve_by_category;
+  const rate = l => Math.round(100 * l.verified / l.pages.live);
+  return {
+    n: A.length, cNative: D.composio.coverage.native, cMcp: D.composio.coverage.mcp_only, cNone: D.composio.coverage.none,
+    cSize: D.composio.catalog_size, cDate: D.composio.catalog_fetched,
+    cNowNative: c(a => a.verdict === "build_now" && a.composio.coverage === "native"),
+    cGaps: A.filter(a => a.verdict === "build_now" && a.composio.coverage !== "native").map(a => a.app + (a.composio.coverage === "mcp_only" ? " (MCP only)" : "")).join(", "),
+    oauth: c(a => a.auth_methods[0] === "oauth2"), key: c(a => a.auth_methods[0] === "api_key"),
+    oauthAny: c(a => a.auth_methods.includes("oauth2")),
+    free: c(a => a.access === "free_self_serve"), trial: c(a => a.access === "free_trial"),
+    selfServe: c(a => a.access === "free_self_serve" || a.access === "free_trial"),
+    gated: c(a => ["partner_gated", "admin_approval", "no_public_api"].includes(a.access)),
+    paidAccess: c(a => a.access === "paid_plan"),
+    buildNow: c(a => a.verdict === "build_now"), caveat: c(a => a.verdict === "build_with_caveat"),
+    outreach: c(a => a.verdict === "needs_outreach"), notFeasible: c(a => a.verdict === "not_feasible"),
+    blkPaid: c(a => a.blocker === "paid_plan"), blkReview: c(a => a.blocker === "app_review"),
+    blkPartner: c(a => a.blocker === "partner_program"),
+    catTop: rank[0][0], catTopPct: Math.round(rank[0][1] * 100),
+    catLow: rank[rank.length - 1][0], catLowPct: Math.round(rank[rank.length - 1][1] * 100),
+    changedFields: V.changed_fields.length, changedApps: new Set(V.changed_fields.map(x => x.app)).size,
+    p2won: t.pass2 || 0, p1won: t.pass1 || 0, unsettled: (t.unclear || 0) + (t.neither || 0), both: t.both || 0,
+    disputes: V.disputes.length,
+    q1: V.links_pass1.verified, q1live: V.links_pass1.pages.live, q1pct: rate(V.links_pass1),
+    q2: V.links_pass2.verified, q2live: V.links_pass2.pages.live, q2pct: rate(V.links_pass2),
+    unchecked2: V.links_pass2.quotes.unchecked || 0, citations2: V.links_pass2.citations,
+    acc1: pct(V.pass1.accuracy), acc2: pct(V.pass2.accuracy), sample: V.pass1.apps_checked,
+    reviewed: V.human_reviewed, rechecked: V.rechecked, stillOpen: V.to_review - V.human_reviewed - V.rechecked, toReview: V.to_review,
+    leniSingle: V.reference_leniency.single_answers, leniSeveral: V.reference_leniency.accepting_several,
+    leniApps: V.reference_leniency.apps_with_several, lowConf: c(a => a.confidence === "low"), contested: c(a => a.contested.length > 0),
+  };
+}
+
+function disputes() {
+  const rows = D.verification.disputes;
+  document.getElementById("disputes").innerHTML = `<table><tr><th>App</th><th>Field</th><th>Docs sided with</th><th class="hide-sm">Decided by</th><th class="hide-sm">Source</th></tr>` +
+    rows.map(r => `<tr><td>${esc(r.app)}</td><td>${label(r.field)}</td><td class="win-${r.winner}">${label(r.winner)}</td>
+      <td class="hide-sm small">${esc(r.decided_by)}</td>
+      <td class="hide-sm small">${r.source ? `<a href="${esc(r.source)}" target="_blank" rel="noopener">link</a>` : ""} ${esc(r.note || "")}</td></tr>`).join("") + "</table>";
+}
+
+function init() {
+  const S = stats();
+  const hs = document.getElementById("humanStatus");
+  if (hs) hs.textContent = `Of the ${S.toReview} contested answers, ${S.reviewed} have been reviewed by a person, ${S.rechecked} were re-checked strictly from the vendor docs by Claude with the reasoning recorded, and ${S.stillOpen} stay open because the docs do not settle them.`;
+  document.querySelectorAll("[data-s]").forEach(el => { el.textContent = S[el.dataset.s]; });
+  const p = D.patterns, n = D.apps.length;
+  bars("auth", p.primary_auth, n);
+  bars("blockers", Object.fromEntries(Object.entries(p.blockers).filter(([k]) => k !== "none")));
+  bars("mcp", p.mcp, n);
+  bars("verdicts", p.verdicts, n);
+  heat();
+  verdictList("easy", "build_now");
+  verdictList("outreach", "needs_outreach");
+  verification();
+  disputes();
+  const cats = [...new Set(D.apps.map(a => a.category))];
+  document.getElementById("cat").innerHTML = `<option value="">All categories</option>` + cats.map(c => `<option>${esc(c)}</option>`).join("");
+  for (const id of ["q", "cat", "ver"]) document.getElementById(id).addEventListener("input", table);
+  table();
+}
+init();
+</script>
+</body>
+</html>

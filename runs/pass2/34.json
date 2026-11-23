@@ -1,0 +1,64 @@
+{
+  "app_id": 34,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "GoHighLevel",
+  "summary": "All-in-one CRM, funnel and marketing automation platform for agencies and small businesses.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "paid_plan",
+  "access_note": "Needs a HighLevel account (paid subscription or trial); Private Integration tokens created in Settings.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://services.leadconnectorhq.com/mcp/",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "No free tier found; some endpoints depend on subscription plan. Public OAuth marketplace apps require HighLevel listing.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken",
+      "quote": "Private Integrations, to put it simply, are static/fixed OAuth2 Access Tokens"
+    },
+    {
+      "field": "access",
+      "url": "https://www.gohighlevel.com/pricing",
+      "quote": "Start with a FREE 14-day trial on any plan below"
+    },
+    {
+      "field": "access",
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+      "quote": "access to certain API endpoints depends on your subscription plan and the permissions assigned to the"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken",
+      "quote": "Private Integration tokens are used in the Authorization header, just like other Access Tokens"
+    },
+    {
+      "field": "mcp",
+      "url": "https://marketplace.gohighlevel.com/docs/other/mcp.md",
+      "quote": "Connect HighLevel to your AI assistant, then ask it to find a contact, book an appointment, send a message"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Pricing page: 14-day free trial on any plan, no free tier found. Private Integration tokens are available across plans per help article. Vendor MCP doc lists hosted endpoints under services.leadconnectorhq.com/mcp. REST inferred from bearer-token HTTPS calls.",
+  "review": [
+    {
+      "field": "confidence",
+      "from": "low",
+      "to": "medium",
+      "reason": "Pricing page confirms only a 14-day trial then paid plans (no free tier), and the vendor MCP doc confirms the hosted MCP; REST remains inferred."
+    },
+    {
+      "field": "evidence",
+      "from": "access and mcp quotes",
+      "to": "replaced",
+      "reason": "Added the pricing-page trial quote to support paid_plan; MCP quote replaced with one that describes the vendor MCP rather than a sign-in detail."
+    }
+  ]
+}

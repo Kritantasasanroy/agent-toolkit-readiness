@@ -1,0 +1,52 @@
+{
+  "app_id": 50,
+  "app": "fanbasis",
+  "category": "Ecommerce",
+  "summary": "Creator payments and commerce platform (now branded Commas) with enterprise embedded checkout and payouts.",
+  "auth_methods": [
+    "other"
+  ],
+  "access": "partner_gated",
+  "access_note": "Enterprise page markets APIs and SDKs but no public developer docs or self-serve keys were found.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://commas.com/",
+  "verdict": "needs_outreach",
+  "blocker": "partner_program",
+  "blocker_note": "No public API docs located; enterprise API appears to require contacting the vendor.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://commas.com/enterprises",
+      "quote": "Checkout embedded in your stack. APIs and embeddable components, live in days not quarters."
+    },
+    {
+      "field": "access",
+      "url": "https://commas.com/enterprises",
+      "quote": "Enterprise sellers make more money here."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://commas.com/",
+      "quote": "Embedded checkouts, multi-rail payouts, APIs and SDKs."
+    },
+    {
+      "field": "mcp",
+      "url": "https://commas.com/",
+      "quote": "MCP beta Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English."
+    }
+  ],
+  "confidence": "low",
+  "notes": "fanbasis.com redirects to commas.com (FanBasis is now Commas). No developer docs, llms.txt, auth description or API reference could be found (docs/apidocs/developers hosts and paths all redirect to the homepage or 404). auth_methods \"other\" is a placeholder: no page names an auth method; the cited quote only shows an API is advertised. The access value partner_gated is likewise not shown by any quote; the enterprise page only markets APIs for enterprise sellers. REST is assumed, not stated. MCP is advertised as beta with no endpoint documented. Confidence low.",
+  "review": [
+    {
+      "field": "mcp",
+      "from": "none",
+      "to": "official",
+      "reason": "Vendor homepage (fanbasis.com now redirects to commas.com) advertises an MCP beta for its own product. No URL or setup docs found, so mcp_url is the page that announces it."
+    }
+  ]
+}

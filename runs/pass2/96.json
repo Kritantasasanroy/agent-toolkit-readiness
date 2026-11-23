@@ -1,0 +1,63 @@
+{
+  "app_id": 96,
+  "app": "Devin",
+  "category": "AI, Research and Media-native",
+  "summary": "Autonomous AI software engineer that runs coding sessions, with an API and a hosted MCP server.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "paid_plan",
+  "access_note": "API v3 uses service-user keys (cog_) for Teams/Enterprise orgs, or personal access tokens; exact free-plan API eligibility not confirmed.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://mcp.devin.ai/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Organization API aimed at Teams and Enterprise orgs; Enterprise API for enterprise customers only.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "quote": "All API credentials use the cog_ prefix format."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "quote": "Personal Access Token (PAT) For human programmatic access under your own identity"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.devin.ai/api-reference/getting-started/teams-quickstart",
+      "quote": "Set up Devin API access for a teams or standard organization: provision a service user, copy the API key, and create your first session."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.devin.ai/api-reference/overview",
+      "quote": "Learn how to programmatically interact with Devin using our REST APIs"
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.devin.ai/work-with-devin/devin-mcp.md",
+      "quote": "To use the Devin MCP server, you need a Devin API key:"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Pricing page lists a Free individual plan, but no page read shows which plans include the Devin v3 API. Docs quick start is for 'teams or standard organization' (service user provisioned in org Settings > Devin API); paid_plan is an inference and could be wrong. The MCP page says to sign up and generate an API key.",
+  "review": [
+    {
+      "field": "notes",
+      "from": "Pricing page lists a Free plan but does not show which plans include the Devin API; paid_plan is inferred. MCP supports X-Org-Id header for enterprise keys and PATs. MCP URL https://mcp.devin.ai/mcp quoted on devin-mcp page.",
+      "to": "Pricing page lists a Free individual plan, but no page read shows which plans include the Devin v3 API. Docs quick start is for 'teams or standard organization' (service user provisioned in org Settings > Devin API); paid_plan is an inference and could be wrong. The MCP page says to sign up and generate an API key.",
+      "reason": ""
+    },
+    {
+      "field": "evidence",
+      "from": "pass1 quotes",
+      "to": "replaced",
+      "reason": "Pass 1 auth quote missing; access and api_styles quotes did not support the claims. Replaced with page sentences. paid_plan stays an inference."
+    }
+  ]
+}

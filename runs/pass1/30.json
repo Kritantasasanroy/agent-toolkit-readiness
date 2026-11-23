@@ -1,0 +1,50 @@
+{
+  "app_id": 30,
+  "app": "Vonage",
+  "category": "Communications and Messaging",
+  "summary": "Communications APIs for SMS, voice, video, verification and messaging channels.",
+  "auth_methods": [
+    "basic",
+    "other"
+  ],
+  "access": "free_self_serve",
+  "access_note": "API key and secret are created with a Vonage account; JWT with an application private key for newer APIs. Trial credit and number rules may apply.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://developer.vonage.com/en/mcp-server/overview",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+      "quote": "A number of newer Vonage APIs require authentication to be done using an API key and secret sent Base64 encoded in the `Authorization` header."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+      "quote": "The max expiration time for a JWT is 24 hours."
+    },
+    {
+      "field": "access",
+      "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+      "quote": "When you create a Vonage account, an API key and secret will be created for you."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+      "quote": "A number of newer Vonage APIs require authentication to be done using an API key and secret sent Base64 encoded in the `Authorization` header."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developer.vonage.com/en/mcp-server/overview",
+      "quote": "The Vonage MCP Server enables AI agents and developer tools to discover, describe, and use Vonage capabilities"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "REST inferred from HTTP header auth description; no page explicitly says REST. Free trial credit and regional/KYC number restrictions not verified. MCP: documentation server and API-bindings (tooling) server; the latter runs locally with credentials. https://developer.vonage.com/en/api-reference returned 404."
+}

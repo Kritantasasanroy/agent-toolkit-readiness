@@ -1,0 +1,45 @@
+{
+  "app_id": 6,
+  "app": "Podio",
+  "category": "CRM and Sales",
+  "summary": "Flexible work platform for building custom apps, workspaces, and CRM-style workflows.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "API key generated in Podio account settings; OAuth2 flows (server-side, client-side, password, app auth).",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.podio.com",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.podio.com/authentication",
+      "quote": "The Podio API uses the OAuth2 protocol for authentication."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.podio.com/api-key",
+      "quote": "You just have to sign in or sign up with Podio, and go to the API key tab in your settings."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.podio.com/",
+      "quote": "The Podio API is a complete programmable interface to all Podio functionality."
+    },
+    {
+      "field": "mcp",
+      "url": "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide.md",
+      "quote": "The Podio MCP (Model Context Protocol) Server connects AI assistants"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Podio MCP is in beta. Whether the free plan includes API access was not stated on a fetched page. 'REST' is inferred from the API reference structure; page does not use the word."
+}

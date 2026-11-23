@@ -1,0 +1,53 @@
+{
+  "app_id": 14,
+  "app": "Front",
+  "category": "Support and Helpdesk",
+  "summary": "Shared inbox and customer operations platform for email, SMS and chat conversations.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "free_trial",
+  "access_note": "API tokens created by an admin in Settings > Developers; public integrations must use OAuth. No free plan seen, trial only.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.frontapp.com/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Needs a paid/trial Front workspace; public integrations must use OAuth and the MCP server needs a confidential OAuth app created in Front developer settings.",
+  "confidence": "high",
+  "notes": "Quote repaired: the rendered page shows the URL as plain text, so the earlier backtick quote did not match. Older page /docs/mcp marks the previous MCP version deprecated; use /docs/mcp-server. Front does not support Dynamic Client Registration; you create a confidential OAuth app yourself.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://dev.frontapp.com/docs/authentication",
+      "quote": "There are two ways to get a Bearer token — through API tokens in your settings or through an OAuth implementation"
+    },
+    {
+      "field": "access",
+      "url": "https://front.com/pricing",
+      "quote": "Try for Free"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://dev.frontapp.com/docs/authentication",
+      "quote": "The Core API uses Bearer tokens to authenticate its user."
+    },
+    {
+      "field": "mcp",
+      "url": "https://dev.frontapp.com/docs/mcp-server",
+      "quote": "lets AI agents act on Front conversation data using a single OAuth-authenticated endpoint."
+    }
+  ],
+  "review": [
+    {
+      "field": "evidence.mcp",
+      "from": "quote with backticks around mcp.frontapp.com/mcp",
+      "to": "same sentence without the URL",
+      "reason": "Quote was missing on the rendered page because of markdown backticks; the sentence is on the page."
+    }
+  ]
+}

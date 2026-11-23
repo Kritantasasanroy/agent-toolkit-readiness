@@ -1,0 +1,51 @@
+{
+  "app_id": 94,
+  "app": "Consensus",
+  "category": "AI, Research and Media-native",
+  "summary": "AI academic search engine that finds and summarizes findings from peer-reviewed papers.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "paid_plan",
+  "access_note": "REST API keys and MCP require a paid or org plan; Team-tier Search API access is available upon approval and rate limited. MCP also has an anonymous trial mode.",
+  "api_styles": [
+    "rest",
+    "rpc"
+  ],
+  "api_breadth": "narrow",
+  "mcp": "official",
+  "mcp_url": "https://mcp.consensus.app/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "API access is tied to paid org tiers and approval; REST reference docs.consensus.app could not be opened.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://consensus.app/llms-full.txt",
+      "quote": "Recommended for any multi-user agent or LLM host."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://consensus.app/llms-full.txt",
+      "quote": "Treat as a secret; do not embed in client-side code."
+    },
+    {
+      "field": "access",
+      "url": "https://consensus.app/.well-known/pricing.md",
+      "quote": "available upon approval, rate limited"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://consensus.app/llms-full.txt",
+      "quote": "The REST API is the canonical machine surface for organizations."
+    },
+    {
+      "field": "mcp",
+      "url": "https://consensus.app/llms-full.txt",
+      "quote": "The Model Context Protocol server is the recommended surface for any LLM client."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "docs.consensus.app returned 403. Breadth inferred as search-centric. Do not confuse with goconsensus.com (a different company). consensus.app/home/api/ page text only showed a Create API key button and 'Included on every paid plan', conflicting with the approval wording in pricing.md."
+}

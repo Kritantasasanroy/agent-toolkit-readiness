@@ -1,0 +1,58 @@
+{
+  "app_id": 72,
+  "app": "Airtable",
+  "category": "Productivity and Project Management",
+  "summary": "Spreadsheet-database platform for building collaborative apps and workflows.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Personal access tokens and OAuth integrations created in the Airtable developer hub; MCP is available on all plans.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.airtable.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://airtable.com/developers/web/api/authentication.md",
+      "quote": "Any integrations that allow other users to grant access to Airtable should use OAuth."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://airtable.com/developers/web/api/authentication.md",
+      "quote": "Personal access tokens act as your user account"
+    },
+    {
+      "field": "access",
+      "url": "https://airtable.com/developers/agents/mcp/getting-started",
+      "quote": "The server is available to all users on all plans."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://airtable.com/developers/web/api/introduction.md",
+      "quote": "The API closely follows REST"
+    },
+    {
+      "field": "mcp",
+      "url": "https://airtable.com/developers/agents/mcp/getting-started",
+      "quote": "Server URL: https://mcp.airtable.com/mcp"
+    }
+  ],
+  "confidence": "high",
+  "notes": "Rate limit 5 req/s per base. PAT and OAuth both documented; MCP server stated available on all plans. Auth/intro quotes taken from the .md versions of the reference pages because the HTML pages render only a shell.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "HTML page URLs",
+      "to": "markdown page URLs",
+      "reason": "The HTML pages are JavaScript shells (quote missing); the .md versions carry the text."
+    }
+  ]
+}

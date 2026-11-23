@@ -1,0 +1,44 @@
+{
+  "app_id": 78,
+  "app": "Coda",
+  "category": "Productivity and Project Management",
+  "summary": "All-in-one doc platform combining documents, tables and automations (now under Superhuman Docs).",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "API token generated in account settings; also accessed as Superhuman Docs API.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "",
+  "verdict": "build_with_caveat",
+  "blocker": "narrow_api",
+  "blocker_note": "API covers docs, pages, tables, rows and controls; no documented OAuth for third-party apps found.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "quote": "This API uses a base path of `https://coda.io/apis/v1`."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "quote": "Read, insert, upsert, update, and delete rows"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "quote": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "quote": "If you plan to integrate Superhuman Docs with an AI tool, you may also want to consider using the Superhuman Docs MCP server."
+    }
+  ],
+  "confidence": "low",
+  "notes": "Auth method not documented on fetched page (only bearer samples); api_key is from memory of Coda API tokens, unverified, and OAuth support unknown. Official MCP is referenced but its URL was not found, so mcp_url is empty. coda.io/developers redirects to docs.superhuman.com. The auth_methods and access evidence quotes do not directly support the claims."
+}

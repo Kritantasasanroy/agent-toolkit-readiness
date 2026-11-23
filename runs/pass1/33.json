@@ -1,0 +1,44 @@
+{
+  "app_id": 33,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "LinkedIn Ads",
+  "summary": "LinkedIn's Advertising API for managing ad accounts, campaigns, creatives and reporting.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "admin_approval",
+  "access_note": "Create a developer app and a Company Page, then apply for the Advertising API product; Standard tier needs a support ticket with a demo video.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://pypi.org/project/linkedin-ads-mcp/",
+  "verdict": "needs_outreach",
+  "blocker": "app_review",
+  "blocker_note": "Advertising API access must be approved by LinkedIn; Development tier edits only 5 ad accounts, unlimited requires Standard tier approval.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+      "quote": "The 2-legged client credentials flow is not available for any marketing use cases."
+    },
+    {
+      "field": "access",
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access",
+      "quote": "The Standard API Access must be requested via a support ticket to be submitted on the [Developer Support Portal]"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+      "quote": "Use the `/adAccountUsers` and `/organizationAcls` API to validate what roles a member has."
+    },
+    {
+      "field": "mcp",
+      "url": "https://pypi.org/project/linkedin-ads-mcp/",
+      "quote": "LinkedIn Ads MCP — MCP server for the LinkedIn Marketing API."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "The access quote is truncated before the link URL. REST is inferred from endpoint paths, no explicit REST statement fetched. Several community MCP servers exist, none official."
+}

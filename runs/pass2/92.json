@@ -1,0 +1,59 @@
+{
+  "app_id": 92,
+  "app": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "summary": "AI meeting assistant that records, transcribes and summarizes meetings, with a hosted MCP server and an Enterprise REST API.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "paid_plan",
+  "access_note": "Public REST API is Enterprise-workspace only with static Bearer keys; the hosted MCP server works from a standard Otter account over OAuth.",
+  "api_styles": [
+    "rest",
+    "rpc"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://mcp.otter.ai/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "REST API needs an Enterprise workspace; non-Enterprise users only reach data via the MCP server.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://www.scalekit.com/blog/otter-mcp-vs-api",
+      "quote": "the Public API is gated to Enterprise workspaces and authenticates with Bearer API keys only, no OAuth."
+    },
+    {
+      "field": "access",
+      "url": "https://www.scalekit.com/blog/otter-mcp-vs-api",
+      "quote": "available to Enterprise workspaces only."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://www.scalekit.com/blog/otter-mcp-vs-api",
+      "quote": "The Public API is a REST surface at api.otter.ai/v1"
+    },
+    {
+      "field": "mcp",
+      "url": "https://claude.com/connectors/otter-ai",
+      "quote": "Made by Otter.ai"
+    },
+    {
+      "field": "mcp",
+      "url": "https://claude.com/connectors/otter-ai",
+      "quote": "Connector URL https://mcp.otter.ai/mcp"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "help.otter.ai returned 403 and otter.ai/api/docs returned no body, so API facts rely on a third-party source (Scalekit). MCP URL https://mcp.otter.ai/mcp is from claude.com/connectors/otter-ai (fetched) and returns 401 unauthenticated.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "pass1 quotes",
+      "to": "replaced",
+      "reason": "Pass 1 access/api_styles quote missing because the page puts a space before the comma; re-quoted shorter. mcp evidence now Otter's own connector listing (Made by Otter.ai, connector URL). Scalekit remains a third-party source, so confidence stays medium."
+    }
+  ]
+}

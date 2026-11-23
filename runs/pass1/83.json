@@ -1,0 +1,45 @@
+{
+  "app_id": 83,
+  "app": "Binance",
+  "category": "Finance and Fintech",
+  "summary": "Cryptocurrency exchange offering spot and derivatives trading, account and wallet data through an API.",
+  "auth_methods": [
+    "api_key",
+    "other"
+  ],
+  "access": "free_self_serve",
+  "access_note": "API keys created in Account > API Management after a deposit, 2FA and identity verification; signed requests use HMAC, RSA or Ed25519.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://github.com/AnalyticAce/binance-mcp-server",
+  "verdict": "build_with_caveat",
+  "blocker": "region_or_kyc",
+  "blocker_note": "Account must be funded, 2FA-enabled and identity-verified before keys can be created; availability varies by region.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/general-api-information",
+      "quote": "We support HMAC, RSA, and Ed25519 keys."
+    },
+    {
+      "field": "access",
+      "url": "https://www.binance.com/en/support/faq/how-to-create-api-keys-on-binance-360002502072",
+      "quote": "you need to make a deposit of any amount to your Spot Account to activate your account"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/general-api-information",
+      "quote": "The following base endpoints are available."
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/AnalyticAce/binance-mcp-server",
+      "quote": "Unofficial tools and server implementation for Binance's Model Context Protocol (MCP)."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Only the Spot REST docs were read in full; breadth 'broad' assumes the other product lines (futures, margin, wallet) exist, not verified. No official Binance MCP found (search of PyPI/GitHub; Binance skills hub repo does not mention MCP). Region restrictions not verified from a page."
+}

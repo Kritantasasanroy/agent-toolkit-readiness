@@ -1,0 +1,46 @@
+{
+  "app_id": 5,
+  "app": "Twenty",
+  "category": "CRM and Sales",
+  "summary": "Open-source CRM that teams can self-host or use in the cloud, with a customizable data model.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Open source and self-hostable; API keys created in workspace Settings; OAuth available.",
+  "api_styles": [
+    "rest",
+    "graphql"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://docs.twenty.com/developers/extend/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "API is per-workspace (schema-per-tenant) and base URL differs for self-hosted instances.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.twenty.com/developers/extend/api",
+      "quote": "Authorization: Bearer YOUR_API_KEY"
+    },
+    {
+      "field": "access",
+      "url": "https://twenty.com/",
+      "quote": "Stay in control with our open-source software"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.twenty.com/developers/extend/api",
+      "quote": "REST and GraphQL APIs generated from your workspace schema."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.twenty.com/developers/extend/mcp",
+      "quote": "Twenty exposes an MCP server so that AI assistants"
+    }
+  ],
+  "confidence": "high",
+  "notes": "MCP endpoint is the user's own workspace URL plus /mcp, so no single fixed mcp_url."
+}

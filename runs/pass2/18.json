@@ -1,0 +1,62 @@
+{
+  "app_id": 18,
+  "app": "Help Scout",
+  "category": "Support and Helpdesk",
+  "summary": "Shared inbox help desk and knowledge base for customer support teams.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "free_trial",
+  "access_note": "Free plan has no API access; API is on Standard, Plus and Pro. A 15-day Standard or Plus trial (no card) is the only free route. OAuth2 app created under Your Profile > My apps.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://mcp.helpscout.net/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "API requires a paid plan (a free plan exists but lacks API access); the official MCP is read-only.",
+  "confidence": "high",
+  "notes": "Authentication page is gzip-served; quotes now taken after decompression. Docs API uses a separate API key (not covered). Pricing table column mapping for 'API access' is unclear, but the vendor MCP article states API access is on Standard, Plus and Pro only.",
+  "evidence": [
+    {
+      "field": "access",
+      "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+      "quote": "This integration is available on the Standard, Plus, and Pro plans — any plan that includes Help Scout API access."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+      "quote": "Set the remote MCP server URL to https://mcp.helpscout.net/mcp ."
+    },
+    {
+      "field": "access",
+      "url": "https://www.helpscout.com/pricing/",
+      "quote": "When you sign up for a free trial of the Standard or Plus plan"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+      "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+      "quote": "https://api.helpscout.net/v2/users/me"
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+      "quote": "The connector is read-only."
+    }
+  ],
+  "review": [
+    {
+      "field": "access",
+      "from": "paid_plan",
+      "to": "free_trial",
+      "reason": "Free Basic plan exists but the MCP/API article says API access is on Standard, Plus and Pro; pricing FAQ: 15-day trial of Standard or Plus, no card. Trial is the only free path, as with the other helpdesk apps."
+    }
+  ]
+}

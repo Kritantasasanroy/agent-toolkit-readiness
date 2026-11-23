@@ -1,0 +1,55 @@
+{
+  "app_id": 7,
+  "app": "Zoho CRM",
+  "category": "CRM and Sales",
+  "summary": "Cloud CRM for managing sales, marketing, and customer data, part of the Zoho suite.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free edition for up to 3 users; Self Client created in Zoho API Console; free edition has API credit limits.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "Accounts live in regional data centers, so token and API domains vary per user.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+      "quote": "The Zoho CRM API uses the OAuth 2.0 protocol for authentication."
+    },
+    {
+      "field": "access",
+      "url": "https://www.zoho.com/crm/pricing/",
+      "quote": "Free forever for 3 users."
+    },
+    {
+      "field": "access",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+      "quote": "Free Edition 5000 credits 5000 credits"
+    },
+    {
+      "field": "access",
+      "url": "https://www.zoho.com/accounts/protocol/oauth/self-client/overview.html",
+      "quote": "If you want your app to fetch data from your own Zoho account"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+      "quote": "integrate with any third party application through flexible RESTful endpoints."
+    },
+    {
+      "field": "mcp",
+      "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+      "quote": "Zoho CRM provides these as pre-built MCP servers, so you don't need to build, host, or maintain any infrastructure."
+    }
+  ],
+  "confidence": "high",
+  "notes": "Data-center specific domains (.com, .eu, .in, etc.) not examined in detail.",
+  "review": []
+}

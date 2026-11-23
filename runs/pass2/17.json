@@ -1,0 +1,63 @@
+{
+  "app_id": 17,
+  "app": "Plain",
+  "category": "Support and Helpdesk",
+  "summary": "API-first customer support platform for B2B teams, built around threads and customers.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_trial",
+  "access_note": "7-day free trial, no card; machine user plus API key with fine-grained permissions, or an OAuth app.",
+  "api_styles": [
+    "graphql"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.plain.com/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "No free tier; plans start at $45/user/month after a 7-day trial.",
+  "confidence": "high",
+  "notes": "MCP page moved to plain.com (www.plain.com returned a 308), the quote was verified there. MCP auth is via your Plain account sign-in, no API key needed.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "quote": "GraphQL API Authentication Create a machine user and an API key, and scope it with fine-grained permissions."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "quote": "Authorization: Bearer plainApiKey_xxx"
+    },
+    {
+      "field": "access",
+      "url": "https://www.plain.com/pricing",
+      "quote": "Plain Pricing — Plans from $45/user/month | 7-Day Free Trial"
+    },
+    {
+      "field": "mcp",
+      "url": "https://plain.com/docs/agents/mcp-server",
+      "quote": "The Plain MCP server at https://mcp.plain.com/mcp lets tools like Claude, ChatGPT, and Cursor work with your support data directly."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "quote": "GraphQL API Authentication"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://plain.com/docs/graphql/authentication",
+      "quote": "To call the API as a user in your workspace, use an OAuth app"
+    }
+  ],
+  "review": [
+    {
+      "field": "evidence.mcp.url",
+      "from": "https://www.plain.com/docs/agents/mcp-server",
+      "to": "https://plain.com/docs/agents/mcp-server",
+      "reason": "www URL only redirects (308); quote verified on the plain.com page."
+    }
+  ]
+}

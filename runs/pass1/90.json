@@ -1,0 +1,49 @@
+{
+  "app_id": 90,
+  "app": "PitchBook",
+  "category": "Finance and Fintech",
+  "summary": "Private and public capital markets data on companies, deals, investors and funds.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "partner_gated",
+  "access_note": "API key issued by PitchBook under a separate contract plus purchased API credits; sandbox key via account manager.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://premium.mcp.pitchbook.com/mcp",
+  "verdict": "needs_outreach",
+  "blocker": "partner_program",
+  "blocker_note": "API requires a separate standalone contract with PitchBook and purchased credits; no self-serve key.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://documenter.gw.postman.com/view/metadata/TzCV1iRc",
+      "quote": "PitchBook will provide you with a unique API key that will allow you to make calls to the API."
+    },
+    {
+      "field": "access",
+      "url": "https://documenter.gw.postman.com/view/metadata/TzCV1iRc",
+      "quote": "Please reach out to your account manager to request a sandbox key."
+    },
+    {
+      "field": "access",
+      "url": "https://documenter.gw.postman.com/view/metadata/TzCV1iRc",
+      "quote": "In addition to an API key, please make sure you have purchased API credits."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://documenter.gw.postman.com/view/metadata/TzCV1iRc",
+      "quote": "This API is a RESTFUL implementation that can be easily accessed by most HTTP clients in the language of your choosing."
+    },
+    {
+      "field": "mcp",
+      "url": "https://claude.com/marketplace/connectors/pitchbook",
+      "quote": "Powered by our MCP server, PitchBook clients can seamlessly search and analyze firms, deals, funds, and key players."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "PitchBook's own help page (pitchbook.com/help/pitchbook-api) returned 403, so access terms rely on the Postman-hosted API reference. MCP listing is on Claude's connector marketplace; PitchBook-run status inferred from 'our MCP server' wording and endpoint on pitchbook.com domain; requires PitchBook subscription sign-in. Direct Data API breadth assumed moderate (companies, deals, people, investors, funds, LPs, service providers)."
+}

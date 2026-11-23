@@ -1,0 +1,50 @@
+{
+  "app_id": 86,
+  "app": "QuickBooks",
+  "category": "Finance and Fintech",
+  "summary": "Cloud accounting software for invoicing, expenses, payments, payroll and bookkeeping for small businesses.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free Intuit developer account, create an app, get Client ID/secret; sandbox companies for testing.",
+  "api_styles": [
+    "rest",
+    "graphql"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://github.com/intuit/quickbooks-online-mcp-server",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Production keys for other users' companies are expected to require Intuit app assessment/listing; not confirmed from a page read.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+      "quote": "Use the OAuth 2.0 protocol to implement authentication and authorization."
+    },
+    {
+      "field": "access",
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+      "quote": "Start by signing in to your developer account and creating an app on the Intuit Developer Portal."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+      "quote": "Use access tokens to call specific APIs and interact with users' QuickBooks Online company data."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+      "quote": "Develop with GraphQL"
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+      "quote": "This server uses OAuth 2.0 to authenticate to a QuickBooks Online company."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Intuit docs are JavaScript-rendered; read via a browser. REST and GraphQL are inferred from SDK/OAuth text and the nav entry 'Develop with GraphQL' (no sentence read). Access tokens last one hour, refresh tokens 100 days (rolling, value rotates). The MCP is Intuit's open-source local server (early preview); a remote endpoint appears in third-party directories only. App-review blocker is from general knowledge, not a page read."
+}

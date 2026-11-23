@@ -1,0 +1,34 @@
+{
+  "app_id": 50,
+  "app": "fanbasis",
+  "category": "Ecommerce",
+  "summary": "Creator payments and commerce platform (now branded Commas) with enterprise embedded checkout and payouts.",
+  "auth_methods": [
+    "other"
+  ],
+  "access": "partner_gated",
+  "access_note": "Enterprise page markets APIs and SDKs but no public developer docs or self-serve keys were found.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "none",
+  "mcp_url": "",
+  "verdict": "needs_outreach",
+  "blocker": "partner_program",
+  "blocker_note": "No public API docs located; enterprise API appears to require contacting the vendor.",
+  "evidence": [
+    {
+      "field": "access",
+      "url": "https://fanbasis.com/enterprises",
+      "quote": "Embedded checkouts, multi-rail payouts, APIs and SDKs."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://fanbasis.com/enterprises",
+      "quote": "Embedded checkouts, multi-rail payouts, APIs and SDKs."
+    }
+  ],
+  "confidence": "low",
+  "notes": "fanbasis.com redirects to commas.com. WebFetch got 403 on the enterprise page; text read via curl. A search summary mentioned REST, webhooks, Postman and SDKs on that page but I could not confirm it, nor any auth method (auth_methods 'other' is a placeholder). No MCP found."
+}

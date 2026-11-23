@@ -1,0 +1,58 @@
+{
+  "app_id": 36,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "Klaviyo",
+  "summary": "Marketing automation platform for email, SMS and customer data.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Private API keys created in account settings; OAuth is intended for tech partners.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.klaviyo.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "Multi-tenant OAuth is recommended for tech partners and may need partner registration; private keys work immediately.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+      "quote": "Private API keys can be used to read and write data to your Klaviyo account"
+    },
+    {
+      "field": "access",
+      "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+      "quote": "To manage API keys, you must have an Owner, Admin, or Manager role on your Klaviyo account"
+    },
+    {
+      "field": "access",
+      "url": "https://www.klaviyo.com/pricing",
+      "quote": "Start Free with Email & SMS"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.klaviyo.com/en/reference/api_overview",
+      "quote": "Every endpoint in the Klaviyo REST API, with its authentication, parameters, request and response bodies, and an example request"
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+      "quote": "Remote MCP server URL: https://mcp.klaviyo.com/mcp"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Private keys are self-serve for Owner/Admin/Manager roles; OAuth is recommended for tech partners and may need partner approval (not verified). Hosted MCP requires Owner/Admin/Manager role. Free API access on the free plan not separately verified.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "access and tech-partner OAuth quote",
+      "to": "replaced",
+      "reason": "Old access quote was about OAuth for tech partners and did not prove self-serve access; replaced with the key-creation role requirement and the pricing page free start."
+    }
+  ]
+}

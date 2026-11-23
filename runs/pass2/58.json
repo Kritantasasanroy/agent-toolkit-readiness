@@ -1,0 +1,45 @@
+{
+  "app_id": 58,
+  "app": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "summary": "Open-source command-line tool that hunts for social media accounts by username across 400+ sites.",
+  "auth_methods": [
+    "none"
+  ],
+  "access": "no_public_api",
+  "access_note": "Local CLI only; no hosted API.",
+  "api_styles": [
+    "cli"
+  ],
+  "api_breadth": "none",
+  "mcp": "community",
+  "mcp_url": "https://glama.ai/mcp/servers/Burnsedia/sherlock-mcp",
+  "verdict": "not_feasible",
+  "blocker": "no_public_api",
+  "blocker_note": "No hosted API; only a local CLI (a community MCP wrapper and Apify Actors exist).",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "quote": "Hunt down social media accounts by username across 400+ social networks"
+    },
+    {
+      "field": "access",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "quote": "pipx install sherlock-project"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "quote": "Accounts found will be stored in an individual text file with the corresponding username"
+    },
+    {
+      "field": "mcp",
+      "url": "https://glama.ai/mcp/servers/Burnsedia/sherlock-mcp",
+      "quote": "Seamlessly search social media accounts across 400+ platforms using the Model Context Protocol."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Quotes replaced with text copied from the repo README. Community MCP wraps the local CLI. Apify hosts Sherlock Actors as an alternative path.",
+  "review": []
+}

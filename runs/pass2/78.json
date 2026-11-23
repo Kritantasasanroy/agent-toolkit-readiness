@@ -1,0 +1,76 @@
+{
+  "app_id": 78,
+  "app": "Coda",
+  "category": "Productivity and Project Management",
+  "summary": "All-in-one doc platform combining documents, tables and automations (now under Superhuman Docs).",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "API is free in free and paid workspaces; a user-generated API token is sent as a Bearer header.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://coda.io/apis/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "quote": "The API token is invalid or has expired."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "quote": "We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "quote": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs"
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.superhuman.com/resources/guides/getting_started_with_coda_mcp",
+      "quote": "Under the hood, Superhuman Docs runs an MCP server built on the open Model Context Protocol standard"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Coda is now Superhuman Docs. mcp_url https://coda.io/apis/mcp is the vendor's setup URL per search result of Coda's help article (help.coda.io is behind Cloudflare, so that page could not be fetched by script). Verified live: the URL returns 401 and /.well-known/oauth-protected-resource/apis/mcp names it 'Superhuman Docs MCP Server'. A newer endpoint https://docs.superhuman.com/apis/mcp also answers with the same metadata. MCP auth is OAuth; the REST API uses API tokens only (no OAuth for third-party apps found), hence api_key.",
+  "review": [
+    {
+      "field": "mcp_url",
+      "from": "",
+      "to": "https://coda.io/apis/mcp",
+      "reason": "Official MCP exists (vendor guide and live OAuth metadata) but pass 1 left the URL empty, which the validator rejected."
+    },
+    {
+      "field": "verdict",
+      "from": "build_with_caveat",
+      "to": "build_now",
+      "reason": "Free self-serve API token and a moderate REST API; pass 1 blocker narrow_api contradicted its own api_breadth moderate."
+    },
+    {
+      "field": "blocker",
+      "from": "narrow_api",
+      "to": "none",
+      "reason": "Same reason."
+    },
+    {
+      "field": "evidence",
+      "from": "auth_methods/access/mcp quotes",
+      "to": "verbatim quotes that support each claim",
+      "reason": "Base-path and endpoint-list quotes did not show auth, free access or an MCP server."
+    },
+    {
+      "field": "confidence",
+      "from": "low",
+      "to": "medium",
+      "reason": "Free access and REST now proven by vendor page; MCP URL proven only by live probe and search snippet."
+    }
+  ]
+}

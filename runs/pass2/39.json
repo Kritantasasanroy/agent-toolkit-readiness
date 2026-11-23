@@ -1,0 +1,63 @@
+{
+  "app_id": 39,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "Threads (Meta)",
+  "summary": "Meta's Threads API for publishing posts, managing replies and reading insights.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Create a Meta app with the Threads use case; permissions for other users need App Review and the app must be published.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "community",
+  "mcp_url": "https://github.com/quinnjr/threads-mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Each permission must be approved via App Review and the app published before other users can connect.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.facebook.com/docs/threads/get-started",
+      "quote": "API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol"
+    },
+    {
+      "field": "access",
+      "url": "https://developers.facebook.com/docs/threads/get-started",
+      "quote": "To access the Threads API, create an app and pick the Threads use case"
+    },
+    {
+      "field": "access",
+      "url": "https://developers.facebook.com/docs/threads/get-started",
+      "quote": "each permission must first be approved through the App Review process, and your app must be published"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.facebook.com/docs/threads/overview",
+      "quote": "The Threads API can be accessed by either graph.threads.com or graph.threads.net"
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/quinnjr/threads-mcp",
+      "quote": "Production-ready Model Context Protocol server for Threads.com API"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "No official Meta Threads MCP found. REST is inferred from the Graph-style HTTP endpoints on graph.threads.com; no Threads page says REST outright.",
+  "review": [
+    {
+      "field": "mcp_url",
+      "from": "pegasusheavy/threads-mcp",
+      "to": "quinnjr/threads-mcp",
+      "reason": "The repo now resolves to quinnjr/threads-mcp (about 19 stars); same project."
+    },
+    {
+      "field": "evidence",
+      "from": "access, api_styles and mcp quotes",
+      "to": "replaced",
+      "reason": "Access quote re-copied without the trailing period that broke matching; api_styles quote replaced with a Threads-specific endpoint sentence; MCP quote updated to the current repo text."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+{"item":1,"ruling":"A","source":"https://docs.attio.com/share/publishing-to-the-app-store.md","quote":"All apps are reviewed by the Attio team before they are published.","note":"Unpublished apps limited to 25 workspaces; wide use needs review, so caveat."},
+{"item":2,"ruling":"A","source":"https://docs.attio.com/rest-api/guides/authentication","quote":"An unpublished app can be installed in up to 25 workspaces.","note":"Beyond 25 workspaces needs publish and review."},
+{"item":3,"ruling":"A","source":"https://developer.close.com/topics/authentication/","quote":"API keys use HTTP Basic client side authentication","note":"Basic is only the transport for the API key; no separate username/password method."},
+{"item":4,"ruling":"unclear","source":"https://www.copper.com/pricing","quote":"","note":"No vendor page found stating API tier; only third-party sources say Professional+ (paid). Trial exists but unconfirmed as gate."},
+{"item":5,"ruling":"B","source":"https://developers.intercom.com/docs/build-an-integration/getting-started","quote":"Development workspaces are free and intended for development purposes only.","note":"Free dev workspaces, unlimited."},
+{"item":6,"ruling":"A","source":"https://developers.intercom.com/docs/build-an-integration/getting-started","quote":"Development workspaces are free","note":"Self-serve OAuth in dev workspace; no gate."},
+{"item":7,"ruling":"A","source":"https://developers.intercom.com/docs/build-an-integration/getting-started","quote":"Development workspaces are free","note":"No paid plan needed for public app development."},
+{"item":8,"ruling":"B","source":"https://developers.freshdesk.com/api/","quote":"OAuth 2.0 Scope freshdesk.tickets.create","note":"Docs list OAuth 2.0 scopes per endpoint alongside API key."},
+{"item":9,"ruling":"B","source":"https://www.helpscout.com/pricing/","quote":"API access Read/write data and connect more key systems with Help Scout.","note":"API is a paid plan feature; trial is just a trial of a paid plan, no free plan."},
+{"item":10,"ruling":"unclear","source":"https://developer.gladly.com/","quote":"","note":"No vendor MCP found (so not official); only third-party hosted servers (StackOne, Truto), no vendor page settling community vs none."},
+{"item":11,"ruling":"B","source":"https://pumble.com/help/integrations/add-pumble-apps/api-keys-integration","quote":"This addon lets you generate an API key","note":"Only API key documented; bearer is just header format."},
+{"item":12,"ruling":"B","source":"https://developers.facebook.com/docs/whatsapp/cloud-api/get-started","quote":"Embedded Signup","note":"Tech Provider Embedded Signup flow (Facebook Login/OAuth) plus access tokens; moderate confidence."},
+{"item":13,"ruling":"B","source":"https://developer.aircall.io/docs/public-vs-private-app","quote":"A public app requires you to first join the Aircall Technology Partner Program","note":"Multi-customer OAuth requires partner approval, so outreach."},
+{"item":14,"ruling":"A","source":"https://developer.aircall.io/docs/public-vs-private-app","quote":"A public app requires you to first join the Aircall Technology Partner Program","note":"Partner program is the gate; no paid plan statement found."},
+{"item":15,"ruling":"A","source":"https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp","quote":"systeme.io MCP server","note":"Built-in official MCP, also systeme.io/mcp."},
+{"item":16,"ruling":"both","source":"https://developer.adobe.com/commerce/webapi/get-started/authentication/","quote":"","note":"Magento Open Source is free and self-hosted with integration tokens; Adobe Commerce is licensed. Docs cover both editions."}
+]

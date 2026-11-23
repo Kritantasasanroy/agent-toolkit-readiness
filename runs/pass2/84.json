@@ -1,0 +1,58 @@
+{
+  "app_id": 84,
+  "app": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "summary": "Payment gateway product reportedly built on NMI's gateway platform for merchants to accept card payments.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "partner_gated",
+  "access_note": "Could not find any Paygent-branded docs; the underlying NMI gateway works only through its partner channel and does not onboard individual merchants.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://docs.nmi.com/docs/mcp-api",
+  "verdict": "needs_outreach",
+  "blocker": "partner_program",
+  "blocker_note": "No public Paygent Connect developer docs found; NMI says it operates exclusively through a partner channel.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.nmi.com/reference/authentication",
+      "quote": "Authentication across our APIs is done via secure API keys."
+    },
+    {
+      "field": "access",
+      "url": "https://www.nmi.com/resources/payments-101/faq/",
+      "quote": "NMI operates exclusively through a partner channel. We don’t directly onboard individual merchants as end users."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.nmi.com/llms.txt",
+      "quote": "For new integrations, start with the Payment Component and NMI REST API guides, API reference, SDKs, and recipes."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.nmi.com/docs/mcp-api",
+      "quote": "It runs locally on your machine and talks to the NMI REST API with your own merchant API key."
+    }
+  ],
+  "confidence": "low",
+  "notes": "'Paygent Connect' could not be matched to a vendor site; the hint says NMI-powered, so the profile describes the NMI gateway. Pass 1 missed that NMI publishes its own MCP (npm @nmipayments/nmi-mcp, local, read-only record lookups with a merchant API key) plus a hosted Developer Docs MCP. NMI's FAQ quote ('operates exclusively through a partner channel') could not be re-fetched because www.nmi.com blocks scripts; kept from pass 1 as unverified. Merchant API keys come from the Merchant Portal, which requires a merchant account created through an NMI partner.",
+  "review": [
+    {
+      "field": "mcp",
+      "from": "none",
+      "to": "official",
+      "reason": "NMI docs publish an MCP server page (@nmipayments/nmi-mcp, read-only lookups)."
+    },
+    {
+      "field": "evidence",
+      "from": "api_styles/mcp quotes",
+      "to": "verbatim quotes",
+      "reason": "Old quote was not on the page and did not mention MCP."
+    }
+  ]
+}

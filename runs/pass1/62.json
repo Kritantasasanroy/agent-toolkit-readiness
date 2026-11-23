@@ -1,0 +1,50 @@
+{
+  "app_id": 62,
+  "app": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "summary": "Frontend cloud platform for deploying and hosting web projects with serverless functions and analytics.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Access tokens created in account settings; Vercel MCP is available on all plans.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.vercel.com",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://vercel.com/kb/guide/how-do-i-use-a-vercel-api-access-token",
+      "quote": "Pass the token as a Bearer token in the `Authorization` header of your request."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+      "quote": "It's a remote MCP with OAuth that gives AI tools secure access to your Vercel projects available at:"
+    },
+    {
+      "field": "access",
+      "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+      "quote": "Vercel MCP is available on all plans and your use is subject to"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://vercel.com/docs/rest-api",
+      "quote": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests."
+    },
+    {
+      "field": "mcp",
+      "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+      "quote": "Vercel MCP is Vercel's official MCP server."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "REST reference lists about 470 endpoints. Vercel MCP only allows reviewed clients or CIMD clients. Access via free Hobby plan is inferred; no page fetched says tokens work on free accounts. OAuth for the REST API itself (integrations) not verified; oauth2 here rests on the MCP page."
+}

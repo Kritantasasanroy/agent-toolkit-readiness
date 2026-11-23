@@ -1,0 +1,58 @@
+{
+  "app_id": 75,
+  "app": "Asana",
+  "category": "Productivity and Project Management",
+  "summary": "Work management platform for planning and tracking team tasks and projects.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Personal access tokens from the developer console; OAuth apps for multi-user use.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.asana.com/v2/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.asana.com/docs/authentication",
+      "quote": "A personal access token (PAT) is the quickest and simplest way to authenticate in the API."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developers.asana.com/docs/authentication",
+      "quote": "This is the best choice if multiple users need to sign in to your app."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.asana.com/docs/rate-limits",
+      "quote": "Limits are based on minute-long windows and differ depending on whether the domain is free or paid"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.asana.com/reference/rest-api-reference",
+      "quote": "To begin making requests against the REST API, see the quick start guide."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+      "quote": "The Asana MCP V2 server is available at: https://mcp.asana.com/v2/mcp"
+    }
+  ],
+  "confidence": "high",
+  "notes": "Legacy beta MCP (mcp.asana.com/sse) shuts down 05/11/2026; v2 is current. Free domains are rate limited at 150 req/min per the rate-limit page.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "access, api_styles, mcp quotes",
+      "to": "verbatim quotes",
+      "reason": "Old access quote said nothing about free accounts; the others were not word for word."
+    }
+  ]
+}

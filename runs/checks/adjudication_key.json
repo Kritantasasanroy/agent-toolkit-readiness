@@ -1,0 +1,471 @@
+[
+ {
+  "item": 1,
+  "kind": "changed",
+  "app": "Attio",
+  "field": "verdict",
+  "x": [
+   "build_now"
+  ],
+  "y": [
+   "build_with_caveat"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 2,
+  "kind": "changed",
+  "app": "Attio",
+  "field": "blocker",
+  "x": [
+   "none"
+  ],
+  "y": [
+   "app_review"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 3,
+  "kind": "changed",
+  "app": "Close",
+  "field": "auth_methods",
+  "x": [
+   "api_key",
+   "oauth2"
+  ],
+  "y": [
+   "api_key",
+   "oauth2",
+   "basic"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass1"
+ },
+ {
+  "item": 4,
+  "kind": "changed",
+  "app": "Copper",
+  "field": "access",
+  "x": [
+   "paid_plan"
+  ],
+  "y": [
+   "free_trial"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 5,
+  "kind": "changed",
+  "app": "Intercom",
+  "field": "access",
+  "x": [
+   "free_trial"
+  ],
+  "y": [
+   "free_self_serve"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass1"
+ },
+ {
+  "item": 6,
+  "kind": "changed",
+  "app": "Intercom",
+  "field": "verdict",
+  "x": [
+   "build_with_caveat"
+  ],
+  "y": [
+   "build_now"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 7,
+  "kind": "changed",
+  "app": "Intercom",
+  "field": "blocker",
+  "x": [
+   "paid_plan"
+  ],
+  "y": [
+   "none"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 8,
+  "kind": "changed",
+  "app": "Freshdesk",
+  "field": "auth_methods",
+  "x": [
+   "api_key"
+  ],
+  "y": [
+   "api_key",
+   "oauth2"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass1"
+ },
+ {
+  "item": 9,
+  "kind": "changed",
+  "app": "Help Scout",
+  "field": "access",
+  "x": [
+   "paid_plan"
+  ],
+  "y": [
+   "free_trial"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 10,
+  "kind": "changed",
+  "app": "Gladly",
+  "field": "mcp",
+  "x": [
+   "none"
+  ],
+  "y": [
+   "community"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 11,
+  "kind": "changed",
+  "app": "Pumble",
+  "field": "auth_methods",
+  "x": [
+   "api_key"
+  ],
+  "y": [
+   "api_key",
+   "bearer_token"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 12,
+  "kind": "changed",
+  "app": "WhatsApp Business",
+  "field": "auth_methods",
+  "x": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "y": [
+   "bearer_token"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 13,
+  "kind": "changed",
+  "app": "Aircall",
+  "field": "verdict",
+  "x": [
+   "needs_outreach"
+  ],
+  "y": [
+   "build_with_caveat"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 14,
+  "kind": "changed",
+  "app": "Aircall",
+  "field": "blocker",
+  "x": [
+   "partner_program"
+  ],
+  "y": [
+   "paid_plan"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass1"
+ },
+ {
+  "item": 15,
+  "kind": "changed",
+  "app": "systeme.io",
+  "field": "mcp",
+  "x": [
+   "none"
+  ],
+  "y": [
+   "official"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 16,
+  "kind": "changed",
+  "app": "Magento (Adobe Commerce)",
+  "field": "access",
+  "x": [
+   "paid_plan"
+  ],
+  "y": [
+   "free_self_serve"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 17,
+  "kind": "changed",
+  "app": "Magento (Adobe Commerce)",
+  "field": "blocker",
+  "x": [
+   "paid_plan"
+  ],
+  "y": [
+   "admin_install"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass1"
+ },
+ {
+  "item": 18,
+  "kind": "changed",
+  "app": "Squarespace",
+  "field": "mcp",
+  "x": [
+   "none"
+  ],
+  "y": [
+   "official"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass1"
+ },
+ {
+  "item": 19,
+  "kind": "changed",
+  "app": "GitHub",
+  "field": "api_styles",
+  "x": [
+   "rest"
+  ],
+  "y": [
+   "rest",
+   "graphql"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass1"
+ },
+ {
+  "item": 20,
+  "kind": "changed",
+  "app": "Notion",
+  "field": "auth_methods",
+  "x": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "y": [
+   "oauth2",
+   "api_key"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 21,
+  "kind": "changed",
+  "app": "Paygent Connect",
+  "field": "mcp",
+  "x": [
+   "none"
+  ],
+  "y": [
+   "official"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass1"
+ },
+ {
+  "item": 22,
+  "kind": "changed",
+  "app": "QuickBooks",
+  "field": "api_styles",
+  "x": [
+   "rest",
+   "graphql"
+  ],
+  "y": [
+   "rest"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 23,
+  "kind": "changed",
+  "app": "NotebookLM",
+  "field": "access",
+  "x": [
+   "paid_plan"
+  ],
+  "y": [
+   "free_self_serve"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass1"
+ },
+ {
+  "item": 24,
+  "kind": "changed",
+  "app": "NotebookLM",
+  "field": "api_styles",
+  "x": [
+   "rest"
+  ],
+  "y": [
+   "rest",
+   "rpc"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 25,
+  "kind": "changed",
+  "app": "NotebookLM",
+  "field": "blocker",
+  "x": [
+   "paid_plan"
+  ],
+  "y": [
+   "narrow_api"
+  ],
+  "y_is": "pass2",
+  "A_is": "pass2"
+ },
+ {
+  "item": 26,
+  "kind": "sample_miss",
+  "app": "Podio",
+  "field": "auth_methods",
+  "x": [
+   "oauth2",
+   "api_key"
+  ],
+  "y": [
+   "oauth2"
+  ],
+  "y_is": "reference",
+  "A_is": "reference"
+ },
+ {
+  "item": 27,
+  "kind": "sample_miss",
+  "app": "Podio",
+  "field": "mcp",
+  "x": [
+   "official"
+  ],
+  "y": [
+   "community",
+   "none"
+  ],
+  "y_is": "reference",
+  "A_is": "reference"
+ },
+ {
+  "item": 28,
+  "kind": "sample_miss",
+  "app": "Gorgias",
+  "field": "mcp",
+  "x": [
+   "official"
+  ],
+  "y": [
+   "none",
+   "community"
+  ],
+  "y_is": "reference",
+  "A_is": "agent"
+ },
+ {
+  "item": 29,
+  "kind": "sample_miss",
+  "app": "Clay",
+  "field": "api_styles",
+  "x": [
+   "rest",
+   "cli"
+  ],
+  "y": [
+   "rest"
+  ],
+  "y_is": "reference",
+  "A_is": "reference"
+ },
+ {
+  "item": 30,
+  "kind": "sample_miss",
+  "app": "GitHub",
+  "field": "auth_methods",
+  "x": [
+   "oauth2",
+   "api_key",
+   "other"
+  ],
+  "y": [
+   "oauth2",
+   "api_key",
+   "bearer_token"
+  ],
+  "y_is": "reference",
+  "A_is": "agent"
+ },
+ {
+  "item": 31,
+  "kind": "sample_miss",
+  "app": "iPayX",
+  "field": "api_styles",
+  "x": [
+   "rest",
+   "rpc"
+  ],
+  "y": [
+   "rest"
+  ],
+  "y_is": "reference",
+  "A_is": "agent"
+ },
+ {
+  "item": 32,
+  "kind": "sample_miss",
+  "app": "Otter AI",
+  "field": "api_styles",
+  "x": [
+   "rest",
+   "rpc"
+  ],
+  "y": [
+   "rest"
+  ],
+  "y_is": "reference",
+  "A_is": "reference"
+ }
+]

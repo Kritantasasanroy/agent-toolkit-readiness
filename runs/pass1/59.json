@@ -1,0 +1,44 @@
+{
+  "app_id": 59,
+  "app": "Waterfall.io",
+  "category": "Data, SEO and Scraping",
+  "summary": "B2B enrichment API that finds people, emails, phones and company data by cascading across many data vendors.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "partner_gated",
+  "access_note": "Homepage only offers Book a Call; docs have API key management but no self-serve signup or free credits were found.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "none",
+  "mcp_url": "",
+  "verdict": "needs_outreach",
+  "blocker": "partner_program",
+  "blocker_note": "Account access appears to require booking a call; self-serve signup not documented.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.waterfall.io",
+      "quote": "Send your API key in the `x-api-key` header."
+    },
+    {
+      "field": "access",
+      "url": "https://waterfall.io",
+      "quote": "Thanks, we'll review your request shortly."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.waterfall.io",
+      "quote": "The Waterfall API is available at `https://api.waterfall.io`."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.waterfall.io",
+      "quote": "Choose an API based on what you already know and what you want to find."
+    }
+  ],
+  "confidence": "low",
+  "notes": "Docs home lists 13 endpoints and links 'Use Waterfall with an agent' but no MCP described; third-party Workato MCP exists but not counted. Access gate inferred from homepage CTA being only Book a Call; may have self-serve signup elsewhere (e.g. app login). MCP evidence quote is only a docs page checked, which does not mention MCP."
+}

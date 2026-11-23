@@ -1,0 +1,64 @@
+{
+  "app_id": 100,
+  "app": "Grain",
+  "category": "AI, Research and Media-native",
+  "summary": "AI meeting recorder that transcribes calls and surfaces notes, clips and sales coaching insights.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Personal access tokens on every plan including Free; workspace tokens need Business/Enterprise and admin; OAuth2 required for apps distributed to others.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://api.grain.com/_/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://support.grain.com/en/articles/15507288-grain-api",
+      "quote": "Required if you are building an integration to distribute to others."
+    },
+    {
+      "field": "access",
+      "url": "https://support.grain.com/en/articles/15507288-grain-api",
+      "quote": "Available on every plan, including Free."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.grain.com",
+      "quote": "The Grain API lets you read and manage recordings, highlights, uploads, and more."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.grain.com",
+      "quote": "https://api.grain.com/_/public-api/v2/token-info"
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.grain.com/mcp",
+      "quote": "Official Grain MCP Server: Quick Start Guide"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "MCP URL https://api.grain.com/_/mcp was not on any readable page; it answers 401 with a Bearer/OAuth protected-resource header, consistent with an MCP endpoint, and Grain's developer docs (developers.grain.com/mcp) call it the 'Official Grain MCP Server'. Whether OAuth app registration needs Grain review was not confirmed. REST inferred from HTTPS endpoint at api.grain.com/_/public-api/v2.",
+  "review": [
+    {
+      "field": "notes",
+      "from": "MCP URL api.grain.com/_/mcp comes from a search summary; the fetched Grain pages did not show it. developers.grain.com root returned 404. Whether OAuth app registration needs Grain review was not confirmed.",
+      "to": "MCP URL https://api.grain.com/_/mcp was not on any readable page; it answers 401 with a Bearer/OAuth protected-resource header, consistent with an MCP endpoint, and Grain's developer docs (developers.grain.com/mcp) call it the 'Official Grain MCP Server'. Whether OAuth app registration needs Grain review was not confirmed. REST inferred from HTTPS endpoint at api.grain.com/_/public-api/v2.",
+      "reason": "Documented how the MCP URL was checked."
+    },
+    {
+      "field": "evidence",
+      "from": "pass1 quotes",
+      "to": "replaced",
+      "reason": "Pass 1 api_styles quote missing and did not support REST; mcp quote was about OAuth, not vendor ownership. Replaced from developers.grain.com."
+    }
+  ]
+}

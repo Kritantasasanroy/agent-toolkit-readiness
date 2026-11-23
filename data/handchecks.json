@@ -1,0 +1,605 @@
+[
+ {
+  "app_id": 2,
+  "app": "HubSpot",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://developers.hubspot.com/docs/api/oauth-quickstart-guide",
+   "https://developers.hubspot.com/docs/api/private-apps",
+   "https://developers.hubspot.com/mcp"
+  ],
+  "note": "Private app tokens are static keys made in settings."
+ },
+ {
+  "app_id": 6,
+  "app": "Podio",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://developers.podio.com/authentication",
+   "https://developers.podio.com/index/faq",
+   "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide.md"
+  ],
+  "note": "FAQ says the API is free on free and premium accounts; newer pricing adds paid API add-ons for volume. Corrected 23 Nov: the first reference said no official MCP; Progress documents one and mcp.podio.com is live."
+ },
+ {
+  "app_id": 19,
+  "app": "Gorgias",
+  "auth_methods": [
+   "basic",
+   "oauth2",
+   "api_key"
+  ],
+  "access": [
+   "free_trial",
+   "paid_plan"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_with_caveat",
+   "needs_outreach"
+  ],
+  "blocker": [
+   "paid_plan",
+   "app_review"
+  ],
+  "sources": [
+   "https://developers.gorgias.com/v1.1/reference/authentication",
+   "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias",
+   "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-gorgias-6310546"
+  ],
+  "note": "Private apps use email + key as Basic; approved public apps must use OAuth2. No free plan. Corrected 23 Nov: Gorgias documents a first-party MCP server (open beta)."
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "auth_methods": [
+   "basic",
+   "api_key"
+  ],
+  "access": [
+   "partner_gated"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "none",
+   "community"
+  ],
+  "verdict": [
+   "needs_outreach"
+  ],
+  "blocker": [
+   "partner_program",
+   "paid_plan"
+  ],
+  "sources": [
+   "https://developer.gladly.com/rest/",
+   "https://help.gladly.com/developer-tutorials/docs/authentication"
+  ],
+  "note": "Token-based Basic auth; only Gladly customers (sales-led) get an instance."
+ },
+ {
+  "app_id": 22,
+  "app": "Twilio",
+  "auth_methods": [
+   "basic",
+   "api_key"
+  ],
+  "access": [
+   "free_trial",
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_now",
+   "build_with_caveat"
+  ],
+  "blocker": [
+   "none",
+   "paid_plan"
+  ],
+  "sources": [
+   "https://www.twilio.com/docs/usage/requests-to-twilio",
+   "https://github.com/twilio-labs/mcp"
+  ],
+  "note": "Trial is credit-limited rather than time-limited, so both readings accepted."
+ },
+ {
+  "app_id": 24,
+  "app": "Lark (Larksuite)",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token",
+   "other"
+  ],
+  "access": [
+   "free_self_serve",
+   "admin_approval"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_with_caveat",
+   "build_now"
+  ],
+  "blocker": [
+   "admin_install",
+   "none"
+  ],
+  "sources": [
+   "https://open.larksuite.com/document/server-docs/api-call-guide/calling-process/get-access-token",
+   "https://github.com/larksuite/lark-openapi-mcp"
+  ],
+  "note": "Apps must be released and approved by the tenant admin."
+ },
+ {
+  "app_id": 40,
+  "app": "SendGrid",
+  "auth_methods": [
+   "api_key",
+   "bearer_token"
+  ],
+  "access": [
+   "free_trial"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "community"
+  ],
+  "verdict": [
+   "build_now",
+   "build_with_caveat"
+  ],
+  "blocker": [
+   "paid_plan",
+   "none"
+  ],
+  "sources": [
+   "https://www.twilio.com/en-us/changelog/sendgrid-free-plan",
+   "https://support.sendgrid.com/hc/en-us/articles/35270136965403"
+  ],
+  "note": "Free plan retired May 2025; 60-day trial replaces it."
+ },
+ {
+  "app_id": 39,
+  "app": "Threads (Meta)",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "access": [
+   "free_self_serve",
+   "admin_approval"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "community"
+  ],
+  "verdict": [
+   "build_with_caveat"
+  ],
+  "blocker": [
+   "app_review"
+  ],
+  "sources": [
+   "https://developers.facebook.com/docs/threads/get-started",
+   "https://developers.facebook.com/docs/threads/get-started/get-access-tokens-and-permissions"
+  ],
+  "note": "Meta app review needed before other users can connect."
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token"
+  ],
+  "access": [
+   "paid_plan"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "community",
+   "none"
+  ],
+  "verdict": [
+   "build_with_caveat"
+  ],
+  "blocker": [
+   "paid_plan"
+  ],
+  "sources": [
+   "https://api-docs.ecwid.com/reference/access-ecwid-api",
+   "https://docs.ecwid.com/develop-apps/private-and-public-ecwid-apps"
+  ],
+  "note": "API available on paid plans only; free dev store offered to App Market builders."
+ },
+ {
+  "app_id": 49,
+  "app": "Amazon Selling Partner",
+  "auth_methods": [
+   "oauth2",
+   "other"
+  ],
+  "access": [
+   "admin_approval",
+   "partner_gated",
+   "paid_plan"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official",
+   "community"
+  ],
+  "verdict": [
+   "needs_outreach",
+   "build_with_caveat"
+  ],
+  "blocker": [
+   "app_review",
+   "partner_program"
+  ],
+  "sources": [
+   "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer",
+   "https://github.com/amzn/selling-partner-api-samples"
+  ],
+  "note": "Developer registration is reviewed by Amazon; restricted roles need extra approval."
+ },
+ {
+  "app_id": 58,
+  "app": "Sherlock",
+  "auth_methods": [
+   "none"
+  ],
+  "access": [
+   "no_public_api"
+  ],
+  "api_styles": [
+   "cli"
+  ],
+  "mcp": [
+   "community",
+   "none"
+  ],
+  "verdict": [
+   "not_feasible",
+   "build_with_caveat"
+  ],
+  "blocker": [
+   "no_public_api"
+  ],
+  "sources": [
+   "https://github.com/sherlock-project/sherlock"
+  ],
+  "note": "Open-source local CLI; could be wrapped as a local tool but has no hosted API."
+ },
+ {
+  "app_id": 60,
+  "app": "Clay",
+  "auth_methods": [
+   "api_key"
+  ],
+  "access": [
+   "free_self_serve",
+   "paid_plan"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_with_caveat",
+   "build_now"
+  ],
+  "blocker": [
+   "paid_plan",
+   "narrow_api",
+   "none"
+  ],
+  "sources": [
+   "https://developers.clay.com/concepts/mcp",
+   "https://university.clay.com/docs/clay-api-cli"
+  ],
+  "note": "Sources disagree on which plan includes the public API."
+ },
+ {
+  "app_id": 64,
+  "app": "Cloudflare",
+  "auth_methods": [
+   "api_key",
+   "bearer_token",
+   "oauth2"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+   "https://github.com/cloudflare/mcp-server-cloudflare"
+  ],
+  "note": ""
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest",
+   "graphql"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+   "https://github.com/github/github-mcp-server"
+  ],
+  "note": ""
+ },
+ {
+  "app_id": 80,
+  "app": "Harvest",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token"
+  ],
+  "access": [
+   "free_self_serve",
+   "free_trial"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+   "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP"
+  ],
+  "note": "Official remote MCP at api.harvestapp.com/mcp."
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token"
+  ],
+  "access": [
+   "free_self_serve"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official",
+   "community"
+  ],
+  "verdict": [
+   "build_now"
+  ],
+  "blocker": [
+   "none"
+  ],
+  "sources": [
+   "https://airtable.com/developers/web/api/authentication"
+  ],
+  "note": "Could not confirm an Airtable-owned MCP server from the vendor's own site."
+ },
+ {
+  "app_id": 82,
+  "app": "Plaid",
+  "auth_methods": [
+   "api_key",
+   "other"
+  ],
+  "access": [
+   "free_self_serve",
+   "admin_approval"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_with_caveat",
+   "needs_outreach"
+  ],
+  "blocker": [
+   "app_review"
+  ],
+  "sources": [
+   "https://plaid.com/docs/api/",
+   "https://plaid.com/docs/resources/mcp/"
+  ],
+  "note": "Sandbox is free; production access requires Plaid's approval."
+ },
+ {
+  "app_id": 85,
+  "app": "iPayX",
+  "auth_methods": [
+   "api_key",
+   "bearer_token"
+  ],
+  "access": [
+   "free_self_serve",
+   "paid_plan"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "build_with_caveat",
+   "build_now"
+  ],
+  "blocker": [
+   "narrow_api",
+   "none"
+  ],
+  "sources": [
+   "https://mcpservers.org/servers/ipayx-technologies/mcp-fx-audit"
+  ],
+  "note": "Thin public docs; MCP published under the vendor's GitHub org; reports billed per use."
+ },
+ {
+  "app_id": 92,
+  "app": "Otter AI",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "access": [
+   "paid_plan",
+   "partner_gated"
+  ],
+  "api_styles": [
+   "rest"
+  ],
+  "mcp": [
+   "official"
+  ],
+  "verdict": [
+   "needs_outreach",
+   "build_with_caveat"
+  ],
+  "blocker": [
+   "paid_plan",
+   "partner_program"
+  ],
+  "sources": [
+   "https://www.businesswire.com/news/home/20251007385147/en",
+   "https://claude.com/connectors/otter-ai"
+  ],
+  "note": "Public API announced for enterprise customers; official MCP connector exists."
+ },
+ {
+  "app_id": 98,
+  "app": "Mermaid CLI",
+  "auth_methods": [
+   "none"
+  ],
+  "access": [
+   "no_public_api"
+  ],
+  "api_styles": [
+   "cli",
+   "sdk_only"
+  ],
+  "mcp": [
+   "community",
+   "official"
+  ],
+  "verdict": [
+   "not_feasible",
+   "build_with_caveat"
+  ],
+  "blocker": [
+   "no_public_api"
+  ],
+  "sources": [
+   "https://github.com/mermaid-js/mermaid-cli"
+  ],
+  "note": "Local renderer; nothing account-based to connect."
+ }
+]

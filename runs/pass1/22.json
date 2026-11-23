@@ -1,0 +1,45 @@
+{
+  "app_id": 22,
+  "app": "Twilio",
+  "category": "Communications and Messaging",
+  "summary": "Cloud communications platform with APIs for SMS, voice, video, email and verification.",
+  "auth_methods": [
+    "basic",
+    "api_key"
+  ],
+  "access": "free_trial",
+  "access_note": "Free trial account with verified-recipient limits; production use requires upgrading to a paid pay-as-you-go account.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.twilio.com/docs",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Trial accounts can only message verified numbers (up to 5) and trials expire; real use needs an upgraded paid account.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+      "quote": "Use your API key SID as the username and your API key secret as the password."
+    },
+    {
+      "field": "access",
+      "url": "https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account",
+      "quote": "You can only send to verified phone numbers (up to 5 per account)."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://www.twilio.com/docs/usage/api",
+      "quote": "The Twilio APIs are organized around REST."
+    },
+    {
+      "field": "mcp",
+      "url": "https://www.twilio.com/docs/mcp",
+      "quote": "No Twilio account or authentication is required."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Official hosted MCP at mcp.twilio.com/docs is docs-only (no account actions); an API-wide server exists as twilio-labs/mcp (@twilio-alpha/mcp) per search results, not fetched. Trial duration quoted from fetch summary."
+}

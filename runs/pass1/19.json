@@ -1,0 +1,45 @@
+{
+  "app_id": 19,
+  "app": "Gorgias",
+  "category": "Support and Helpdesk",
+  "summary": "Helpdesk for ecommerce brands, tying support tickets to Shopify and other store data.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_trial",
+  "access_note": "Free trial with no credit card; private apps use email plus API key (HTTP Basic), public apps must use OAuth2.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.gorgias.com/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Trial only; ticket-based paid plans from $10/mo helpdesk tier. MCP is in open beta with some writes gated.",
+  "confidence": "medium",
+  "notes": "The mcp.gorgias.com/mcp URL comes from a Merge listing in search results, not from the Gorgias page I fetched. Some write operations are gated during the beta.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.gorgias.com/reference/authentication",
+      "quote": "The Gorgias API supports two authentication methods: 🔐 Private app → API key 👥 Public app → OAuth2"
+    },
+    {
+      "field": "access",
+      "url": "https://www.gorgias.com/pricing",
+      "quote": "Start free trial No credit card required"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.gorgias.com/reference/introduction",
+      "quote": "Gorgias REST API"
+    },
+    {
+      "field": "mcp",
+      "url": "https://updates.gorgias.com/publications/gorgias-mcp-is-now-in-open-beta",
+      "quote": "a first-party server that plugs your workspace into Claude, ChatGPT, Cursor, and any MCP-compatible tool"
+    }
+  ]
+}

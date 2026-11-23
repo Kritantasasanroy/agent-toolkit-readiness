@@ -1,0 +1,65 @@
+{
+  "app_id": 61,
+  "app": "GitHub",
+  "category": "Developer, Infra and Data platforms",
+  "summary": "Hosts Git repositories and provides collaboration tools for issues, pull requests, CI and releases.",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "other"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free personal account; fine-grained or classic personal access tokens and OAuth/GitHub Apps are created in settings.",
+  "api_styles": [
+    "rest",
+    "graphql"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://api.githubcopilot.com/mcp/",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "quote": "You can also create an OAuth token with an OAuth app to access the REST API."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "quote": "If you want to use the API for an organization or on behalf of another user, GitHub recommends that you use a GitHub App."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.github.com/en/get-started/learning-about-github/githubs-plans",
+      "quote": "GitHub offers free and paid plans for storing and collaborating on code."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api",
+      "quote": "Every request to the REST API includes an HTTP method and a path."
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/github/github-mcp-server",
+      "quote": "The remote GitHub MCP Server is hosted by GitHub and provides the easiest method for getting up and running."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.github.com/en/graphql/overview/about-the-graphql-api",
+      "quote": "GitHub chose GraphQL because it offers significantly more flexibility for our integrators."
+    }
+  ],
+  "confidence": "high",
+  "notes": "GraphQL API confirmed on the GitHub GraphQL docs. Remote MCP URL appears in config examples on the repo README.",
+  "review": [
+    {
+      "field": "api_styles",
+      "from": "[rest]",
+      "to": "[rest, graphql]",
+      "reason": "GitHub docs document a GraphQL API alongside REST."
+    }
+  ]
+}

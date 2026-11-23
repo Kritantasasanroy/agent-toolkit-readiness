@@ -1,0 +1,52 @@
+{
+  "app_id": 27,
+  "app": "Telegram",
+  "category": "Communications and Messaging",
+  "summary": "Messaging app whose Bot API lets developers build bots that message users and groups.",
+  "auth_methods": [
+    "bearer_token"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Create a bot with BotFather and receive a token instantly, free.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://github.com/guangxiangdebizi/telegram-mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://core.telegram.org/bots/api",
+      "quote": "Each bot is given a unique authentication token when it is created"
+    },
+    {
+      "field": "access",
+      "url": "https://core.telegram.org/bots/api",
+      "quote": "Each bot is given a unique authentication token when it is created"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://core.telegram.org/bots/api",
+      "quote": "The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram"
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/guangxiangdebizi/telegram-mcp",
+      "quote": "A comprehensive Telegram Bot API server built on the Model Context Protocol (MCP)"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Bot API only acts as a bot, not as a user account; user-account access (MTProto) is a separate API not assessed. Page is 639k chars; only first 100k read. Community MCP servers exist but none official.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "auth/access/api_styles quotes missing",
+      "to": "replaced",
+      "reason": "Quotes re-copied from the live page without trailing punctuation; api_styles quote replaced with the HTTP-based interface sentence."
+    }
+  ]
+}

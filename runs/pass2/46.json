@@ -1,0 +1,63 @@
+{
+  "app_id": 46,
+  "app": "Squarespace",
+  "category": "Ecommerce",
+  "summary": "Website and online store builder; Commerce APIs manage products, orders, inventory and profiles on a merchant site.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "paid_plan",
+  "access_note": "API keys for custom apps need the Commerce Advanced plan; OAuth for multi-site apps requires registering and getting an OAuth client approved.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://mcp.squarespace.com/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "OAuth client must be reviewed and approved by Squarespace before connecting other users' sites; single-site API keys need a paid plan.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "quote": "Depending on your development needs, you can use a generated API key or start the OAuth process with Squarespace to become a registered OAuth client."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "quote": "With Squarespace's Commerce Advanced plan, you can develop a custom application for a Squarespace merchant site."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "quote": "Registering an OAuth client, and having it reviewed and approved, only allows OAuth connections with Squarespace."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.squarespace.com/commerce-apis/overview",
+      "quote": "All Commerce APIs are built on HTTPS and designed with REST principles in mind."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.squarespace.com/mcp/overview",
+      "quote": "The Squarespace MCP server is a remote server."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.squarespace.com/mcp/overview",
+      "quote": "Your MCP client connects directly to: Code https://mcp.squarespace.com/mcp"
+    }
+  ],
+  "confidence": "high",
+  "notes": "Official remote MCP server exists (domains tools need no sign-in; commerce tools need Squarespace sign-in and are limited to Claude and ChatGPT clients per the docs at time of reading). API keys need the Commerce Advanced plan; OAuth clients need Squarespace review.",
+  "review": [
+    {
+      "field": "mcp",
+      "from": "none",
+      "to": "official",
+      "reason": "Squarespace publishes a remote MCP server at https://mcp.squarespace.com/mcp (developer docs MCP section); pass 1 found only third-party ones. Commerce tools need sign-in and are currently only in Claude and ChatGPT."
+    }
+  ]
+}

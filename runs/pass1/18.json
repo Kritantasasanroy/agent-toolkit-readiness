@@ -1,0 +1,44 @@
+{
+  "app_id": 18,
+  "app": "Help Scout",
+  "category": "Support and Helpdesk",
+  "summary": "Shared inbox help desk and knowledge base for customer support teams.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "paid_plan",
+  "access_note": "API access is on Standard, Plus and Pro; a 15-day trial of Standard or Plus is available. OAuth2 app created under Your Profile > My apps.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://mcp.helpscout.net/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "API requires a paid plan (a free plan exists but lacks API access); the official MCP is read-only.",
+  "confidence": "high",
+  "notes": "Mailbox API 2.0 docs page is gzip-served and the Docs API uses a separate API key (not covered here). Pricing table was read to see API access row: first plan column Free appears to omit it, but the row text did not map columns cleanly.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+      "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization , implementing Authorization Code and Client Credential flows."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+      "quote": "This integration is available on the Standard, Plus, and Pro plans — any plan that includes Help Scout API access."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+      "quote": "All requests have to be authenticated via the Authorization header"
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+      "quote": "Set the remote MCP server URL to https://mcp.helpscout.net/mcp ."
+    }
+  ]
+}

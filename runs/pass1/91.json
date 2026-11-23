@@ -1,0 +1,44 @@
+{
+  "app_id": 91,
+  "app": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "summary": "Google's AI research notebook that grounds answers in user-supplied sources, with an Enterprise API and MCP server to manage notebooks and sources.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "paid_plan",
+  "access_note": "Requires an active Gemini Notebook Enterprise license plus the Cloud NotebookLM User IAM role in a Google Cloud project; API is Pre-GA.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "narrow",
+  "mcp": "official",
+  "mcp_url": "https://notebook.googleapis.com/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Enterprise license and Google Cloud project needed; MCP page says Workspace accounts not yet supported.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "quote": "Signing in with your user credentials ensures that"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "quote": "require an authenticated user account with an active Gemini Notebook Enterprise license"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+      "quote": "Some of the sources include Google Docs, Google Slides, raw text, web content, and YouTube videos."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.google.com/notebook/docs/mcp",
+      "quote": "The MCP server exposes 7 tools corresponding to the REST API methods."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Fetched pages are summarized; auth quote on the bearer-token flow is partial. The MCP page lists OAuth scope https://www.googleapis.com/auth/notebook and says Workspace accounts are not yet supported, which conflicts with the Enterprise license requirement of the REST API. Consumer NotebookLM has no API."
+}

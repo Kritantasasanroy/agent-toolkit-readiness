@@ -1,0 +1,44 @@
+{
+  "app_id": 51,
+  "app": "DataForSEO",
+  "category": "Data, SEO and Scraping",
+  "summary": "Pay-as-you-go APIs for SERP, keyword, backlink, on-page and other SEO data.",
+  "auth_methods": [
+    "basic"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free signup with $1 trial credit and a free Sandbox; paid use needs a $50 minimum top-up (credits do not expire).",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.dataforseo.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.dataforseo.com/v3/auth/",
+      "quote": "Basic authentication is the only way to access DataForSEO API."
+    },
+    {
+      "field": "access",
+      "url": "https://dataforseo.com/pricing",
+      "quote": "You can also test API integration for free using the DataForSEO Sandbox."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.dataforseo.com/v3/auth/",
+      "quote": "you do not have to make a separate authentication call to obtain API credentials."
+    },
+    {
+      "field": "mcp",
+      "url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+      "quote": "This simple guide will walk you through the process of setting up and using the official DataForSEO MCP server."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "REST style inferred from header-based Basic auth and per-endpoint JSON POST/GET; no page explicitly says REST. Fetch summaries were paraphrased by a small model, so quotes should be verified. Search snippets gave two conflicting MCP URLs; the help-center guide gives https://mcp.dataforseo.com/mcp."
+}

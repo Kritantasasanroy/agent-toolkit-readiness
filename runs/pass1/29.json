@@ -1,0 +1,45 @@
+{
+  "app_id": 29,
+  "app": "Aircall",
+  "category": "Communications and Messaging",
+  "summary": "Cloud phone system for sales and support teams with call routing, SMS and CRM integrations.",
+  "auth_methods": [
+    "basic",
+    "oauth2"
+  ],
+  "access": "paid_plan",
+  "access_note": "Basic auth (api_id and api_token) is for Aircall customers on their own account; OAuth is only for approved Technology Partners and needs client_id/secret from Aircall.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://lobehub.com/mcp/themobilefirstco-aircall-mcp-server",
+  "verdict": "needs_outreach",
+  "blocker": "partner_program",
+  "blocker_note": "A multi-tenant connect flow needs OAuth credentials from Aircall's partner program; only single-account Basic auth is self-serve and requires a paying Aircall customer.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.aircall.io/api-references",
+      "quote": "With Aircall Public API, Authentication can be done through OAuth or Basic Auth."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.aircall.io/api-references",
+      "quote": "As an Aircall customer, an `api_id` and `api_token` are needed to use Aircall Public API."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.aircall.io/api-references",
+      "quote": "Aircall Public API is a classic REST API."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developer.aircall.io/docs/how-to-register",
+      "quote": "Registering an MCP with Aircall makes your tools and resources available to every Aircall AI customer"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "No first-party Aircall MCP server found; community and vendor-hosted servers exist (search results only, not opened). The cited MCP quote only shows Aircall hosts third-party MCP registrations. Page 469k chars; first 100k read. Quotes from fetch-tool excerpts. Aircall pricing for API access not verified."
+}

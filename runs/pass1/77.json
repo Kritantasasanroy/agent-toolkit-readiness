@@ -1,0 +1,50 @@
+{
+  "app_id": 77,
+  "app": "ClickUp",
+  "category": "Productivity and Project Management",
+  "summary": "Project management platform for tasks, docs, goals and team collaboration.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Personal API token for own use; OAuth apps require workspace owner or admin to create.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.clickup.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.clickup.com/docs/authentication",
+      "quote": "Use a personal API token for individual or testing purposes."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developer.clickup.com/docs/authentication",
+      "quote": "To allow others to use your app, implement the OAuth2 flow so each user has their own token"
+    },
+    {
+      "field": "access",
+      "url": "https://developer.clickup.com/docs/authentication",
+      "quote": "Only Workspace owners or admins can create OAuth apps."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.clickup.com/reference/gettasks",
+      "quote": "The ClickUp API enables you to programmatically access and manage your ClickUp resources."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+      "quote": "Our MCP server URL is `https://mcp.clickup.com/mcp`."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Page does not call API REST explicitly; REST inferred from /v2 paths. MCP is public beta, OAuth only. Free plan API access not confirmed."
+}

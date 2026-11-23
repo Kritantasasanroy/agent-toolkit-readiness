@@ -1,0 +1,46 @@
+{
+  "app_id": 97,
+  "app": "higgsfield",
+  "category": "AI, Research and Media-native",
+  "summary": "Generative AI image and video studio with a CLI, MCP server and a REST generation API.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "paid_plan",
+  "access_note": "API is a standalone product billed on its own balance via console.higgsfield.ai; the MCP/CLI use browser sign-in and spend plan credits on a paid Higgsfield plan.",
+  "api_styles": [
+    "rest",
+    "cli"
+  ],
+  "api_breadth": "narrow",
+  "mcp": "official",
+  "mcp_url": "https://mcp.higgsfield.ai/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Generation consumes paid credits or API balance; no confirmed free tier for API.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.higgsfield.ai/docs/quickstart.md",
+      "quote": "API credentials grant access to your account and its balance."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.higgsfield.ai/docs/authentication.md",
+      "quote": "Do not call the API directly from browser or mobile application code."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://higgsfield.ai/cli",
+      "quote": "Run Higgsfield from the command line in Claude Code, Cursor, or any MCP-compatible CLI agent."
+    },
+    {
+      "field": "mcp",
+      "url": "https://higgsfield.ai/cli",
+      "quote": "No API keys to manage or configure."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Docs use Authorization: Key ID:SECRET. Paid-subscription and separate-billing claims come from search snippets, not fetched pages. MCP URL from higgsfield.ai/mcp. Credential header and base URL https://api.higgsfield.ai from docs."
+}

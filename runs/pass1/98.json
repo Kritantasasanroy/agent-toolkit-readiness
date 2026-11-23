@@ -1,0 +1,45 @@
+{
+  "app_id": 98,
+  "app": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "summary": "Local command-line tool that renders Mermaid diagram definitions to SVG, PNG or PDF.",
+  "auth_methods": [
+    "none"
+  ],
+  "access": "no_public_api",
+  "access_note": "Open-source MIT npm package run locally; no hosted API or credentials.",
+  "api_styles": [
+    "cli",
+    "sdk_only"
+  ],
+  "api_breadth": "none",
+  "mcp": "community",
+  "mcp_url": "https://github.com/hustcc/mcp-mermaid",
+  "verdict": "not_feasible",
+  "blocker": "no_public_api",
+  "blocker_note": "Local CLI/Node library only; nothing hosted to connect to a user account.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "quote": "takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output"
+    },
+    {
+      "field": "access",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "quote": "takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "quote": "It's possible to call `mermaid-cli` via a Node.JS API."
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/hustcc/mcp-mermaid",
+      "quote": "Generate mermaid diagram and chart with AI MCP dynamically."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "No official Mermaid MCP found; hustcc/mcp-mermaid and others are community servers (not verified for usage counts). Could be wrapped only as a local/sandboxed rendering tool."
+}

@@ -1,0 +1,45 @@
+{
+  "app_id": 36,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "Klaviyo",
+  "summary": "Marketing automation platform for email, SMS and customer data.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Private API keys created in account settings; OAuth is intended for tech partners.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.klaviyo.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "Multi-tenant OAuth is recommended for tech partners and may need partner registration; private keys work immediately.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+      "quote": "Private API keys can be used to read and write data to your Klaviyo account."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+      "quote": "If you are a tech partner integrating with Klaviyo, we recommend using OAuth to make authorized API calls."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.klaviyo.com/en/reference/api_overview",
+      "quote": "JSON:API's general filtering syntax and its supported operations can be used across all new APIs."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+      "quote": "URL: https://mcp.klaviyo.com/mcp"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Free plan existence and OAuth app approval not confirmed on a fetched page. MCP limited to Owner/Admin/Manager roles (per search result)."
+}

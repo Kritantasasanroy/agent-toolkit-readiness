@@ -1,0 +1,18 @@
+[
+{"item":17,"ruling":"B","source":"https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth","quote":"each administrator or integration user can have a unique set of permissions which is configured in the Admin","note":"Integrations are registered by an Admin; Magento Open Source is free, so paid_plan is not the gate"},
+{"item":18,"ruling":"B","source":"https://developers.squarespace.com/mcp","quote":"The Squarespace MCP server connects AI assistants to Squarespace.","note":"Vendor-hosted MCP docs on developers.squarespace.com"},
+{"item":19,"ruling":"B","source":"https://docs.github.com/en/graphql","quote":"use the GitHub GraphQL API","note":"Official REST and GraphQL APIs both documented"},
+{"item":20,"ruling":"A","source":"https://developers.notion.com/docs/authorization","quote":"Personal access token authentication","note":"Internal connection tokens and PATs are user-generated, so api_key; OAuth also supported"},
+{"item":21,"ruling":"unclear","source":"https://www.paygent.co.jp/","quote":"","note":"No vendor MCP page found; absence not proven"},
+{"item":22,"ruling":"unclear","source":"","quote":"","note":"Intuit developer pages are JS-rendered; could not confirm a GraphQL API"},
+{"item":23,"ruling":"A","source":"https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks","quote":"Get licenses for Gemini Notebook for business","note":"API is part of the licensed Gemini Enterprise product"},
+{"item":24,"ruling":"B","source":"https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks","quote":"curl -X POST -H \"Authorization:Bearer ...\" \"https://ENDPOINT_LOCATION-discoveryengine.googleapis.com/v1alpha/projects/...\"","note":"Docs show only REST calls; no RPC surface documented"},
+{"item":25,"ruling":"both","source":"https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks","quote":"Get licenses for Gemini Notebook for business","note":"License needed and API covers only notebooks, sources and audio overviews"},
+{"item":26,"ruling":"A","source":"https://developers.podio.com/authentication","quote":"The Podio API uses the OAuth2 protocol for authentication.","note":"All four flows, including app authentication, are OAuth2 variants; no separate API key"},
+{"item":27,"ruling":"A","source":"https://developers.podio.com/doc","quote":"","note":"No vendor MCP found; only third-party repos (stoskov/podio-mcp etc.) on GitHub search"},
+{"item":28,"ruling":"A","source":"https://developers.gorgias.com/docs/mcp","quote":"gorgias-developers hosts a remote MCP server at https://developers.gorgias.com/mcp","note":"Vendor-hosted MCP (docs and API)"},
+{"item":29,"ruling":"unclear","source":"https://api.clay.com/v3","quote":"","note":"Could not load Clay API or CLI docs"},
+{"item":30,"ruling":"both","source":"https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api","quote":"Endpoints for GitHub App installation tokens","note":"PAT is api_key; app installation tokens fit bearer_token (or other for JWT); docs do not choose a label"},
+{"item":31,"ruling":"unclear","source":"https://www.ipayx.ai","quote":"","note":"No public API docs found, only a landing page and a third-party MCP repo"},
+{"item":32,"ruling":"unclear","source":"","quote":"","note":"Otter developer and help pages blocked or empty"}
+]

@@ -1,0 +1,45 @@
+{
+  "app_id": 8,
+  "app": "Close",
+  "category": "CRM and Sales",
+  "summary": "Sales CRM with built-in calling, email, SMS, and workflows for inside sales teams.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_trial",
+  "access_note": "14-day free trial, then a paid plan; API keys created in account settings, OAuth apps for user-facing integrations.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.close.com/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "No free plan found; end users need a paid Close account after the trial.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.close.com/api/overview/api-key-authentication",
+      "quote": "API keys can be created and managed in your Close account under Settings → Developer → API Keys"
+    },
+    {
+      "field": "access",
+      "url": "https://www.close.com/pricing",
+      "quote": "14-day free trial, no credit card required."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.close.com/",
+      "quote": "REST API Reference Full endpoint docs with schemas, examples, and an interactive API explorer."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developer.close.com/mcp",
+      "quote": "The MCP server URL is https://mcp.close.com/mcp"
+    }
+  ],
+  "confidence": "high",
+  "notes": "API keys use HTTP Basic auth per the docs page title text, so basic is also relevant."
+}

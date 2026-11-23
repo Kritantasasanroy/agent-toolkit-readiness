@@ -1,0 +1,45 @@
+{
+  "app_id": 55,
+  "app": "Apify",
+  "category": "Data, SEO and Scraping",
+  "summary": "Cloud platform for running web scraping and automation Actors with a large store of ready-made tools.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free plan with $5 monthly usage; token created in Console Integrations.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.apify.com",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.apify.com/api/v2",
+      "quote": "You can create an API token on the [Integrations](https://console.apify.com/settings/integrations) page in the Apify Console."
+    },
+    {
+      "field": "access",
+      "url": "https://apify.com/pricing",
+      "quote": "If you're on the free plan, your access to Apify's services will be blocked until the beginning of the next monthly cycle."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.apify.com/api/v2",
+      "quote": "The API is organized around RESTful HTTP endpoints."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.apify.com/integrations/mcp.md",
+      "quote": "On first connection, your browser opens so you can sign in to Apify and approve access."
+    }
+  ],
+  "confidence": "high",
+  "notes": "OAuth applies to the hosted MCP server sign-in; REST API uses API tokens."
+}

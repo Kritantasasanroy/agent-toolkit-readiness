@@ -1,0 +1,44 @@
+{
+  "app_id": 52,
+  "app": "SE Ranking",
+  "category": "Data, SEO and Scraping",
+  "summary": "SEO platform with API and MCP access to keyword, backlink, SERP and rank-tracking data.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "paid_plan",
+  "access_note": "Data API is sold as annual credit packages; a free trial of the platform exists but the API plan is paid.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://api.seranking.com/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Data API credit plans are annual paid packages.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://seranking.com/api/data/getting-started/",
+      "quote": "Include an `Authorization` header in your request, with the value `Token YOUR_API_KEY`."
+    },
+    {
+      "field": "access",
+      "url": "https://seranking.com/api/data/getting-started/",
+      "quote": "Our Data API credit plans are available as annual packages."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://seranking.com/api/data/getting-started/",
+      "quote": "First, you'll need to generate a unique API key from your account dashboard."
+    },
+    {
+      "field": "mcp",
+      "url": "https://seranking.com/api/mcp/",
+      "quote": "Our MCP server supports Streamable HTTP transports."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Landing page (seranking.com/api) says API access is included in every plan and offers a free trial; the getting-started page says Data API plans are annual packages. Conflict unresolved. REST inferred, not stated. MCP also supports OAuth 2.1."
+}

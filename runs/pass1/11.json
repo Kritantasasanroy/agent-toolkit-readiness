@@ -1,0 +1,51 @@
+{
+  "app_id": 11,
+  "app": "Zendesk",
+  "category": "Support and Helpdesk",
+  "summary": "Customer service platform for tickets, messaging, help center and support operations.",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic"
+  ],
+  "access": "free_trial",
+  "access_note": "14-day free trial; sponsored 5-agent instance only for Marketplace/developer partners. API tokens are created in Admin Center; docs now push OAuth and mark API tokens deprecated.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://github.com/reminia/zendesk-mcp-server",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "No permanent free tier; end users need a paid Zendesk plan, and a developer needs a trial or sponsored account.",
+  "confidence": "medium",
+  "notes": "Zendesk's own first-party MCP is only the customer-facing ChatGPT Help Center one (per a third-party blog, checked Sept 2026); the general ticket MCP announced May 2026 had not shipped. Community server reminia/zendesk-mcp-server README confirmed via raw GitHub but the quoted evidence is the blog. REST breadth inferred from the API reference (not enumerated).",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "quote": "Zendesk supports using OAuth access tokens to authenticate API requests."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "quote": "API tokens are auto-generated passwords in the Zendesk Admin Center."
+    },
+    {
+      "field": "access",
+      "url": "https://developer.zendesk.com/documentation/developer-tools/getting-started/getting-a-trial-or-sponsored-account-for-development/",
+      "quote": "You can try out the Zendesk platform with a free, 14-day trial account."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.zendesk.com/documentation/ticketing/getting-started/zendesk-api-quick-start/",
+      "quote": "A Zendesk Support account with agent or admin access."
+    },
+    {
+      "field": "mcp",
+      "url": "https://tldv.io/blog/zendesk-mcp/",
+      "quote": "Zendesk actually launched a first-party MCP server at the end of April 2026."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "app_id": 87,
+  "app": "Xero",
+  "category": "Finance and Fintech",
+  "summary": "Cloud accounting platform for small businesses covering invoicing, bank reconciliation, payroll and reporting.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free developer account and Starter tier app; Demo company for testing. Custom Connections (client credentials) cost a monthly fee on the Xero organisation.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://github.com/XeroAPI/xero-mcp-server",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Starter tier is limited to 5 connections and each organisation can connect only five uncertified apps; scaling needs higher tier and App Store certification.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+      "quote": "Xero’s API supports the authorization code grant type using the standard authorization code flow or the Proof Key for Code Exchange (PKCE) extension."
+    },
+    {
+      "field": "access",
+      "url": "https://developer.xero.com/documentation/guides/oauth2/limits/",
+      "quote": "New apps default to the starter tier with 5 connections."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+      "quote": "These are all generated from our collection of OpenAPI definitions."
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/XeroAPI/xero-mcp-server",
+      "quote": "This is a Model Context Protocol (MCP) server implementation for Xero."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Xero docs are JavaScript-rendered; read via a browser. Docs nav lists a 'Remote MCP' guide, but that page returned 'Not Authorized' so it was not read. Starter tier daily limit is 1,000 calls per tenant. REST is inferred from OpenAPI/SDK wording."
+}

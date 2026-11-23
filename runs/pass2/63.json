@@ -1,0 +1,56 @@
+{
+  "app_id": 63,
+  "app": "Netlify",
+  "category": "Developer, Infra and Data platforms",
+  "summary": "Web hosting and deploy platform for sites and apps with builds, forms, DNS and serverless functions.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Personal access token generated in user settings; OAuth2 for public integrations.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.netlify.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "quote": "Netlify uses OAuth2 for authentication"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "quote": "Use your PAT for manual authentication in shell scripts or commands that use the Netlify API."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "quote": "If you're making a public integration with Netlify for others to enjoy, you must use OAuth2."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps"
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.netlify.com/build/build-with-ai/netlify-mcp-server/",
+      "quote": "remote MCP server by running this command and following the prompts to select the agents you want to configure: npx -y add-mcp https://mcp.netlify.com/mcp"
+    },
+    {
+      "field": "access",
+      "url": "https://www.netlify.com/pricing/",
+      "quote": "Start free. Pay for what your app actually uses."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "No fetched page states PATs are available on the free plan; free_self_serve is inferred. OAuth2 for public integrations may need registering an OAuth app (not verified).",
+  "review": []
+}

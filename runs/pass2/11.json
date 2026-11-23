@@ -1,0 +1,69 @@
+{
+  "app_id": 11,
+  "app": "Zendesk",
+  "category": "Support and Helpdesk",
+  "summary": "Customer service platform for tickets, messaging, help center and support operations.",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic"
+  ],
+  "access": "free_trial",
+  "access_note": "14-day free trial; sponsored 5-agent instance only for Marketplace/developer partners. API tokens are created in Admin Center; docs now push OAuth and mark API tokens deprecated.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://github.com/reminia/zendesk-mcp-server",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "No permanent free tier; end users need a paid Zendesk plan, and a developer needs a trial or sponsored account.",
+  "confidence": "medium",
+  "notes": "Zendesk docs index (developer.zendesk.com/llms.txt) lists no general ticketing MCP server; a third-party blog (Sept 2026) says the only first-party one is a customer-facing ChatGPT channel EAP, so mcp stays community. Quote for api_styles is auth-page only; REST breadth inferred from the API reference. Auth page marks API tokens deprecated and asks existing customers to migrate to OAuth.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "quote": "Zendesk supports using OAuth access tokens to authenticate API requests."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "quote": "API tokens are auto-generated passwords in the Zendesk Admin Center."
+    },
+    {
+      "field": "access",
+      "url": "https://developer.zendesk.com/documentation/developer-tools/getting-started/getting-a-trial-or-sponsored-account-for-development/",
+      "quote": "You can try out the Zendesk platform with a free, 14-day trial account."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.zendesk.com/documentation/ticketing/getting-started/zendesk-api-quick-start/",
+      "quote": "A Zendesk Support account with agent or admin access."
+    },
+    {
+      "field": "mcp",
+      "url": "https://raw.githubusercontent.com/reminia/zendesk-mcp-server/main/README.md",
+      "quote": "A Model Context Protocol server for Zendesk."
+    },
+    {
+      "field": "mcp",
+      "url": "https://tldv.io/blog/zendesk-mcp/",
+      "quote": "So, as of 3 September 2026, the general-purpose Zendesk MCP server does not appear on Zendesk’s early access programs page."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "quote": "Basic authentication is used for API tokens."
+    }
+  ],
+  "review": [
+    {
+      "field": "evidence.mcp",
+      "from": "tldv blog quote about a first-party MCP launch",
+      "to": "GitHub README quote for the community server",
+      "reason": "The old quote described a customer-facing ChatGPT server and did not support the community-server claim; the README states the server exists."
+    }
+  ]
+}

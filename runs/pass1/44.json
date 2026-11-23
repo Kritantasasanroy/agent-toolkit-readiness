@@ -1,0 +1,29 @@
+{
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "summary": "Enterprise B2C/B2B commerce platform from Salesforce with storefront and headless commerce APIs.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "partner_gated",
+  "access_note": "Requires a licensed B2C Commerce instance and Account Manager API client; sandbox is provisioned for customers. Not verified from docs (pages returned 403).",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp",
+  "verdict": "needs_outreach",
+  "blocker": "partner_program",
+  "blocker_note": "Enterprise licensed product; API clients exist only inside a customer or partner instance. Shopper MCP is a pilot requiring account executive contact.",
+  "evidence": [
+    {
+      "field": "mcp",
+      "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp",
+      "quote": "The B2C MCP server connects your AI assistant to Salesforce B2C Commerce tools, documentation, and workflow skills."
+    }
+  ],
+  "confidence": "low",
+  "notes": "developer.salesforce.com pages returned HTTP 403 to every fetch, so auth (Account Manager client_credentials for SCAPI Admin; SLAS OAuth 2.1 for Shopper), access and REST claims come from search result summaries only and have no verified quotes. MCP server is developer tooling (npm @salesforce/b2c-dx-mcp), developer preview."
+}

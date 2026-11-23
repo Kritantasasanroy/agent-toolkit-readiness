@@ -1,0 +1,63 @@
+{
+  "app_id": 88,
+  "app": "Brex",
+  "category": "Finance and Fintech",
+  "summary": "Corporate cards and spend management platform with expenses, bill pay, travel and banking APIs.",
+  "auth_methods": [
+    "bearer_token",
+    "oauth2"
+  ],
+  "access": "admin_approval",
+  "access_note": "Account or card admin must accept the Developer API agreement and create a user token; OAuth for partner apps needs Brex approval and staging credentials.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://api.brex.com/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "partner_program",
+  "blocker_note": "User tokens only work for the creating company's admin; OAuth to authenticate other Brex accounts requires partner application and approval.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.brex.com/docs/authentication/",
+      "quote": "To start making calls to Brex APIs, generate a user token from your Brex dashboard and pass it along in your API call headers."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developer.brex.com/docs/faq.md",
+      "quote": "is used when building partner applications to authenticate other Brex accounts."
+    },
+    {
+      "field": "access",
+      "url": "https://developer.brex.com/docs/partner_onboarding.md",
+      "quote": "Once your application is approved, you'll receive credentials for the staging environment using SendSafely."
+    },
+    {
+      "field": "access",
+      "url": "https://developer.brex.com/docs/mcp.md",
+      "quote": "This is different from the Brex Developer API, which requires admin-provisioned API tokens."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.brex.com/",
+      "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developer.brex.com/docs/mcp.md",
+      "quote": "The Brex MCP server lets AI assistants interact directly with your Brex account"
+    }
+  ],
+  "confidence": "high",
+  "notes": "Brex MCP is beta and needs the 'Brex in AI assistants' beta enabled; once on, any employee can connect via OAuth. Overview page states APIs use REST and OpenAPI; quote chosen is the plain-text neighbour sentence because the REST sentence contains a markdown link. Production-only API server (no public sandbox).",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "quotes",
+      "to": "fixed",
+      "reason": "auth_methods quote was missing from page; replaced with the sentence on the authentication page. api_styles quote did not mention REST; replaced with the overview sentence."
+    }
+  ]
+}

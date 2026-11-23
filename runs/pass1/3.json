@@ -1,0 +1,45 @@
+{
+  "app_id": 3,
+  "app": "Pipedrive",
+  "category": "CRM and Sales",
+  "summary": "Sales CRM focused on pipeline and deal management for small and mid-size sales teams.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free developer sandbox account; API token available per user; OAuth apps registered in developer hub.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.pipedrive.ai/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "OAuth is required for Marketplace apps; distributing beyond your own account may need Marketplace review. End users need a Pipedrive plan (not verified).",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://pipedrive.readme.io/docs/getting-started",
+      "quote": "You can use our API to create public or private apps using OAuth 2.0 and integrations via API token"
+    },
+    {
+      "field": "access",
+      "url": "https://pipedrive.readme.io/docs/getting-started",
+      "quote": "Create a developer sandbox account Testing in a risk-free environment."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://pipedrive.readme.io/docs/getting-started",
+      "quote": "featuring an intuitive RESTful API"
+    },
+    {
+      "field": "mcp",
+      "url": "https://support.pipedrive.com/en/article/mcp-tools",
+      "quote": "MCP, it can use these tools to access information and perform actions on your behalf, based on the permissions you grant."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "MCP URL (mcp.pipedrive.ai/mcp) confirmed in Pipedrive's MCP for Claude support article. Paid plan requirement and Marketplace review process not confirmed from a fetched page."
+}

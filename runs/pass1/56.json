@@ -1,0 +1,44 @@
+{
+  "app_id": 56,
+  "app": "Firecrawl",
+  "category": "Data, SEO and Scraping",
+  "summary": "API that searches, scrapes and crawls the web into clean Markdown or structured data for AI agents.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free account gives API key; some endpoints are keyless with lower limits.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://mcp.firecrawl.dev/v2/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.firecrawl.dev/api-reference/introduction",
+      "quote": "The header should contain `Bearer fc-123456789`, where `fc-123456789` represents your API Key."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.firecrawl.dev/introduction",
+      "quote": "Add an API key when you need higher limits."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.firecrawl.dev/api-reference/introduction",
+      "quote": "All requests contain the following base URL:"
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.firecrawl.dev/mcp-server",
+      "quote": "Set up Firecrawl MCP with keyless access, account sign-in, or an API key."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Free credit amount not found on fetched pages. MCP docs are on Firecrawl's own docs site but do not use the word official. OAuth is offered for MCP at https://mcp.firecrawl.dev/v2/mcp-oauth."
+}

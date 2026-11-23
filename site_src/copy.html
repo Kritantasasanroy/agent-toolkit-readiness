@@ -1,0 +1,93 @@
+<header>
+<h1>Which of 100 apps can become agent toolkits today?</h1>
+<p class="lede">I researched all <span data-s="n"></span> apps on the list with an agent pipeline, checked its work three ways, and wrote down where it was wrong. The short version: <span data-s="buildNow"></span> are ready to build now, <span data-s="caveat"></span> can be built with a catch, and only <span data-s="outreach"></span> need someone to talk to a vendor first.</p>
+<div class="links">
+  <a href="data.json">All findings as JSON</a>
+  <a href="https://github.com/Kritantasasanroy/agent-toolkit-readiness">Source repo and README</a>
+  <a href="https://github.com/Kritantasasanroy/agent-toolkit-readiness/actions/workflows/verify.yml">Run the checks yourself</a>
+  <a href="#table">Jump to the 100-app table</a>
+</div>
+</header>
+
+<h2>What the 100 apps say</h2>
+<ol class="findings">
+  <li><b>Getting a key is rarely the hard part.</b> <span data-s="selfServe"></span> of <span data-s="n"></span> apps let a developer get working credentials alone, <span data-s="free"></span> on a free plan and <span data-s="trial"></span> only during a trial. <span data-s="paidAccess"></span> need a paid plan, and just <span data-s="gated"></span> sit behind a partner programme, admin approval or have no public API at all.</li>
+  <li><b>Two auth methods cover the list.</b> <span data-s="oauth"></span> apps lead with OAuth2 and <span data-s="key"></span> with an API key or personal token. <span data-s="oauthAny"></span> support OAuth2 in some form, so a toolkit that handles those two flows well reaches almost everything here.</li>
+  <li><b>Paid plans, then approvals, are the main blockers.</b> A paid plan blocks <span data-s="blkPaid"></span> apps, app review before other users can connect blocks <span data-s="blkReview"></span>, and a partner programme blocks <span data-s="blkPartner"></span>. My own reading is that review and partner gates matter most once you serve other people's accounts, but the data records only the blocker, not when it appears.</li>
+  <li><b>Access varies by category.</b> <span data-s="catTop"></span> is <span data-s="catTopPct"></span>% self-serve and <span data-s="catLow"></span> is <span data-s="catLowPct"></span>% (ten apps per category, so read these as indications, and ties are broken by list order).</li>
+  <li><b>Composio already covers most of this list.</b> Checked against Composio's own catalog (<span data-s="cSize"></span> toolkits, fetched <span data-s="cDate"></span>), <span data-s="cNative"></span> of the <span data-s="n"></span> apps have a native toolkit and <span data-s="cMcp"></span> more have an MCP-only one. <span data-s="cNowNative"></span> of the <span data-s="buildNow"></span> build-now apps already exist there, so the build-now gaps are <span data-s="cGaps"></span>. Matching is by name plus four reviewed aliases, and a toolkit existing says nothing about how complete it is.</li>
+  <li><b>MCP servers are common but mean different things.</b> Most apps have something labelled official. Several are documentation or developer-tooling servers that cannot act on a customer's data (Twilio's hosted server and Shopify's developer server are examples), and my field does not separate those from account-level servers. I would not read the raw count as readiness.</li>
+</ol>
+
+<div class="stats">
+  <div class="stat"><div class="n" data-s="buildNow"></div><div class="l">build now</div></div>
+  <div class="stat"><div class="n" data-s="caveat"></div><div class="l">build with a caveat</div></div>
+  <div class="stat"><div class="n" data-s="outreach"></div><div class="l">need outreach first</div></div>
+  <div class="stat"><div class="n" data-s="notFeasible"></div><div class="l">not feasible (no API to wrap)</div></div>
+</div>
+
+<h2>The matrix</h2>
+<div class="card"><h3 style="margin-top:0">Access tier by category</h3><p class="small">Count of apps. Darker means more.</p><div id="heat"></div></div>
+<div class="grid2" style="margin-top:16px">
+  <div class="card"><h3 style="margin-top:0">Primary auth method</h3><div id="auth"></div></div>
+  <div class="card"><h3 style="margin-top:0">Main blocker</h3><div id="blockers"></div></div>
+  <div class="card"><h3 style="margin-top:0">Verdict</h3><div id="verdicts"></div></div>
+  <div class="card"><h3 style="margin-top:0">MCP server listed</h3><div id="mcp"></div><p class="small">Counts any server the vendor publishes, including docs-only ones.</p></div>
+</div>
+
+<h2>Easy wins and the ones that need outreach</h2>
+<div class="grid2">
+  <div class="card"><h3 style="margin-top:0">Build now</h3><p class="small">Self-serve credentials, usable API, no approval step found.</p><ul id="easy"></ul></div>
+  <div class="card"><h3 style="margin-top:0">Needs outreach</h3><p class="small">A partner programme, sales contact or vendor approval stands in the way.</p><ul id="outreach"></ul></div>
+</div>
+
+<h2>The agent</h2>
+<p>I cross-checked the list against Composio's toolkits API, using a Composio API key. I wrote one brief that fixes every field and its allowed values (<code>agent/prompts/research.md</code>) and ran it as parallel Claude Sonnet 5.5 sub-agents with web search and page fetch, ten to fifteen apps each, from a Claude Code session. Each agent writes one JSON profile per app, and every claim about auth, access, API style and MCP has to cite a quote from a vendor page.</p>
+<div class="pipeline">
+  <div class="step"><b>1. Research</b>Agents read vendor docs and write a profile per app with quoted evidence.</div>
+  <div class="step"><b>2. Validate</b>A script rejects any profile with a value outside the brief or a cited field with no evidence.</div>
+  <div class="step"><b>3. Check the links</b>A script fetches every cited page and looks for the quote word for word.</div>
+  <div class="step"><b>4. Review</b>A second agent gets the profile plus the link results and has to prove or fix each field from raw page text.</div>
+  <div class="step"><b>5. Score</b>Answers are compared with a reference sample, and every answer the passes disagreed on goes to a blind adjudicator.</div>
+  <div class="step human"><span class="tag">Needed a human</span><b>6. Contested answers</b>Where the checks disagree with each other, a person decides. <span id="humanStatus"></span></div>
+</div>
+<p style="margin-top:16px"><b>Where it needed help.</b> Pages built with JavaScript (Intuit, Xero, Coda, Ramp and others) returned nothing to a plain fetch, so the agents fell back to GitHub READMEs, <code>llms.txt</code> files or help articles. Several vendor sites refuse automated requests. <span data-s="unchecked2"></span> of the <span data-s="citations2"></span> citations in the final data could not be checked, because the page refused the request, errored or was too large, so those quotes are unconfirmed rather than confirmed.</p>
+
+<h2>How I know how accurate it is</h2>
+<div id="vstats" class="stats"></div>
+
+<h3>Evidence, the mechanical check</h3>
+<p>The pass 1 agents reported that their fetch tool returns summaries of pages, so many "quotes" were paraphrases. Of the citations whose page loaded, <span data-s="q1pct"></span>% held the quoted text in pass 1 (<span data-s="q1"></span> of <span data-s="q1live"></span>). After the review agent re-copied quotes from raw page text it is <span data-s="q2pct"></span>% (<span data-s="q2"></span> of <span data-s="q2live"></span>). The match ignores case, spacing and typographic quote marks. This is the clearest gain, and a script measured it.</p>
+
+<h3>Answers, the reference sample</h3>
+<p>I drew <span data-s="sample"></span> apps, two per category, with a fixed seed, and wrote reference answers from vendor docs for six fields each. Pass 1 scores <span data-s="acc1"></span> on it and pass 2 scores <span data-s="acc2"></span>, so the sample does not separate them. It is also not independent: I wrote the reference with Claude's help, and <span data-s="leniSeveral"></span> of its <span data-s="leniSingle"></span> single-value answers accept more than one reading, in <span data-s="leniApps"></span> of the <span data-s="sample"></span> apps. I also had to correct two entries (Podio and Gorgias both publish official MCP servers; my first reference said otherwise). Treat it as a sanity check, not proof. For the two list fields (auth methods and API styles) a correct first answer plus any subset of the accepted values counts as right, so omissions are never penalised and those scores measure precision, not completeness.</p>
+<div class="grid2">
+  <div class="card"><h3 style="margin-top:0">Accuracy by field</h3><div id="vfields"></div></div>
+  <div class="card"><h3 style="margin-top:0">Sample misses, pass 2</h3><div id="miss2"></div></div>
+</div>
+
+<h3>Answers, the disputes</h3>
+<p>The more useful test is the answers the passes disagreed on. Pass 2 changed <span data-s="changedFields"></span> fields across <span data-s="changedApps"></span> apps. I added the sample misses, giving <span data-s="disputes"></span> disputed answers, and gave each to a fresh agent that saw only the two competing values (shuffled, unlabelled) and had to settle it from vendor docs.</p>
+<p class="note">Of the changes, the docs supported pass 2 <span data-s="p2won"></span> times and pass 1 <span data-s="p1won"></span> times, <span data-s="unsettled"></span> could not be settled, and for <span data-s="both"></span> the docs support both readings. So the second pass fixed more than it broke, but it also introduced errors, and I would not call it uniformly better. The adjudicator is not infallible either: it ruled against official MCP servers for Podio that a live request and the vendor's own guide show exist. Items it sided against pass 2 on are flagged <span class="flag">contested</span> in the table below (<span data-s="contested"></span> apps).</p>
+<div class="card"><div id="disputes"></div></div>
+
+<h3>What defeated the agent</h3>
+<p>A few apps have thin or contradictory public information, and the page says so instead of guessing. fanbasis now redirects to commas.com and publishes no developer docs, so its auth value is a placeholder. Paygent Connect has no product site of its own, so its profile describes NMI, the gateway the brief names. iPayX's vendor files disagree on free-tier limits. Salesforce Commerce Cloud's developer pages refused every fetch. <span data-s="lowConf"></span> apps are marked low confidence for reasons like these, and every profile's notes field lists its own assumptions.</p>
+
+<h2 id="table">All 100 apps</h2>
+<p class="small">Open a row for the one-line description, access notes and the evidence behind each answer.</p>
+<div class="controls">
+  <input id="q" type="search" placeholder="Search apps" aria-label="Search apps">
+  <select id="cat" aria-label="Category"></select>
+  <select id="ver" aria-label="Verdict">
+    <option value="">All verdicts</option><option value="build_now">build now</option>
+    <option value="build_with_caveat">build with caveat</option><option value="needs_outreach">needs outreach</option>
+    <option value="not_feasible">not feasible</option>
+  </select>
+</div>
+<p class="small" id="count"></p>
+<div class="card" id="apps"></div>
+
+<footer>
+<p>Built with Claude Code. Source, prompts, both passes of raw profiles and the checking scripts are in the repo. Every profile and score on this page comes from <a href="data.json">data.json</a>, which is the same file an agent can read.</p>
+</footer>

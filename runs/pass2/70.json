@@ -1,0 +1,55 @@
+{
+  "app_id": 70,
+  "app": "Sentry",
+  "category": "Developer, Infra and Data platforms",
+  "summary": "Application monitoring platform that tracks errors, performance and releases.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Organization auth tokens via an internal integration; requires Manager or Admin org role.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.sentry.dev/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.sentry.io/api/auth/",
+      "quote": "You can create authentication tokens within Sentry by creating an internal integration."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.sentry.io/api/guides/create-auth-token/",
+      "quote": "To use Sentry's APIs, you must have an authentication token."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.sentry.io/api/auth/",
+      "quote": "Authorization: Bearer {TOKEN}"
+    },
+    {
+      "field": "mcp",
+      "url": "https://mcp.sentry.dev/",
+      "quote": "The base MCP server address is: https://mcp.sentry.dev/mcp"
+    },
+    {
+      "field": "mcp",
+      "url": "https://mcp.sentry.dev/",
+      "quote": "All connections use OAuth."
+    },
+    {
+      "field": "access",
+      "url": "https://sentry.io/pricing/",
+      "quote": "Pricing: Free Developer Plan, Pay as You Grow"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Docs do not name a plan requirement; a free plan is assumed from general knowledge. REST not stated in a fetched sentence (inferred from Bearer header and endpoint docs). Sentry OAuth for public integrations not read, so oauth2 omitted from auth_methods.",
+  "review": []
+}

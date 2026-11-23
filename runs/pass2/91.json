@@ -1,0 +1,119 @@
+{
+  "app_id": 91,
+  "app": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "summary": "Google's AI research notebook that grounds answers in user-supplied sources, with an Enterprise API and MCP server to manage notebooks and sources.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Public Preview Gemini Notebook API is free to use during preview for personal Google Accounts: create a Google Cloud project, configure OAuth consent, create OAuth clients. The separate Enterprise REST API needs a Gemini Notebook Enterprise license.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "narrow",
+  "mcp": "official",
+  "mcp_url": "https://notebook.googleapis.com/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "narrow_api",
+  "blocker_note": "Public Preview (pre-GA); personal Google Accounts only (Workspace accounts get 403); API covers notebooks and sources only (7 MCP tools).",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.google.com/notebook/docs/authentication",
+      "quote": "The Gemini Notebook API uses OAuth 2.0 to authenticate requests on behalf of a Google user."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.google.com/notebook/docs/rate-limits",
+      "quote": "The Gemini Notebook API is free to use during the Public Preview period"
+    },
+    {
+      "field": "access",
+      "url": "https://developers.google.com/notebook/docs/authentication",
+      "quote": "During the Public Preview, the Gemini Notebook API is only available for personal Google Accounts."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "quote": "require an authenticated user account with an active Gemini Notebook Enterprise license"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.google.com/notebook",
+      "quote": "The Gemini Notebook API is a REST interface for programmatically creating and managing notebooks and sources in Gemini Notebook."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.google.com/notebook/docs/mcp",
+      "quote": "Streamable HTTP (JSON-RPC 2.0)"
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.google.com/notebook/docs/mcp",
+      "quote": "The Gemini Notebook API provides a remote Model Context Protocol (MCP) server at https://notebook.googleapis.com/mcp"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Pass 1 used the Enterprise-licensed API page; Google also publishes the Gemini Notebook API at developers.google.com/notebook (REST + remote MCP, free during Public Preview, personal accounts only). Whether Google requires OAuth app verification for other users was not confirmed. Consumer NotebookLM has no separate API beyond this.",
+  "review": [
+    {
+      "field": "access",
+      "from": "paid_plan",
+      "to": "free_self_serve",
+      "reason": "Public Gemini Notebook API is free in Public Preview on personal Google accounts; Enterprise license applies only to the separate Cloud REST API."
+    },
+    {
+      "field": "access_note",
+      "from": "Requires an active Gemini Notebook Enterprise license plus the Cloud NotebookLM User IAM role in a Google Cloud project; API is Pre-GA.",
+      "to": "Public Preview Gemini Notebook API is free to use during preview for personal Google Accounts: create a Google Cloud project, configure OAuth consent, create OAuth clients. The separate Enterprise REST API needs a Gemini Notebook Enterprise license.",
+      "reason": "Rewritten."
+    },
+    {
+      "field": "api_styles",
+      "from": [
+        "rest"
+      ],
+      "to": [
+        "rest",
+        "rpc"
+      ],
+      "reason": "MCP page states JSON-RPC 2.0 over Streamable HTTP."
+    },
+    {
+      "field": "blocker",
+      "from": "paid_plan",
+      "to": "narrow_api",
+      "reason": "No paid-plan gate on the public API; real limits are preview status, personal-only and narrow scope."
+    },
+    {
+      "field": "blocker_note",
+      "from": "Enterprise license and Google Cloud project needed; MCP page says Workspace accounts not yet supported.",
+      "to": "Public Preview (pre-GA); personal Google Accounts only (Workspace accounts get 403); API covers notebooks and sources only (7 MCP tools).",
+      "reason": "Rewritten to match."
+    },
+    {
+      "field": "notes",
+      "from": "Fetched pages are summarized; auth quote on the bearer-token flow is partial. The MCP page lists OAuth scope https://www.googleapis.com/auth/notebook and says Workspace accounts are not yet supported, which conflicts with the Enterprise license requirement of the REST API. Consumer NotebookLM has no API.",
+      "to": "Pass 1 used the Enterprise-licensed API page; Google also publishes the Gemini Notebook API at developers.google.com/notebook (REST + remote MCP, free during Public Preview, personal accounts only). Whether Google requires OAuth app verification for other users was not confirmed. Consumer NotebookLM has no separate API beyond this.",
+      "reason": ""
+    },
+    {
+      "field": "evidence",
+      "from": "pass1 quotes",
+      "to": "replaced",
+      "reason": "mcp quote was missing on page; replaced and access/auth quotes replaced with the public Gemini Notebook API pages."
+    },
+    {
+      "field": "api_styles",
+      "from": [
+        "rest",
+        "rpc"
+      ],
+      "to": [
+        "rest"
+      ],
+      "reason": "Strict re-check of a contested answer: rpc came from the MCP server's JSON-RPC transport, not the API."
+    }
+  ]
+}

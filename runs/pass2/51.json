@@ -1,0 +1,67 @@
+{
+  "app_id": 51,
+  "app": "DataForSEO",
+  "category": "Data, SEO and Scraping",
+  "summary": "Pay-as-you-go APIs for SERP, keyword, backlink, on-page and other SEO data.",
+  "auth_methods": [
+    "basic"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free signup with $1 trial credit and a free Sandbox; paid use needs a $50 minimum top-up (credits do not expire).",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.dataforseo.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.dataforseo.com/v3/auth/",
+      "quote": "Authorization: Basic login:password"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.dataforseo.com/v3/auth/",
+      "quote": "go to the API Access tab in the account dashboard to find your API login and password"
+    },
+    {
+      "field": "access",
+      "url": "https://dataforseo.com/pricing",
+      "quote": "You can sign up for free and use your $1 trial credit available to new accounts"
+    },
+    {
+      "field": "access",
+      "url": "https://dataforseo.com/pricing",
+      "quote": "The minimum account top-up is $50."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.dataforseo.com/v3/auth/",
+      "quote": "call our APIs with almost any programming language, Postman app, REST API platforms, and all major frameworks."
+    },
+    {
+      "field": "mcp",
+      "url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+      "quote": "Use this URL (no local setup). https://mcp.dataforseo.com/mcp"
+    },
+    {
+      "field": "mcp",
+      "url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+      "quote": "Setting Up the Official DataForSEO MCP Server: Simple Guide"
+    }
+  ],
+  "confidence": "high",
+  "notes": "Free signup gives $1 trial credit and a free Sandbox; real use needs a $50 minimum pay-as-you-go top-up (never expires), so each end user pays for usage. Official MCP at https://mcp.dataforseo.com/mcp confirmed on the vendor help-centre page.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "auth/mcp quotes missing",
+      "to": "re-quoted from raw pages",
+      "reason": "Old quotes did not match raw text (curly quotes/rendering). REST now has a quote naming REST API platforms."
+    }
+  ]
+}

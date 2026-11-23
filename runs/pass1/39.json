@@ -1,0 +1,44 @@
+{
+  "app_id": 39,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "Threads (Meta)",
+  "summary": "Meta's Threads API for publishing posts, managing replies and reading insights.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Create a Meta app with the Threads use case; permissions for other users need App Review and the app must be published.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "community",
+  "mcp_url": "https://github.com/pegasusheavy/threads-mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Each permission must be approved via App Review and the app published before other users can connect.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.facebook.com/docs/threads/get-started",
+      "quote": "API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.facebook.com/docs/threads/get-started",
+      "quote": "To access the Threads API, create an app and pick the Threads use case."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.facebook.com/docs/graph-api/overview",
+      "quote": "It's an HTTP-based API that apps can use to programmatically query data."
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/pegasusheavy/threads-mcp",
+      "quote": "A powerful Model Context Protocol (MCP) server for integrating with the Threads.com API."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "REST-style endpoints inferred from Graph API overview. No official Meta Threads MCP found."
+}

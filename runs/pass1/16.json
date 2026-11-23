@@ -1,0 +1,44 @@
+{
+  "app_id": 16,
+  "app": "LiveAgent",
+  "category": "Support and Helpdesk",
+  "summary": "Help desk and live chat software with ticketing, call center and AI features.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_trial",
+  "access_note": "30-day free trial; admin creates a v3 API key under Configuration > System > API, sent in an apikey header. Interactive v3 docs are inside your own account.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://<your-liveagent-domain>/api/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Trial only; the v3 API reference is only visible inside a logged-in account.",
+  "confidence": "medium",
+  "notes": "Could not read the v3 reference (behind login), so api_breadth is an inference and the apikey-header detail comes from a search summary. FAQ page gives /public/api/mcp as the path, conflicting with /api/mcp. Support page labels MCP an early preview.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://support.liveagent.com/741982-API-key",
+      "quote": "While logged in as an admin navigate to Configuration> System> API which loads the API v3 section where you find existing API keys or add a new one."
+    },
+    {
+      "field": "access",
+      "url": "https://www.liveagent.com/pricing/",
+      "quote": "30-day free trial, no credit card"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://support.liveagent.com/567924-Documentation",
+      "quote": "You can find whole LiveAgent API documentation within your LiveAgent account"
+    },
+    {
+      "field": "mcp",
+      "url": "https://support.liveagent.com/647358-MCP-Integration-for-Agents",
+      "quote": "MCP server URL https://<your-liveagent-domain>/api/mcp"
+    }
+  ]
+}

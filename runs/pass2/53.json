@@ -1,0 +1,63 @@
+{
+  "app_id": 53,
+  "app": "Ahrefs",
+  "category": "Data, SEO and Scraping",
+  "summary": "SEO toolset with API v3 and a hosted MCP server for backlink, keyword and site data.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "paid_plan",
+  "access_note": "Direct API v3 and the remote MCP server need a paid plan from Lite; only workspace owners/admins can create keys.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://api.ahrefs.com/mcp/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid Ahrefs subscription required; keys limited to workspace owners/admins; API units are consumed from the plan.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management.md",
+      "quote": "You'll need an API key to send requests via Ahrefs API v3."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.ahrefs.com/mcp/docs/claude-code.md",
+      "quote": "Login to Ahrefs account, select workspace and click \"Allow\""
+    },
+    {
+      "field": "access",
+      "url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
+      "quote": "Users on any paid plan can test Ahrefs API by running a limited set of free test queries."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+      "quote": "Ahrefs provides a hosted MCP server that allows users with a Lite plan or higher to connect their Ahrefs account to supported AI tools."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.ahrefs.com/llms.txt",
+      "quote": "The Ahrefs API is organized into **tools**, each a self-contained group of REST endpoints."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+      "quote": "Ahrefs provides a hosted MCP server that allows users with a Lite plan or higher to connect their Ahrefs account to supported AI tools."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "API keys can only be made by workspace owners/admins. The free \"public\" endpoints need no subscription, but the useful data endpoints need a paid plan; exact minimum plan for the REST API was not stated on a page (MCP says Lite or higher). Pass-1 note says Ahrefs does not permit scripted use of the MCP endpoint: not re-verified.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "mcp/access quote missing (cited introduction page returned 404 in pass 1)",
+      "to": "introduction.md page now loads; quotes re-copied",
+      "reason": "REST is now quoted from llms.txt; paid-plan gate quoted from the free-test-queries and MCP intro pages."
+    }
+  ]
+}

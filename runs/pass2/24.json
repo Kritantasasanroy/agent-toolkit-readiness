@@ -1,0 +1,58 @@
+{
+  "app_id": 24,
+  "app": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "summary": "Collaboration suite with messaging, docs, calendar and video meetings, with an open platform for custom apps.",
+  "auth_methods": [
+    "oauth2",
+    "other"
+  ],
+  "access": "admin_approval",
+  "access_note": "Create a custom app in the Developer Console; requested API permissions must be approved by a tenant admin before they take effect.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://github.com/larksuite/lark-openapi-mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "admin_install",
+  "blocker_note": "Custom app permissions need tenant admin review; apps are scoped per tenant (tenant_access_token) unless published as a store app.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+      "quote": "自建应用通过此接口获取 `tenant_access_token`。"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://open.larksuite.com/llms.txt",
+      "quote": "获取 user_access_token 是标准的 OAuth 2.0"
+    },
+    {
+      "field": "access",
+      "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes.md",
+      "quote": "应用开发者申请的权限需要通过 **租户管理员** 的审核。"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+      "quote": "https://open.larksuite.com/open-apis/auth/v3/tenant_access_token/internal"
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/larksuite/lark-openapi-mcp",
+      "quote": "This is the Feishu/Lark official OpenAPI MCP (Model Context Protocol) tool"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Docs quotes are Chinese-language. REST is inferred from the HTTP POST endpoint. MCP repo is under the larksuite GitHub org and its README calls itself the Feishu/Lark official OpenAPI MCP tool, marked Beta.",
+  "review": [
+    {
+      "field": "notes",
+      "from": "Docs pages fetched were Chinese-language versions; quotes are in Chinese. REST inferred from HTTP POST endpoint https://open.larksuite.com/open-apis/... Quote for api_styles is weak. Repo ownership as official taken from search results.",
+      "to": "Docs quotes are Chinese-language. REST is inferred from the HTTP POST endpoint. MCP repo is under the larksuite GitHub org and its README calls itself the Feishu/Lark official OpenAPI MCP tool, marked Beta.",
+      "reason": "Replaced the weak api_styles and mcp quotes."
+    }
+  ]
+}

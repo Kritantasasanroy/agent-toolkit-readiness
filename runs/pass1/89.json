@@ -1,0 +1,49 @@
+{
+  "app_id": 89,
+  "app": "Ramp",
+  "category": "Finance and Fintech",
+  "summary": "Corporate card and spend management platform with expenses, bill pay, procurement and accounting automation.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "admin_approval",
+  "access_note": "Ramp customer admin creates a developer app (Company > Developer) with client credentials or authorization code; sandbox by request.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://docs.ramp.com/developer-api/v1/ramp-mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Requires a Ramp customer account with an admin; partner apps need Ramp approval before production access.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.ramp.com/llms-full.txt",
+      "quote": "Authorization Code and Refresh Token access tokens default to 1 hour (3,600 seconds)"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.ramp.com/llms-full.txt",
+      "quote": "This guide assumes you are a Ramp customer with"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.ramp.com/llms-full.txt",
+      "quote": "For apps that access the whole business, an Admin or Business Owner must approve."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.ramp.com/llms-full.txt",
+      "quote": "Make sure you're pointing your API calls at the API host, not the frontend host."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.ramp.com/llms-full.txt",
+      "quote": "A connection can do what the connecting user's Ramp role allows, within the access level chosen at sign-in."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Ramp docs are JavaScript shells; quotes come from the vendor's official https://docs.ramp.com/llms-full.txt export. Exact MCP server URL for the account MCP was not found (only the Ramp Data MCP, https://mcp.ramp.com/ramp-data/mcp, which needs a provisioned key); mcp_url points to the docs page. MCP connections expire after 30 days. Some endpoints need Ramp Plus."
+}

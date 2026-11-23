@@ -1,0 +1,77 @@
+{
+  "app_id": 45,
+  "app": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "summary": "Self-hosted and cloud ecommerce platform (Adobe Commerce / Magento Open Source) for merchants.",
+  "auth_methods": [
+    "bearer_token",
+    "oauth2",
+    "other"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Self-hosted per merchant: the store admin activates an integration to get keys/tokens. Magento Open Source is named in the docs; Adobe Commerce license cost not read.",
+  "api_styles": [
+    "rest",
+    "graphql"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://developer.adobe.com/commerce/extensibility/developer-agent/tools-overview",
+  "verdict": "build_with_caveat",
+  "blocker": "admin_install",
+  "blocker_note": "Each merchant instance has its own base URL and an admin must create the integration or admin/IMS credentials.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+      "quote": "Use this token in applications to authorize an Admin user and access Admin-related APIs."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+      "quote": "This method is a good choice for integrating with a third-party system that supports OAuth 1.0a."
+    },
+    {
+      "field": "access",
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+      "quote": "After activating an integration (self activated), you can use the generated consumer key, consumer secret, access token, and access token secret"
+    },
+    {
+      "field": "access",
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+      "quote": "Adobe Commerce and Magento Open Source allow developers to define web API resources and their permissions in the webapi.xml configuration file."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.adobe.com/commerce/webapi/",
+      "quote": "The Web API documentation is divided into three guides: REST, GraphQL, and Getting Started."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/tools-overview",
+      "quote": "Adobe Commerce App Builder MCP server"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Official MCP found is the Adobe Commerce App Builder MCP server: IDE/developer tooling, not store data access. Fee for Adobe Commerce licence not verified either way, so access rests on self-activated integration text. SaaS (Commerce as a Cloud Service) uses IMS OAuth server-to-server, only linked on the auth page, not read.",
+  "review": [
+    {
+      "field": "access",
+      "from": "paid_plan",
+      "to": "free_self_serve",
+      "reason": "Open Source edition is named in the vendor docs and integrations are self-activated by the merchant admin; no page read states a license fee for API access. Pass-1 paid_plan was an unquoted inference."
+    },
+    {
+      "field": "blocker",
+      "from": "paid_plan",
+      "to": "admin_install",
+      "reason": "Credentials come from an integration the store admin creates and activates on each instance."
+    },
+    {
+      "field": "evidence",
+      "from": "auth quote missing (Admin Token em-dash spacing)",
+      "to": "re-quoted",
+      "reason": "Quote did not match raw page text."
+    }
+  ]
+}

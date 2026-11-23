@@ -1,0 +1,23 @@
+# App toolkit readiness: 100 apps
+
+Research on whether 100 apps can become agent toolkits today: auth, who can get credentials
+without talking to the vendor, API surface, MCP servers, and what blocks the rest.
+
+## Read this first
+- data.json: every finding. `apps` is one profile per app, with evidence quotes and URLs.
+  `patterns` holds the aggregates. `verification` holds link-check totals, sample scores,
+  and every disputed answer with the source that settled it.
+- index.html: the same data as a human-readable case study.
+
+## Field values
+auth_methods: oauth2, api_key, basic, bearer_token, other, none
+access: free_self_serve, free_trial, paid_plan, admin_approval, partner_gated, no_public_api
+api_styles: rest, graphql, soap, rpc, sdk_only, cli, none
+mcp: official, community, none (official includes docs-only and developer-tooling servers)
+verdict: build_now, build_with_caveat, needs_outreach, not_feasible
+blocker: none, partner_program, paid_plan, app_review, admin_install, no_public_api,
+narrow_api, region_or_kyc, unofficial_only
+
+## Caveats
+- `contested` on an app lists fields where a blind docs check disagreed with the second pass.
+- confidence low means the vendor's docs could not be read or were contradictory; see `notes`.

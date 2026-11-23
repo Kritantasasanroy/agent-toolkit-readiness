@@ -1,0 +1,59 @@
+{
+  "app_id": 83,
+  "app": "Binance",
+  "category": "Finance and Fintech",
+  "summary": "Cryptocurrency exchange offering spot and derivatives trading, account and wallet data through an API.",
+  "auth_methods": [
+    "api_key",
+    "other"
+  ],
+  "access": "free_self_serve",
+  "access_note": "API keys created in Account > API Management after a deposit, 2FA and identity verification; signed requests use HMAC, RSA or Ed25519.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://github.com/AnalyticAce/binance-mcp-server",
+  "verdict": "build_with_caveat",
+  "blocker": "region_or_kyc",
+  "blocker_note": "Account must be funded, 2FA-enabled and identity-verified before keys can be created; availability varies by region.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md",
+      "quote": "We support HMAC, RSA, and Ed25519 keys."
+    },
+    {
+      "field": "access",
+      "url": "https://testnet.binance.vision/",
+      "quote": "Step 1: Log in on this website, and generate an API Key."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md",
+      "quote": "# Public Rest API for Binance"
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/AnalyticAce/binance-mcp-server",
+      "quote": "Unofficial tools and server implementation for Binance's Model Context Protocol (MCP)."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Binance docs pages are JavaScript-only; quotes taken from the official binance/binance-spot-api-docs GitHub markdown and the official Spot Test Network page. Live trading access needs a verified Binance account and region availability; that is not proven from a fetched page. No official Binance MCP found; AnalyticAce/binance-mcp-server describes itself as unofficial. Breadth 'broad' assumes the other product lines documented in the same GitHub repo.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "auth/access/api_styles quotes",
+      "to": "verbatim quotes from raw GitHub docs and testnet page",
+      "reason": "Original Binance pages are JavaScript-only (empty text); access quote (deposit requirement) could not be verified."
+    },
+    {
+      "field": "confidence",
+      "from": "low",
+      "to": "medium",
+      "reason": "Auth and REST now proven; live-account KYC/region blocker still unproven."
+    }
+  ]
+}

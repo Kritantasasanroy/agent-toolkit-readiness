@@ -1,0 +1,50 @@
+{
+  "app_id": 21,
+  "app": "Slack",
+  "category": "Communications and Messaging",
+  "summary": "Team messaging platform with channels, DMs, files and workflow automation.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Create a Slack app in a free workspace and install it via OAuth; bot tokens (xoxb-) and user tokens (xoxp-) are issued.",
+  "api_styles": [
+    "rpc"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.slack.com/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Slack's MCP server only accepts directory-published (Marketplace) or internal apps; broader multi-tenant use of the Web API outside the Marketplace is subject to Slack's app distribution rules.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.slack.dev/authentication/installing-with-oauth",
+      "quote": "Slack apps are installed with a v2 OAuth 2.0 flow."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.slack.dev/authentication/tokens",
+      "quote": "Bot token strings begin with `xoxb-`."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.slack.dev/authentication/installing-with-oauth",
+      "quote": "The `oauth.v2.access` API method supports generating either a bot token or user token or both."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.slack.dev/apis/web-api/",
+      "quote": "The Web API is a collection of HTTP RPC-style methods, all with URLs in the form https://slack.com/api/METHOD_FAMILY.method."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.slack.dev/ai/mcp-server",
+      "quote": "Only directory-published apps or internal apps may use MCP."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Slack states the Web API is not REST. Marketplace/rate-limit page (docs.slack.dev/distribution/distributing-apps-with-oauth) returned 404, so the app_review blocker rests on the MCP page and general knowledge; some quotes come from fetch-tool excerpts."
+}

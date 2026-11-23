@@ -1,0 +1,69 @@
+{
+  "app_id": 80,
+  "app": "Harvest",
+  "category": "Productivity and Project Management",
+  "summary": "Time tracking and invoicing software for teams and freelancers.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Personal Access Token created in Harvest ID developer section; OAuth2 apps for multi-user integrations.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://api.harvestapp.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "quote": "Personal Access Tokens are the preferred method when you want to write your own scripts that consume our API."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "quote": "If you are interested in building integrations that other users can use, you will need to register an OAuth2 Application"
+    },
+    {
+      "field": "access",
+      "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "quote": "The API can be accessed by creating a Personal Access Token from the Developers section of Harvest ID."
+    },
+    {
+      "field": "access",
+      "url": "https://www.getharvest.com/pricing",
+      "quote": "Free Built for individual freelancers starting from $0 forever"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+      "quote": "The Harvest V2 API is a REST API that allows you to interact with your Harvest account programmatically."
+    },
+    {
+      "field": "mcp",
+      "url": "https://api.harvestapp.com/.well-known/oauth-protected-resource/mcp",
+      "quote": "\"resource\":\"https://api.harvestapp.com/mcp\""
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Harvest's MCP support article (support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP) is blocked to scripts, so the mcp quote comes from the vendor's own OAuth protected-resource metadata at api.harvestapp.com, which names the /mcp resource; search snippets of the help article confirm it is the official remote MCP using OAuth. Free plan (1 seat, 2 projects) exists; API availability on it is not stated on a fetched page.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "mcp quote (help article, blocked)",
+      "to": "vendor OAuth metadata at api.harvestapp.com",
+      "reason": "Original page refused script access, so the quote could not be checked."
+    },
+    {
+      "field": "confidence",
+      "from": "high",
+      "to": "medium",
+      "reason": "MCP evidence is indirect and free-plan API access is inferred."
+    }
+  ]
+}

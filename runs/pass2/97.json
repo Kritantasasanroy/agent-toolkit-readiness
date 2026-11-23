@@ -1,0 +1,77 @@
+{
+  "app_id": 97,
+  "app": "higgsfield",
+  "category": "AI, Research and Media-native",
+  "summary": "Generative AI image and video studio with a CLI, MCP server and a REST generation API.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "paid_plan",
+  "access_note": "API is billed against a prepaid account balance on console.higgsfield.ai; docs show no free tier. MCP/CLI sign in through the browser and spend plan credits.",
+  "api_styles": [
+    "rest",
+    "cli"
+  ],
+  "api_breadth": "narrow",
+  "mcp": "official",
+  "mcp_url": "https://mcp.higgsfield.ai/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Generation is charged to a prepaid balance; no free API tier found in docs.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.higgsfield.ai/docs/authentication.md",
+      "quote": "Each credential consists of a key ID and a secret."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.higgsfield.ai/docs/concepts/billing-and-retention.md",
+      "quote": "Higgsfield charges successful generation requests to your account balance."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.higgsfield.ai/docs/quickstart.md",
+      "quote": "This guide uses the REST API so you can see the complete request lifecycle."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://higgsfield.ai/cli",
+      "quote": "Higgsfield CLI for any AI Create images and videos directly from your prompts in any AI tool"
+    },
+    {
+      "field": "mcp",
+      "url": "https://higgsfield.ai/mcp",
+      "quote": "Generate Images & Videos in Claude with Higgsfield"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Docs use Authorization: Key ID:SECRET. Plan-credit use by MCP/CLI is from higgsfield.ai marketing pages, not API docs. Whether any free credits exist for new API accounts was not found.",
+  "review": [
+    {
+      "field": "access_note",
+      "from": "API is a standalone product billed on its own balance via console.higgsfield.ai; the MCP/CLI use browser sign-in and spend plan credits on a paid Higgsfield plan.",
+      "to": "API is billed against a prepaid account balance on console.higgsfield.ai; docs show no free tier. MCP/CLI sign in through the browser and spend plan credits.",
+      "reason": "Reworded to what docs show."
+    },
+    {
+      "field": "blocker_note",
+      "from": "Generation consumes paid credits or API balance; no confirmed free tier for API.",
+      "to": "Generation is charged to a prepaid balance; no free API tier found in docs.",
+      "reason": "Same."
+    },
+    {
+      "field": "notes",
+      "from": "Docs use Authorization: Key ID:SECRET. Paid-subscription and separate-billing claims come from search snippets, not fetched pages. MCP URL from higgsfield.ai/mcp. Credential header and base URL https://api.higgsfield.ai from docs.",
+      "to": "Docs use Authorization: Key ID:SECRET. Plan-credit use by MCP/CLI is from higgsfield.ai marketing pages, not API docs. Whether any free credits exist for new API accounts was not found.",
+      "reason": "Clarified sources."
+    },
+    {
+      "field": "evidence",
+      "from": "pass1 quotes",
+      "to": "replaced",
+      "reason": "Pass 1 api_styles quote missing and the other quotes did not support the claims; replaced."
+    }
+  ]
+}

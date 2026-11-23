@@ -1,0 +1,69 @@
+{
+  "app_id": 47,
+  "app": "Ecwid",
+  "category": "Ecommerce",
+  "summary": "Embeddable ecommerce widget and store platform (Ecwid by Lightspeed) for adding a shop to any website.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "paid_plan",
+  "access_note": "Only paid-plan stores can use the API; free upgrade for developers can be requested by emailing API support.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://zapier.com/mcp/ecwid",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Store must be on a paid plan to access the API.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.ecwid.com/api-reference/rest-api/overview",
+      "quote": "We use OAuth 2.0 authorization simplified for single-store customizations, JSON-formatted data, and a clear structure."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.ecwid.com/llms-full.txt",
+      "quote": "Secret tokens exposed on the storefront put the store data at risk."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.ecwid.com/llms-full.txt",
+      "quote": "Only stores on paid plans can access API."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.ecwid.com/llms-full.txt",
+      "quote": "Ecwid provides a **free upgrade to a paid plan** if you:"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.ecwid.com/llms-full.txt",
+      "quote": "Access tokens authorize REST API requests for the specific app in the specific store."
+    },
+    {
+      "field": "mcp",
+      "url": "https://zapier.com/mcp/ecwid",
+      "quote": "Use Ecwid by Lightspeed MCP to take action in your AI tools"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Whole llms-full.txt read: no MCP mention, so no official Ecwid MCP; the community entry is Zapier-hosted (generic Zapier MCP, not run by Ecwid). GitHub search found no real Ecwid MCP repo. Breadth broad is from reference size, not counted.",
+  "review": [
+    {
+      "field": "evidence(mcp)",
+      "from": "OAuth quote from llms-full.txt",
+      "to": "Zapier MCP page quote",
+      "reason": "Old mcp quote did not support the mcp claim; now cites the Zapier-hosted Ecwid MCP page. llms-full.txt (550k chars) contains no mention of MCP, so no official one."
+    },
+    {
+      "field": "evidence(access)",
+      "from": "-",
+      "to": "added free-upgrade quote",
+      "reason": "Shows the paid-plan gate can be lifted for developers by request."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "app_id": 96,
+  "app": "Devin",
+  "category": "AI, Research and Media-native",
+  "summary": "Autonomous AI software engineer that runs coding sessions, with an API and a hosted MCP server.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "paid_plan",
+  "access_note": "API v3 uses service-user keys (cog_) for Teams/Enterprise orgs, or personal access tokens; exact free-plan API eligibility not confirmed.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://mcp.devin.ai/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Organization API aimed at Teams and Enterprise orgs; Enterprise API for enterprise customers only.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.devin.ai/api-reference/overview",
+      "quote": "Both scopes use service user credentials (`cog_` prefix)."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.devin.ai/api-reference/overview",
+      "quote": "For teams and standard organizations."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.devin.ai/api-reference/overview",
+      "quote": "The v1 and v2 APIs continue to work during the deprecation period but do not receive new features."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.devin.ai/work-with-devin/devin-mcp.md",
+      "quote": "To use the Devin MCP server, you need a Devin API key:"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Pricing page lists a Free plan but does not show which plans include the Devin API; paid_plan is inferred. MCP supports X-Org-Id header for enterprise keys and PATs. MCP URL https://mcp.devin.ai/mcp quoted on devin-mcp page."
+}

@@ -1,0 +1,50 @@
+{
+  "app_id": 71,
+  "app": "Notion",
+  "category": "Productivity and Project Management",
+  "summary": "Connected workspace for notes, docs, wikis and databases.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free workspace; internal connections need a workspace owner, public OAuth integrations are created in the developer portal.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.notion.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.notion.com/docs/authorization",
+      "quote": "Internal connections use a static credential called an internal connection API token."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developers.notion.com/docs/authorization",
+      "quote": "OAuth integrations follow the OAuth 2.0 protocol to authorize a connection to interact with a workspace."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.notion.com/docs/authorization",
+      "quote": "You are required to be a workspace owner to create a connection."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.notion.com/reference/intro",
+      "quote": "Send requests over HTTPS to `https://api.notion.com`."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+      "quote": "The remote server URL is `https://mcp.notion.com/mcp`."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Fetch tool returned summarized text; quotes taken from its quoted output. Access (free signup) inferred; no page fetched stating free plan API access."
+}

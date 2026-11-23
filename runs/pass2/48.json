@@ -1,0 +1,58 @@
+{
+  "app_id": 48,
+  "app": "Gumroad",
+  "category": "Ecommerce",
+  "summary": "Platform for creators to sell digital products and memberships directly to customers.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Create an application in account settings and click Generate access token for your own account; OAuth for other users.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://gumroad.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://gumroad.com/help/article/280-create-application-api",
+      "quote": "To create an application for general use, you'll need to build a Redirect URI handler to generate access tokens for each of your users."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://gumroad.com/help/article/280-create-application-api",
+      "quote": "Your access token is used in the request header of every request to the API and should be kept secret, like a password."
+    },
+    {
+      "field": "access",
+      "url": "https://gumroad.com/help/article/280-create-application-api",
+      "quote": "if you only want to use the API on your own Gumroad account, you can manually generate an access token"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://gumroad.com/help/article/280-create-application-api",
+      "quote": "curl https://api.gumroad.com/v2/products"
+    },
+    {
+      "field": "mcp",
+      "url": "https://gumroad.com/mcp",
+      "quote": "Every assistant connects to its own URL and asks for OAuth access to your Gumroad account."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Help article and gumroad.com/mcp read via curl. API reference page gumroad.com/api is JS-rendered (only \"API\" visible), so breadth (products, sales, subscribers, offer codes) is from pass-1 search results, not a vendor quote.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "quotes missing (curly-apostrophe or rendering mismatch)",
+      "to": "ASCII quotes verified on raw help page",
+      "reason": "Re-quoted from raw HTML of the help article and MCP page."
+    }
+  ]
+}

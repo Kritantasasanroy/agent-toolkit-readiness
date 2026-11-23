@@ -1,0 +1,50 @@
+{
+  "app_id": 68,
+  "app": "MongoDB Atlas",
+  "category": "Developer, Infra and Data platforms",
+  "summary": "Managed cloud database service for MongoDB with an administration API for clusters, projects and users.",
+  "auth_methods": [
+    "oauth2",
+    "other"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Create an Atlas account; an Organization Owner creates service accounts or API keys.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://www.mongodb.com/docs/mcp-server/",
+  "verdict": "build_with_caveat",
+  "blocker": "admin_install",
+  "blocker_note": "Credentials are created by an Organization Owner; users without that role cannot self-create them.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+      "quote": "Service accounts are the recommended method to manage authentication to the Atlas Administration API."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+      "quote": "API keys are a legacy method of authenticating to the Atlas Administration API that uses HTTP Digest Authentication."
+    },
+    {
+      "field": "access",
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+      "quote": "You have an Atlas account. To create one, see"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://www.mongodb.com/docs/atlas/api/",
+      "quote": "Programmatically perform administrative tasks on your Atlas cluster outside of the Atlas UI with the Atlas Administration API."
+    },
+    {
+      "field": "mcp",
+      "url": "https://www.mongodb.com/docs/mcp-server/",
+      "quote": "The MongoDB MCP Server lets you connect to MongoDB from your agentic AI tools, assistants, and platforms."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Fetched docs do not say the API is REST (inferred) or that a free tier can use it. Admin API covers control plane only; data access goes through the MCP server or drivers. Docs mention Local MCP and Atlas Managed MCP; mcp_url is the docs page, not a hosted endpoint. The page gave conflicting role requirements for API key project access."
+}

@@ -1,0 +1,56 @@
+{
+  "app_id": 64,
+  "app": "Cloudflare",
+  "category": "Developer, Infra and Data platforms",
+  "summary": "Provides DNS, CDN, security, Workers serverless compute and storage services for websites and apps.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free plan account; scoped API tokens created in the dashboard.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.cloudflare.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+      "quote": "Whenever possible, use API tokens to interact with the Cloudflare API."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+      "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth"
+    },
+    {
+      "field": "access",
+      "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+      "quote": "Create an API token to grant access to the API to perform actions."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+      "quote": "Using the Cloudflare API requires authentication"
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+      "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth"
+    },
+    {
+      "field": "access",
+      "url": "https://www.cloudflare.com/plans/",
+      "quote": "Free For personal or hobby projects that aren't business-critical."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Fetched pages did not explicitly say REST or that free plans get API access; both inferred (endpoint list shows REST paths like /zones/{zone_id}/...). Some Organization endpoints need a Global API key. oauth2 refers to the MCP flow only.",
+  "review": []
+}

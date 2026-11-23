@@ -1,0 +1,44 @@
+{
+  "app_id": 38,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "Pinterest",
+  "summary": "Visual discovery platform with APIs for pins, boards and ads.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "admin_approval",
+  "access_note": "Apps need Pinterest review for Trial access before API use; Standard access requires a further application.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://glama.ai/mcp/servers/clugtu/pinterest-mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Pinterest reviews apps for Trial access, and Standard access is needed for production use by other users.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+      "quote": "Our implementation of grant types and access tokens follows OAuth 2.0 specifications."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+      "quote": "Application requests are reviewed by Pinterest."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+      "quote": "Pinterest API services are only available to authenticated and authorized users."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+      "quote": "Be the first to know when it launches."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "REST (v5) inferred, no explicit REST sentence fetched. Official Pinterest MCP announced (https://api.pinterest.com/mcp) but page says waitlist; community servers exist (glama: 'Provides tools for managing Pinterest boards, pins, and analytics'). Access tiers page returned 404."
+}

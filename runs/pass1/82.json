@@ -1,0 +1,44 @@
+{
+  "app_id": 82,
+  "app": "Plaid",
+  "category": "Finance and Fintech",
+  "summary": "Connects apps to users' bank accounts to retrieve account, transaction, identity and payment data.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free Sandbox keys from the Dashboard; Production (and Limited Production) must be requested through the Dashboard.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://api.dashboard.plaid.com/mcp/",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Sandbox is free and self-serve, but live bank data needs Production access requested and approved through the Dashboard; end users also link accounts via Plaid Link.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://plaid.com/docs/api/",
+      "quote": "These may be sent either in the request body or in the headers PLAID-CLIENT-ID and PLAID-SECRET."
+    },
+    {
+      "field": "access",
+      "url": "https://plaid.com/docs/sandbox/",
+      "quote": "The Plaid Sandbox is a free and fully-featured environment for application development and testing."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://plaid.com/docs/api/",
+      "quote": "The Plaid API is JSON over HTTP."
+    },
+    {
+      "field": "mcp",
+      "url": "https://plaid.com/docs/resources/mcp/",
+      "quote": "Access tokens for the MCP server expire after 15 minutes."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Official MCP is a Dashboard MCP server (Production data only, limited support, under active development); it covers Dashboard/admin tasks, not end-user bank data. Production approval criteria were not shown on pages read, so the app_review rating leans on the 'request Production API access via the Dashboard' wording."
+}

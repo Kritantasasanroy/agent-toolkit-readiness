@@ -1,0 +1,44 @@
+{
+  "app_id": 57,
+  "app": "Bright Data",
+  "category": "Data, SEO and Scraping",
+  "summary": "Web data platform offering proxies, Web Unlocker, SERP and scraper APIs, and a hosted MCP server.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Account admin generates an API key; recurring free tier of 5,000 MCP requests/month; most products are pay-as-you-go.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.brightdata.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.brightdata.com/api-reference/introduction",
+      "quote": "An API key is a secure hashed token used to authenticate with Bright Data API."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.brightdata.com/api-reference/authentication",
+      "quote": "If you don't see the 'API key' section, switch to an admin account."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.brightdata.com/api-reference/introduction",
+      "quote": "Authorization: Bearer <token>"
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/brightdata/brightdata-mcp",
+      "quote": "Free tier: 5,000 requests per month."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Signup/KYC requirements for proxy products were not verified; the free tier quote is from the MCP README. docs.brightdata.com/api-reference/MCP-Server returned 404."
+}

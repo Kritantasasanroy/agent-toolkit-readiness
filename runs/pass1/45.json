@@ -1,0 +1,52 @@
+{
+  "app_id": 45,
+  "app": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "summary": "Self-hosted and cloud ecommerce platform (Adobe Commerce / Magento Open Source) for merchants.",
+  "auth_methods": [
+    "bearer_token",
+    "oauth2",
+    "other"
+  ],
+  "access": "paid_plan",
+  "access_note": "Open Source is free to self-host; Adobe Commerce/cloud needs a license. Each merchant instance has its own base URL and integration credentials.",
+  "api_styles": [
+    "rest",
+    "graphql"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://developer.adobe.com/commerce/extensibility/developer-agent/tools-overview",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Per-instance setup and, for SaaS, IMS OAuth server-to-server; PaaS uses integration tokens or OAuth 1.0a.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+      "quote": "Admin Token—Use this token in applications to authorize an Admin user and access Admin-related APIs."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+      "quote": "This method is a good choice for integrating with a third-party system that supports OAuth 1.0a."
+    },
+    {
+      "field": "access",
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+      "quote": "Adobe Commerce Cloud Services customers must refer to REST Authentication for details on authentication."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.adobe.com/commerce/webapi/",
+      "quote": "The Web API documentation is divided into three guides: REST, GraphQL, and Getting Started."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/tools-overview",
+      "quote": "Adobe Commerce App Builder MCP server"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Official MCP is IDE/dev tooling, not store data access. Access tier (license cost) inferred, not quoted. IMS OAuth server-to-server for SaaS only linked, not read."
+}

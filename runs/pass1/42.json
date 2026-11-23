@@ -1,0 +1,50 @@
+{
+  "app_id": 42,
+  "app": "WooCommerce",
+  "category": "Ecommerce",
+  "summary": "Open-source WordPress ecommerce plugin for running online stores.",
+  "auth_methods": [
+    "basic",
+    "other"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Self-hosted plugin; store admin generates consumer key/secret. Requires the user to own or administer a WooCommerce site.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://developer.woocommerce.com/docs/features/mcp/",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "quote": "You may use HTTP Basic Auth by providing the REST API Consumer Key as the username"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "quote": "You must use OAuth 1.0a \"one-legged\" authentication to ensure REST API credentials cannot be intercepted"
+    },
+    {
+      "field": "access",
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "quote": "WooCommerce (WC) 2.6+ is fully integrated with the WordPress REST API."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "quote": "WooCommerce (WC) 2.6+ is fully integrated with the WordPress REST API."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developer.woocommerce.com/docs/features/mcp/",
+      "quote": "The MCP implementation in WooCommerce is currently in developer preview."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "No page fetched that states key generation steps or that the plugin is free; access inferred from consumer-key auth. Each merchant is a separate self-hosted base URL (HTTPS recommended). MCP is developer preview via WordPress MCP Adapter."
+}

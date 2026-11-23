@@ -1,0 +1,50 @@
+{
+  "app_id": 76,
+  "app": "Monday.com",
+  "category": "Productivity and Project Management",
+  "summary": "Work operating system for managing projects, workflows and teams on customizable boards.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Personal API token from Developer Center for users with API access; OAuth apps registered in Developer Center.",
+  "api_styles": [
+    "graphql"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.monday.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.monday.com/apps/docs/oauth",
+      "quote": "OAuth 2.0 is a protocol that lets your app request authorization to read or modify data in a user's monday account."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developer.monday.com/api-reference/docs/authentication",
+      "quote": "These tokens are unique to each user."
+    },
+    {
+      "field": "access",
+      "url": "https://developer.monday.com/api-reference/docs/authentication",
+      "quote": "All users with API access can follow these steps to access their API token."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.monday.com/api-reference/docs/introduction-to-graphql",
+      "quote": "The monday.com API is built with GraphQL, a flexible query language"
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/mondaycom/mcp",
+      "quote": "https://mcp.monday.com/mcp"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Whether API access depends on plan tier, and whether marketplace apps need review, not confirmed. MCP URL taken from github.com/mondaycom/mcp via summarized fetch; the developer.monday.com MCP page itself showed only local setup."
+}

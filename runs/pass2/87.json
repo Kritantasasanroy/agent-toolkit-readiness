@@ -1,0 +1,69 @@
+{
+  "app_id": 87,
+  "app": "Xero",
+  "category": "Finance and Fintech",
+  "summary": "Cloud accounting platform for small businesses covering invoicing, bank reconciliation, payroll and reporting.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free developer account and Starter tier app; Demo company for testing. Custom Connections (client credentials) cost a monthly fee on the Xero organisation.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://github.com/XeroAPI/xero-mcp-server",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Pass 1 cited tier limits (5 connections, five uncertified apps per org, App Store certification) from JS-rendered pages that could not be read; treat as unconfirmed. Custom Connections are a premium option for a single org.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://github.com/XeroAPI/Xero-OpenAPI",
+      "quote": "An OpenAPI (Swagger) specification for the Xero API with OAuth 2.0 security schema."
+    },
+    {
+      "field": "access",
+      "url": "https://github.com/XeroAPI/xero-node",
+      "quote": "Create a free Xero user account"
+    },
+    {
+      "field": "access",
+      "url": "https://github.com/XeroAPI/xero-node",
+      "quote": "Basic app showing Custom Connections - a Xero premium option for building M2M integrations to a single org"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://github.com/XeroAPI/Xero-OpenAPI",
+      "quote": "This repository holds the official Xero OpenAPI descriptions."
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/XeroAPI/xero-mcp-server",
+      "quote": "This is a Model Context Protocol (MCP) server implementation for Xero."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Xero developer docs are JavaScript-only; evidence is from Xero's official GitHub repos (XeroAPI org). Tier limits and the 'Remote MCP' guide were not readable. REST inferred from official OpenAPI descriptions. Xero's MCP server supports Custom Connections (single org) and per-user auth modes.",
+  "review": [
+    {
+      "field": "blocker_note",
+      "from": "Starter tier is limited to 5 connections and each organisation can connect only five uncertified apps; scaling needs higher tier and App Store certification.",
+      "to": "Pass 1 cited tier limits (5 connections, five uncertified apps per org, App Store certification) from JS-rendered pages that could not be read; treat as unconfirmed. Custom Connections are a premium option for a single org.",
+      "reason": "Cited limits pages unreadable; unproven."
+    },
+    {
+      "field": "notes",
+      "from": "Xero docs are JavaScript-rendered; read via a browser. Docs nav lists a 'Remote MCP' guide, but that page returned 'Not Authorized' so it was not read. Starter tier daily limit is 1,000 calls per tenant. REST is inferred from OpenAPI/SDK wording.",
+      "to": "Xero developer docs are JavaScript-only; evidence is from Xero's official GitHub repos (XeroAPI org). Tier limits and the 'Remote MCP' guide were not readable. REST inferred from official OpenAPI descriptions. Xero's MCP server supports Custom Connections (single org) and per-user auth modes.",
+      "reason": ""
+    },
+    {
+      "field": "evidence",
+      "from": "pass1 quotes",
+      "to": "replaced",
+      "reason": "Xero developer docs are JavaScript-only; pass 1 quotes were not found. Re-sourced from Xero's GitHub repos (xero-node, Xero-OpenAPI, xero-mcp-server)."
+    }
+  ]
+}

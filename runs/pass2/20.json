@@ -1,0 +1,52 @@
+{
+  "app_id": 20,
+  "app": "Gladly",
+  "category": "Support and Helpdesk",
+  "summary": "Customer service platform organized around people rather than tickets, for enterprise brands.",
+  "auth_methods": [
+    "basic"
+  ],
+  "access": "partner_gated",
+  "access_note": "No self-serve signup seen (Get a demo); API tokens are created by an admin for a user with the API User permission, used as HTTP Basic.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "verdict": "needs_outreach",
+  "blocker": "partner_program",
+  "blocker_note": "Only existing Gladly customers (enterprise sales) have an organization and tokens; no trial or sandbox signup found.",
+  "confidence": "medium",
+  "notes": "No Gladly-published MCP found; the official MCP registry lists third-party Gladly servers (usefulapi.io, cotlet.dev), usage unverified. Gladly docs say a sandbox at {organization}.gladly.qa is enabled for the organization (customers only). No self-serve signup seen.",
+  "evidence": [
+    {
+      "field": "access",
+      "url": "https://www.gladly.com/",
+      "quote": "Get a demo"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.gladly.com/rest/",
+      "quote": "To create and use an API token, your user must have the API User permission."
+    },
+    {
+      "field": "mcp",
+      "url": "https://registry.modelcontextprotocol.io/v0/servers?search=gladly",
+      "quote": "Find customers, read conversations, items and tasks; add internal notes in Gladly."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developer.gladly.com/rest/",
+      "quote": "Gladly API uses token-based Basic Authentication"
+    }
+  ],
+  "review": [
+    {
+      "field": "mcp",
+      "from": "none",
+      "to": "community",
+      "reason": "MCP registry lists third-party Gladly servers (dev.cotlet/gladly, io.usefulapi/gladly); none are Gladly-published, so not official, but not none."
+    }
+  ],
+  "mcp_url": "https://registry.modelcontextprotocol.io/v0/servers?search=gladly"
+}

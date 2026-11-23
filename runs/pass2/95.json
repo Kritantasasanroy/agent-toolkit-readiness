@@ -1,0 +1,57 @@
+{
+  "app_id": 95,
+  "app": "Reducto",
+  "category": "AI, Research and Media-native",
+  "summary": "Document processing API that parses, extracts structured data from, edits and splits PDFs and other files for LLM pipelines.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Sign up free, create an API key in Studio; pay-as-you-go with $150 free usage.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://mcp.reducto.ai/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.reducto.ai/llms.txt",
+      "quote": "Manage API keys, usage, billing, and organization settings in Reducto Studio"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.reducto.ai/mcp-server",
+      "quote": "Auth Bearer token in headers Browser login or env var"
+    },
+    {
+      "field": "access",
+      "url": "https://reducto.ai/pricing",
+      "quote": "Free $150 in free usage"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.reducto.ai/agent-guide/index.md",
+      "quote": "| No SDK | REST |"
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.reducto.ai/mcp-server",
+      "quote": "The hosted server runs at https://mcp.reducto.ai/mcp ."
+    }
+  ],
+  "confidence": "high",
+  "notes": "Hosted MCP authenticates with Authorization: Bearer key. Pricing page also lists Parse, Extract, Edit and Split APIs.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "pass1 quotes",
+      "to": "replaced",
+      "reason": "Pass 1 quotes were true but did not support the claims (key creation, REST, MCP); replaced with sentences that do."
+    }
+  ]
+}

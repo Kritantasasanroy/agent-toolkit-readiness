@@ -1,0 +1,65 @@
+{
+  "app_id": 85,
+  "app": "iPayX",
+  "category": "Finance and Fintech",
+  "summary": "FX audit service that scores bank or card-network FX rates against live mid-market rates.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Sign up and generate keys in the dashboard (ipx_live_ / ipx_test_); three free lifetime audits, MCP free tools capped per key; REST plans start at $99/mo.",
+  "api_styles": [
+    "rest",
+    "rpc"
+  ],
+  "api_breadth": "narrow",
+  "mcp": "official",
+  "mcp_url": "https://mcp.ipayx.ai/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "narrow_api",
+  "blocker_note": "Single-purpose FX audit API (three tools); REST usage beyond the free tier needs a paid plan.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://www.ipayx.ai/.well-known/mcp.json",
+      "quote": "full_forensic_fx_report requires a Bearer API key from https://www.ipayx.ai/developers"
+    },
+    {
+      "field": "access",
+      "url": "https://www.ipayx.ai/.well-known/mcp.json",
+      "quote": "3 audits per IP per calendar month (renews monthly)"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://ipayx.ai/llms.txt",
+      "quote": "POST https://api.ipayx.ai/functions/v1/fx-audit-engine"
+    },
+    {
+      "field": "mcp",
+      "url": "https://ipayx.ai/llms.txt",
+      "quote": "Endpoint: https://mcp.ipayx.ai/mcp"
+    }
+  ],
+  "confidence": "low",
+  "notes": "Site is a JavaScript app (every path returns the same shell), so quotes come from the vendor's llms.txt and .well-known manifest. Free-tier terms conflict: llms.txt/manifest say 3 audits per IP per month, the OpenAPI file says 2 lifetime, the old homepage said 3 lifetime. API plans start at $99/month; whether API keys are free was not shown. Only four tools (FX audit), so narrow.",
+  "review": [
+    {
+      "field": "mcp_url",
+      "from": "https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/mcp-server",
+      "to": "https://mcp.ipayx.ai/mcp",
+      "reason": "Vendor llms.txt documents mcp.ipayx.ai as the MCP endpoint (live, answers 200)."
+    },
+    {
+      "field": "evidence",
+      "from": "all four quotes",
+      "to": "llms.txt / mcp.json quotes",
+      "reason": "Quotes were not found on the JavaScript-rendered pages."
+    },
+    {
+      "field": "confidence",
+      "from": "medium",
+      "to": "low",
+      "reason": "Free key access not proven and free-tier limits conflict across vendor files."
+    }
+  ]
+}

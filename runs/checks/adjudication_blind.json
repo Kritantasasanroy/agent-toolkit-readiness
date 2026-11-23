@@ -1,0 +1,375 @@
+[
+ {
+  "item": 1,
+  "app": "Attio",
+  "field": "verdict",
+  "option_A": [
+   "build_with_caveat"
+  ],
+  "option_B": [
+   "build_now"
+  ]
+ },
+ {
+  "item": 2,
+  "app": "Attio",
+  "field": "blocker",
+  "option_A": [
+   "app_review"
+  ],
+  "option_B": [
+   "none"
+  ]
+ },
+ {
+  "item": 3,
+  "app": "Close",
+  "field": "auth_methods",
+  "option_A": [
+   "api_key",
+   "oauth2"
+  ],
+  "option_B": [
+   "api_key",
+   "oauth2",
+   "basic"
+  ]
+ },
+ {
+  "item": 4,
+  "app": "Copper",
+  "field": "access",
+  "option_A": [
+   "free_trial"
+  ],
+  "option_B": [
+   "paid_plan"
+  ]
+ },
+ {
+  "item": 5,
+  "app": "Intercom",
+  "field": "access",
+  "option_A": [
+   "free_trial"
+  ],
+  "option_B": [
+   "free_self_serve"
+  ]
+ },
+ {
+  "item": 6,
+  "app": "Intercom",
+  "field": "verdict",
+  "option_A": [
+   "build_now"
+  ],
+  "option_B": [
+   "build_with_caveat"
+  ]
+ },
+ {
+  "item": 7,
+  "app": "Intercom",
+  "field": "blocker",
+  "option_A": [
+   "none"
+  ],
+  "option_B": [
+   "paid_plan"
+  ]
+ },
+ {
+  "item": 8,
+  "app": "Freshdesk",
+  "field": "auth_methods",
+  "option_A": [
+   "api_key"
+  ],
+  "option_B": [
+   "api_key",
+   "oauth2"
+  ]
+ },
+ {
+  "item": 9,
+  "app": "Help Scout",
+  "field": "access",
+  "option_A": [
+   "free_trial"
+  ],
+  "option_B": [
+   "paid_plan"
+  ]
+ },
+ {
+  "item": 10,
+  "app": "Gladly",
+  "field": "mcp",
+  "option_A": [
+   "community"
+  ],
+  "option_B": [
+   "none"
+  ]
+ },
+ {
+  "item": 11,
+  "app": "Pumble",
+  "field": "auth_methods",
+  "option_A": [
+   "api_key",
+   "bearer_token"
+  ],
+  "option_B": [
+   "api_key"
+  ]
+ },
+ {
+  "item": 12,
+  "app": "WhatsApp Business",
+  "field": "auth_methods",
+  "option_A": [
+   "bearer_token"
+  ],
+  "option_B": [
+   "bearer_token",
+   "oauth2"
+  ]
+ },
+ {
+  "item": 13,
+  "app": "Aircall",
+  "field": "verdict",
+  "option_A": [
+   "build_with_caveat"
+  ],
+  "option_B": [
+   "needs_outreach"
+  ]
+ },
+ {
+  "item": 14,
+  "app": "Aircall",
+  "field": "blocker",
+  "option_A": [
+   "partner_program"
+  ],
+  "option_B": [
+   "paid_plan"
+  ]
+ },
+ {
+  "item": 15,
+  "app": "systeme.io",
+  "field": "mcp",
+  "option_A": [
+   "official"
+  ],
+  "option_B": [
+   "none"
+  ]
+ },
+ {
+  "item": 16,
+  "app": "Magento (Adobe Commerce)",
+  "field": "access",
+  "option_A": [
+   "free_self_serve"
+  ],
+  "option_B": [
+   "paid_plan"
+  ]
+ },
+ {
+  "item": 17,
+  "app": "Magento (Adobe Commerce)",
+  "field": "blocker",
+  "option_A": [
+   "paid_plan"
+  ],
+  "option_B": [
+   "admin_install"
+  ]
+ },
+ {
+  "item": 18,
+  "app": "Squarespace",
+  "field": "mcp",
+  "option_A": [
+   "none"
+  ],
+  "option_B": [
+   "official"
+  ]
+ },
+ {
+  "item": 19,
+  "app": "GitHub",
+  "field": "api_styles",
+  "option_A": [
+   "rest"
+  ],
+  "option_B": [
+   "rest",
+   "graphql"
+  ]
+ },
+ {
+  "item": 20,
+  "app": "Notion",
+  "field": "auth_methods",
+  "option_A": [
+   "oauth2",
+   "api_key"
+  ],
+  "option_B": [
+   "oauth2",
+   "bearer_token"
+  ]
+ },
+ {
+  "item": 21,
+  "app": "Paygent Connect",
+  "field": "mcp",
+  "option_A": [
+   "none"
+  ],
+  "option_B": [
+   "official"
+  ]
+ },
+ {
+  "item": 22,
+  "app": "QuickBooks",
+  "field": "api_styles",
+  "option_A": [
+   "rest"
+  ],
+  "option_B": [
+   "rest",
+   "graphql"
+  ]
+ },
+ {
+  "item": 23,
+  "app": "NotebookLM",
+  "field": "access",
+  "option_A": [
+   "paid_plan"
+  ],
+  "option_B": [
+   "free_self_serve"
+  ]
+ },
+ {
+  "item": 24,
+  "app": "NotebookLM",
+  "field": "api_styles",
+  "option_A": [
+   "rest",
+   "rpc"
+  ],
+  "option_B": [
+   "rest"
+  ]
+ },
+ {
+  "item": 25,
+  "app": "NotebookLM",
+  "field": "blocker",
+  "option_A": [
+   "narrow_api"
+  ],
+  "option_B": [
+   "paid_plan"
+  ]
+ },
+ {
+  "item": 26,
+  "app": "Podio",
+  "field": "auth_methods",
+  "option_A": [
+   "oauth2"
+  ],
+  "option_B": [
+   "oauth2",
+   "api_key"
+  ]
+ },
+ {
+  "item": 27,
+  "app": "Podio",
+  "field": "mcp",
+  "option_A": [
+   "community",
+   "none"
+  ],
+  "option_B": [
+   "official"
+  ]
+ },
+ {
+  "item": 28,
+  "app": "Gorgias",
+  "field": "mcp",
+  "option_A": [
+   "official"
+  ],
+  "option_B": [
+   "none",
+   "community"
+  ]
+ },
+ {
+  "item": 29,
+  "app": "Clay",
+  "field": "api_styles",
+  "option_A": [
+   "rest"
+  ],
+  "option_B": [
+   "rest",
+   "cli"
+  ]
+ },
+ {
+  "item": 30,
+  "app": "GitHub",
+  "field": "auth_methods",
+  "option_A": [
+   "oauth2",
+   "api_key",
+   "other"
+  ],
+  "option_B": [
+   "oauth2",
+   "api_key",
+   "bearer_token"
+  ]
+ },
+ {
+  "item": 31,
+  "app": "iPayX",
+  "field": "api_styles",
+  "option_A": [
+   "rest",
+   "rpc"
+  ],
+  "option_B": [
+   "rest"
+  ]
+ },
+ {
+  "item": 32,
+  "app": "Otter AI",
+  "field": "api_styles",
+  "option_A": [
+   "rest"
+  ],
+  "option_B": [
+   "rest",
+   "rpc"
+  ]
+ }
+]

@@ -1,0 +1,87 @@
+{
+  "app_id": 86,
+  "app": "QuickBooks",
+  "category": "Finance and Fintech",
+  "summary": "Cloud accounting software for invoicing, expenses, payments, payroll and bookkeeping for small businesses.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free Intuit developer account, create an app, get Client ID/secret; sandbox companies for testing.",
+  "api_styles": [
+    "rest",
+    "graphql"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://github.com/intuit/quickbooks-online-mcp-server",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Intuit's MCP README says integration is 'gated by Intuit's OAuth app setup'; whether production keys for other companies need Intuit app assessment is not confirmed from a page read.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+      "quote": "This server uses OAuth 2.0 to authenticate to a QuickBooks Online company."
+    },
+    {
+      "field": "access",
+      "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+      "quote": "If you only want to read your own company's data, you still need to set up an app"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://github.com/intuit/QuickBooks-V3-Java-SDK",
+      "quote": "ipp-v3-java-devkit - core component, contains REST API support."
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+      "quote": "this is a local MCP server. It runs as a stdio subprocess on the developer's or partner's machine"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Intuit developer docs are JavaScript-only and cannot be read by script, so evidence comes from Intuit's GitHub repos. GraphQL dropped: only a nav label was seen in pass 1, no readable page. The MCP is Intuit's open-source local stdio server, not hosted. App-review blocker is unconfirmed. GraphQL: documented at developer.intuit.com (Develop your app with the GraphQL API); the page is JavaScript-rendered so no quote could be checked by script.",
+  "review": [
+    {
+      "field": "api_styles",
+      "from": [
+        "rest",
+        "graphql"
+      ],
+      "to": [
+        "rest"
+      ],
+      "reason": "GraphQL claim rested only on a nav label; no readable page supports it. REST confirmed in Intuit's SDK README."
+    },
+    {
+      "field": "blocker_note",
+      "from": "Production keys for other users' companies are expected to require Intuit app assessment/listing; not confirmed from a page read.",
+      "to": "Intuit's MCP README says integration is 'gated by Intuit's OAuth app setup'; whether production keys for other companies need Intuit app assessment is not confirmed from a page read.",
+      "reason": "Reworded to say what is and is not proven."
+    },
+    {
+      "field": "notes",
+      "from": "Intuit docs are JavaScript-rendered; read via a browser. REST and GraphQL are inferred from SDK/OAuth text and the nav entry 'Develop with GraphQL' (no sentence read). Access tokens last one hour, refresh tokens 100 days (rolling, value rotates). The MCP is Intuit's open-source local server (early preview); a remote endpoint appears in third-party directories only. App-review blocker is from general knowledge, not a page read.",
+      "to": "Intuit developer docs are JavaScript-only and cannot be read by script, so evidence comes from Intuit's GitHub repos. GraphQL dropped: only a nav label was seen in pass 1, no readable page. The MCP is Intuit's open-source local stdio server, not hosted. App-review blocker is unconfirmed.",
+      "reason": ""
+    },
+    {
+      "field": "evidence",
+      "from": "pass1 quotes",
+      "to": "replaced",
+      "reason": "Intuit developer docs are JavaScript-only; pass 1 quotes were not on the page. Re-sourced from Intuit's GitHub repos."
+    },
+    {
+      "field": "api_styles",
+      "from": [
+        "rest"
+      ],
+      "to": [
+        "rest",
+        "graphql"
+      ],
+      "reason": "Strict re-check of a contested answer: Intuit documents GraphQL APIs for QuickBooks Online (see notes)."
+    }
+  ]
+}

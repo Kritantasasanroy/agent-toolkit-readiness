@@ -1,0 +1,58 @@
+{
+  "app_id": 73,
+  "app": "Linear",
+  "category": "Productivity and Project Management",
+  "summary": "Issue tracking and project planning tool for software teams.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Personal API keys from Security & access settings; OAuth2 apps created by users.",
+  "api_styles": [
+    "graphql"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.linear.app/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://linear.app/developers/oauth-2-0-authentication",
+      "quote": "Linear supports OAuth2 authentication, which is recommended if you're building applications to integrate with Linear."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://linear.app/developers/graphql",
+      "quote": "For personal scripts API keys are the easiest way to access the API."
+    },
+    {
+      "field": "access",
+      "url": "https://linear.app/pricing",
+      "quote": "Free for everyone Unlimited members 2 teams 250 issues"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://linear.app/developers/graphql",
+      "quote": "It supports introspection so you can query the whole schema."
+    },
+    {
+      "field": "mcp",
+      "url": "https://linear.app/docs/mcp",
+      "quote": "Read-write access is provided through https://mcp.linear.app/mcp by default."
+    }
+  ],
+  "confidence": "high",
+  "notes": "GraphQL endpoint https://api.linear.app/graphql. Free plan listed on pricing page.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "mcp and access quotes",
+      "to": "verbatim quotes",
+      "reason": "MCP quote was not on the page; access quote did not show a free plan, pricing page does."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "app_id": 35,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "Mailchimp",
+  "summary": "Email marketing and audience management platform.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "API keys generated in account settings; OAuth apps registered on the Registered Apps page.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://github.com/damientilman/mailchimp-mcp-server",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+      "quote": "This page walks through implementing OAuth 2 so your application can access the Marketing API on behalf of other Mailchimp users"
+    },
+    {
+      "field": "access",
+      "url": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+      "quote": "Registering gives you the client_id and client_secret your server needs"
+    },
+    {
+      "field": "access",
+      "url": "https://mailchimp.com/pricing/marketing/",
+      "quote": "Cancel or downgrade to our basic Free plan at any time"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+      "quote": "The Marketing API generally follows REST conventions, with some deviations"
+    },
+    {
+      "field": "mcp",
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server.md",
+      "quote": "This searches documentation, not your Mailchimp account"
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/damientilman/mailchimp-mcp-server",
+      "quote": "The most complete Mailchimp Marketing API MCP server: 227 tools across campaigns, audiences, reports, segments"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Vendor MCP only searches docs (verified); community server damientilman/mailchimp-mcp-server has about 25 stars and 227 tools. API key flow and OAuth app registration both documented.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "three pages unchecked (HTTP 308)",
+      "to": "confirmed",
+      "reason": "Pages redirect; with redirects followed all three quotes are on the page. Added a Free plan quote and the community repo description."
+    }
+  ]
+}

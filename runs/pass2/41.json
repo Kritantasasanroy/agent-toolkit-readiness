@@ -1,0 +1,69 @@
+{
+  "app_id": 41,
+  "app": "Shopify",
+  "category": "Ecommerce",
+  "summary": "Commerce platform for building and running online stores, with apps extending the merchant admin and storefront.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free dev stores and custom apps via Dev Dashboard; public multi-store apps need App Store registration and review.",
+  "api_styles": [
+    "graphql",
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://shopify.dev/docs/apps/build/devmcp",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Public distribution to many stores requires Shopify App Store approval; custom distribution is limited to a single store.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "quote": "Your app sends the token in the X-Shopify-Access-Token header on every GraphQL Admin API request."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "quote": "Authorization code grant , for apps that run outside the Shopify admin."
+    },
+    {
+      "field": "access",
+      "url": "https://shopify.dev/docs/apps/build/dev-dashboard",
+      "quote": "You own them, for building and testing without touching a live store."
+    },
+    {
+      "field": "access",
+      "url": "https://shopify.dev/docs/apps/launch/distribution",
+      "quote": "Public distribution also requires registering for the Shopify App Store, which has a one-time fee."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://shopify.dev/docs/api/admin-rest",
+      "quote": "The REST Admin API is a legacy API as of October 1, 2024."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://shopify.dev/docs/api/admin-rest",
+      "quote": "Starting April 1, 2025, all new public apps must be built exclusively with the GraphQL Admin API ."
+    },
+    {
+      "field": "mcp",
+      "url": "https://shopify.dev/docs/apps/build/devmcp",
+      "quote": "If you prefer MCP, you can connect to Shopify's developer resources through the Dev MCP server."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "MCP is Shopify Dev MCP (local, docs/dev tooling, no auth), not a store-operations server. REST Admin API is legacy; GraphQL is primary.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "quote missing (access, auth)",
+      "to": "replaced with quotes verified on raw page",
+      "reason": "Replaced unverifiable/ non-supporting quotes; added token-header and REST-legacy quotes."
+    }
+  ]
+}

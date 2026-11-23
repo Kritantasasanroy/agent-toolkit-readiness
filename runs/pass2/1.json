@@ -1,0 +1,76 @@
+{
+  "app_id": 1,
+  "app": "Salesforce",
+  "category": "CRM and Sales",
+  "summary": "Cloud CRM for managing leads, accounts, opportunities, and service cases, with a broad platform API.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Developer Edition orgs can use the hosted MCP servers; External Client Apps are required for OAuth and an admin must activate each server in Setup. developer.salesforce.com returns 403 to automated fetches, so REST/SOAP/GraphQL breadth and the free sign-up page could not be read directly.",
+  "api_styles": [
+    "rest",
+    "soap",
+    "graphql"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide",
+  "verdict": "build_with_caveat",
+  "blocker": "admin_install",
+  "blocker_note": "Each customer org admin must create an External Client App and activate the hosted MCP servers (disabled by default); Enterprise Edition or above (or Developer Edition) is required.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/FAQ.md",
+      "quote": "Connected Apps are a legacy construct and are not supported for MCP authentication."
+    },
+    {
+      "field": "access",
+      "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/Confirming-Availability.md",
+      "quote": "orgs can also use MCP servers."
+    },
+    {
+      "field": "access",
+      "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/FAQ.md",
+      "quote": "Servers are disabled by default"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/FAQ.md",
+      "quote": "If the user can't do it in the Lightning UI or via the REST API, they can't do it via MCP."
+    },
+    {
+      "field": "mcp",
+      "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/FAQ.md",
+      "quote": "The processing of the MCP server is completely deterministic."
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/forcedotcom/mcp-hosted",
+      "quote": "Salesforce’s hosted MCP servers allow AI assistants like Claude, ChatGPT, and more connect securely to your Salesforce logic and assets"
+    }
+  ],
+  "confidence": "low",
+  "notes": "developer.salesforce.com blocks automated fetches (HTTP 403), so evidence comes only from the vendor-owned forcedotcom GitHub wiki FAQ. Free Developer Edition, SOAP and GraphQL APIs, and Flex Credits billing are from search result snippets or general knowledge, not a fetched page. Hosted MCP guide URL is from search results.",
+  "review": [
+    {
+      "field": "access_note",
+      "from": "Free Developer Edition org and External Client Apps created in Setup (not verified from vendor docs: developer.salesforce.com returned 403 to automated fetches). Hosted MCP servers must be activated by an org admin.",
+      "to": "Developer Edition orgs can use the hosted MCP servers; External Client Apps are required for OAuth and an admin must activate each server in Setup. developer.salesforce.com returns 403 to automated fetches, so REST/SOAP/GraphQL breadth and the free sign-up page could not be read directly.",
+      "reason": "Removed unverified Flex Credits claim; cited the vendor wiki for Developer Edition."
+    },
+    {
+      "field": "blocker_note",
+      "from": "Each customer org admin must create an External Client App and enable the hosted MCP servers; hosted MCP is billed via Flex Credits per search snippets (unverified).",
+      "to": "Each customer org admin must create an External Client App and activate the hosted MCP servers (disabled by default); Enterprise Edition or above (or Developer Edition) is required.",
+      "reason": "Flex Credits billing claim was not supported by any page read; replaced with the edition and activation requirements from the vendor wiki."
+    },
+    {
+      "field": "confidence",
+      "from": "low",
+      "to": "low",
+      "reason": "Only the vendor GitHub wiki could be read; SOAP and GraphQL are not backed by a fetched page."
+    }
+  ]
+}

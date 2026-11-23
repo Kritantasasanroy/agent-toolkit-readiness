@@ -1,0 +1,43 @@
+{
+  "app_id": 20,
+  "app": "Gladly",
+  "category": "Support and Helpdesk",
+  "summary": "Customer service platform organized around people rather than tickets, for enterprise brands.",
+  "auth_methods": [
+    "basic"
+  ],
+  "access": "partner_gated",
+  "access_note": "No self-serve signup seen (Get a demo); API tokens are created by an admin for a user with the API User permission, used as HTTP Basic.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "none",
+  "verdict": "needs_outreach",
+  "blocker": "partner_program",
+  "blocker_note": "Only existing Gladly customers (enterprise sales) have an organization and tokens; no trial or sandbox signup found.",
+  "confidence": "medium",
+  "notes": "MCP none rests on a third-party report card (Aug 2026); StackOne and Truto offer hosted MCP wrappers but those are not vendor servers. A per-org sandbox at gladly.qa is mentioned by the same third-party page, availability to non-customers not confirmed.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.gladly.com/rest/",
+      "quote": "Gladly API uses token-based Basic Authentication ."
+    },
+    {
+      "field": "access",
+      "url": "https://www.gladly.com/",
+      "quote": "Get a demo"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.gladly.com/rest/",
+      "quote": "To create and use an API token, your user must have the API User permission."
+    },
+    {
+      "field": "mcp",
+      "url": "https://supergood.ai/api-report-card/gladly",
+      "quote": "No official or community MCP server was found for Gladly."
+    }
+  ]
+}

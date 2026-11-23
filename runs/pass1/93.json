@@ -1,0 +1,50 @@
+{
+  "app_id": 93,
+  "app": "Fathom",
+  "category": "AI, Research and Media-native",
+  "summary": "AI meeting recorder that transcribes and summarizes calls, with a REST API, webhooks and an MCP server.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Users generate an API key in User Settings; public OAuth apps for other users are subject to Fathom review.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://api.fathom.ai/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Distributing an OAuth app to other Fathom users is subject to review.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.fathom.ai/api-overview",
+      "quote": "All REST API resources are authenticated with API keys generated via the Fathom website's settings area."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.fathom.ai/quickstart",
+      "quote": "Head to the API Access section of your User Settings and generate an API key."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.fathom.ai/api-overview",
+      "quote": "All REST API resources are authenticated with API keys generated via the Fathom website's settings area."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.fathom.ai/mcp-docs/claude",
+      "quote": "claude mcp add fathom -- npx mcp-remote@latest https://api.fathom.ai/mcp"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developers.fathom.ai/oauth",
+      "quote": "subject to review to ensure the best experience for all users"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Docs do not state which Fathom plans include API access. Resources: meetings, recordings summary/transcript, teams, team members, webhooks. MCP quote and URL from the Claude MCP page; sign-in method is an authorization prompt."
+}

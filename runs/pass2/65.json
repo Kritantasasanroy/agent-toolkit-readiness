@@ -1,0 +1,56 @@
+{
+  "app_id": 65,
+  "app": "Supabase",
+  "category": "Developer, Infra and Data platforms",
+  "summary": "Hosted Postgres backend platform with auth, storage, realtime and edge functions.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Personal access tokens generated in the dashboard; OAuth2 apps for acting on behalf of users.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://mcp.supabase.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://supabase.com/docs/reference/api/introduction",
+      "quote": "PATs are tokens with a custom expiry that you manually generate to access the Management API."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://supabase.com/docs/reference/api/introduction",
+      "quote": "OAuth2 allows your application to generate tokens on behalf of a Supabase user"
+    },
+    {
+      "field": "access",
+      "url": "https://supabase.com/docs/reference/api/introduction",
+      "quote": "All API requests must be authenticated and made over HTTPS."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://supabase.com/docs/reference/api/introduction",
+      "quote": "Manage your Supabase organizations and projects programmatically."
+    },
+    {
+      "field": "mcp",
+      "url": "https://supabase.com/docs/guides/getting-started/mcp",
+      "quote": "Remote MCP installation Choose your Supabase platform, project, and MCP client and follow the installation instructions"
+    },
+    {
+      "field": "access",
+      "url": "https://supabase.com/pricing",
+      "quote": "Free Perfect for passion projects & simple websites."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Management API covers orgs and projects; per-project data APIs (PostgREST, auth) use project keys and were not read. Free plan availability is inferred, not quoted. The MCP page contained an embedded instruction to file feedback; ignored.",
+  "review": []
+}

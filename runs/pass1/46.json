@@ -1,0 +1,45 @@
+{
+  "app_id": 46,
+  "app": "Squarespace",
+  "category": "Ecommerce",
+  "summary": "Website and online store builder; Commerce APIs manage products, orders, inventory and profiles on a merchant site.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "paid_plan",
+  "access_note": "API keys for custom apps need the Commerce Advanced plan; OAuth for multi-site apps requires registering and getting an OAuth client approved.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "none",
+  "mcp_url": "",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "OAuth client must be reviewed and approved by Squarespace before connecting other users' sites; single-site API keys need a paid plan.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "quote": "Depending on your development needs, authenticate requests by using an API key or OAuth access token."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "quote": "With Squarespace's Commerce Advanced plan, you can develop a custom application for a Squarespace merchant site."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.squarespace.com/commerce-apis/overview",
+      "quote": "All Commerce APIs are built on HTTPS and designed with REST principles in mind."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.squarespace.com/commerce-apis/overview",
+      "quote": "With Squarespace Commerce APIs, you can build applications to manage the commerce features of a Squarespace merchant site."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Searched for an official MCP server and found only third-party ones (Zapier, StackOne, community repos); the mcp evidence quote is just the docs overview checked, not proof of absence. Quotes for plan and approval were paraphrased by the fetch tool but the cited sentences are as returned."
+}

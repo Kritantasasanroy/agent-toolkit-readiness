@@ -1,0 +1,45 @@
+{
+  "app_id": 15,
+  "app": "Pylon",
+  "category": "Support and Helpdesk",
+  "summary": "B2B support platform that unifies Slack, email and chat support with account intelligence.",
+  "auth_methods": [
+    "bearer_token",
+    "oauth2"
+  ],
+  "access": "partner_gated",
+  "access_note": "API tokens are created by workspace Admins in the Pylon dashboard; no self-serve signup, trials are arranged through sales.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.usepylon.com",
+  "verdict": "needs_outreach",
+  "blocker": "partner_program",
+  "blocker_note": "No self-serve account; Pylon trials are set up via a sales representative.",
+  "confidence": "high",
+  "notes": "MCP docs say OAuth 2.0 or an API token; support article describes OAuth. Only Admin users can create API tokens.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+      "quote": "The Pylon API uses Bearer authentication."
+    },
+    {
+      "field": "access",
+      "url": "https://www.usepylon.com/pricing",
+      "quote": "Pylon offers free trials for prospects. Your sales representative will work with you on setting up the demo organization."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "quote": "Pylon’s API can be used to programmatically access and take action on data within Pylon."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.usepylon.com/pylon-docs/integrations/mcp",
+      "quote": "Server URL (US): https://mcp.usepylon.com"
+    }
+  ]
+}

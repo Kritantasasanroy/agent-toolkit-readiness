@@ -1,0 +1,44 @@
+{
+  "app_id": 40,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "SendGrid",
+  "summary": "Twilio's transactional and marketing email delivery service.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_trial",
+  "access_note": "Free plans retired in 2025; new accounts get a 60-day trial, then a paid plan is needed to keep sending.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://www.twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Users need a paid plan (or active trial) to send email.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+      "quote": "The Twilio SendGrid Web API v3 supports API keys, which add an additional layer of security to your account."
+    },
+    {
+      "field": "access",
+      "url": "https://www.twilio.com/en-us/changelog/sendgrid-free-plan",
+      "quote": "After that, an upgrade to a paid plan will be required to continue sending email and accessing key tools."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+      "quote": "To use an API key, include an `Authorization` header with the value `Bearer <YOUR_API_KEY_HERE>` in your request."
+    },
+    {
+      "field": "mcp",
+      "url": "https://www.twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows",
+      "quote": "Your server now lets models like Claude send personalized emails and manage contacts through SendGrid's API."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "No official SendGrid MCP found; the cited MCP is a Twilio blog tutorial for building one, with community servers on registries. REST inferred (v3 Web API over HTTP Bearer). 60-day trial detail comes from a search result, not a fetched page."
+}

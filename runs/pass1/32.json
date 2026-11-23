@@ -1,0 +1,45 @@
+{
+  "app_id": 32,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "Meta Ads",
+  "summary": "Meta's Marketing API for creating, managing and reporting on ads across Facebook and Instagram.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Create a Meta business app; Standard access works for your own ad accounts, Advanced access needs App Review to manage others' accounts.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.facebook.com/ads",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Managing other users' ad accounts requires Advanced access via App Review (and business verification).",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.facebook.com/blog/post/2026/07/16/meta-ads-mcp-server/",
+      "quote": "or pass a pre-obtained access token if you manage your own token lifecycle."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+      "quote": "Advanced access must be approved through the App Review process on an individual permission and feature basis."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.facebook.com/docs/graph-api/overview",
+      "quote": "It's an HTTP-based API that apps can use to programmatically query data."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+      "quote": "The ads MCP server is a Meta-hosted Model Context Protocol server that lets you manage Meta ads directly from an AI agent."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Marketing API is Graph API based (HTTP). OAuth inferred from MCP blog (Facebook Login for Business) rather than a dedicated auth page; tier names reportedly renamed to Limited/Full Access."
+}

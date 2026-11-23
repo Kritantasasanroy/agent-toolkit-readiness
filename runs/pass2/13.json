@@ -1,0 +1,73 @@
+{
+  "app_id": 13,
+  "app": "Freshdesk",
+  "category": "Support and Helpdesk",
+  "summary": "Helpdesk and ticketing software from Freshworks for email, chat, phone and social support.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_trial",
+  "access_note": "API key from profile settings, sent as HTTP Basic (key as username, X as password). Free trial only; MCP needs Growth plan or above.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://<subdomain>.freshdesk.com/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Trial only; official MCP is gated to Growth/Pro/Enterprise with monthly action allowances.",
+  "confidence": "medium",
+  "notes": "MCP endpoint pattern and plan limits (Growth 1,200 actions/yr) read directly from the Freshworks partner-support article. OAuth for the REST API is inferred from per-endpoint OAuth scopes in the API reference; the OAuth app setup flow was not read, so oauth2 is listed second.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.freshdesk.com/api/",
+      "quote": "Your API key will be available below the change password section to your right"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.freshdesk.com/api/",
+      "quote": "curl -v -u abcdefghij1234567890:X -H \"Content-Type: application/json\" -X GET 'https://domain.freshdesk.com/api/v2/tickets'"
+    },
+    {
+      "field": "mcp",
+      "url": "https://partnersupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+      "quote": "Currently, Freshdesk allows you to authenticate requests involved in MCP integration by using an API key only."
+    },
+    {
+      "field": "mcp",
+      "url": "https://partnersupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+      "quote": "Starting September 10, 2026 , the Freshworks MCP integration is generally available."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developers.freshdesk.com/api/",
+      "quote": "Create a Ticket post /api/v2/tickets OAuth 2.0 Scope 1 freshdesk.tickets.create"
+    },
+    {
+      "field": "access",
+      "url": "https://www.freshworks.com/freshdesk/pricing/",
+      "quote": "How does the 14-day free trial work? When you sign up, you instantly get access to our Enterprise plan for 14 days."
+    },
+    {
+      "field": "mcp",
+      "url": "https://partnersupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+      "quote": "Ensure to use your Freshdesk base domain in the following format: https://<subdomain>.freshdesk.com/mcp"
+    }
+  ],
+  "review": [
+    {
+      "field": "auth_methods",
+      "from": [
+        "api_key"
+      ],
+      "to": [
+        "api_key",
+        "oauth2"
+      ],
+      "reason": "API reference shows an OAuth 2.0 scope on each endpoint (e.g. freshdesk.tickets.create), so OAuth exists beside the API key; MCP is API-key only."
+    }
+  ]
+}

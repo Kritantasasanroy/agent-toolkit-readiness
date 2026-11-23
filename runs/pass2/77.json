@@ -1,0 +1,58 @@
+{
+  "app_id": 77,
+  "app": "ClickUp",
+  "category": "Productivity and Project Management",
+  "summary": "Project management platform for tasks, docs, goals and team collaboration.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Personal API token for own use; OAuth apps require workspace owner or admin to create.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.clickup.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.clickup.com/docs/authentication",
+      "quote": "Use a personal API token for individual or testing purposes."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developer.clickup.com/docs/authentication",
+      "quote": "To allow others to use your app, implement the OAuth2 flow so each user has their own token"
+    },
+    {
+      "field": "access",
+      "url": "https://developer.clickup.com/docs/rate-limits",
+      "quote": "FreeForever 100 Unlimited 100 Business 100"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.clickup.com/reference/gettasks",
+      "quote": "View the tasks in a List. Responses are limited to 100 tasks per page."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+      "quote": "Our MCP server URL is https://mcp.clickup.com/mcp"
+    }
+  ],
+  "confidence": "high",
+  "notes": "REST inferred from /api/v2 paths and endpoint pages; no page uses the word REST. MCP stated available on all plans. OAuth apps can only be created by workspace owners or admins; personal tokens are self-serve.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "access, api_styles, mcp quotes",
+      "to": "verbatim quotes",
+      "reason": "Old access quote was about OAuth app creation, not plan access; the others were not on the pages."
+    }
+  ]
+}

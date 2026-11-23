@@ -1,0 +1,58 @@
+{
+  "app_id": 74,
+  "app": "Jira",
+  "category": "Productivity and Project Management",
+  "summary": "Issue and project tracking software from Atlassian for software and business teams.",
+  "auth_methods": [
+    "oauth2",
+    "basic"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free Jira Cloud site; API tokens via basic auth, OAuth 2.0 (3LO) apps created in the developer console.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.atlassian.com/v2/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+      "quote": "OAuth 2.0 (3LO) allows external applications and services to access Atlassian product APIs on a user's behalf."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+      "quote": "Basic auth requires API tokens."
+    },
+    {
+      "field": "access",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+      "quote": "You generate an API token for your Atlassian account and use it to authenticate anywhere where you would have used a password."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "quote": "The Jira REST API enables you to interact with Jira programmatically."
+    },
+    {
+      "field": "mcp",
+      "url": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/",
+      "quote": "claude mcp add --transport http atlassian https://mcp.atlassian.com/v2/mcp"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Free Jira plan and 3LO distribution to other sites not confirmed from a plain-text page (Jira pricing page is JavaScript-only). Atlassian API tokens and 3LO apps are self-serve; sharing is enabled by a toggle in the Developer console.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "access quote ('private by default')",
+      "to": "API token quote",
+      "reason": "Old quote showed a restriction, not a self-serve path; confidence set to medium because a free Jira plan page could not be read."
+    }
+  ]
+}

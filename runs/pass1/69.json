@@ -1,0 +1,50 @@
+{
+  "app_id": 69,
+  "app": "Datadog",
+  "category": "Developer, Infra and Data platforms",
+  "summary": "Observability and security platform for monitoring metrics, logs, traces and incidents.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_trial",
+  "access_note": "API key plus application key from org settings; account needed (trial/paid plan assumed, not verified).",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.datadoghq.com/v1/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Datadog is a paid product; no free tier or trial terms were confirmed in fetched docs.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.datadoghq.com/api/latest/",
+      "quote": "Authenticate to the API with an API key using the header `DD-API-KEY`."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.datadoghq.com/mcp_server/setup/",
+      "quote": "For most users, OAuth 2.0 is the recommended authentication method, and your MCP client handles it during setup."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+      "quote": "If you have the permission to create application keys, click New Key."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.datadoghq.com/api/latest/",
+      "quote": "The Datadog API is an HTTP REST API."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.datadoghq.com/bits_ai/mcp_server/",
+      "quote": "The Datadog MCP Server acts as a bridge between your observability data in Datadog and any AI agents"
+    }
+  ],
+  "confidence": "low",
+  "notes": "Access and trial status not confirmed from any pricing page; verdict leans on general knowledge that Datadog needs a paid plan or trial. MCP URL is region-specific (US1 shown); US1-FED/US2-FED unsupported. The MCP page says it is under significant development."
+}

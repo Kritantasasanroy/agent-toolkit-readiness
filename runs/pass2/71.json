@@ -1,0 +1,70 @@
+{
+  "app_id": 71,
+  "app": "Notion",
+  "category": "Productivity and Project Management",
+  "summary": "Connected workspace for notes, docs, wikis and databases.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free workspace; internal connections need a workspace owner, public OAuth integrations are created in the developer portal.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.notion.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.notion.com/docs/authorization",
+      "quote": "Internal connections use a static credential called an internal connection API token"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developers.notion.com/docs/authorization",
+      "quote": "OAuth integrations follow the OAuth 2.0 protocol to authorize a connection to interact with a workspace"
+    },
+    {
+      "field": "access",
+      "url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+      "quote": "Free Workspace owners only. Not configurable."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.notion.com/reference/intro",
+      "quote": "Send requests over HTTPS to https://api.notion.com"
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+      "quote": "The remote server URL is https://mcp.notion.com/mcp"
+    }
+  ],
+  "confidence": "high",
+  "notes": "Free workspaces: workspace owners can create personal access tokens and connections (PAT policy table). Quotes re-checked against raw page text.",
+  "review": [
+    {
+      "field": "auth_methods",
+      "from": "[oauth2, bearer_token]",
+      "to": "[oauth2, api_key]",
+      "reason": "Internal connection tokens and PATs are static tokens the user generates in the Developer portal, which the brief defines as api_key."
+    },
+    {
+      "field": "evidence",
+      "from": "quote not found on page",
+      "to": "replaced with verbatim text",
+      "reason": "Replaced quotes that were not word for word on the fetched page (punctuation, truncation or wrong page)."
+    },
+    {
+      "field": "access",
+      "from": "(quote: workspace owner required)",
+      "to": "(quote: Free plan PAT policy row)",
+      "reason": "Old quote did not show a free path; the PAT page lists the Free plan."
+    }
+  ]
+}

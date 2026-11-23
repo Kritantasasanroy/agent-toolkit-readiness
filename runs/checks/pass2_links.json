@@ -1,0 +1,4844 @@
+[
+ {
+  "app_id": 1,
+  "app": "Salesforce",
+  "field": "auth_methods",
+  "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/FAQ.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 1,
+  "app": "Salesforce",
+  "field": "access",
+  "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/Confirming-Availability.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 1,
+  "app": "Salesforce",
+  "field": "access",
+  "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/FAQ.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 1,
+  "app": "Salesforce",
+  "field": "api_styles",
+  "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/FAQ.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 1,
+  "app": "Salesforce",
+  "field": "mcp",
+  "url": "https://raw.githubusercontent.com/wiki/forcedotcom/mcp-hosted/FAQ.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 1,
+  "app": "Salesforce",
+  "field": "mcp",
+  "url": "https://github.com/forcedotcom/mcp-hosted",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 2,
+  "app": "HubSpot",
+  "field": "auth_methods",
+  "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 2,
+  "app": "HubSpot",
+  "field": "access",
+  "url": "https://developers.hubspot.com/docs/getting-started/account-types.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 2,
+  "app": "HubSpot",
+  "field": "api_styles",
+  "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/overview.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 2,
+  "app": "HubSpot",
+  "field": "mcp",
+  "url": "https://developers.hubspot.com/docs/build-with-ai/remote-mcp-server.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 3,
+  "app": "Pipedrive",
+  "field": "auth_methods",
+  "url": "https://pipedrive.readme.io/docs/getting-started",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 3,
+  "app": "Pipedrive",
+  "field": "access",
+  "url": "https://pipedrive.readme.io/docs/getting-started",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 3,
+  "app": "Pipedrive",
+  "field": "api_styles",
+  "url": "https://pipedrive.readme.io/docs/getting-started",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 3,
+  "app": "Pipedrive",
+  "field": "mcp",
+  "url": "https://support.pipedrive.com/en/article/mcp-tools",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 4,
+  "app": "Attio",
+  "field": "auth_methods",
+  "url": "https://docs.attio.com/rest-api/guides/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 4,
+  "app": "Attio",
+  "field": "auth_methods",
+  "url": "https://docs.attio.com/rest-api/guides/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 4,
+  "app": "Attio",
+  "field": "access",
+  "url": "https://attio.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 4,
+  "app": "Attio",
+  "field": "access",
+  "url": "https://docs.attio.com/rest-api/guides/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 4,
+  "app": "Attio",
+  "field": "api_styles",
+  "url": "https://docs.attio.com/rest-api/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 4,
+  "app": "Attio",
+  "field": "mcp",
+  "url": "https://docs.attio.com/mcp/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 4,
+  "app": "Attio",
+  "field": "mcp",
+  "url": "https://docs.attio.com/mcp/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 5,
+  "app": "Twenty",
+  "field": "auth_methods",
+  "url": "https://docs.twenty.com/developers/extend/api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 5,
+  "app": "Twenty",
+  "field": "auth_methods",
+  "url": "https://docs.twenty.com/developers/extend/api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 5,
+  "app": "Twenty",
+  "field": "access",
+  "url": "https://github.com/twentyhq/twenty",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 5,
+  "app": "Twenty",
+  "field": "access",
+  "url": "https://twenty.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 5,
+  "app": "Twenty",
+  "field": "api_styles",
+  "url": "https://docs.twenty.com/developers/extend/api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 5,
+  "app": "Twenty",
+  "field": "mcp",
+  "url": "https://docs.twenty.com/developers/extend/mcp",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 6,
+  "app": "Podio",
+  "field": "auth_methods",
+  "url": "https://developers.podio.com/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 6,
+  "app": "Podio",
+  "field": "auth_methods",
+  "url": "https://developers.podio.com/api-key",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 6,
+  "app": "Podio",
+  "field": "access",
+  "url": "https://developers.podio.com/api-key",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 6,
+  "app": "Podio",
+  "field": "access",
+  "url": "https://www.progress.com/podio/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 6,
+  "app": "Podio",
+  "field": "api_styles",
+  "url": "https://developers.podio.com/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 6,
+  "app": "Podio",
+  "field": "mcp",
+  "url": "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 7,
+  "app": "Zoho CRM",
+  "field": "auth_methods",
+  "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 7,
+  "app": "Zoho CRM",
+  "field": "access",
+  "url": "https://www.zoho.com/crm/pricing/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 7,
+  "app": "Zoho CRM",
+  "field": "access",
+  "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 7,
+  "app": "Zoho CRM",
+  "field": "access",
+  "url": "https://www.zoho.com/accounts/protocol/oauth/self-client/overview.html",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 7,
+  "app": "Zoho CRM",
+  "field": "api_styles",
+  "url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 7,
+  "app": "Zoho CRM",
+  "field": "mcp",
+  "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 8,
+  "app": "Close",
+  "field": "auth_methods",
+  "url": "https://developer.close.com/api/overview/api-key-authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 8,
+  "app": "Close",
+  "field": "auth_methods",
+  "url": "https://developer.close.com/api/overview/api-key-authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 8,
+  "app": "Close",
+  "field": "access",
+  "url": "https://www.close.com/pricing",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 8,
+  "app": "Close",
+  "field": "api_styles",
+  "url": "https://developer.close.com/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 8,
+  "app": "Close",
+  "field": "mcp",
+  "url": "https://developer.close.com/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 9,
+  "app": "Copper",
+  "field": "auth_methods",
+  "url": "https://developer.copper.com/introduction/authentication.html",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 9,
+  "app": "Copper",
+  "field": "access",
+  "url": "https://www.copper.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 9,
+  "app": "Copper",
+  "field": "access",
+  "url": "https://developer.copper.com/introduction/oauth/index.html",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 9,
+  "app": "Copper",
+  "field": "api_styles",
+  "url": "https://developer.copper.com/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 9,
+  "app": "Copper",
+  "field": "mcp",
+  "url": "https://www.copper.com/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 10,
+  "app": "DealCloud",
+  "field": "auth_methods",
+  "url": "https://api.docs.dealcloud.com/docs/token",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 10,
+  "app": "DealCloud",
+  "field": "auth_methods",
+  "url": "https://api.docs.dealcloud.com/docs/apikeys",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 10,
+  "app": "DealCloud",
+  "field": "access",
+  "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 10,
+  "app": "DealCloud",
+  "field": "access",
+  "url": "https://api.docs.dealcloud.com/docs/apikeys",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 10,
+  "app": "DealCloud",
+  "field": "api_styles",
+  "url": "https://api.docs.dealcloud.com/docs/token",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 10,
+  "app": "DealCloud",
+  "field": "mcp",
+  "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 11,
+  "app": "Zendesk",
+  "field": "auth_methods",
+  "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 11,
+  "app": "Zendesk",
+  "field": "auth_methods",
+  "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 11,
+  "app": "Zendesk",
+  "field": "access",
+  "url": "https://developer.zendesk.com/documentation/developer-tools/getting-started/getting-a-trial-or-sponsored-account-for-development/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 11,
+  "app": "Zendesk",
+  "field": "api_styles",
+  "url": "https://developer.zendesk.com/documentation/ticketing/getting-started/zendesk-api-quick-start/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 11,
+  "app": "Zendesk",
+  "field": "mcp",
+  "url": "https://raw.githubusercontent.com/reminia/zendesk-mcp-server/main/README.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 11,
+  "app": "Zendesk",
+  "field": "mcp",
+  "url": "https://tldv.io/blog/zendesk-mcp/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 11,
+  "app": "Zendesk",
+  "field": "api_styles",
+  "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 12,
+  "app": "Intercom",
+  "field": "auth_methods",
+  "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 12,
+  "app": "Intercom",
+  "field": "auth_methods",
+  "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 12,
+  "app": "Intercom",
+  "field": "mcp",
+  "url": "https://developers.intercom.com/docs/guides/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 12,
+  "app": "Intercom",
+  "field": "access",
+  "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 12,
+  "app": "Intercom",
+  "field": "api_styles",
+  "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 12,
+  "app": "Intercom",
+  "field": "mcp",
+  "url": "https://developers.intercom.com/docs/guides/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 13,
+  "app": "Freshdesk",
+  "field": "auth_methods",
+  "url": "https://developers.freshdesk.com/api/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 13,
+  "app": "Freshdesk",
+  "field": "api_styles",
+  "url": "https://developers.freshdesk.com/api/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 13,
+  "app": "Freshdesk",
+  "field": "mcp",
+  "url": "https://partnersupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 13,
+  "app": "Freshdesk",
+  "field": "mcp",
+  "url": "https://partnersupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 13,
+  "app": "Freshdesk",
+  "field": "auth_methods",
+  "url": "https://developers.freshdesk.com/api/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 13,
+  "app": "Freshdesk",
+  "field": "access",
+  "url": "https://www.freshworks.com/freshdesk/pricing/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 13,
+  "app": "Freshdesk",
+  "field": "mcp",
+  "url": "https://partnersupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 14,
+  "app": "Front",
+  "field": "auth_methods",
+  "url": "https://dev.frontapp.com/docs/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 14,
+  "app": "Front",
+  "field": "access",
+  "url": "https://front.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 14,
+  "app": "Front",
+  "field": "api_styles",
+  "url": "https://dev.frontapp.com/docs/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 14,
+  "app": "Front",
+  "field": "mcp",
+  "url": "https://dev.frontapp.com/docs/mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 15,
+  "app": "Pylon",
+  "field": "auth_methods",
+  "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 15,
+  "app": "Pylon",
+  "field": "access",
+  "url": "https://www.usepylon.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 15,
+  "app": "Pylon",
+  "field": "api_styles",
+  "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 15,
+  "app": "Pylon",
+  "field": "mcp",
+  "url": "https://docs.usepylon.com/pylon-docs/integrations/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 16,
+  "app": "LiveAgent",
+  "field": "auth_methods",
+  "url": "https://support.liveagent.com/741982-API-key",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 16,
+  "app": "LiveAgent",
+  "field": "access",
+  "url": "https://www.liveagent.com/pricing/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 16,
+  "app": "LiveAgent",
+  "field": "api_styles",
+  "url": "https://support.liveagent.com/567924-Documentation",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 16,
+  "app": "LiveAgent",
+  "field": "mcp",
+  "url": "https://support.liveagent.com/647358-MCP-Integration-for-Agents",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 16,
+  "app": "LiveAgent",
+  "field": "mcp",
+  "url": "https://www.liveagent.com/pricing/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 17,
+  "app": "Plain",
+  "field": "auth_methods",
+  "url": "https://www.plain.com/docs/graphql/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 17,
+  "app": "Plain",
+  "field": "auth_methods",
+  "url": "https://www.plain.com/docs/graphql/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 17,
+  "app": "Plain",
+  "field": "access",
+  "url": "https://www.plain.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 17,
+  "app": "Plain",
+  "field": "mcp",
+  "url": "https://plain.com/docs/agents/mcp-server",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 17,
+  "app": "Plain",
+  "field": "api_styles",
+  "url": "https://www.plain.com/docs/graphql/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 17,
+  "app": "Plain",
+  "field": "auth_methods",
+  "url": "https://plain.com/docs/graphql/authentication",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 18,
+  "app": "Help Scout",
+  "field": "access",
+  "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 18,
+  "app": "Help Scout",
+  "field": "mcp",
+  "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 18,
+  "app": "Help Scout",
+  "field": "access",
+  "url": "https://www.helpscout.com/pricing/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 18,
+  "app": "Help Scout",
+  "field": "auth_methods",
+  "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 18,
+  "app": "Help Scout",
+  "field": "api_styles",
+  "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 18,
+  "app": "Help Scout",
+  "field": "mcp",
+  "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 19,
+  "app": "Gorgias",
+  "field": "auth_methods",
+  "url": "https://developers.gorgias.com/reference/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 19,
+  "app": "Gorgias",
+  "field": "access",
+  "url": "https://www.gorgias.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 19,
+  "app": "Gorgias",
+  "field": "api_styles",
+  "url": "https://developers.gorgias.com/reference/introduction",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 19,
+  "app": "Gorgias",
+  "field": "mcp",
+  "url": "https://updates.gorgias.com/publications/gorgias-mcp-is-now-in-open-beta",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 19,
+  "app": "Gorgias",
+  "field": "mcp",
+  "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-gorgias-6310546",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "field": "access",
+  "url": "https://www.gladly.com/",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "field": "api_styles",
+  "url": "https://developer.gladly.com/rest/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "field": "mcp",
+  "url": "https://registry.modelcontextprotocol.io/v0/servers?search=gladly",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "field": "auth_methods",
+  "url": "https://developer.gladly.com/rest/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 21,
+  "app": "Slack",
+  "field": "auth_methods",
+  "url": "https://docs.slack.dev/authentication/installing-with-oauth",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 21,
+  "app": "Slack",
+  "field": "auth_methods",
+  "url": "https://docs.slack.dev/authentication/tokens",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 21,
+  "app": "Slack",
+  "field": "access",
+  "url": "https://docs.slack.dev/authentication/installing-with-oauth",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 21,
+  "app": "Slack",
+  "field": "access",
+  "url": "https://docs.slack.dev/distribution/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 21,
+  "app": "Slack",
+  "field": "api_styles",
+  "url": "https://docs.slack.dev/apis/web-api/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 21,
+  "app": "Slack",
+  "field": "mcp",
+  "url": "https://docs.slack.dev/ai/mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 22,
+  "app": "Twilio",
+  "field": "auth_methods",
+  "url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 22,
+  "app": "Twilio",
+  "field": "access",
+  "url": "https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 22,
+  "app": "Twilio",
+  "field": "api_styles",
+  "url": "https://www.twilio.com/docs/usage/api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 22,
+  "app": "Twilio",
+  "field": "mcp",
+  "url": "https://www.twilio.com/docs/mcp",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 23,
+  "app": "Zoho Cliq",
+  "field": "auth_methods",
+  "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 23,
+  "app": "Zoho Cliq",
+  "field": "access",
+  "url": "https://www.zoho.com/cliq/pricing.html",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 23,
+  "app": "Zoho Cliq",
+  "field": "access",
+  "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 23,
+  "app": "Zoho Cliq",
+  "field": "api_styles",
+  "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 23,
+  "app": "Zoho Cliq",
+  "field": "mcp",
+  "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 24,
+  "app": "Lark (Larksuite)",
+  "field": "auth_methods",
+  "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 24,
+  "app": "Lark (Larksuite)",
+  "field": "auth_methods",
+  "url": "https://open.larksuite.com/llms.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 24,
+  "app": "Lark (Larksuite)",
+  "field": "access",
+  "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 24,
+  "app": "Lark (Larksuite)",
+  "field": "api_styles",
+  "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 24,
+  "app": "Lark (Larksuite)",
+  "field": "mcp",
+  "url": "https://github.com/larksuite/lark-openapi-mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 25,
+  "app": "Pumble",
+  "field": "auth_methods",
+  "url": "https://pumble.com/help/integrations/add-pumble-apps-to-your-workspace/api-keys/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 25,
+  "app": "Pumble",
+  "field": "auth_methods",
+  "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 25,
+  "app": "Pumble",
+  "field": "access",
+  "url": "https://pumble.com/help/integrations/add-pumble-apps-to-your-workspace/api-keys/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 25,
+  "app": "Pumble",
+  "field": "api_styles",
+  "url": "https://pumble.com/help/integrations/add-pumble-apps-to-your-workspace/api-keys/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 25,
+  "app": "Pumble",
+  "field": "mcp",
+  "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 26,
+  "app": "Discord",
+  "field": "auth_methods",
+  "url": "https://docs.discord.com/developers/topics/oauth2",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 26,
+  "app": "Discord",
+  "field": "auth_methods",
+  "url": "https://docs.discord.com/developers/topics/oauth2",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 26,
+  "app": "Discord",
+  "field": "access",
+  "url": "https://docs.discord.com/developers/reference",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 26,
+  "app": "Discord",
+  "field": "api_styles",
+  "url": "https://docs.discord.com/developers/reference",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 26,
+  "app": "Discord",
+  "field": "api_styles",
+  "url": "https://docs.discord.com/developers/topics/oauth2",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 26,
+  "app": "Discord",
+  "field": "mcp",
+  "url": "https://github.com/SaseQ/discord-mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 27,
+  "app": "Telegram",
+  "field": "auth_methods",
+  "url": "https://core.telegram.org/bots/api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 27,
+  "app": "Telegram",
+  "field": "access",
+  "url": "https://core.telegram.org/bots/api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 27,
+  "app": "Telegram",
+  "field": "api_styles",
+  "url": "https://core.telegram.org/bots/api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 27,
+  "app": "Telegram",
+  "field": "mcp",
+  "url": "https://github.com/guangxiangdebizi/telegram-mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 28,
+  "app": "WhatsApp Business",
+  "field": "auth_methods",
+  "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 28,
+  "app": "WhatsApp Business",
+  "field": "auth_methods",
+  "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 28,
+  "app": "WhatsApp Business",
+  "field": "access",
+  "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 28,
+  "app": "WhatsApp Business",
+  "field": "api_styles",
+  "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 28,
+  "app": "WhatsApp Business",
+  "field": "mcp",
+  "url": "https://developers.facebook.com/documentation/mcp/whatsapp-business-tools-mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 28,
+  "app": "WhatsApp Business",
+  "field": "mcp",
+  "url": "https://developers.facebook.com/blog/post/2026/09/15/whatsapp-business-messaging-mcp-ai-agent/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 29,
+  "app": "Aircall",
+  "field": "auth_methods",
+  "url": "https://developers.aircall.io/api-references",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 29,
+  "app": "Aircall",
+  "field": "access",
+  "url": "https://developers.aircall.io/api-references",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 29,
+  "app": "Aircall",
+  "field": "access",
+  "url": "https://aircall.io/pricing/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 29,
+  "app": "Aircall",
+  "field": "api_styles",
+  "url": "https://developers.aircall.io/api-references",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 29,
+  "app": "Aircall",
+  "field": "mcp",
+  "url": "https://developer.aircall.io/docs/mcp-faqs.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 29,
+  "app": "Aircall",
+  "field": "mcp",
+  "url": "https://github.com/themobilefirstco/aircall-mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 30,
+  "app": "Vonage",
+  "field": "auth_methods",
+  "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 30,
+  "app": "Vonage",
+  "field": "auth_methods",
+  "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 30,
+  "app": "Vonage",
+  "field": "access",
+  "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 30,
+  "app": "Vonage",
+  "field": "access",
+  "url": "https://developer.vonage.com/en/getting-started/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 30,
+  "app": "Vonage",
+  "field": "api_styles",
+  "url": "https://developer.vonage.com/llms.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 30,
+  "app": "Vonage",
+  "field": "mcp",
+  "url": "https://developer.vonage.com/en/mcp-server/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 31,
+  "app": "Google Ads",
+  "field": "auth_methods",
+  "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 31,
+  "app": "Google Ads",
+  "field": "access",
+  "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 31,
+  "app": "Google Ads",
+  "field": "api_styles",
+  "url": "https://developers.google.com/google-ads/api/rest/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 31,
+  "app": "Google Ads",
+  "field": "mcp",
+  "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 31,
+  "app": "Google Ads",
+  "field": "access",
+  "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 32,
+  "app": "Meta Ads",
+  "field": "auth_methods",
+  "url": "https://developers.facebook.com/blog/post/2026/07/16/meta-ads-mcp-server/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 32,
+  "app": "Meta Ads",
+  "field": "access",
+  "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 32,
+  "app": "Meta Ads",
+  "field": "access",
+  "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 32,
+  "app": "Meta Ads",
+  "field": "api_styles",
+  "url": "https://developers.facebook.com/docs/graph-api/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 32,
+  "app": "Meta Ads",
+  "field": "mcp",
+  "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 33,
+  "app": "LinkedIn Ads",
+  "field": "auth_methods",
+  "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 33,
+  "app": "LinkedIn Ads",
+  "field": "auth_methods",
+  "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 33,
+  "app": "LinkedIn Ads",
+  "field": "access",
+  "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 33,
+  "app": "LinkedIn Ads",
+  "field": "access",
+  "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 33,
+  "app": "LinkedIn Ads",
+  "field": "api_styles",
+  "url": "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/concepts/methods",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 33,
+  "app": "LinkedIn Ads",
+  "field": "mcp",
+  "url": "https://github.com/danielpopamd/linkedin-ads-mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 34,
+  "app": "GoHighLevel",
+  "field": "auth_methods",
+  "url": "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 34,
+  "app": "GoHighLevel",
+  "field": "access",
+  "url": "https://www.gohighlevel.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 34,
+  "app": "GoHighLevel",
+  "field": "access",
+  "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 34,
+  "app": "GoHighLevel",
+  "field": "api_styles",
+  "url": "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 34,
+  "app": "GoHighLevel",
+  "field": "mcp",
+  "url": "https://marketplace.gohighlevel.com/docs/other/mcp.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 35,
+  "app": "Mailchimp",
+  "field": "auth_methods",
+  "url": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 35,
+  "app": "Mailchimp",
+  "field": "access",
+  "url": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 35,
+  "app": "Mailchimp",
+  "field": "access",
+  "url": "https://mailchimp.com/pricing/marketing/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 35,
+  "app": "Mailchimp",
+  "field": "api_styles",
+  "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 35,
+  "app": "Mailchimp",
+  "field": "mcp",
+  "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 35,
+  "app": "Mailchimp",
+  "field": "mcp",
+  "url": "https://github.com/damientilman/mailchimp-mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 36,
+  "app": "Klaviyo",
+  "field": "auth_methods",
+  "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 36,
+  "app": "Klaviyo",
+  "field": "access",
+  "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 36,
+  "app": "Klaviyo",
+  "field": "access",
+  "url": "https://www.klaviyo.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 36,
+  "app": "Klaviyo",
+  "field": "api_styles",
+  "url": "https://developers.klaviyo.com/en/reference/api_overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 36,
+  "app": "Klaviyo",
+  "field": "mcp",
+  "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 37,
+  "app": "systeme.io",
+  "field": "auth_methods",
+  "url": "https://developer.systeme.io/reference/api.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 37,
+  "app": "systeme.io",
+  "field": "access",
+  "url": "https://developer.systeme.io/reference/api.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 37,
+  "app": "systeme.io",
+  "field": "access",
+  "url": "https://systeme.io/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 37,
+  "app": "systeme.io",
+  "field": "api_styles",
+  "url": "https://developer.systeme.io/reference/api.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 37,
+  "app": "systeme.io",
+  "field": "mcp",
+  "url": "https://developer.systeme.io/docs/mcp-server.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "field": "auth_methods",
+  "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "field": "access",
+  "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "field": "api_styles",
+  "url": "https://github.com/pinterest/api-description",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "field": "mcp",
+  "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "field": "mcp",
+  "url": "https://github.com/collactivelabs/pinterest-mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 39,
+  "app": "Threads (Meta)",
+  "field": "auth_methods",
+  "url": "https://developers.facebook.com/docs/threads/get-started",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 39,
+  "app": "Threads (Meta)",
+  "field": "access",
+  "url": "https://developers.facebook.com/docs/threads/get-started",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 39,
+  "app": "Threads (Meta)",
+  "field": "access",
+  "url": "https://developers.facebook.com/docs/threads/get-started",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 39,
+  "app": "Threads (Meta)",
+  "field": "api_styles",
+  "url": "https://developers.facebook.com/docs/threads/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 39,
+  "app": "Threads (Meta)",
+  "field": "mcp",
+  "url": "https://github.com/quinnjr/threads-mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 40,
+  "app": "SendGrid",
+  "field": "auth_methods",
+  "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 40,
+  "app": "SendGrid",
+  "field": "access",
+  "url": "https://www.twilio.com/en-us/changelog/sendgrid-free-plan",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 40,
+  "app": "SendGrid",
+  "field": "access",
+  "url": "https://www.twilio.com/en-us/sendgrid/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 40,
+  "app": "SendGrid",
+  "field": "api_styles",
+  "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 40,
+  "app": "SendGrid",
+  "field": "mcp",
+  "url": "https://github.com/Garoth/sendgrid-mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 41,
+  "app": "Shopify",
+  "field": "auth_methods",
+  "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 41,
+  "app": "Shopify",
+  "field": "auth_methods",
+  "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 41,
+  "app": "Shopify",
+  "field": "access",
+  "url": "https://shopify.dev/docs/apps/build/dev-dashboard",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 41,
+  "app": "Shopify",
+  "field": "access",
+  "url": "https://shopify.dev/docs/apps/launch/distribution",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 41,
+  "app": "Shopify",
+  "field": "api_styles",
+  "url": "https://shopify.dev/docs/api/admin-rest",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 41,
+  "app": "Shopify",
+  "field": "api_styles",
+  "url": "https://shopify.dev/docs/api/admin-rest",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 41,
+  "app": "Shopify",
+  "field": "mcp",
+  "url": "https://shopify.dev/docs/apps/build/devmcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 42,
+  "app": "WooCommerce",
+  "field": "auth_methods",
+  "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 42,
+  "app": "WooCommerce",
+  "field": "auth_methods",
+  "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 42,
+  "app": "WooCommerce",
+  "field": "access",
+  "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 42,
+  "app": "WooCommerce",
+  "field": "access",
+  "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 42,
+  "app": "WooCommerce",
+  "field": "api_styles",
+  "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 42,
+  "app": "WooCommerce",
+  "field": "mcp",
+  "url": "https://developer.woocommerce.com/docs/features/mcp/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 43,
+  "app": "BigCommerce",
+  "field": "auth_methods",
+  "url": "https://docs.bigcommerce.com/docs/start/authentication",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 43,
+  "app": "BigCommerce",
+  "field": "auth_methods",
+  "url": "https://docs.bigcommerce.com/docs/start/authentication",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 43,
+  "app": "BigCommerce",
+  "field": "access",
+  "url": "https://docs.bigcommerce.com/docs/start/authentication",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 43,
+  "app": "BigCommerce",
+  "field": "access",
+  "url": "https://docs.bigcommerce.com/docs/start/about/sandboxes",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 43,
+  "app": "BigCommerce",
+  "field": "api_styles",
+  "url": "https://docs.bigcommerce.com/docs/start/authentication",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 43,
+  "app": "BigCommerce",
+  "field": "mcp",
+  "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 43,
+  "app": "BigCommerce",
+  "field": "mcp",
+  "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "field": "auth_methods",
+  "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "field": "auth_methods",
+  "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "field": "access",
+  "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "field": "api_styles",
+  "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "field": "mcp",
+  "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 45,
+  "app": "Magento (Adobe Commerce)",
+  "field": "auth_methods",
+  "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 45,
+  "app": "Magento (Adobe Commerce)",
+  "field": "auth_methods",
+  "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 45,
+  "app": "Magento (Adobe Commerce)",
+  "field": "access",
+  "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 45,
+  "app": "Magento (Adobe Commerce)",
+  "field": "access",
+  "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 45,
+  "app": "Magento (Adobe Commerce)",
+  "field": "api_styles",
+  "url": "https://developer.adobe.com/commerce/webapi/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 45,
+  "app": "Magento (Adobe Commerce)",
+  "field": "mcp",
+  "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/tools-overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "field": "auth_methods",
+  "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "field": "access",
+  "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "field": "access",
+  "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "field": "api_styles",
+  "url": "https://developers.squarespace.com/commerce-apis/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "field": "mcp",
+  "url": "https://developers.squarespace.com/mcp/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "field": "mcp",
+  "url": "https://developers.squarespace.com/mcp/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "field": "auth_methods",
+  "url": "https://docs.ecwid.com/api-reference/rest-api/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "field": "auth_methods",
+  "url": "https://docs.ecwid.com/llms-full.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "field": "access",
+  "url": "https://docs.ecwid.com/llms-full.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "field": "access",
+  "url": "https://docs.ecwid.com/llms-full.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "field": "api_styles",
+  "url": "https://docs.ecwid.com/llms-full.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "field": "mcp",
+  "url": "https://zapier.com/mcp/ecwid",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 48,
+  "app": "Gumroad",
+  "field": "auth_methods",
+  "url": "https://gumroad.com/help/article/280-create-application-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 48,
+  "app": "Gumroad",
+  "field": "auth_methods",
+  "url": "https://gumroad.com/help/article/280-create-application-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 48,
+  "app": "Gumroad",
+  "field": "access",
+  "url": "https://gumroad.com/help/article/280-create-application-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 48,
+  "app": "Gumroad",
+  "field": "api_styles",
+  "url": "https://gumroad.com/help/article/280-create-application-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 48,
+  "app": "Gumroad",
+  "field": "mcp",
+  "url": "https://gumroad.com/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 49,
+  "app": "Amazon Selling Partner",
+  "field": "auth_methods",
+  "url": "https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 49,
+  "app": "Amazon Selling Partner",
+  "field": "auth_methods",
+  "url": "https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 49,
+  "app": "Amazon Selling Partner",
+  "field": "access",
+  "url": "https://developer-docs.amazon/sp-api/docs/sp-api-registration-overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 49,
+  "app": "Amazon Selling Partner",
+  "field": "access",
+  "url": "https://developer-docs.amazon/sp-api/docs/sp-api-registration-overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 49,
+  "app": "Amazon Selling Partner",
+  "field": "api_styles",
+  "url": "https://developer-docs.amazon/sp-api/llms.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 49,
+  "app": "Amazon Selling Partner",
+  "field": "mcp",
+  "url": "https://github.com/amzn/selling-partner-api-samples",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 50,
+  "app": "fanbasis",
+  "field": "auth_methods",
+  "url": "https://commas.com/enterprises",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 50,
+  "app": "fanbasis",
+  "field": "access",
+  "url": "https://commas.com/enterprises",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 50,
+  "app": "fanbasis",
+  "field": "api_styles",
+  "url": "https://commas.com/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 50,
+  "app": "fanbasis",
+  "field": "mcp",
+  "url": "https://commas.com/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 51,
+  "app": "DataForSEO",
+  "field": "auth_methods",
+  "url": "https://docs.dataforseo.com/v3/auth/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 51,
+  "app": "DataForSEO",
+  "field": "auth_methods",
+  "url": "https://docs.dataforseo.com/v3/auth/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 51,
+  "app": "DataForSEO",
+  "field": "access",
+  "url": "https://dataforseo.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 51,
+  "app": "DataForSEO",
+  "field": "access",
+  "url": "https://dataforseo.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 51,
+  "app": "DataForSEO",
+  "field": "api_styles",
+  "url": "https://docs.dataforseo.com/v3/auth/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 51,
+  "app": "DataForSEO",
+  "field": "mcp",
+  "url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 51,
+  "app": "DataForSEO",
+  "field": "mcp",
+  "url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 52,
+  "app": "SE Ranking",
+  "field": "auth_methods",
+  "url": "https://seranking.com/api/data/getting-started/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 52,
+  "app": "SE Ranking",
+  "field": "auth_methods",
+  "url": "https://seranking.com/api/data/getting-started/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 52,
+  "app": "SE Ranking",
+  "field": "access",
+  "url": "https://seranking.com/api/data/getting-started/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 52,
+  "app": "SE Ranking",
+  "field": "access",
+  "url": "https://seranking.com/api/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 52,
+  "app": "SE Ranking",
+  "field": "api_styles",
+  "url": "https://seranking.com/api/data/getting-started/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 52,
+  "app": "SE Ranking",
+  "field": "mcp",
+  "url": "https://seranking.com/api/mcp/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 53,
+  "app": "Ahrefs",
+  "field": "auth_methods",
+  "url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 53,
+  "app": "Ahrefs",
+  "field": "auth_methods",
+  "url": "https://docs.ahrefs.com/mcp/docs/claude-code.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 53,
+  "app": "Ahrefs",
+  "field": "access",
+  "url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 53,
+  "app": "Ahrefs",
+  "field": "access",
+  "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 53,
+  "app": "Ahrefs",
+  "field": "api_styles",
+  "url": "https://docs.ahrefs.com/llms.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 53,
+  "app": "Ahrefs",
+  "field": "mcp",
+  "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 54,
+  "app": "MrScraper",
+  "field": "auth_methods",
+  "url": "https://docs.mrscraper.com/docs/api/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 54,
+  "app": "MrScraper",
+  "field": "auth_methods",
+  "url": "https://docs.mrscraper.com/docs/api/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 54,
+  "app": "MrScraper",
+  "field": "access",
+  "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 54,
+  "app": "MrScraper",
+  "field": "access",
+  "url": "https://docs.mrscraper.com/docs/api/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 54,
+  "app": "MrScraper",
+  "field": "api_styles",
+  "url": "https://docs.mrscraper.com/docs/api/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 54,
+  "app": "MrScraper",
+  "field": "mcp",
+  "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 54,
+  "app": "MrScraper",
+  "field": "mcp",
+  "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 55,
+  "app": "Apify",
+  "field": "auth_methods",
+  "url": "https://docs.apify.com/api/v2",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 55,
+  "app": "Apify",
+  "field": "auth_methods",
+  "url": "https://docs.apify.com/integrations/mcp.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 55,
+  "app": "Apify",
+  "field": "access",
+  "url": "https://apify.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 55,
+  "app": "Apify",
+  "field": "api_styles",
+  "url": "https://docs.apify.com/api/v2",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 55,
+  "app": "Apify",
+  "field": "mcp",
+  "url": "https://docs.apify.com/integrations/mcp.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 56,
+  "app": "Firecrawl",
+  "field": "auth_methods",
+  "url": "https://docs.firecrawl.dev/api-reference/introduction",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 56,
+  "app": "Firecrawl",
+  "field": "access",
+  "url": "https://docs.firecrawl.dev/introduction",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 56,
+  "app": "Firecrawl",
+  "field": "api_styles",
+  "url": "https://docs.firecrawl.dev/api-reference/introduction",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 56,
+  "app": "Firecrawl",
+  "field": "mcp",
+  "url": "https://docs.firecrawl.dev/mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 56,
+  "app": "Firecrawl",
+  "field": "access",
+  "url": "https://www.firecrawl.dev/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 57,
+  "app": "Bright Data",
+  "field": "auth_methods",
+  "url": "https://docs.brightdata.com/api-reference/introduction",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 57,
+  "app": "Bright Data",
+  "field": "access",
+  "url": "https://docs.brightdata.com/api-reference/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 57,
+  "app": "Bright Data",
+  "field": "api_styles",
+  "url": "https://docs.brightdata.com/api-reference/introduction",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 57,
+  "app": "Bright Data",
+  "field": "mcp",
+  "url": "https://github.com/brightdata/brightdata-mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 57,
+  "app": "Bright Data",
+  "field": "access",
+  "url": "https://github.com/brightdata/brightdata-mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 58,
+  "app": "Sherlock",
+  "field": "auth_methods",
+  "url": "https://github.com/sherlock-project/sherlock",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 58,
+  "app": "Sherlock",
+  "field": "access",
+  "url": "https://github.com/sherlock-project/sherlock",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 58,
+  "app": "Sherlock",
+  "field": "api_styles",
+  "url": "https://github.com/sherlock-project/sherlock",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 58,
+  "app": "Sherlock",
+  "field": "mcp",
+  "url": "https://glama.ai/mcp/servers/Burnsedia/sherlock-mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 59,
+  "app": "Waterfall.io",
+  "field": "api_styles",
+  "url": "https://docs.waterfall.io",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 59,
+  "app": "Waterfall.io",
+  "field": "access",
+  "url": "https://docs.waterfall.io/v1/book-demo.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 59,
+  "app": "Waterfall.io",
+  "field": "auth_methods",
+  "url": "https://docs.waterfall.io/v1/authentication.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 59,
+  "app": "Waterfall.io",
+  "field": "mcp",
+  "url": "https://docs.waterfall.io/v1/skills-overview.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 60,
+  "app": "Clay",
+  "field": "auth_methods",
+  "url": "https://developers.clay.com/public-api/quickstart.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 60,
+  "app": "Clay",
+  "field": "access",
+  "url": "https://developers.clay.com/public-api/quickstart.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 60,
+  "app": "Clay",
+  "field": "api_styles",
+  "url": "https://developers.clay.com/public-api/quickstart.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 60,
+  "app": "Clay",
+  "field": "mcp",
+  "url": "https://developers.clay.com/llms.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 60,
+  "app": "Clay",
+  "field": "access",
+  "url": "https://www.clay.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 60,
+  "app": "Clay",
+  "field": "mcp",
+  "url": "https://developers.clay.com/use-cases/agent-workflows.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "field": "auth_methods",
+  "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "field": "auth_methods",
+  "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "field": "access",
+  "url": "https://docs.github.com/en/get-started/learning-about-github/githubs-plans",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "field": "api_styles",
+  "url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "field": "mcp",
+  "url": "https://github.com/github/github-mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "field": "api_styles",
+  "url": "https://docs.github.com/en/graphql/overview/about-the-graphql-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "field": "auth_methods",
+  "url": "https://vercel.com/kb/guide/how-do-i-use-a-vercel-api-access-token",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "field": "auth_methods",
+  "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "field": "access",
+  "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "field": "api_styles",
+  "url": "https://vercel.com/docs/rest-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "field": "mcp",
+  "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "field": "access",
+  "url": "https://vercel.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 63,
+  "app": "Netlify",
+  "field": "auth_methods",
+  "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 63,
+  "app": "Netlify",
+  "field": "auth_methods",
+  "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 63,
+  "app": "Netlify",
+  "field": "access",
+  "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 63,
+  "app": "Netlify",
+  "field": "api_styles",
+  "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 63,
+  "app": "Netlify",
+  "field": "mcp",
+  "url": "https://docs.netlify.com/build/build-with-ai/netlify-mcp-server/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 63,
+  "app": "Netlify",
+  "field": "access",
+  "url": "https://www.netlify.com/pricing/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 64,
+  "app": "Cloudflare",
+  "field": "auth_methods",
+  "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 64,
+  "app": "Cloudflare",
+  "field": "auth_methods",
+  "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 64,
+  "app": "Cloudflare",
+  "field": "access",
+  "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 64,
+  "app": "Cloudflare",
+  "field": "api_styles",
+  "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 64,
+  "app": "Cloudflare",
+  "field": "mcp",
+  "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 64,
+  "app": "Cloudflare",
+  "field": "access",
+  "url": "https://www.cloudflare.com/plans/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 65,
+  "app": "Supabase",
+  "field": "auth_methods",
+  "url": "https://supabase.com/docs/reference/api/introduction",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 65,
+  "app": "Supabase",
+  "field": "auth_methods",
+  "url": "https://supabase.com/docs/reference/api/introduction",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 65,
+  "app": "Supabase",
+  "field": "access",
+  "url": "https://supabase.com/docs/reference/api/introduction",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 65,
+  "app": "Supabase",
+  "field": "api_styles",
+  "url": "https://supabase.com/docs/reference/api/introduction",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 65,
+  "app": "Supabase",
+  "field": "mcp",
+  "url": "https://supabase.com/docs/guides/getting-started/mcp",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 65,
+  "app": "Supabase",
+  "field": "access",
+  "url": "https://supabase.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "field": "auth_methods",
+  "url": "https://neo4j.com/docs/aura/api/authentication/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "field": "access",
+  "url": "https://neo4j.com/docs/aura/api/authentication/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "field": "api_styles",
+  "url": "https://neo4j.com/docs/query-api/current/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "field": "api_styles",
+  "url": "https://neo4j.com/docs/aura/api/overview/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "field": "mcp",
+  "url": "https://neo4j.com/docs/mcp/current/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "field": "auth_methods",
+  "url": "https://neo4j.com/docs/query-api/current/query/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 67,
+  "app": "Snowflake",
+  "field": "auth_methods",
+  "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 67,
+  "app": "Snowflake",
+  "field": "auth_methods",
+  "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 67,
+  "app": "Snowflake",
+  "field": "access",
+  "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 67,
+  "app": "Snowflake",
+  "field": "api_styles",
+  "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 67,
+  "app": "Snowflake",
+  "field": "mcp",
+  "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 67,
+  "app": "Snowflake",
+  "field": "access",
+  "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 68,
+  "app": "MongoDB Atlas",
+  "field": "auth_methods",
+  "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 68,
+  "app": "MongoDB Atlas",
+  "field": "auth_methods",
+  "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 68,
+  "app": "MongoDB Atlas",
+  "field": "access",
+  "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 68,
+  "app": "MongoDB Atlas",
+  "field": "api_styles",
+  "url": "https://www.mongodb.com/docs/atlas/api/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 68,
+  "app": "MongoDB Atlas",
+  "field": "mcp",
+  "url": "https://www.mongodb.com/docs/mcp-server/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 68,
+  "app": "MongoDB Atlas",
+  "field": "access",
+  "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 69,
+  "app": "Datadog",
+  "field": "auth_methods",
+  "url": "https://docs.datadoghq.com/api/latest/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 69,
+  "app": "Datadog",
+  "field": "auth_methods",
+  "url": "https://docs.datadoghq.com/mcp_server/setup/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 69,
+  "app": "Datadog",
+  "field": "access",
+  "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 69,
+  "app": "Datadog",
+  "field": "api_styles",
+  "url": "https://docs.datadoghq.com/api/latest/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 69,
+  "app": "Datadog",
+  "field": "mcp",
+  "url": "https://docs.datadoghq.com/bits_ai/mcp_server/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 69,
+  "app": "Datadog",
+  "field": "access",
+  "url": "https://www.datadoghq.com/pricing/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 69,
+  "app": "Datadog",
+  "field": "mcp",
+  "url": "https://docs.datadoghq.com/mcp_server/setup/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 70,
+  "app": "Sentry",
+  "field": "auth_methods",
+  "url": "https://docs.sentry.io/api/auth/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "missing"
+ },
+ {
+  "app_id": 70,
+  "app": "Sentry",
+  "field": "access",
+  "url": "https://docs.sentry.io/api/guides/create-auth-token/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 70,
+  "app": "Sentry",
+  "field": "api_styles",
+  "url": "https://docs.sentry.io/api/auth/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 70,
+  "app": "Sentry",
+  "field": "mcp",
+  "url": "https://mcp.sentry.dev/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 70,
+  "app": "Sentry",
+  "field": "mcp",
+  "url": "https://mcp.sentry.dev/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 70,
+  "app": "Sentry",
+  "field": "access",
+  "url": "https://sentry.io/pricing/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "field": "auth_methods",
+  "url": "https://developers.notion.com/docs/authorization",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "field": "auth_methods",
+  "url": "https://developers.notion.com/docs/authorization",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "field": "access",
+  "url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "field": "api_styles",
+  "url": "https://developers.notion.com/reference/intro",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "field": "mcp",
+  "url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "field": "auth_methods",
+  "url": "https://airtable.com/developers/web/api/authentication.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "field": "auth_methods",
+  "url": "https://airtable.com/developers/web/api/authentication.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "field": "access",
+  "url": "https://airtable.com/developers/agents/mcp/getting-started",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "field": "api_styles",
+  "url": "https://airtable.com/developers/web/api/introduction.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "field": "mcp",
+  "url": "https://airtable.com/developers/agents/mcp/getting-started",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 73,
+  "app": "Linear",
+  "field": "auth_methods",
+  "url": "https://linear.app/developers/oauth-2-0-authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 73,
+  "app": "Linear",
+  "field": "auth_methods",
+  "url": "https://linear.app/developers/graphql",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 73,
+  "app": "Linear",
+  "field": "access",
+  "url": "https://linear.app/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 73,
+  "app": "Linear",
+  "field": "api_styles",
+  "url": "https://linear.app/developers/graphql",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 73,
+  "app": "Linear",
+  "field": "mcp",
+  "url": "https://linear.app/docs/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 74,
+  "app": "Jira",
+  "field": "auth_methods",
+  "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 74,
+  "app": "Jira",
+  "field": "auth_methods",
+  "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 74,
+  "app": "Jira",
+  "field": "access",
+  "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 74,
+  "app": "Jira",
+  "field": "api_styles",
+  "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 74,
+  "app": "Jira",
+  "field": "mcp",
+  "url": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "field": "auth_methods",
+  "url": "https://developers.asana.com/docs/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "field": "auth_methods",
+  "url": "https://developers.asana.com/docs/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "field": "access",
+  "url": "https://developers.asana.com/docs/rate-limits",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "field": "api_styles",
+  "url": "https://developers.asana.com/reference/rest-api-reference",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "field": "mcp",
+  "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 76,
+  "app": "Monday.com",
+  "field": "auth_methods",
+  "url": "https://developer.monday.com/apps/docs/oauth",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 76,
+  "app": "Monday.com",
+  "field": "auth_methods",
+  "url": "https://developer.monday.com/api-reference/docs/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 76,
+  "app": "Monday.com",
+  "field": "access",
+  "url": "https://developer.monday.com/api-reference/docs/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 76,
+  "app": "Monday.com",
+  "field": "api_styles",
+  "url": "https://developer.monday.com/api-reference/docs/introduction-to-graphql",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 76,
+  "app": "Monday.com",
+  "field": "mcp",
+  "url": "https://github.com/mondaycom/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 77,
+  "app": "ClickUp",
+  "field": "auth_methods",
+  "url": "https://developer.clickup.com/docs/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 77,
+  "app": "ClickUp",
+  "field": "auth_methods",
+  "url": "https://developer.clickup.com/docs/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 77,
+  "app": "ClickUp",
+  "field": "access",
+  "url": "https://developer.clickup.com/docs/rate-limits",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 77,
+  "app": "ClickUp",
+  "field": "api_styles",
+  "url": "https://developer.clickup.com/reference/gettasks",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 77,
+  "app": "ClickUp",
+  "field": "mcp",
+  "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 78,
+  "app": "Coda",
+  "field": "auth_methods",
+  "url": "https://docs.superhuman.com/developers/apis/v1",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 78,
+  "app": "Coda",
+  "field": "access",
+  "url": "https://docs.superhuman.com/developers/apis/v1",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 78,
+  "app": "Coda",
+  "field": "api_styles",
+  "url": "https://docs.superhuman.com/developers/apis/v1",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 78,
+  "app": "Coda",
+  "field": "mcp",
+  "url": "https://docs.superhuman.com/resources/guides/getting_started_with_coda_mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 79,
+  "app": "Smartsheet",
+  "field": "auth_methods",
+  "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 79,
+  "app": "Smartsheet",
+  "field": "auth_methods",
+  "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 79,
+  "app": "Smartsheet",
+  "field": "access",
+  "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 79,
+  "app": "Smartsheet",
+  "field": "api_styles",
+  "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 79,
+  "app": "Smartsheet",
+  "field": "mcp",
+  "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 80,
+  "app": "Harvest",
+  "field": "auth_methods",
+  "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 80,
+  "app": "Harvest",
+  "field": "auth_methods",
+  "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 80,
+  "app": "Harvest",
+  "field": "access",
+  "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 80,
+  "app": "Harvest",
+  "field": "access",
+  "url": "https://www.getharvest.com/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 80,
+  "app": "Harvest",
+  "field": "api_styles",
+  "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 80,
+  "app": "Harvest",
+  "field": "mcp",
+  "url": "https://api.harvestapp.com/.well-known/oauth-protected-resource/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 81,
+  "app": "Stripe",
+  "field": "auth_methods",
+  "url": "https://docs.stripe.com/api/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 81,
+  "app": "Stripe",
+  "field": "auth_methods",
+  "url": "https://docs.stripe.com/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 81,
+  "app": "Stripe",
+  "field": "access",
+  "url": "https://docs.stripe.com/api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 81,
+  "app": "Stripe",
+  "field": "api_styles",
+  "url": "https://docs.stripe.com/api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 81,
+  "app": "Stripe",
+  "field": "mcp",
+  "url": "https://docs.stripe.com/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 82,
+  "app": "Plaid",
+  "field": "auth_methods",
+  "url": "https://plaid.com/docs/api/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 82,
+  "app": "Plaid",
+  "field": "access",
+  "url": "https://plaid.com/docs/sandbox/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 82,
+  "app": "Plaid",
+  "field": "api_styles",
+  "url": "https://plaid.com/docs/api/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 82,
+  "app": "Plaid",
+  "field": "mcp",
+  "url": "https://plaid.com/docs/resources/mcp/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 83,
+  "app": "Binance",
+  "field": "auth_methods",
+  "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 83,
+  "app": "Binance",
+  "field": "access",
+  "url": "https://testnet.binance.vision/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 83,
+  "app": "Binance",
+  "field": "api_styles",
+  "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 83,
+  "app": "Binance",
+  "field": "mcp",
+  "url": "https://github.com/AnalyticAce/binance-mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 84,
+  "app": "Paygent Connect",
+  "field": "auth_methods",
+  "url": "https://docs.nmi.com/reference/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 84,
+  "app": "Paygent Connect",
+  "field": "access",
+  "url": "https://www.nmi.com/resources/payments-101/faq/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 84,
+  "app": "Paygent Connect",
+  "field": "api_styles",
+  "url": "https://docs.nmi.com/llms.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 84,
+  "app": "Paygent Connect",
+  "field": "mcp",
+  "url": "https://docs.nmi.com/docs/mcp-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 85,
+  "app": "iPayX",
+  "field": "auth_methods",
+  "url": "https://www.ipayx.ai/.well-known/mcp.json",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 85,
+  "app": "iPayX",
+  "field": "access",
+  "url": "https://www.ipayx.ai/.well-known/mcp.json",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 85,
+  "app": "iPayX",
+  "field": "api_styles",
+  "url": "https://ipayx.ai/llms.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 85,
+  "app": "iPayX",
+  "field": "mcp",
+  "url": "https://ipayx.ai/llms.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 86,
+  "app": "QuickBooks",
+  "field": "auth_methods",
+  "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 86,
+  "app": "QuickBooks",
+  "field": "access",
+  "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 86,
+  "app": "QuickBooks",
+  "field": "api_styles",
+  "url": "https://github.com/intuit/QuickBooks-V3-Java-SDK",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 86,
+  "app": "QuickBooks",
+  "field": "mcp",
+  "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 87,
+  "app": "Xero",
+  "field": "auth_methods",
+  "url": "https://github.com/XeroAPI/Xero-OpenAPI",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 87,
+  "app": "Xero",
+  "field": "access",
+  "url": "https://github.com/XeroAPI/xero-node",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 87,
+  "app": "Xero",
+  "field": "access",
+  "url": "https://github.com/XeroAPI/xero-node",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 87,
+  "app": "Xero",
+  "field": "api_styles",
+  "url": "https://github.com/XeroAPI/Xero-OpenAPI",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 87,
+  "app": "Xero",
+  "field": "mcp",
+  "url": "https://github.com/XeroAPI/xero-mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 88,
+  "app": "Brex",
+  "field": "auth_methods",
+  "url": "https://developer.brex.com/docs/authentication/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 88,
+  "app": "Brex",
+  "field": "auth_methods",
+  "url": "https://developer.brex.com/docs/faq.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 88,
+  "app": "Brex",
+  "field": "access",
+  "url": "https://developer.brex.com/docs/partner_onboarding.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 88,
+  "app": "Brex",
+  "field": "access",
+  "url": "https://developer.brex.com/docs/mcp.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 88,
+  "app": "Brex",
+  "field": "api_styles",
+  "url": "https://developer.brex.com/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 88,
+  "app": "Brex",
+  "field": "mcp",
+  "url": "https://developer.brex.com/docs/mcp.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 89,
+  "app": "Ramp",
+  "field": "auth_methods",
+  "url": "https://docs.ramp.com/llms-full.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 89,
+  "app": "Ramp",
+  "field": "access",
+  "url": "https://docs.ramp.com/llms-full.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 89,
+  "app": "Ramp",
+  "field": "access",
+  "url": "https://docs.ramp.com/llms-full.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 89,
+  "app": "Ramp",
+  "field": "api_styles",
+  "url": "https://docs.ramp.com/llms-full.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 89,
+  "app": "Ramp",
+  "field": "mcp",
+  "url": "https://docs.ramp.com/llms-full.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 90,
+  "app": "PitchBook",
+  "field": "auth_methods",
+  "url": "https://documenter.gw.postman.com/view/metadata/TzCV1iRc",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 90,
+  "app": "PitchBook",
+  "field": "access",
+  "url": "https://documenter.gw.postman.com/view/metadata/TzCV1iRc",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 90,
+  "app": "PitchBook",
+  "field": "access",
+  "url": "https://documenter.gw.postman.com/view/metadata/TzCV1iRc",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 90,
+  "app": "PitchBook",
+  "field": "api_styles",
+  "url": "https://documenter.gw.postman.com/view/metadata/TzCV1iRc",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 90,
+  "app": "PitchBook",
+  "field": "mcp",
+  "url": "https://claude.com/marketplace/connectors/pitchbook",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 90,
+  "app": "PitchBook",
+  "field": "mcp",
+  "url": "https://claude.com/marketplace/connectors/pitchbook",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 91,
+  "app": "NotebookLM",
+  "field": "auth_methods",
+  "url": "https://developers.google.com/notebook/docs/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 91,
+  "app": "NotebookLM",
+  "field": "access",
+  "url": "https://developers.google.com/notebook/docs/rate-limits",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 91,
+  "app": "NotebookLM",
+  "field": "access",
+  "url": "https://developers.google.com/notebook/docs/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 91,
+  "app": "NotebookLM",
+  "field": "access",
+  "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 91,
+  "app": "NotebookLM",
+  "field": "api_styles",
+  "url": "https://developers.google.com/notebook",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 91,
+  "app": "NotebookLM",
+  "field": "api_styles",
+  "url": "https://developers.google.com/notebook/docs/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 91,
+  "app": "NotebookLM",
+  "field": "mcp",
+  "url": "https://developers.google.com/notebook/docs/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 92,
+  "app": "Otter AI",
+  "field": "auth_methods",
+  "url": "https://www.scalekit.com/blog/otter-mcp-vs-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 92,
+  "app": "Otter AI",
+  "field": "access",
+  "url": "https://www.scalekit.com/blog/otter-mcp-vs-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 92,
+  "app": "Otter AI",
+  "field": "api_styles",
+  "url": "https://www.scalekit.com/blog/otter-mcp-vs-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 92,
+  "app": "Otter AI",
+  "field": "mcp",
+  "url": "https://claude.com/connectors/otter-ai",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 92,
+  "app": "Otter AI",
+  "field": "mcp",
+  "url": "https://claude.com/connectors/otter-ai",
+  "page": "refused",
+  "http_code": 308,
+  "quote": "unchecked"
+ },
+ {
+  "app_id": 93,
+  "app": "Fathom",
+  "field": "auth_methods",
+  "url": "https://developers.fathom.ai/api-overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 93,
+  "app": "Fathom",
+  "field": "auth_methods",
+  "url": "https://developers.fathom.ai/oauth",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 93,
+  "app": "Fathom",
+  "field": "auth_methods",
+  "url": "https://developers.fathom.ai/oauth",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 93,
+  "app": "Fathom",
+  "field": "access",
+  "url": "https://developers.fathom.ai/quickstart",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 93,
+  "app": "Fathom",
+  "field": "api_styles",
+  "url": "https://developers.fathom.ai/api-overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 93,
+  "app": "Fathom",
+  "field": "mcp",
+  "url": "https://developers.fathom.ai/mcp-docs/claude",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 94,
+  "app": "Consensus",
+  "field": "auth_methods",
+  "url": "https://consensus.app/llms-full.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 94,
+  "app": "Consensus",
+  "field": "auth_methods",
+  "url": "https://consensus.app/llms-full.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 94,
+  "app": "Consensus",
+  "field": "access",
+  "url": "https://consensus.app/.well-known/pricing.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 94,
+  "app": "Consensus",
+  "field": "api_styles",
+  "url": "https://consensus.app/llms-full.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 94,
+  "app": "Consensus",
+  "field": "mcp",
+  "url": "https://consensus.app/llms-full.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 94,
+  "app": "Consensus",
+  "field": "mcp",
+  "url": "https://consensus.app/llms-full.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 95,
+  "app": "Reducto",
+  "field": "auth_methods",
+  "url": "https://docs.reducto.ai/llms.txt",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 95,
+  "app": "Reducto",
+  "field": "auth_methods",
+  "url": "https://docs.reducto.ai/mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 95,
+  "app": "Reducto",
+  "field": "access",
+  "url": "https://reducto.ai/pricing",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 95,
+  "app": "Reducto",
+  "field": "api_styles",
+  "url": "https://docs.reducto.ai/agent-guide/index.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 95,
+  "app": "Reducto",
+  "field": "mcp",
+  "url": "https://docs.reducto.ai/mcp-server",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 96,
+  "app": "Devin",
+  "field": "auth_methods",
+  "url": "https://docs.devin.ai/api-reference/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 96,
+  "app": "Devin",
+  "field": "auth_methods",
+  "url": "https://docs.devin.ai/api-reference/authentication",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 96,
+  "app": "Devin",
+  "field": "access",
+  "url": "https://docs.devin.ai/api-reference/getting-started/teams-quickstart",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 96,
+  "app": "Devin",
+  "field": "api_styles",
+  "url": "https://docs.devin.ai/api-reference/overview",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 96,
+  "app": "Devin",
+  "field": "mcp",
+  "url": "https://docs.devin.ai/work-with-devin/devin-mcp.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 97,
+  "app": "higgsfield",
+  "field": "auth_methods",
+  "url": "https://docs.higgsfield.ai/docs/authentication.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 97,
+  "app": "higgsfield",
+  "field": "access",
+  "url": "https://docs.higgsfield.ai/docs/concepts/billing-and-retention.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 97,
+  "app": "higgsfield",
+  "field": "api_styles",
+  "url": "https://docs.higgsfield.ai/docs/quickstart.md",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 97,
+  "app": "higgsfield",
+  "field": "api_styles",
+  "url": "https://higgsfield.ai/cli",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 97,
+  "app": "higgsfield",
+  "field": "mcp",
+  "url": "https://higgsfield.ai/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 98,
+  "app": "Mermaid CLI",
+  "field": "auth_methods",
+  "url": "https://github.com/mermaid-js/mermaid-cli",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 98,
+  "app": "Mermaid CLI",
+  "field": "access",
+  "url": "https://github.com/mermaid-js/mermaid-cli",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 98,
+  "app": "Mermaid CLI",
+  "field": "api_styles",
+  "url": "https://github.com/mermaid-js/mermaid-cli",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 98,
+  "app": "Mermaid CLI",
+  "field": "mcp",
+  "url": "https://github.com/hustcc/mcp-mermaid",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 99,
+  "app": "YouTube Transcript",
+  "field": "auth_methods",
+  "url": "https://transcriptapi.com/docs/api/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 99,
+  "app": "YouTube Transcript",
+  "field": "auth_methods",
+  "url": "https://transcriptapi.com/docs/mcp/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 99,
+  "app": "YouTube Transcript",
+  "field": "access",
+  "url": "https://transcriptapi.com",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 99,
+  "app": "YouTube Transcript",
+  "field": "api_styles",
+  "url": "https://transcriptapi.com",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 99,
+  "app": "YouTube Transcript",
+  "field": "mcp",
+  "url": "https://transcriptapi.com/docs/mcp/",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 100,
+  "app": "Grain",
+  "field": "auth_methods",
+  "url": "https://support.grain.com/en/articles/15507288-grain-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 100,
+  "app": "Grain",
+  "field": "access",
+  "url": "https://support.grain.com/en/articles/15507288-grain-api",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 100,
+  "app": "Grain",
+  "field": "api_styles",
+  "url": "https://developers.grain.com",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 100,
+  "app": "Grain",
+  "field": "api_styles",
+  "url": "https://developers.grain.com",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ },
+ {
+  "app_id": 100,
+  "app": "Grain",
+  "field": "mcp",
+  "url": "https://developers.grain.com/mcp",
+  "page": "live",
+  "http_code": 200,
+  "quote": "found"
+ }
+]

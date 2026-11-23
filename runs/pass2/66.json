@@ -1,0 +1,56 @@
+{
+  "app_id": 66,
+  "app": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "summary": "Graph database for storing and querying connected data with Cypher, offered self-hosted or as Aura cloud.",
+  "auth_methods": [
+    "oauth2",
+    "basic"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Aura API credentials (client ID/secret) available on all tiers incl. free; database queries use per-instance credentials.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://neo4j.com/docs/mcp/current/",
+  "verdict": "build_with_caveat",
+  "blocker": "none",
+  "blocker_note": "Data access is per database instance with its own URL and credentials, not one account-level token; Aura API only manages instances.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://neo4j.com/docs/aura/api/authentication/",
+      "quote": "The Aura API uses OAuth 2.0 for API authentication."
+    },
+    {
+      "field": "access",
+      "url": "https://neo4j.com/docs/aura/api/authentication/",
+      "quote": "All tiers can create Aura API credentials."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://neo4j.com/docs/query-api/current/",
+      "quote": "The Query API allows to execute Cypher statements against a Neo4j server through HTTP requests."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://neo4j.com/docs/aura/api/overview/",
+      "quote": "The current version of the Aura API is v1"
+    },
+    {
+      "field": "mcp",
+      "url": "https://neo4j.com/docs/mcp/current/",
+      "quote": "Neo4j MCP implements the Model Context Protocol (MCP), an open standard that lets applications connect to external data"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://neo4j.com/docs/query-api/current/query/",
+      "quote": "Authorization: Basic bmVvNGo6dmVyeXNlY3JldA=="
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Basic auth for the Query API now confirmed from the Query API page example (Authorization: Basic). Bolt not read. Official MCP repo is github.com/neo4j/mcp (from search results, not opened).",
+  "review": []
+}

@@ -1,0 +1,45 @@
+{
+  "app_id": 47,
+  "app": "Ecwid",
+  "category": "Ecommerce",
+  "summary": "Embeddable ecommerce widget and store platform (Ecwid by Lightspeed) for adding a shop to any website.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "paid_plan",
+  "access_note": "Only paid-plan stores can use the API; free upgrade for developers can be requested by emailing API support.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://zapier.com/mcp/ecwid",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Store must be on a paid plan to access the API.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.ecwid.com/api-reference/rest-api/overview",
+      "quote": "We use OAuth 2.0 authorization simplified for single-store customizations, JSON-formatted data, and a clear structure."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.ecwid.com/llms-full.txt",
+      "quote": "Only stores on paid plans can access API."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.ecwid.com/llms-full.txt",
+      "quote": "Access tokens authorize REST API requests for the specific app in the specific store."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.ecwid.com/llms-full.txt",
+      "quote": "Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Only the first 100k chars of llms-full.txt were read. No official MCP found in search; only third-party (Zapier, viaSocket, Glama); the mcp quote is not support for it, just the docs checked. Breadth marked broad by assumption from REST reference size, not counted."
+}

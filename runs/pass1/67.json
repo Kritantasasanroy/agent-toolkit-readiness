@@ -1,0 +1,51 @@
+{
+  "app_id": 67,
+  "app": "Snowflake",
+  "category": "Developer, Infra and Data platforms",
+  "summary": "Cloud data platform for warehousing, analytics and AI workloads on shared data.",
+  "auth_methods": [
+    "oauth2",
+    "other",
+    "api_key"
+  ],
+  "access": "free_trial",
+  "access_note": "30-day trial with free credits; an upgrade to paid is needed after that.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Only a time-limited trial is free; ongoing use needs a paid account.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+      "quote": "When you send a request, the request must include authentication information."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+      "quote": "PROGRAMMATIC_ACCESS_TOKEN (for programmatic access tokens)"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+      "quote": "The trial continues for 30 days (from the sign-up date)"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+      "quote": "The Snowflake SQL API is a REST API that you can use to access and update data in a Snowflake database."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+      "quote": "The Snowflake-managed MCP server lets AI agents securely retrieve data from Snowflake accounts."
+    }
+  ],
+  "confidence": "high",
+  "notes": "Auth options listed on the page: OAuth, key-pair JWT, workload identity federation; PAT inferred from a header value. MCP server is per account and must be configured in the account (URL is account-specific). Snowflake also has other REST APIs not read."
+}

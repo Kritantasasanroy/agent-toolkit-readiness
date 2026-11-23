@@ -1,0 +1,63 @@
+{
+  "app_id": 49,
+  "app": "Amazon Selling Partner",
+  "category": "Ecommerce",
+  "summary": "Amazon's API for sellers and vendors to manage listings, orders, inventory, reports and fulfillment.",
+  "auth_methods": [
+    "oauth2",
+    "other"
+  ],
+  "access": "admin_approval",
+  "access_note": "Must register as an SP-API developer with a professional selling account; private apps are self-authorized, public apps need Appstore listing. Restricted roles may need approval.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://github.com/amzn/selling-partner-api-samples",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Public multi-seller apps must be listed in the Selling Partner Appstore; developer registration and professional seller account required.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api",
+      "quote": "An LWA access token expires one hour after it is issued."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api",
+      "quote": "you include a Restricted Data Token (RDT)"
+    },
+    {
+      "field": "access",
+      "url": "https://developer-docs.amazon/sp-api/docs/sp-api-registration-overview",
+      "quote": "you must have a professional selling account to develop SP-API private seller applications."
+    },
+    {
+      "field": "access",
+      "url": "https://developer-docs.amazon/sp-api/docs/sp-api-registration-overview",
+      "quote": "public developers must list their app in the Amazon Selling Partner Appstore."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer-docs.amazon/sp-api/llms.txt",
+      "quote": "This topic describes the REST-based Selling Partner API."
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/amzn/selling-partner-api-samples",
+      "quote": "A local MCP server that bundles SP-API developer tools into a single npm package"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "REST confirmed in vendor llms.txt. LWA token plus Restricted Data Token (other). Registration needs a professional selling account (paid seller plan) and a developer profile review; public apps must be listed on the Appstore. Official MCP is a local developer-tooling server in the Amazon samples repo, not hosted seller-data access. Role approval for restricted roles not quoted.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "auth quote missing, REST unquoted",
+      "to": "re-quoted from raw pages incl. llms.txt \"REST-based\"",
+      "reason": "Old LWA quote not on the page; REST was from memory."
+    }
+  ]
+}

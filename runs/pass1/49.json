@@ -1,0 +1,45 @@
+{
+  "app_id": 49,
+  "app": "Amazon Selling Partner",
+  "category": "Ecommerce",
+  "summary": "Amazon's API for sellers and vendors to manage listings, orders, inventory, reports and fulfillment.",
+  "auth_methods": [
+    "oauth2",
+    "other"
+  ],
+  "access": "admin_approval",
+  "access_note": "Must register as an SP-API developer with a professional selling account; private apps are self-authorized, public apps need Appstore listing. Restricted roles may need approval.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://github.com/amzn/selling-partner-api-samples",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Public multi-seller apps must be listed in the Selling Partner Appstore; developer registration and professional seller account required.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api",
+      "quote": "A Login with Amazon (LWA) access token authorizes your application to take certain actions on behalf of a selling partner."
+    },
+    {
+      "field": "access",
+      "url": "https://developer-docs.amazon/sp-api/docs/sp-api-registration-overview",
+      "quote": "you must have a professional selling account to develop SP-API private seller applications."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api",
+      "quote": "To request an LWA access token, make a secure HTTP POST to the LWA authentication server"
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/amzn/selling-partner-api-samples",
+      "quote": "A local MCP server that bundles SP-API developer tools into a single npm package"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Docs host redirected to developer-docs.amazon. No page read that says REST explicitly or states restricted-role approval; REST and breadth are from background knowledge only. Official MCP is local developer tooling."
+}

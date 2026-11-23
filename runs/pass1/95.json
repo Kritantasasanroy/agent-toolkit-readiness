@@ -1,0 +1,44 @@
+{
+  "app_id": 95,
+  "app": "Reducto",
+  "category": "AI, Research and Media-native",
+  "summary": "Document processing API that parses, extracts structured data from, edits and splits PDFs and other files for LLM pipelines.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Sign up free, create an API key in Studio; pay-as-you-go with $150 free usage.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://mcp.reducto.ai/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.reducto.ai/quickstart",
+      "quote": "Create a key right here. Give it a name and copy it."
+    },
+    {
+      "field": "access",
+      "url": "https://reducto.ai/pricing",
+      "quote": "After your free $150, standard rates apply."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.reducto.ai/quickstart",
+      "quote": "https://platform.reducto.ai/parse"
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.reducto.ai/mcp-server",
+      "quote": "cannot read files from your local filesystem"
+    }
+  ],
+  "confidence": "high",
+  "notes": "Hosted MCP authenticates with Authorization: Bearer key. Pricing page also lists Parse, Extract, Edit and Split APIs."
+}

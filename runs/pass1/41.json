@@ -1,0 +1,51 @@
+{
+  "app_id": 41,
+  "app": "Shopify",
+  "category": "Ecommerce",
+  "summary": "Commerce platform for building and running online stores, with apps extending the merchant admin and storefront.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free dev stores and custom apps via Dev Dashboard; public multi-store apps need App Store registration and review.",
+  "api_styles": [
+    "graphql",
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://shopify.dev/docs/apps/build/devmcp",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Public distribution to many stores requires Shopify App Store approval; custom distribution is limited to a single store.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "quote": "You don't implement OAuth by hand for most apps."
+    },
+    {
+      "field": "access",
+      "url": "https://shopify.dev/docs/apps/build/dev-dashboard",
+      "quote": "Dev stores: You own them, for building and testing without touching a live store."
+    },
+    {
+      "field": "access",
+      "url": "https://shopify.dev/docs/apps/launch/distribution",
+      "quote": "Public distribution also requires registering for the Shopify App Store, which has a one-time fee."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://shopify.dev/docs/api/admin-graphql",
+      "quote": "The Admin API lets you build apps and integrations that extend and enhance the Shopify admin."
+    },
+    {
+      "field": "mcp",
+      "url": "https://shopify.dev/docs/apps/build/devmcp",
+      "quote": "connect to Shopify's developer resources through the Dev MCP server"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "The Dev MCP server is a local docs/dev-tooling server, not a store-operations server; store-level MCP not verified. Token header and REST legacy status not verified by direct quote. Fetch tool paraphrased some page text."
+}

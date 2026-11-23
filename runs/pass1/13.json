@@ -1,0 +1,49 @@
+{
+  "app_id": 13,
+  "app": "Freshdesk",
+  "category": "Support and Helpdesk",
+  "summary": "Helpdesk and ticketing software from Freshworks for email, chat, phone and social support.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_trial",
+  "access_note": "API key from profile settings, sent as HTTP Basic (key as username, X as password). Free trial only; MCP needs Growth plan or above.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://<subdomain>.freshdesk.com/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Trial only; official MCP is gated to Growth/Pro/Enterprise with monthly action allowances.",
+  "confidence": "high",
+  "notes": "MCP endpoint pattern https://<subdomain>.freshdesk.com/mcp comes from a web search summary of the Freshworks article; the fetched page text confirms API-key-only auth and GA date. Freshworks also offers OAuth only for marketplace apps (not verified).",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.freshdesk.com/api/",
+      "quote": "Your API key will be available below the change password section to your right"
+    },
+    {
+      "field": "access",
+      "url": "https://www.freshworks.com/freshdesk/pricing/",
+      "quote": "Try it free"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.freshdesk.com/api/",
+      "quote": "curl -v -u abcdefghij1234567890:X -H \"Content-Type: application/json\" -X GET 'https://domain.freshdesk.com/api/v2/tickets'"
+    },
+    {
+      "field": "mcp",
+      "url": "https://partnersupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+      "quote": "Currently, Freshdesk allows you to authenticate requests involved in MCP integration by using an API key only."
+    },
+    {
+      "field": "mcp",
+      "url": "https://partnersupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+      "quote": "Starting September 10, 2026 , the Freshworks MCP integration is generally available."
+    }
+  ]
+}

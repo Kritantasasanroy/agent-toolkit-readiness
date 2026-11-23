@@ -1,0 +1,63 @@
+{
+  "app_id": 40,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "SendGrid",
+  "summary": "Twilio's transactional and marketing email delivery service.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_trial",
+  "access_note": "Free plans retired in 2025; new accounts get a 60-day trial, then a paid plan is needed to keep sending.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://github.com/Garoth/sendgrid-mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Users need a paid plan (or active trial) to send email.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+      "quote": "The Twilio SendGrid Web API v3 supports API keys"
+    },
+    {
+      "field": "access",
+      "url": "https://www.twilio.com/en-us/changelog/sendgrid-free-plan",
+      "quote": "After that, an upgrade to a paid plan will be required to continue sending email and accessing key tools"
+    },
+    {
+      "field": "access",
+      "url": "https://www.twilio.com/en-us/sendgrid/pricing",
+      "quote": "Sign up for a free trial"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+      "quote": "The SendGrid v3 Web API provides a REST interface to send email at scale"
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/Garoth/sendgrid-mcp",
+      "quote": "Allows AI Agents to interact with the Twilio SendGrid v3 API, managing contact lists, templates, single sends, and stats"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "No official SendGrid MCP found (Twilio docs and twilio-labs/mcp show none). Free plan retired in 2025 (changelog); pricing page offers a free trial. The 60-day figure comes from the changelog transition period, not the trial length.",
+  "review": [
+    {
+      "field": "mcp_url",
+      "from": "Twilio blog tutorial",
+      "to": "github Garoth/sendgrid-mcp (about 32 stars)",
+      "reason": "A tutorial for building a server is not an existing MCP server; the repo is an actual community server."
+    },
+    {
+      "field": "evidence",
+      "from": "api_styles and mcp quotes",
+      "to": "replaced",
+      "reason": "api_styles quote now states REST explicitly; MCP quote now from a real server README."
+    }
+  ]
+}

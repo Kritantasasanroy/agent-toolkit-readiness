@@ -1,0 +1,57 @@
+{
+  "app_id": 23,
+  "app": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "summary": "Team chat and collaboration tool from Zoho with channels, bots and extensions.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "OAuth clients created in the Zoho API Console; Cliq has a free edition (not confirmed from docs fetched).",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+      "quote": "Zoho Cliq's Rest API's follows the OAuth 2.0 protocol to authorize and authenticate requests."
+    },
+    {
+      "field": "access",
+      "url": "https://www.zoho.com/cliq/pricing.html",
+      "quote": "Free Chat plans for all Teams size"
+    },
+    {
+      "field": "access",
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+      "quote": "Each API request must include an OAuth token in order to receive a success response."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+      "quote": "Cliq API is standardized around REST"
+    },
+    {
+      "field": "mcp",
+      "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+      "quote": "Any AI model or agent can use our official MCP server to access your Cliq data"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Page is 337k chars; only first 100k read. Free-plan and API Console self-serve claims not confirmed from a fetched page. Zoho data centers are regional (accounts.zoho.com vs .eu etc.). MCP is hosted via Zoho MCP console; plan requirements unstated.",
+  "review": [
+    {
+      "field": "confidence",
+      "from": "medium",
+      "to": "medium",
+      "reason": "Free edition is on the pricing page, but API Console self-serve for Cliq and MCP plan requirements are not stated on pages read."
+    }
+  ]
+}

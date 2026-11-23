@@ -1,0 +1,52 @@
+{
+  "app_id": 59,
+  "app": "Waterfall.io",
+  "category": "Data, SEO and Scraping",
+  "summary": "B2B enrichment API that finds people, emails, phones and company data by cascading across many data vendors.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "partner_gated",
+  "access_note": "API keys are issued by approval after a request or call; the docs say the team reviews every access request and works with a limited number of customers.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "none",
+  "mcp_url": "",
+  "verdict": "needs_outreach",
+  "blocker": "partner_program",
+  "blocker_note": "Account access appears to require booking a call; self-serve signup not documented.",
+  "evidence": [
+    {
+      "field": "api_styles",
+      "url": "https://docs.waterfall.io",
+      "quote": "The Waterfall API is available at `https://api.waterfall.io`."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.waterfall.io/v1/book-demo.md",
+      "quote": "API access is available by approval."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.waterfall.io/v1/authentication.md",
+      "quote": "Authenticate data and account API requests with your Waterfall API key in the x-api-key header."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.waterfall.io/v1/skills-overview.md",
+      "quote": "Waterfall provides two skills: one for making API calls during a task, and one for creating integration code you maintain."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Docs (book-demo and authentication pages) confirm access is by approval/contact. The agent skills page lists API skills and no MCP server; no MCP found.",
+  "review": [
+    {
+      "field": "confidence",
+      "from": "low",
+      "to": "medium",
+      "reason": "Docs book-demo page states API access is available by approval and the team reviews every request, confirming the gate."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "app_id": 75,
+  "app": "Asana",
+  "category": "Productivity and Project Management",
+  "summary": "Work management platform for planning and tracking team tasks and projects.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Personal access tokens from the developer console; OAuth apps for multi-user use.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.asana.com/v2/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.asana.com/docs/authentication",
+      "quote": "A personal access token (PAT) is the quickest and simplest way to authenticate in the API."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developers.asana.com/docs/authentication",
+      "quote": "This is the best choice if multiple users need to sign in to your app."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.asana.com/docs/authentication",
+      "quote": "PATs are long-lived tokens allowing programmatic authentication to the API and should be stored securely."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.asana.com/reference/rest-api-reference",
+      "quote": "The Asana API is a RESTful interface with predictable resource-oriented URLs"
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+      "quote": "available at: `https://mcp.asana.com/v2/mcp`."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Free plan access not confirmed by fetched page. Legacy MCP beta (mcp.asana.com/sse) is being shut down; use v2."
+}

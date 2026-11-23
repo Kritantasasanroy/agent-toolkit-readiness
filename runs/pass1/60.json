@@ -1,0 +1,45 @@
+{
+  "app_id": 60,
+  "app": "Clay",
+  "category": "Data, SEO and Scraping",
+  "summary": "GTM data enrichment and workflow platform that waterfalls across data providers to build lead lists and outreach.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "API keys created in Clay web app under API and CLI settings or via CLI; plan gating not stated in vendor docs.",
+  "api_styles": [
+    "rest",
+    "cli"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://developers.clay.com/llms.txt",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Plan gating for the Public API is unstated; one third-party review claims HTTP API needs Growth tier and above; Tables API is Enterprise.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.clay.com/public-api/quickstart.md",
+      "quote": "Requests authenticate with a Clay API key in the `clay-api-key` header."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.clay.com/public-api/quickstart.md",
+      "quote": "You can create an API key three ways:"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.clay.com/public-api/quickstart.md",
+      "quote": "Use the Public API to call Clay from your own applications and services."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.clay.com/llms.txt",
+      "quote": "Use Clay with coding agents, MCP clients, local scripts, and JSON-first automations."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Official MCP is a local server started via the Clay CLI (`clay mcp`), not a hosted URL; mcp_url points to the docs index. That detail came from a search summary; developers.clay.com/concepts/mcp.md returned 404. Public API appears beta; paid-plan gating unverified."
+}

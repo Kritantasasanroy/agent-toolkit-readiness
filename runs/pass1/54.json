@@ -1,0 +1,44 @@
+{
+  "app_id": 54,
+  "app": "MrScraper",
+  "category": "Data, SEO and Scraping",
+  "summary": "AI-powered web scraping platform with scraper, search and unblocker APIs.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Create an API token in the dashboard; free credits or plan limits not confirmed.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://docs.mrscraper.com",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.mrscraper.com/docs/api/authentication",
+      "quote": "Include your API token in the `x-api-token` HTTP header on every request:"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.mrscraper.com/docs/api/authentication",
+      "quote": "API tokens are managed directly from your MrScraper dashboard."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.mrscraper.com/docs/api/overview",
+      "quote": "Built on REST principles, our API offers predictable resource-oriented URLs."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.mrscraper.com",
+      "quote": "AI agents fetch pages and search Google through the Model Context Protocol"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Free tier/trial not found in docs, so self-serve access is an assumption. MCP page URL not located; mcp_url is the docs home which links to it, and source is said to be on GitHub. Marketplace endpoints use Bearer auth instead of x-api-token."
+}

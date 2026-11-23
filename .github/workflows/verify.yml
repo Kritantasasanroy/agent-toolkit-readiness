@@ -1,0 +1,36 @@
+name: Verify the research
+
+# Run from the Actions tab ("Run workflow"). Needs no API key: it re-checks the saved
+# profiles, scores both passes against the hand-checked sample, and rebuilds the page data.
+on:
+  workflow_dispatch:
+    inputs:
+      check_links:
+        description: "Re-fetch every evidence page and look for its quote (about a minute)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+      - name: Unit tests
+        run: python -m unittest discover -s tests -t .
+      - name: Validate pass 2 against the brief
+        run: python -m research validate runs/pass2
+      - name: Score both passes on the hand-checked sample
+        run: |
+          python -m research score runs/pass1 data/handchecks.json
+          python -m research score runs/pass2 data/handchecks.json
+      - name: Re-check evidence links
+        if: ${{ inputs.check_links }}
+        run: python -m research links runs/pass2
+      - name: Rebuild the page data
+        run: python -m research site

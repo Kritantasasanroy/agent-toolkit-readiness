@@ -1,0 +1,51 @@
+{
+  "app_id": 31,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "Google Ads",
+  "summary": "Online advertising platform for running search, display and video campaigns on Google.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "admin_approval",
+  "access_note": "Google Cloud project plus a developer token; Test access is automatic, Explorer/Basic are automated reviews, Standard needs manual review.",
+  "api_styles": [
+    "rest",
+    "rpc"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://github.com/googleads/google-ads-mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Production accounts need a developer token with Explorer/Basic/Standard access; Test access only works on test accounts.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+      "quote": "Just like other Google APIs, Google Ads API uses the OAuth 2.0 protocol for authentication and authorization."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+      "quote": "If you need Standard access, you need a manual review."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.google.com/google-ads/api/rest/overview",
+      "quote": "The Google Ads API can be called either using gRPC or REST."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+      "quote": "The Google Ads MCP server provides a standardized bridge to the Google Ads API."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+      "quote": "you can apply on the Google Ads API Overview page for Explorer access (automated review and approval in most cases"
+    }
+  ],
+  "confidence": "high",
+  "notes": "All four original quotes confirmed on the live pages. Explorer access is automated but capped at 2,880 production operations per day; Basic and Standard need brand verification or manual review, so admin_approval and app_review stand. Official MCP is the googleads/google-ads-mcp repo documented on developers.google.com.",
+  "review": []
+}

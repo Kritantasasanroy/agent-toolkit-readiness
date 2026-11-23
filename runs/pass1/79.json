@@ -1,0 +1,50 @@
+{
+  "app_id": 79,
+  "app": "Smartsheet",
+  "category": "Productivity and Project Management",
+  "summary": "Work management and spreadsheet-style collaboration platform for enterprise teams.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "paid_plan",
+  "access_note": "API restricted to Business and Enterprise plans; OAuth app registration needs Developer Tools activation by Smartsheet.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "End user needs a Business, Enterprise or Advanced Work Management plan.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi/access-tokens",
+      "quote": "An Authorization HTTP header containing an access token is required to authenticate all API requests"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+      "quote": "OAuth 2.0 (OAuth) provides a way for your app users to grant limited access to their Smartsheet resources."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi/access-tokens",
+      "quote": "The Smartsheet API is restricted to users on Business and Enterprise plans"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+      "quote": "You'll find SDK code examples alongside REST snippets throughout the API documentation."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+      "quote": "The Smartsheet MCP server bridges the gap between Smartsheet and AI models"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Hosted MCP regional endpoints (mcp.smartsheet.com / .eu / .au) came from a search summary, not a fetched page, so mcp_url points at the docs page. One portal page mentions Early Adopter Program while a March 2026 post says GA. OAuth needs developer profile activation by Smartsheet (may add friction)."
+}

@@ -1,0 +1,64 @@
+{
+  "app_id": 26,
+  "app": "Discord",
+  "category": "Communications and Messaging",
+  "summary": "Chat platform for communities with servers, channels, voice and bots.",
+  "auth_methods": [
+    "bearer_token",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Create an application in the Developer Portal for a bot token; users authorize via OAuth2.",
+  "api_styles": [
+    "rest",
+    "rpc"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://github.com/SaseQ/discord-mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.discord.com/developers/topics/oauth2",
+      "quote": "Bot users are automatically added to all apps"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.discord.com/developers/topics/oauth2",
+      "quote": "We support the authorization code grant, the implicit grant, client credentials"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.discord.com/developers/reference",
+      "quote": "Using a bot token found on the Bot page within your app"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.discord.com/developers/reference",
+      "quote": "The Discord API is a REST API that allows you to interact with Discord data from your own applications"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.discord.com/developers/topics/oauth2",
+      "quote": "bot users have full access to most API routes without using bearer tokens, and can connect to the Real Time Gateway"
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/SaseQ/discord-mcp",
+      "quote": "A MCP server for the Discord integration. Enable your AI assistants to seamlessly interact with Discord"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "rpc reflects the Gateway websocket (not read). Bots must be invited to each server by someone with manage-server rights; verification applies at scale. No official Discord MCP found. Some quotes come from fetch-tool excerpts.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "auth_methods quote missing",
+      "to": "replaced",
+      "reason": "Original quote used a curly apostrophe that did not match; replaced with a word-for-word sentence from the OAuth2 page and added a Gateway quote supporting rpc."
+    }
+  ]
+}

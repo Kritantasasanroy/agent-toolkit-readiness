@@ -1,0 +1,44 @@
+{
+  "app_id": 25,
+  "app": "Pumble",
+  "category": "Communications and Messaging",
+  "summary": "Free team chat app with channels, DMs and apps for workplace messaging.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "API keys addon is available on all plans; apps with app key and user/bot tokens can be created in workspace settings.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://mcp.pumble.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://pumble.com/help/integrations/add-pumble-apps-to-your-workspace/api-keys/",
+      "quote": "This addon lets you generate an API key that allows you to send messages, reactions, and more via simple HTTP requests."
+    },
+    {
+      "field": "access",
+      "url": "https://pumble.com/help/integrations/add-pumble-apps-to-your-workspace/api-keys/",
+      "quote": "Available on all plans"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://pumble.com/help/integrations/add-pumble-apps-to-your-workspace/api-keys/",
+      "quote": "The full list of available actions is available in the Swagger documentation."
+    },
+    {
+      "field": "mcp",
+      "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+      "quote": "With the Pumble Model Context Protocol (MCP) server, you can connect third-party AI agents (e.g., Claude, Gemini, Codex) to Pumble."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Swagger docs not opened, so breadth is assumed moderate. An OAuth/app-install flow with app key plus user/bot tokens also exists per the MCP page but was not fully verified as OAuth 2.0. Rate limit 1000 req/min/user."
+}

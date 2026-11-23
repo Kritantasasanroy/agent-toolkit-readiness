@@ -1,0 +1,52 @@
+{
+  "app_id": 82,
+  "app": "Plaid",
+  "category": "Finance and Fintech",
+  "summary": "Connects apps to users' bank accounts to retrieve account, transaction, identity and payment data.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Free Sandbox keys from the Dashboard; Production (and Limited Production) must be requested through the Dashboard.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://api.dashboard.plaid.com/mcp/",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Sandbox is free and self-serve, but live bank data needs Production access requested and approved through the Dashboard; end users also link accounts via Plaid Link.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://plaid.com/docs/api/",
+      "quote": "These may be sent either in the request body or in the headers PLAID-CLIENT-ID and PLAID-SECRET"
+    },
+    {
+      "field": "access",
+      "url": "https://plaid.com/docs/sandbox/",
+      "quote": "The Plaid Sandbox is a free and fully-featured environment for application development and testing."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://plaid.com/docs/api/",
+      "quote": "The Plaid API is JSON over HTTP."
+    },
+    {
+      "field": "mcp",
+      "url": "https://plaid.com/docs/resources/mcp/",
+      "quote": "The Dashboard MCP server is a remote MCP server hosted by Plaid."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Sandbox is free and self-serve; live client_id/secret are issued after signup and terms acceptance, but the Dashboard MCP server needs a team approved for Production access. The MCP covers Dashboard diagnostics, not end-user bank data. Production approval criteria not found on pages read.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "auth_methods/mcp quotes",
+      "to": "verbatim quotes",
+      "reason": "Auth quote had a trailing period the page lacks; MCP quote was about token expiry, not that the server is Plaid's."
+    }
+  ]
+}

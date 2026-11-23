@@ -1,0 +1,45 @@
+{
+  "app_id": 85,
+  "app": "iPayX",
+  "category": "Finance and Fintech",
+  "summary": "FX audit service that scores bank or card-network FX rates against live mid-market rates.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Sign up and generate keys in the dashboard (ipx_live_ / ipx_test_); three free lifetime audits, MCP free tools capped per key; REST plans start at $99/mo.",
+  "api_styles": [
+    "rest",
+    "rpc"
+  ],
+  "api_breadth": "narrow",
+  "mcp": "official",
+  "mcp_url": "https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/mcp-server",
+  "verdict": "build_with_caveat",
+  "blocker": "narrow_api",
+  "blocker_note": "Single-purpose FX audit API (three tools); REST usage beyond the free tier needs a paid plan.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://ipayx.ai/developers",
+      "quote": "Authenticate every request using your production API key in the Authorization header."
+    },
+    {
+      "field": "access",
+      "url": "https://ipayx.ai",
+      "quote": "Start free with three lifetime audits"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://ipayx.ai",
+      "quote": "REST API + SDKs for FX audit automation"
+    },
+    {
+      "field": "mcp",
+      "url": "https://ipayx.ai",
+      "quote": "Native Model Context Protocol server"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Docs pages were read through a summarizer, quotes taken from its output. ipayx.ai/docs returned a 404 page; used /developers and /docs/mcp-server instead. Small vendor; MCP endpoint is a Supabase function URL; 'rpc' reflects MCP over SSE."
+}

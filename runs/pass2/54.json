@@ -1,0 +1,73 @@
+{
+  "app_id": 54,
+  "app": "MrScraper",
+  "category": "Data, SEO and Scraping",
+  "summary": "AI-powered web scraping platform with scraper, search and unblocker APIs.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Create an API token in the dashboard; free credits or plan limits not confirmed.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://mcp.mrscraper.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.mrscraper.com/docs/api/authentication",
+      "quote": "Include your API token in the x-api-token HTTP header on every request"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.mrscraper.com/docs/api/authentication",
+      "quote": "For Marketplace endpoints , authenticate using the standard RFC 6750 Authorization header with a Bearer token"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+      "quote": "The Free plan includes 100 tokens per month with no credit card required."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.mrscraper.com/docs/api/authentication",
+      "quote": "API tokens are managed directly from your MrScraper dashboard."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.mrscraper.com/docs/api/overview",
+      "quote": "Built on REST principles, our API offers predictable resource-oriented URLs"
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+      "quote": "MrScraper MCP is the official Model Context Protocol server for MrScraper."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+      "quote": "Use this exact URL, including the /mcp path."
+    }
+  ],
+  "confidence": "high",
+  "notes": "Free plan (no credit card) confirmed on the billing page; the page table (1,000 tokens) and text (100 tokens per month) disagree on the free allowance. REST uses x-api-token; Marketplace endpoints use Bearer. Hosted MCP uses OAuth 2.1 with API key fallback.",
+  "review": [
+    {
+      "field": "mcp_url",
+      "from": "https://docs.mrscraper.com",
+      "to": "https://mcp.mrscraper.com/mcp",
+      "reason": "MCP docs page located; hosted endpoint is given there."
+    },
+    {
+      "field": "evidence",
+      "from": "auth/api_styles quotes missing",
+      "to": "re-quoted",
+      "reason": "Old quotes had backticks or did not match; free plan now quoted so access is proven, not assumed."
+    }
+  ]
+}

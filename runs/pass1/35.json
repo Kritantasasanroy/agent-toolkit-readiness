@@ -1,0 +1,45 @@
+{
+  "app_id": 35,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "Mailchimp",
+  "summary": "Email marketing and audience management platform.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "API keys generated in account settings; OAuth apps registered on the Registered Apps page.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://github.com/damientilman/mailchimp-mcp-server",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+      "quote": "This page walks through implementing OAuth 2 so your application can access the Marketing API on behalf of other Mailchimp users."
+    },
+    {
+      "field": "access",
+      "url": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+      "quote": "Registering gives you the client_id and client_secret your server needs."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+      "quote": "The Marketing API generally follows REST conventions, with some deviations."
+    },
+    {
+      "field": "mcp",
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server.md",
+      "quote": "This searches documentation, not your Mailchimp account."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Official Mailchimp MCP found only searches docs (https://mailchimp.com/developer/_mcp/server); an account-level hosted endpoint was reported by a directory but not confirmed. Community server: damientilman/mailchimp-mcp-server. Free plan and API key generation steps not confirmed on a fetched page."
+}

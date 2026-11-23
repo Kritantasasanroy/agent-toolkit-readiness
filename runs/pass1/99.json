@@ -1,0 +1,44 @@
+{
+  "app_id": 99,
+  "app": "YouTube Transcript",
+  "category": "AI, Research and Media-native",
+  "summary": "Third-party API (TranscriptAPI) that returns YouTube video transcripts, search and channel data.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Sign up and get a free API key; 100 free credits, no card, then $5/month for 1,000 credits.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "official",
+  "mcp_url": "https://transcriptapi.com/mcp",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://transcriptapi.com/docs/api/",
+      "quote": "The API uses Bearer token authentication."
+    },
+    {
+      "field": "access",
+      "url": "https://transcriptapi.com",
+      "quote": "new accounts get 100 free credits, no card required"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://transcriptapi.com/docs/api/",
+      "quote": "All API requests are made to:"
+    },
+    {
+      "field": "mcp",
+      "url": "https://transcriptapi.com",
+      "quote": "https://transcriptapi.com/mcp"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Small third-party vendor, not affiliated with YouTube; data likely sourced unofficially from YouTube, so continuity and ToS risk exist. Base URL https://transcriptapi.com/api/v2 with GET endpoints. Quotes are from fetch summaries."
+}

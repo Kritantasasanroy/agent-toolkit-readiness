@@ -1,0 +1,51 @@
+{
+  "app_id": 43,
+  "app": "BigCommerce",
+  "category": "Ecommerce",
+  "summary": "SaaS ecommerce platform for merchants to run online stores.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_trial",
+  "access_note": "API credentials are created in a store control panel; a store (trial or paid) is needed. Trial length and free sandbox not verified.",
+  "api_styles": [
+    "rest",
+    "graphql"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://api.bigcommerce.com/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Needs a BigCommerce store; trial terms not verified. Multi-store apps are registered in the Developer Portal.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.bigcommerce.com/docs/start/authentication",
+      "quote": "Pass the access token as the value of the `X-Auth-Token` header of the request you want to authenticate."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.bigcommerce.com/docs/start/authentication",
+      "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce's REST APIs."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.bigcommerce.com/docs/start/authentication",
+      "quote": "Merchants generate single-store API credentials when they create API accounts in their store control panel."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://docs.bigcommerce.com/docs/start/authentication",
+      "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce's REST APIs."
+    },
+    {
+      "field": "mcp",
+      "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+      "quote": "Store Management MCP is in early access and available to all stores."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "GraphQL support inferred from the auth page summary and search, not a direct quote. Trial/free store terms not read. Old developer.bigcommerce.com URL redirects to docs.bigcommerce.com."
+}

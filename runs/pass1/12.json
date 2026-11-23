@@ -1,0 +1,50 @@
+{
+  "app_id": 12,
+  "app": "Intercom",
+  "category": "Support and Helpdesk",
+  "summary": "Customer messaging and support platform with inbox, tickets, help center and the Fin AI agent.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "free_trial",
+  "access_note": "Private apps use an access token from the Developer Hub for your own workspace; public apps use OAuth. A workspace needs a trial or paid plan.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.intercom.com/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Workspace is trial/paid; MCP server not available for AU-hosted workspaces.",
+  "confidence": "medium",
+  "notes": "Did not find a page confirming a free developer/test workspace, so access is set to free_trial. REST breadth taken from the docs nav (contacts, tickets, help center, reporting) and the REST API reference; no review requirement for public apps was read.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "quote": "An Access Token is for if you're using the API to access data in your own Intercom workspace, in other words, building a private app."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "quote": "OAuth is for if you're building a public app that accesses other people's Intercom data."
+    },
+    {
+      "field": "access",
+      "url": "https://www.intercom.com/pricing",
+      "quote": "Start free trial"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developers.intercom.com/docs/guides/mcp",
+      "quote": "The Intercom MCP Server provides 16 tools for interacting with the Intercom API."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.intercom.com/docs/guides/mcp",
+      "quote": "The Intercom MCP server is available for US and EU hosted workspaces."
+    }
+  ]
+}

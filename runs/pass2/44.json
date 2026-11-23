@@ -1,0 +1,57 @@
+{
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "summary": "Enterprise B2C/B2B commerce platform from Salesforce with storefront and headless commerce APIs.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "partner_gated",
+  "access_note": "Requires a licensed B2C Commerce instance and Account Manager API client; sandbox is provisioned for customers. Not verified from docs (pages returned 403).",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp",
+  "verdict": "needs_outreach",
+  "blocker": "partner_program",
+  "blocker_note": "Enterprise licensed product; API clients exist only inside a customer or partner instance. Shopper MCP is a pilot requiring account executive contact.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication",
+      "quote": "This requires the API Administrator or Account Administrator role"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication",
+      "quote": "With a client secret configured, the CLI uses client credentials."
+    },
+    {
+      "field": "access",
+      "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication",
+      "quote": "This requires the API Administrator or Account Administrator role"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication",
+      "quote": "Use SCAPI instead"
+    },
+    {
+      "field": "mcp",
+      "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp",
+      "quote": "The B2C MCP server connects your AI assistant to Salesforce B2C Commerce tools, documentation, and workflow skills."
+    }
+  ],
+  "confidence": "low",
+  "notes": "developer.salesforce.com returns \"Oops Something went wrong\" to curl, so SCAPI/SLAS reference pages could not be read; evidence is from the vendor-owned SalesforceCommerceCloud GitHub Pages tooling docs. Those show OAuth via Account Manager API clients (client credentials or user sign-in) created by an API/Account Administrator, and SCAPI replacing deprecated OCAPI. They do not say REST in words (REST is background knowledge) and do not show any free signup: access as partner_gated (needs a licensed B2C instance and Account Manager org) is an inference, not quoted. MCP is local stdio developer tooling (@salesforce/b2c-dx-mcp), official but not a hosted server. Confidence low.",
+  "review": [
+    {
+      "field": "evidence",
+      "from": "only an mcp item",
+      "to": "added auth_methods, access, api_styles items",
+      "reason": "Validator rejected pass 1 for missing evidence; added quotes from the vendor-run B2C developer tooling docs (developer.salesforce.com returns an error page to curl)."
+    }
+  ]
+}

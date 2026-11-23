@@ -1,0 +1,45 @@
+{
+  "app_id": 14,
+  "app": "Front",
+  "category": "Support and Helpdesk",
+  "summary": "Shared inbox and customer operations platform for email, SMS and chat conversations.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "free_trial",
+  "access_note": "API tokens created by an admin in Settings > Developers; public integrations must use OAuth. No free plan seen, trial only.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://mcp.frontapp.com/mcp",
+  "verdict": "build_with_caveat",
+  "blocker": "paid_plan",
+  "blocker_note": "Needs a paid/trial Front workspace; public integrations must use OAuth and the MCP server needs a confidential OAuth app created in Front developer settings.",
+  "confidence": "high",
+  "notes": "Older page at /docs/mcp marks the previous MCP version as deprecated; use /docs/mcp-server. Quote for MCP and auth taken from raw .md versions of the pages.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://dev.frontapp.com/docs/authentication",
+      "quote": "There are two ways to get a Bearer token — through API tokens in your settings or through an OAuth implementation"
+    },
+    {
+      "field": "access",
+      "url": "https://front.com/pricing",
+      "quote": "Try for Free"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://dev.frontapp.com/docs/authentication",
+      "quote": "The Core API uses Bearer tokens to authenticate its user."
+    },
+    {
+      "field": "mcp",
+      "url": "https://dev.frontapp.com/docs/mcp-server",
+      "quote": "Front's MCP server (`mcp.frontapp.com/mcp`) lets AI agents act on Front conversation data using a single OAuth-authenticated endpoint."
+    }
+  ]
+}

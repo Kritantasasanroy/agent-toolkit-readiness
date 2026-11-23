@@ -1,0 +1,63 @@
+{
+  "app_id": 42,
+  "app": "WooCommerce",
+  "category": "Ecommerce",
+  "summary": "Open-source WordPress ecommerce plugin for running online stores.",
+  "auth_methods": [
+    "basic",
+    "other"
+  ],
+  "access": "free_self_serve",
+  "access_note": "Self-hosted plugin; store admin generates consumer key/secret. Requires the user to own or administer a WooCommerce site.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "official",
+  "mcp_url": "https://developer.woocommerce.com/docs/features/mcp/",
+  "verdict": "build_now",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "quote": "You may use HTTP Basic Auth by providing the REST API Consumer Key as the username"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "quote": "You must use OAuth 1.0a \"one-legged\" authentication to ensure REST API credentials cannot be intercepted"
+    },
+    {
+      "field": "access",
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "quote": "New keys can be generated either through the WordPress admin interface or they can be auto-generated through an endpoint."
+    },
+    {
+      "field": "access",
+      "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "quote": "Each set of keys is linked to a WordPress user on your site."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "quote": "WooCommerce (WC) 2.6+ is fully integrated with the WordPress REST API."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developer.woocommerce.com/docs/features/mcp/",
+      "quote": "The MCP implementation in WooCommerce is currently in developer preview."
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Plugin is free and self-hosted; the merchant site must be reachable over HTTPS and each user has a distinct base URL. Free price of the plugin not quoted from a page. MCP is developer preview via WordPress MCP Adapter, may change.",
+  "review": [
+    {
+      "field": "evidence(access)",
+      "from": "WC 2.6+ integration sentence",
+      "to": "key-generation quotes",
+      "reason": "Old quote did not support access; replaced with admin key generation text."
+    }
+  ]
+}

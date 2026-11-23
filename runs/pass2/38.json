@@ -1,0 +1,63 @@
+{
+  "app_id": 38,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "Pinterest",
+  "summary": "Visual discovery platform with APIs for pins, boards and ads.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "admin_approval",
+  "access_note": "Apps need Pinterest review for Trial access before API use; Standard access requires a further application.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "broad",
+  "mcp": "community",
+  "mcp_url": "https://github.com/collactivelabs/pinterest-mcp-server",
+  "verdict": "build_with_caveat",
+  "blocker": "app_review",
+  "blocker_note": "Pinterest reviews apps for Trial access, and Standard access is needed for production use by other users.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+      "quote": "Our implementation of grant types and access tokens follows OAuth 2.0 specifications"
+    },
+    {
+      "field": "access",
+      "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+      "quote": "Application requests are reviewed by Pinterest"
+    },
+    {
+      "field": "api_styles",
+      "url": "https://github.com/pinterest/api-description",
+      "quote": "This repository contains OpenAPI (version 3.0.3) descriptions for Pinterest"
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+      "quote": "Be the first to know when it launches"
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/collactivelabs/pinterest-mcp-server",
+      "quote": "A Model Context Protocol (MCP) server for integrating the Pinterest API with AI agents and LLMs"
+    }
+  ],
+  "confidence": "medium",
+  "notes": "Official Pinterest MCP is announced but not launched (waitlist page). The github.com/pinterest/api-description repo is titled 'Pinterest's REST API OpenAPI Description', supporting rest.",
+  "review": [
+    {
+      "field": "mcp_url",
+      "from": "glama listing (clugtu, 8 stars)",
+      "to": "collactivelabs/pinterest-mcp-server (41 stars)",
+      "reason": "Better-used community server with a readable README; official Pinterest MCP is still a waitlist page."
+    },
+    {
+      "field": "evidence",
+      "from": "mcp quote",
+      "to": "added",
+      "reason": "Added community repo README quote alongside the official waitlist page."
+    }
+  ]
+}

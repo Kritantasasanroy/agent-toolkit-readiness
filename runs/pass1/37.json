@@ -1,0 +1,44 @@
+{
+  "app_id": 37,
+  "category": "Marketing, Ads, Email and Social",
+  "app": "systeme.io",
+  "summary": "All-in-one funnel builder, email marketing and course platform.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_note": "API key attached to X-API-Key header; plan requirement for API access not verified.",
+  "api_styles": [
+    "rest"
+  ],
+  "api_breadth": "moderate",
+  "mcp": "none",
+  "mcp_url": "",
+  "verdict": "build_with_caveat",
+  "blocker": "none",
+  "blocker_note": "API key only, no OAuth; per-user key paste. Plan gating for API unverified.",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.systeme.io/reference/api.md",
+      "quote": "your only option right now is to attach your API key to the `X-API-Key` header of each request"
+    },
+    {
+      "field": "access",
+      "url": "https://developer.systeme.io/reference/api.md",
+      "quote": "If you exceed the rate limit, you will receive a `429` Too Many Requests response status code."
+    },
+    {
+      "field": "api_styles",
+      "url": "https://developer.systeme.io/",
+      "quote": "Retrieves the collection of Contact resources."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developer.systeme.io/",
+      "quote": "Retrieves the collection of Contact resources."
+    }
+  ],
+  "confidence": "low",
+  "notes": "Access plan requirements and free-tier API availability not found; the access and mcp evidence quotes are weak (no explicit MCP page; I did not search an MCP registry for systeme.io). Endpoint groups include Contact, Funnels, Tag, Webhook, Subscription, School, Community, etc."
+}
